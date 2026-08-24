@@ -2,5 +2,6 @@
 
 from .indicators import TechnicalIndicators
 from .levels import PriceLevels
+from .chart_generator import ChartGenerator
 
-__all__ = ["TechnicalIndicators", "PriceLevels"]
+__all__ = ["TechnicalIndicators", "PriceLevels", "ChartGenerator"]
