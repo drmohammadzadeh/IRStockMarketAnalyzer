@@ -21,6 +21,8 @@ class TSETMCFetcher:
             headers=HEADERS,
             timeout=REQUEST_TIMEOUT,
             verify=False,
+            follow_redirects=True,
+            trust_env=False,
         )
 
     def search_inscode(self, symbol: str) -> Optional[str]:
@@ -36,9 +38,14 @@ class TSETMCFetcher:
                 fields = part.split(",")
                 if len(fields) >= 2:
                     row_symbol = fields[0].strip()
-                    inscode = fields[1].strip()
                     if row_symbol == cleaned_symbol or cleaned_symbol in row_symbol:
-                        return inscode
+                        # In real TSETMC response: symbol, name, inscode, ...
+                        # In mock/test responses: symbol, inscode, ...
+                        for candidate in fields[1:]:
+                            cand_clean = candidate.strip()
+                            if cand_clean.isdigit() and len(cand_clean) >= 10:
+                                return cand_clean
+                        return fields[1].strip()
         except Exception:
             pass
         return None

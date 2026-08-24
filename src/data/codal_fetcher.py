@@ -9,7 +9,13 @@ class CodalFetcher:
     """Fetcher for Codal financial statements, monthly activity reports, and corporate announcements."""
 
     def __init__(self, client: Optional[httpx.Client] = None):
-        self.client = client or httpx.Client(headers=HEADERS, timeout=REQUEST_TIMEOUT, verify=False)
+        self.client = client or httpx.Client(
+            headers=HEADERS,
+            timeout=REQUEST_TIMEOUT,
+            verify=False,
+            follow_redirects=True,
+            trust_env=False,
+        )
 
     @staticmethod
     def extract_symbol_from_file(links_file: Path) -> Optional[str]:
