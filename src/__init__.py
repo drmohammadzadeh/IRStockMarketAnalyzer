@@ -1,0 +1,1 @@
+"""Bourse Analysis Engine package."""
