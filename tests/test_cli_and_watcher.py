@@ -79,129 +79,29 @@ def test_directory_watcher_watch_loop_error_handling(tmp_path):
     assert "شپنا" not in watcher.processed
 
 
-@patch("main.ReportGenerator.generate_all_reports")
-@patch("main.StrategyEngine.generate_recommendation")
-@patch("main.ValuationAnalyzer.calculate_ratios")
-@patch("main.ChartGenerator.generate_all_charts")
-@patch("main.PriceLevels.find_key_levels")
-@patch("main.TechnicalIndicators.calculate_all")
-@patch("main.DataValidator.validate_all")
-@patch("main.CodalFetcher")
-@patch("main.TSETMCFetcher")
-def test_analyze_symbol_success(
-    mock_tsetmc_cls,
-    mock_codal_cls,
-    mock_validate_all,
-    mock_calc_tech,
-    mock_find_levels,
-    mock_gen_charts,
-    mock_calc_fund,
-    mock_gen_rec,
-    mock_gen_reports,
-    tmp_path,
-):
-    # Mock TSETMC & Codal fetchers
-    mock_tsetmc = MagicMock()
-    mock_tsetmc_cls.return_value = mock_tsetmc
-    sample_df = pd.DataFrame(
-        {
-            "date": pd.date_range("2026-01-01", periods=50),
-            "close": [1000.0] * 50,
-            "high": [1050.0] * 50,
-            "low": [950.0] * 50,
-            "volume": [10000] * 50,
-            "rsi": [55.0] * 50,
-            "ema20": [990.0] * 50,
-            "atr": [30.0] * 50,
-        }
-    )
-    mock_tsetmc.fetch_symbol_data.return_value = {
-        "symbol": "زهلال",
-        "success": True,
-        "history": sample_df,
-        "client_type": {"buyer_power": 1.4},
-    }
-
-    mock_codal = MagicMock()
-    mock_codal_cls.return_value = mock_codal
-    mock_codal.fetch_codal_reports.return_value = {
-        "symbol": "زهلال",
-        "success": True,
-        "letters_count": 5,
-    }
-
-    # Mock Validation
-    mock_validate_all.return_value = ValidationResult(
-        is_valid=True,
-        candles_count=50,
-        latest_close=1000.0,
-        warnings=["Sample warning"],
-        metrics_summary={"client_power": 1.4},
-    )
-
-    # Mock Technicals
-    mock_calc_tech.return_value = sample_df
-    mock_find_levels.return_value = {
-        "swing_high": 1200.0,
-        "swing_low": 800.0,
-        "nearest_support": 950.0,
-        "nearest_resistance": 1100.0,
-    }
-    mock_gen_charts.return_value = [
-        tmp_path / "chart1.png",
-        tmp_path / "chart2.png",
-        tmp_path / "chart3.png",
-    ]
-
-    # Mock Fundamental & Recommendation
-    mock_calc_fund.return_value = {
-        "pe_ratio": 6.5,
-        "ps_ratio": 1.2,
-        "pb_ratio": 2.8,
-        "dividend_yield_pct": 12.0,
-        "fundamental_score": 7.5,
-    }
-    mock_gen_rec.return_value = {
-        "overall_verdict": "خرید قوی (Strong Buy)",
-        "action_desc": "موقعیت جذاب",
-    }
-    mock_gen_reports.return_value = {
-        "fundamental": tmp_path / "fundamental_report.md",
-        "technical": tmp_path / "technical_report.md",
-        "recommendation": tmp_path / "final_recommendation.md",
-    }
+@patch("main.MultiAgentOrchestrator")
+def test_analyze_symbol_success(mock_orch_cls, tmp_path):
+    mock_orch = MagicMock()
+    mock_orch.run_pipeline.return_value = True
+    mock_orch_cls.return_value = mock_orch
 
     result = main.analyze_symbol("زهلال", stocks_dir=tmp_path)
 
     assert result is True
-    mock_tsetmc.fetch_symbol_data.assert_called_once_with("زهلال")
-    mock_validate_all.assert_called_once()
-    mock_calc_tech.assert_called_once()
-    mock_find_levels.assert_called_once()
-    mock_gen_charts.assert_called_once()
-    mock_calc_fund.assert_called_once()
-    mock_gen_rec.assert_called_once()
-    mock_gen_reports.assert_called_once()
+    mock_orch_cls.assert_called_once_with(stocks_dir=tmp_path)
+    mock_orch.run_pipeline.assert_called_once_with("زهلال", max_retries=3)
 
 
-@patch("main.DataValidator.validate_all")
-@patch("main.CodalFetcher")
-@patch("main.TSETMCFetcher")
-def test_analyze_symbol_validation_failure(
-    mock_tsetmc_cls, mock_codal_cls, mock_validate_all, tmp_path
-):
-    mock_tsetmc = MagicMock()
-    mock_tsetmc_cls.return_value = mock_tsetmc
-    mock_tsetmc.fetch_symbol_data.return_value = {"success": False, "history": None}
-
-    mock_validate_all.return_value = ValidationResult(
-        is_valid=False,
-        errors=["No price history available from TSETMC"],
-    )
+@patch("main.MultiAgentOrchestrator")
+def test_analyze_symbol_validation_failure(mock_orch_cls, tmp_path):
+    mock_orch = MagicMock()
+    mock_orch.run_pipeline.return_value = False
+    mock_orch_cls.return_value = mock_orch
 
     result = main.analyze_symbol("نامعتبر", stocks_dir=tmp_path)
 
     assert result is False
+    mock_orch.run_pipeline.assert_called_once_with("نامعتبر", max_retries=3)
 
 
 @patch("main.analyze_symbol")
