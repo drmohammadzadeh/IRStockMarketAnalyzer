@@ -105,6 +105,9 @@ class ReportGenerator:
 ## ۳. نقاط قوت و ریسک‌های بنیادی
 - **نقاط قوت:** P/E مناسب نسبت به متوسط بازار، پتانسیل تقسیم سود نقدی در مجمع.
 - **ریسک‌ها:** ریسک‌های سیستماتیک بازار، نوسانات نرخ ارز و نهاده‌های تولیدی.
+
+---
+*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
 """
         fund_path.write_text(fund_content, encoding="utf-8")
 
@@ -152,6 +155,9 @@ class ReportGenerator:
 - ![نمودار شمعی و میانگین‌ها](charts/candlestick_overview.png)
 - ![اسیلاتورهای تکانه](charts/indicators_momentum.png)
 - ![جریان نقدینگی](charts/tape_reading_money_flow.png)
+
+---
+*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
 """
         tech_path.write_text(tech_content, encoding="utf-8")
 
@@ -218,6 +224,9 @@ class ReportGenerator:
 
 ## شروط ابطال تحلیل
 - تثبیت قیمت زیر سطح **{stop_loss:,.0f} ریال** با حجم معاملات بالا موجب ابطال سناریوی صعودی و لزوم خروج از سهم است.
+
+---
+*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
 """
         rec_path.write_text(rec_content, encoding="utf-8")
 

@@ -309,6 +309,9 @@ class TechnicalAnalystAgent:
             "- ![نمودار شمعی و میانگین‌های متحرک](charts/candlestick_overview.png)",
             "- ![اسیلاتورهای تکانه و مومنتوم](charts/indicators_momentum.png)",
             "- ![جریان نقدینگی و تابلوخوانی](charts/tape_reading_money_flow.png)",
+            "",
+            "---",
+            "*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*",
         ])
 
         return "\n".join(lines)

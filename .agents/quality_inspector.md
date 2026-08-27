@@ -1,11 +1,13 @@
 ---
 name: quality_inspector
-description: "عامل بازرسی، ممیزی کیفیت، اعتبارسنجی داده‌ها و کنترل سازگاری گزارش‌های تولیدی سیستم"
+description: "عامل ناظر کیفی، کنترل سلامت داده‌ها، بازرسی گزارش‌ها و هدایت حلقه تکرار در پایپ‌لاین"
 version: "1.0.0"
 language: "fa-IR"
+author: "alimohammadzadeh@ut.ac.ir"
 ---
 
-# عامل بازرسی و کنترل کیفیت (Quality Inspector Agent)
+# عامل بازرسی و کنترل کیفیت (Quality Inspector)
+> **نویسنده و توسعه دهنده:** alimohammadzadeh@ut.ac.ir
 
 ## نقش و هدف (Role & Objective)
 عامل **Quality Inspector Agent** نقش نگهبان کیفیت، صحت‌سنجی نهایی و اعتبارسنجی یکپارچگی کلیه تحلیل‌ها، داده‌ها و فایل‌های تولیدی توسط سایر عامل‌ها را ایفا می‌کند.

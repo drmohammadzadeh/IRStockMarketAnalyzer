@@ -3,9 +3,11 @@ name: crawler_agent
 description: "عامل هوشمند خزش، استخراج و اعتبارسنجی اولیه داده‌های بازار سرمایه ایران (TSETMC و سامانه کدال)"
 version: "1.0.0"
 language: "fa-IR"
+author: "alimohammadzadeh@ut.ac.ir"
 ---
 
 # عامل خزش و استخراج داده (Crawler Agent)
+> **نویسنده و توسعه دهنده:** alimohammadzadeh@ut.ac.ir
 
 ## نقش و هدف (Role & Objective)
 عامل **Crawler Agent** مسئول جمع‌آوری خودکار، پیوسته و دقیق داده‌های زنده و تاریخی سهام از سامانه‌های مرجع بازار سرمایه ایران (شرکت مدیریت فناوری بورس تهران - TSETMC و سامانه جامع اطلاع‌رسانی ناشران - Codal) می‌باشد. 

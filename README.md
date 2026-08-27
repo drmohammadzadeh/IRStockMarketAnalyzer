@@ -277,4 +277,5 @@ python -m pytest -v
 ---
 
 ## 👤 نویسنده و توسعه‌دهنده
+- **نویسنده و توسعه دهنده:** alimohammadzadeh@ut.ac.ir
 - **مخزن گیت‌هاب:** [IRStockMarketAnalyzer](https://github.com/drmohammadzadeh/IRStockMarketAnalyzer)
