@@ -102,7 +102,71 @@ class CodalFetcher:
                 result["others"].append(l)
         return result
 
-    def fetch_codal_reports(self, symbol: str, links_file: Optional[Path] = None) -> Dict[str, Any]:
+    @staticmethod
+    def get_pdf_url(letter: Dict[str, Any]) -> str:
+        """Extracts or constructs the PDF download URL for a Codal letter."""
+        import re
+        if letter.get("PdfUrl"):
+            url = str(letter["PdfUrl"]).strip()
+            if not url.startswith("http"):
+                url = urllib.parse.urljoin("https://codal.ir/", url)
+            return url
+
+        serial = letter.get("LetterSerial")
+        if not serial:
+            url_val = str(letter.get("Url", ""))
+            if "LetterSerial=" in url_val:
+                m = re.search(r"LetterSerial=([^&]+)", url_val)
+                if m:
+                    serial = m.group(1)
+        if serial:
+            return f"https://codal.ir/Reports/DownloadFile.aspx?LetterSerial={serial}&type=pdf"
+
+        tracing = letter.get("TracingNo")
+        if tracing:
+            return f"https://codal.ir/Reports/DownloadFile.aspx?id={tracing}&type=pdf"
+        return ""
+
+    @staticmethod
+    def get_excel_url(letter: Dict[str, Any]) -> str:
+        """Extracts or constructs the Excel download URL for a Codal letter."""
+        import re
+        if letter.get("ExcelUrl"):
+            url = str(letter["ExcelUrl"]).strip()
+            if not url.startswith("http"):
+                url = urllib.parse.urljoin("https://excel.codal.ir/", url)
+            return url
+
+        serial = letter.get("LetterSerial")
+        if not serial:
+            url_val = str(letter.get("Url", ""))
+            if "LetterSerial=" in url_val:
+                m = re.search(r"LetterSerial=([^&]+)", url_val)
+                if m:
+                    serial = m.group(1)
+        if serial:
+            return f"https://excel.codal.ir/service/Excel/GetAll/{serial}"
+
+        tracing = letter.get("TracingNo")
+        if tracing:
+            return f"https://excel.codal.ir/service/Excel/GetAll/{tracing}"
+        return ""
+
+    @staticmethod
+    def get_html_url(letter: Dict[str, Any]) -> str:
+        """Extracts or constructs the HTML announcement URL for a Codal letter."""
+        url = letter.get("Url", "")
+        if not url:
+            return ""
+        url = str(url).strip()
+        if url.startswith("http"):
+            return url
+        elif url.startswith("/"):
+            return urllib.parse.urljoin("https://codal.ir/", url)
+        else:
+            return urllib.parse.urljoin("https://codal.ir/Reports/", url)
+
+    def fetch_codal_reports(self, symbol: str, links_file: Optional[Path] = None, max_reports: int = 50) -> Dict[str, Any]:
         """Fetches and categorizes reports for a given symbol from the Codal API."""
         target_symbol = symbol
         if links_file and links_file.exists():
@@ -130,7 +194,7 @@ class CodalFetcher:
                 "success": True,
                 "letters_count": len(letters),
                 "categorized": categorized,
-                "raw_letters": letters[:20],
+                "raw_letters": letters[:max_reports],
             }
         except Exception as e:
             return {
@@ -139,3 +203,4 @@ class CodalFetcher:
                 "error": str(e),
                 "categorized": self.categorize_letters([]),
             }
+

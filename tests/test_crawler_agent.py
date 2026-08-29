@@ -117,3 +117,189 @@ def test_crawler_fetch_market_data():
     assert not history.empty
     assert client_data["buyer_power"] == 1.5
     mock_tsetmc.fetch_symbol_data.assert_called_once_with("زهلال")
+
+
+def test_crawler_recursive_depth_and_file_cap(tmp_path):
+    symbol_dir = tmp_path / "وتجارت"
+    symbol_dir.mkdir(parents=True)
+    links_file = symbol_dir / "links.txt"
+    links_file.write_text("https://www.bourse24.ir/news/tag/وتجارت\n", encoding="utf-8")
+
+    mock_client = MagicMock()
+
+    # Level 1 page with 60 child news links
+    child_links_html = "".join([f'<a href="/news/{i}">خبر شماره {i} وتجارت</a>\n' for i in range(1, 65)])
+    level1_html = f"<html><head><title>اخبار وتجارت</title></head><body>{child_links_html}</body></html>"
+
+    def mock_get(url, *args, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        url_str = str(url)
+        if "bourse24.ir/news/tag" in url_str:
+            resp.text = level1_html
+            resp.content = level1_html.encode("utf-8")
+        elif "/news/" in url_str:
+            resp.text = "<html><body><p>متن خبر تفصیلی بانک تجارت و رویدادهای مالی اخیر این بانک.</p></body></html>"
+            resp.content = resp.text.encode("utf-8")
+        elif "search.codal.ir" in url_str:
+            resp.json.return_value = {
+                "Letters": [{"Title": f"گزارش {i}", "TracingNo": 1000 + i, "LetterSerial": 2000 + i, "Url": f"Decision.aspx?LetterSerial={2000+i}"} for i in range(1, 25)]
+            }
+            resp.text = json.dumps(resp.json.return_value)
+            resp.content = resp.text.encode("utf-8")
+        elif "DownloadFile.aspx" in url_str or ".pdf" in url_str:
+            resp.content = b"%PDF-1.4 sample codal pdf content"
+            resp.text = "%PDF-1.4 sample codal pdf content"
+        elif "excel.codal.ir" in url_str or ".xls" in url_str or ".xlsx" in url_str:
+            resp.content = b"PK\x03\x04 sample excel content"
+            resp.text = "sample excel"
+        else:
+            resp.text = "<html><p>محتوای گزارش کدال</p></body></html>"
+            resp.content = resp.text.encode("utf-8")
+        return resp
+
+    mock_client.get.side_effect = mock_get
+
+    crawler = CrawlerAgent(client=mock_client)
+    res = crawler.run("وتجارت", symbol_dir)
+
+    assert res["success"] is True
+    assert "total_downloaded_files" in res
+    assert res["total_downloaded_files"] <= 50
+
+
+def test_crawler_guarantees_pdf_xlsx_reports_quota(tmp_path):
+    symbol_dir = tmp_path / "وتجارت"
+    symbol_dir.mkdir(parents=True)
+
+    mock_client = MagicMock()
+    letters_data = [
+        {
+            "Title": f"صورت‌های مالی دوره {i}",
+            "TracingNo": 10000 + i,
+            "LetterSerial": 50000 + i,
+            "PublishDateTime": f"1403/0{i%9+1}/15",
+            "Url": f"Decision.aspx?LetterSerial={50000+i}",
+            "PdfUrl": f"https://codal.ir/Reports/DownloadFile.aspx?LetterSerial={50000+i}&type=pdf",
+            "ExcelUrl": f"https://excel.codal.ir/service/Excel/GetAll/{50000+i}",
+        }
+        for i in range(1, 26)
+    ]
+
+    def mock_get(url, *args, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        url_str = str(url)
+        if "search.codal.ir" in url_str:
+            resp.json.return_value = {"Letters": letters_data}
+            resp.text = json.dumps(resp.json.return_value)
+            resp.content = resp.text.encode("utf-8")
+        elif "DownloadFile.aspx" in url_str or ".pdf" in url_str:
+            resp.content = b"%PDF-1.4 binary pdf content"
+            resp.text = "%PDF-1.4 binary pdf content"
+        elif "excel.codal.ir" in url_str or ".xlsx" in url_str or ".xls" in url_str:
+            resp.content = b"PK\x03\x04 binary excel content"
+            resp.text = "binary excel"
+        else:
+            resp.text = "<html><body>گزارش مالی</body></html>"
+            resp.content = resp.text.encode("utf-8")
+        return resp
+
+    mock_client.get.side_effect = mock_get
+
+    crawler = CrawlerAgent(client=mock_client)
+    res = crawler.run("وتجارت", symbol_dir)
+
+    assert res["success"] is True
+    assert res["pdf_xlsx_count"] >= 20
+    assert res["total_downloaded_files"] <= 50
+
+    codal_reports = list((symbol_dir / "codal_reports").iterdir())
+    pdf_xlsx_files = [f for f in codal_reports if f.suffix.lower() in (".pdf", ".xlsx", ".xls")]
+    assert len(pdf_xlsx_files) >= 20
+
+
+def test_codal_fetcher_extracts_pdf_and_excel_urls():
+    from src.data.codal_fetcher import CodalFetcher
+    letter1 = {
+        "LetterSerial": 12345,
+        "PdfUrl": "/Reports/DownloadFile.aspx?LetterSerial=12345&type=pdf",
+        "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/12345",
+        "Url": "/Reports/Decision.aspx?LetterSerial=12345",
+    }
+    pdf_url = CodalFetcher.get_pdf_url(letter1)
+    excel_url = CodalFetcher.get_excel_url(letter1)
+    html_url = CodalFetcher.get_html_url(letter1)
+
+    assert "DownloadFile.aspx" in pdf_url
+    assert "excel.codal.ir" in excel_url
+    assert "Decision.aspx" in html_url
+
+    letter2 = {
+        "Url": "/Reports/Decision.aspx?LetterSerial=67890",
+    }
+    pdf_url2 = CodalFetcher.get_pdf_url(letter2)
+    excel_url2 = CodalFetcher.get_excel_url(letter2)
+    assert "LetterSerial=67890" in pdf_url2
+    assert "67890" in excel_url2
+
+
+def test_crawler_downloads_third_party_documents_depth_2(tmp_path):
+    symbol_dir = tmp_path / "وتجارت"
+    symbol_dir.mkdir(parents=True)
+    links_file = symbol_dir / "links.txt"
+    links_file.write_text("https://rahavard365.com/asset/461\n", encoding="utf-8")
+
+    mock_client = MagicMock()
+
+    portal_html = """
+    <html>
+      <head><title>بانک تجارت در رهآورد</title></head>
+      <body>
+        <a href="https://cdn.rahavard365.com/reports/vtejarat_quarterly.pdf">دانلود گزارش فصلی PDF</a>
+        <a href="https://cdn.rahavard365.com/financials/balance_sheet.xlsx">دانلود صورت مالی اکسل</a>
+        <a href="/news/88899">خبر افزایش سرمایه وتجارت</a>
+      </body>
+    </html>
+    """
+    news_html = "<html><head><title>خبر افزایش سرمایه</title></head><body><p>بانک تجارت قصد افزایش سرمایه دارد.</p></body></html>"
+
+    def mock_get(url, *args, **kwargs):
+        resp = MagicMock()
+        resp.status_code = 200
+        url_str = str(url)
+        if "rahavard365.com/asset" in url_str:
+            resp.text = portal_html
+            resp.content = portal_html.encode("utf-8")
+        elif "vtejarat_quarterly.pdf" in url_str:
+            resp.content = b"%PDF-1.4 sample pdf document"
+            resp.text = "%PDF-1.4 sample pdf document"
+        elif "balance_sheet.xlsx" in url_str:
+            resp.content = b"PK\x03\x04 sample excel sheet"
+            resp.text = "sample excel"
+        elif "/news/88899" in url_str:
+            resp.text = news_html
+            resp.content = news_html.encode("utf-8")
+        elif "search.codal.ir" in url_str:
+            resp.json.return_value = {"Letters": []}
+            resp.text = json.dumps({"Letters": []})
+            resp.content = resp.text.encode("utf-8")
+        else:
+            resp.text = "<html><body>داده</body></html>"
+            resp.content = resp.text.encode("utf-8")
+        return resp
+
+    mock_client.get.side_effect = mock_get
+
+    crawler = CrawlerAgent(client=mock_client)
+    res = crawler.run("وتجارت", symbol_dir)
+
+    assert res["success"] is True
+    codal_reports = list((symbol_dir / "codal_reports").iterdir())
+    news_files = list((symbol_dir / "news").glob("*.html"))
+
+    assert any(f.suffix == ".pdf" for f in codal_reports)
+    assert any(f.suffix == ".xlsx" for f in codal_reports)
+    assert len(news_files) >= 1
+
+
