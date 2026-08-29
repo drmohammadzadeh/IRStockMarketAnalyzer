@@ -37,25 +37,38 @@ class SummarizerAgent:
         # Excel extracted metrics
         if corpus_analysis and corpus_analysis.excel_metrics:
             lines.append("### 📊 شاخص‌های مالی استخراج‌شده از صورت‌های مالی اکسل:")
-            lines.append("| سرفصل مالی | مبلغ (ریال) | منبع استخراج |")
-            lines.append("| :--- | :--- | :--- |")
+            lines.append("| سرفصل مالی مستخرج | مبلغ به میلیون ریال | معادل به همت / میلیارد تومان | مبلغ به ریال | منبع استخراج |")
+            lines.append("| :--- | :--- | :--- | :--- | :--- |")
             metric_titles = {
-                "operating_revenue": "درآمدهای عملیاتی (فروش کل)",
+                "operating_revenue": "درآمدهای عملیاتی (درآمد تسهیلات / فروش کل)",
                 "net_profit": "سود (زیان) خالص دوره",
                 "total_assets": "مجموع دارایی‌ها",
-                "deposits": "سپرده‌های سرمایه‌گذاری / مشتریان",
+                "deposits": "سپرده‌های سرمایه‌گذاری و مشتریان",
                 "loans": "تسهیلات اعطایی و مطالبات",
                 "capital": "سرمایه ثبت‌شده",
-                "retained_earnings": "سود انباشته",
+                "retained_earnings": "سود (زیان) انباشته",
                 "equity": "حقوق صاحبان سهام",
             }
             for key, label in metric_titles.items():
                 if key in corpus_analysis.excel_metrics:
                     val = corpus_analysis.excel_metrics[key]
                     if isinstance(val, (int, float)):
-                        lines.append(f"| **{label}** | {val:,.0f} | فایل اکسل کدال |")
+                        if 0 < abs(val) <= 1e9:
+                            million_rials = val
+                            rials = val * 1_000_000.0
+                        else:
+                            million_rials = val / 1_000_000.0
+                            rials = val
+                        tomans = rials / 10.0
+                        hemmat = tomans / 1_000_000_000_000.0
+                        billion_tomans = tomans / 1_000_000_000.0
+                        if abs(hemmat) >= 1.0:
+                            toman_str = f"{hemmat:,.2f} همت"
+                        else:
+                            toman_str = f"{billion_tomans:,.1f} میلیارد تومان"
+                        lines.append(f"| **{label}** | **{million_rials:,.0f}** | **{toman_str}** | {rials:,.0f} | فایل اکسل کدال |")
                     else:
-                        lines.append(f"| **{label}** | {val} | فایل اکسل کدال |")
+                        lines.append(f"| **{label}** | {val} | -- | -- | فایل اکسل کدال |")
             lines.append("")
 
         financials = [

@@ -12,7 +12,7 @@
     "target_2": 1176.56,
     "stop_loss": 859.5,
     "risk_reward_ratio": 1.2,
-    "score": -2,
+    "score": 0,
     "horizons": {
       "short_term": {
         "title": "کوتاه‌مدت (۱ تا ۴ هفته)",
@@ -48,11 +48,11 @@
       "شکست قطعی کف سوئینگ ماژور در محدوده 369 ریال."
     ],
     "buyer_power": 8.758823973626425,
-    "fund_score": 3.5,
+    "fund_score": 6.5,
     "rsi": 90.99548790618215,
     "atr": 25.928571428571427,
-    "pe_ratio": 316959840.69,
-    "dividend_yield": 0.0
+    "pe_ratio": 35.0,
+    "dividend_yield": 10.79
   },
   "entry_zone": "936 تا 974 ریال",
   "target_1": 1069.6,

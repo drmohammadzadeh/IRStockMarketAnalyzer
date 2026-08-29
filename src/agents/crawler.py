@@ -123,11 +123,15 @@ class CrawlerAgent:
                     content, text, c_type = self._download_binary_or_text(pdf_url)
                     if content and (c_type == "pdf" or content.startswith(b"%PDF") or len(content) > 10):
                         pdf_file = codal_dir / f"{idx+1}_{safe_title}.pdf"
-                        pdf_file.write_bytes(content)
-                        letter["local_files"].append(pdf_file.name)
-                        total_downloaded += 1
-                        pdf_xlsx_count += 1
-                        letter_has_file = True
+                        try:
+                            if not pdf_file.exists() or pdf_file.stat().st_size == 0:
+                                pdf_file.write_bytes(content)
+                            letter["local_files"].append(pdf_file.name)
+                            total_downloaded += 1
+                            pdf_xlsx_count += 1
+                            letter_has_file = True
+                        except Exception as e:
+                            logger.warning(f"Could not write {pdf_file}: {e}")
 
             # 2. Download Excel report
             if total_downloaded < max_files:
@@ -136,11 +140,15 @@ class CrawlerAgent:
                     content, text, c_type = self._download_binary_or_text(excel_url)
                     if content and (c_type == "excel" or content.startswith((b"PK", b"\xd0\xcf")) or "excel" in excel_url):
                         excel_file = codal_dir / f"{idx+1}_{safe_title}.xlsx"
-                        excel_file.write_bytes(content)
-                        letter["local_files"].append(excel_file.name)
-                        total_downloaded += 1
-                        pdf_xlsx_count += 1
-                        letter_has_file = True
+                        try:
+                            if not excel_file.exists() or excel_file.stat().st_size == 0:
+                                excel_file.write_bytes(content)
+                            letter["local_files"].append(excel_file.name)
+                            total_downloaded += 1
+                            pdf_xlsx_count += 1
+                            letter_has_file = True
+                        except Exception as e:
+                            logger.warning(f"Could not write {excel_file}: {e}")
 
             # 3. Download HTML letter content
             if total_downloaded < max_files:
@@ -148,20 +156,28 @@ class CrawlerAgent:
                 html_content = self._download_letter_content(html_url) if html_url else ""
                 if html_content and len(html_content.strip()) > 0:
                     html_file = codal_dir / f"{idx+1}_{safe_title}.html"
-                    html_file.write_text(html_content, encoding="utf-8", errors="ignore")
-                    letter["local_files"].append(html_file.name)
-                    letter["local_file"] = html_file.name
-                    total_downloaded += 1
-                    letter_has_file = True
+                    try:
+                        if not html_file.exists() or html_file.stat().st_size == 0:
+                            html_file.write_text(html_content, encoding="utf-8", errors="ignore")
+                        letter["local_files"].append(html_file.name)
+                        letter["local_file"] = html_file.name
+                        total_downloaded += 1
+                        letter_has_file = True
+                    except Exception as e:
+                        logger.warning(f"Could not write {html_file}: {e}")
 
             # 4. Fallback generation if offline/mock or no network
             if not letter_has_file and total_downloaded < max_files:
                 if pdf_xlsx_count < min_quota:
                     fallback_pdf = codal_dir / f"{idx+1}_{safe_title}.pdf"
-                    fallback_pdf.write_bytes(f"%PDF-1.4 Mock Codal Report: {title}\nTracing: {letter.get('TracingNo')}".encode("utf-8"))
-                    letter["local_files"].append(fallback_pdf.name)
-                    pdf_xlsx_count += 1
-                    total_downloaded += 1
+                    try:
+                        if not fallback_pdf.exists():
+                            fallback_pdf.write_bytes(f"%PDF-1.4 Mock Codal Report: {title}\nTracing: {letter.get('TracingNo')}".encode("utf-8"))
+                        letter["local_files"].append(fallback_pdf.name)
+                        pdf_xlsx_count += 1
+                        total_downloaded += 1
+                    except Exception:
+                        pass
 
                 if total_downloaded < max_files:
                     codal_link = self.codal.get_html_url(letter) or f"https://codal.ir"

@@ -162,14 +162,6 @@ class LocalCorpusAnalyzer:
                 logger.warning(f"Error reading Excel/table file {file_path}: {e}")
                 return extracted
 
-        unit_factor = 1.0
-        # Check text in sheet to see if unit is میلیون ریال or هزار ریال
-        full_sample_text = " ".join([str(df.to_string())[:1000] for df in dataframes if df is not None and not df.empty])
-        if "میلیون ریال" in full_sample_text or "میلیون" in full_sample_text:
-            unit_factor = 1_000_000.0
-        elif "هزار ریال" in full_sample_text:
-            unit_factor = 1_000.0
-
         for df in dataframes:
             if df is None or df.empty:
                 continue
@@ -187,12 +179,14 @@ class LocalCorpusAnalyzer:
                             for cell in row.values:
                                 num = self._parse_numeric(cell)
                                 if num is not None and abs(num) > 0:
-                                    normalized_num = num * unit_factor
                                     if metric_key not in extracted or extracted[metric_key] is None:
-                                        extracted[metric_key] = normalized_num
+                                        extracted[metric_key] = num
+                                        extracted[f"{metric_key}_raw"] = num
+                                        extracted[f"{metric_key}_million_rials"] = num
+                                        extracted[f"{metric_key}_rials"] = num * 1_000_000.0
                                     # Also save by exact keyword found
                                     if kw not in extracted:
-                                        extracted[kw] = normalized_num
+                                        extracted[kw] = num
                                     break
 
             # Strategy 2: If df has 2 or more columns
@@ -206,11 +200,13 @@ class LocalCorpusAnalyzer:
                                 for col_idx in range(1, df.shape[1]):
                                     num = self._parse_numeric(row.iloc[col_idx])
                                     if num is not None and abs(num) > 0:
-                                        normalized_num = num * unit_factor
                                         if metric_key not in extracted:
-                                            extracted[metric_key] = normalized_num
+                                            extracted[metric_key] = num
+                                            extracted[f"{metric_key}_raw"] = num
+                                            extracted[f"{metric_key}_million_rials"] = num
+                                            extracted[f"{metric_key}_rials"] = num * 1_000_000.0
                                         if kw not in extracted:
-                                            extracted[kw] = normalized_num
+                                            extracted[kw] = num
                                         break
 
         return extracted
@@ -396,15 +392,15 @@ class LocalCorpusAnalyzer:
         html_disclosures: List[Dict[str, Any]] = []
         news_catalysts: List[Dict[str, Any]] = []
 
-        # Recursively walk all files, prioritizing consolidated parent statements and recent reports
+        # Recursively walk all files, prioritizing consolidated parent statements and monthly reports
         all_files = [p for p in target_dir.rglob("*") if p.is_file()]
         def file_sort_key(p: Path):
             name = p.name.lower()
-            is_consolidated = 0 if ("تلفیقی" in name or "اصلی" in name) else 1
+            is_parent = 0 if ("ماهانه" in name or "تلفیقی" in name or "اصلی" in name) else 1
             import re
             m = re.match(r"^(\d+)_", name)
             prefix = int(m.group(1)) if m else 999
-            return (is_consolidated, prefix, str(p))
+            return (is_parent, prefix, str(p))
 
         all_files.sort(key=file_sort_key)
 
@@ -420,6 +416,10 @@ class LocalCorpusAnalyzer:
                 for k, v in excel_res.items():
                     if k not in aggregated_excel or aggregated_excel[k] is None:
                         aggregated_excel[k] = v
+                    elif isinstance(v, (int, float)) and isinstance(aggregated_excel[k], (int, float)):
+                        # If a parent company report has larger scale figures for a key metric, prefer the larger parent metric
+                        if v > aggregated_excel[k] and ("ماهانه" in p.name or "تلفیقی" in p.name or "اصلی" in p.name):
+                            aggregated_excel[k] = v
 
             elif ext == ".pdf":
                 pdf_res = self._parse_pdf(p)
