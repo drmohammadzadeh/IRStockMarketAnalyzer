@@ -306,6 +306,7 @@ class TechnicalAnalystAgent:
             "---",
             "",
             "## ۶. نمودارهای تحلیل تکنیکال و بصری",
+            "- ![داشبورد تحلیلی پیشرفته Gemini Nano Banana Pro](charts/ai_dashboard.png)",
             "- ![نمودار شمعی و میانگین‌های متحرک](charts/candlestick_overview.png)",
             "- ![اسیلاتورهای تکانه و مومنتوم](charts/indicators_momentum.png)",
             "- ![جریان نقدینگی و تابلوخوانی](charts/tape_reading_money_flow.png)",

@@ -8,18 +8,22 @@ import pandas as pd
 
 try:
     import arabic_reshaper
-    from bidi.algorithm import get_display
 
     def fa_text(text: str) -> str:
-        """Reshapes Persian/Arabic text for correct RTL display in matplotlib."""
+        """Reshapes Persian/Arabic text for correct cursive display in matplotlib."""
         if not text:
             return text
-        return get_display(arabic_reshaper.reshape(text))
+        return arabic_reshaper.reshape(text)
 except ImportError:
 
     def fa_text(text: str) -> str:
-        """Fallback when arabic_reshaper/bidi is unavailable."""
+        """Fallback when arabic_reshaper is unavailable."""
         return text
+
+# Configure high-quality Persian/Arabic fonts for Matplotlib
+plt.rcParams["font.sans-serif"] = ["Tahoma", "Segoe UI", "B Nazanin", "Arial", "DejaVu Sans"]
+plt.rcParams["font.family"] = "sans-serif"
+plt.rcParams["axes.unicode_minus"] = False
 
 
 class ChartGenerator:

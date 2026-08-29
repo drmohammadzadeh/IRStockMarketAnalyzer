@@ -152,6 +152,7 @@ class ReportGenerator:
 ---
 
 ## ۳. نمودارهای تکنیکال
+- ![داشبورد تحلیلی پیشرفته Gemini Nano Banana Pro](charts/ai_dashboard.png)
 - ![نمودار شمعی و میانگین‌ها](charts/candlestick_overview.png)
 - ![اسیلاتورهای تکانه](charts/indicators_momentum.png)
 - ![جریان نقدینگی](charts/tape_reading_money_flow.png)

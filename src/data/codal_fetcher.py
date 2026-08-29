@@ -18,6 +18,32 @@ class CodalFetcher:
         )
 
     @staticmethod
+    def parse_links_file(links_file: Path) -> Dict[str, List[str]]:
+        """Categorizes all URLs present in a links.txt file."""
+        categorized = {
+            "codal_search": [],
+            "codal_direct": [],
+            "tsetmc": [],
+            "third_party": [],
+        }
+        if not links_file.exists():
+            return categorized
+        content = links_file.read_text(encoding="utf-8", errors="ignore")
+        for line in content.splitlines():
+            line = line.strip()
+            if not line or not line.startswith("http"):
+                continue
+            if "codal.ir/ReportList.aspx" in line:
+                categorized["codal_search"].append(line)
+            elif "codal.ir" in line:
+                categorized["codal_direct"].append(line)
+            elif "tsetmc.com" in line:
+                categorized["tsetmc"].append(line)
+            else:
+                categorized["third_party"].append(line)
+        return categorized
+
+    @staticmethod
     def extract_symbol_from_file(links_file: Path) -> Optional[str]:
         """Extracts ticker symbol from a links.txt file containing Codal search URLs."""
         if not links_file.exists():
@@ -31,6 +57,22 @@ class CodalFetcher:
                 symbols = query_params.get("Symbol", [])
                 if symbols:
                     return symbols[0]
+        return None
+
+    @staticmethod
+    def extract_inscode_from_file(links_file: Path) -> Optional[str]:
+        """Extracts TSETMC inscode from tsetmc links if present in links.txt."""
+        if not links_file.exists():
+            return None
+        content = links_file.read_text(encoding="utf-8", errors="ignore")
+        for line in content.splitlines():
+            line = line.strip()
+            if "tsetmc.com" in line:
+                parts = line.split("/")
+                for part in parts:
+                    clean_part = part.split("?")[0].strip()
+                    if clean_part.isdigit() and len(clean_part) >= 12:
+                        return clean_part
         return None
 
     @staticmethod

@@ -143,15 +143,16 @@ class TSETMCFetcher:
                 pass
         return {}
 
-    def fetch_symbol_data(self, symbol: str) -> Dict[str, Any]:
+    def fetch_symbol_data(self, symbol: str, inscode: Optional[str] = None) -> Dict[str, Any]:
         """Fetch both history OHLCV and real/legal client data for a symbol."""
-        inscode = self.search_inscode(symbol)
-        if not inscode:
+        resolved_inscode = inscode or self.search_inscode(symbol)
+        if not resolved_inscode:
             return {
                 "symbol": symbol,
                 "success": False,
                 "error": f"Symbol {symbol} not found on TSETMC",
             }
+        inscode = resolved_inscode
 
         hist_resp = self.client.get(TSETMC_HISTORY_URL.format(inscode=inscode))
         hist_df = self.parse_history_string(hist_resp.text if hist_resp.status_code == 200 else "")

@@ -24,7 +24,8 @@
     "PdfUrl": "DownloadFile.aspx?hs=8v0YZqZOOObOOOeNL1HZQxR4mnlQ%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/8v0YZqZOOObOOOeNL1HZQxR4mnlQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_file": "1_گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به.html"
   },
   {
     "SuperVision": {
@@ -51,7 +52,8 @@
     "PdfUrl": "DownloadFile.aspx?hs=aMJ2OOObOOO0h1pqRow8d6bkPeWw%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/aMJ2OOObOOO0h1pqRow8d6bkPeWw%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_file": "2_گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به.html"
   },
   {
     "SuperVision": {
@@ -78,7 +80,8 @@
     "PdfUrl": "DownloadFile.aspx?hs=67oPhKOOObOOOOOObOOOL6ZFh3pjI95GFA%3d%3d&ft=1005&let=11",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_file": "3_افشای اطلاعات بااهمیت - سایر اطلاعات باا.html"
   },
   {
     "SuperVision": {
@@ -105,7 +108,8 @@
     "PdfUrl": "DownloadFile.aspx?hs=2ivNJnbBwUaVtp3UFeFHug%3d%3d&ft=1005&let=11",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_file": "4_افشای اطلاعات بااهمیت - برگزاری مزایده -.html"
   },
   {
     "SuperVision": {
@@ -132,7 +136,8 @@
     "PdfUrl": "DownloadFile.aspx?hs=8iBEY1ah0SeRaMzmWVlw2Q%3d%3d&ft=1005&let=11",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_file": "5_افشای اطلاعات بااهمیت - برگزاری مزایده -.html"
   },
   {
     "SuperVision": {
