@@ -217,12 +217,14 @@ class LocalCorpusAnalyzer:
                 line_clean = line.strip()
                 if not line_clean:
                     continue
-                if any(w in line_clean for w in ["بندهای شرطی", "اظهارنظر مشروط", "گزارش حسابرس", "نظر حسابرس", "مشروط", "بندهای تاکیدی", "بازرس قانونی"]):
+                line_lower = line_clean.lower()
+                if any(w in line_clean or w in line_lower for w in ["بندهای شرطی", "اظهارنظر مشروط", "گزارش حسابرس", "نظر حسابرس", "مشروط", "بندهای تاکیدی", "بازرس قانونی", "auditor", "conditional"]):
                     auditor_opinions.append(line_clean)
-                if any(w in line_clean for w in ["افزایش سرمایه", "سود انباشته", "تجدید ارزیابی", "آورده نقدی", "گزارش توجیهی"]):
+                if any(w in line_clean or w in line_lower for w in ["افزایش سرمایه", "سود انباشته", "تجدید ارزیابی", "آورده نقدی", "گزارش توجیهی", "capital increase", "retained earnings"]):
                     capital_increases.append(line_clean)
-                if any(w in line_clean for w in ["تصمیمات مجمع", "مصوبات هیئت مدیره", "تقسیم سود", "DPS", "هیأت مدیره"]):
+                if any(w in line_clean or w in line_lower for w in ["تصمیمات مجمع", "مصوبات هیئت مدیره", "تقسیم سود", "dps", "هیأت مدیره", "board resolution", "general assembly"]):
                     board_resolutions.append(line_clean)
+
 
             return {
                 "filename": file_path.name,

@@ -7,13 +7,14 @@ import pandas as pd
 from src.fundamental.financial_statements import FinancialStatementsAnalyzer
 from src.fundamental.monthly_sales import MonthlySalesAnalyzer
 from src.fundamental.valuation import ValuationAnalyzer
+from src.data.corpus_analyzer import LocalCorpusAnalyzer, CorpusAnalysisResult
 
 
 class FundamentalAnalystAgent:
     """Deep fundamental analysis, financial statement evaluation, and valuation agent for Iranian stock market symbols."""
 
-    def __init__(self):
-        pass
+    def __init__(self, corpus_analyzer: Optional[LocalCorpusAnalyzer] = None):
+        self.corpus_analyzer = corpus_analyzer or LocalCorpusAnalyzer()
 
     def _load_tape_data(self, symbol_dir: Path) -> Dict[str, Any]:
         """Loads market data and tape information from orderbook_tape.json."""
@@ -120,6 +121,7 @@ class FundamentalAnalystAgent:
         tape_data: Dict[str, Any],
         codal_data: Dict[str, Any],
         news_data: Dict[str, Any],
+        corpus_analysis: Optional[CorpusAnalysisResult] = None,
     ) -> str:
         """Constructs an exhaustive 8-pillar Persian fundamental analysis report."""
         try:
@@ -136,6 +138,10 @@ class FundamentalAnalystAgent:
         forward_eps = metrics.get("forward_eps", current_price / 6.0 if current_price > 0 else 500.0)
         last_eps = metrics.get("eps", current_price / 6.5 if current_price > 0 else 450.0)
         last_dps = metrics.get("last_dps", last_eps * 0.7)
+
+        annual_rev = metrics.get("annual_revenue") or metrics.get("operating_revenue", 0.0)
+        net_prof = metrics.get("net_profit", 0.0)
+        op_prof = metrics.get("operating_profit", 0.0)
 
         gross_margin = metrics.get("gross_margin_pct", 34.5)
         operating_margin = metrics.get("operating_margin_pct", 27.0)
@@ -177,14 +183,12 @@ class FundamentalAnalystAgent:
             "## ۲. تجزیه و تحلیل صورت‌های سود و زیان (Income Statement Analysis)",
             "بررسی صورت‌های مالی میاندوره‌ای و سالانه شرکت حاکی از پویایی جریان‌های درآمدی و رشد درآمدهای عملیاتی است:",
             "",
-            "| ردیف صورت سود و زیان | وضعیت عملکردی | تحلیل ساختاری |",
-            "| :--- | :--- | :--- |",
-            f"| **درآمد عملیاتی (فروش کل)** | صعودی | افزایش حجم تولید و رشد نرخ فروش محصولات در بورس کالا / بازار آزاد |",
-            f"| **بهای تمام‌شده درآمدهای عملیاتی** | کنترل‌شده | تأثیر تورم نهاده‌ها با رشد بهره‌وری تا حد زیادی جبران شده است |",
-            f"| **سود ناخالص** | پایدار و صعودی | حاشیه سود ناخالص در تراز {gross_margin:.1f}% تثبیت شده است |",
-            f"| **هزینه‌های عمومی، اداری و فروش** | نرمال | نسبت هزینه‌های اداری به درآمد کل در محدوده استانداردهای صنعت قرار دارد |",
-            f"| **سود عملیاتی (Operating Profit)** | پرقدرت | سود عملیاتی با حاشیه {operating_margin:.1f}% منعکس‌کننده کیفیت سودآوری است |",
-            f"| **سود خالص (Net Income)** | پایدار | سود خالص با حاشیه {net_margin:.1f}% نشان‌دهنده جریان نقد واقعی پایدار است |",
+            "| ردیف صورت سود و زیان | وضعیت عملکردی | مبلغ برآوردی / قطعی (ریال) | تحلیل ساختاری |",
+            "| :--- | :--- | :--- | :--- |",
+            f"| **درآمد عملیاتی (فروش کل)** | صعودی | {annual_rev:,.0f} | افزایش حجم تولید و رشد نرخ فروش محصولات در بورس کالا / بازار آزاد |",
+            f"| **سود ناخالص** | پایدار و صعودی | {(annual_rev * (gross_margin / 100.0)):,.0f} | حاشیه سود ناخالص در تراز {gross_margin:.1f}% تثبیت شده است |",
+            f"| **سود عملیاتی (Operating Profit)** | پرقدرت | {op_prof:,.0f} | سود عملیاتی با حاشیه {operating_margin:.1f}% منعکس‌کننده کیفیت سودآوری است |",
+            f"| **سود خالص (Net Income)** | پایدار | {net_prof:,.0f} | سود خالص با حاشیه {net_margin:.1f}% نشان‌دهنده جریان نقد واقعی پایدار است |",
             "",
             "- **کیفیت سودآوری (Quality of Earnings):** بخش عمده سود شرکت ناشی از عملیات اصلی و تکرارشونده بوده و وابستگی به درآمدهای متفرقه و غیرعملیاتی در حداقل ممکن قرار دارد.",
             "",
@@ -204,8 +208,32 @@ class FundamentalAnalystAgent:
             "---",
             "",
             "## ۴. ترازنامه، ساختار سرمایه و نقدینگی (Balance Sheet & Liquidity)",
-            "ارزیابی وضعیت سلامت مالی و توان ایفای تعهدات کوتاه و بلندمدت بر پایه متغیرهای ترازنامه‌ای:",
+            "ارزیابی وضعیت سلامت مالی و توان ایفای تعهدات کوتاه و بلندمدت بر پایه متغیرهای ترازنامه‌ای مستخرج از صورت‌های مالی:",
             "",
+        ]
+
+        # Balance Sheet line items extracted from Excel/Corpus
+        bs_items = []
+        if "total_assets" in metrics:
+            bs_items.append(f"- **مجموع دارایی‌ها (Total Assets):** {metrics['total_assets']:,.0f} ریال")
+        if "deposits" in metrics:
+            bs_items.append(f"- **سپرده‌های سرمایه‌گذاری و مشتریان (Deposits):** {metrics['deposits']:,.0f} ریال")
+        if "loans" in metrics:
+            bs_items.append(f"- **تسهیلات اعطایی و مطالبات (Loans):** {metrics['loans']:,.0f} ریال")
+        if "loan_to_deposit_ratio" in metrics:
+            bs_items.append(f"- **نسبت تسهیلات به سپرده‌ها (LDR):** {metrics['loan_to_deposit_ratio']:.1f}% (بیانگر بهره‌وری واسطه‌گری وجوه)")
+        if "capital" in metrics:
+            bs_items.append(f"- **سرمایه ثبت‌شده (Capital):** {metrics['capital']:,.0f} ریال")
+        if "retained_earnings" in metrics:
+            bs_items.append(f"- **سود (زیان) انباشته (Retained Earnings):** {metrics['retained_earnings']:,.0f} ریال")
+        if "book_value" in metrics:
+            bs_items.append(f"- **حقوق صاحبان سهام / ارزش دفتری (Equity):** {metrics['book_value']:,.0f} ریال")
+
+        if bs_items:
+            lines.extend(bs_items)
+            lines.append("")
+
+        lines.extend([
             "- **نسبت جاری (Current Ratio):** بالای ۱.۳ مرتبه (کفایت کامل دارایی‌های جاری جهت پوشش بدهی‌های سررسید کوتاه‌مدت).",
             "- **سرمایه در گردش خالص (Net Working Capital):** مثبت و متناسب با مقیاس تولید، بدون نیاز مبرم به استقراض سنگین بانکی.",
             "- **ساختار بدهی و اهرم مالی (Debt Structure):** سهم بدهی‌های بهره‌دار در ترازنامه در محدوده ایمن بوده و هزینه مالی فشار مضاعفی بر سود عملیاتی وارد نمی‌کند.",
@@ -241,7 +269,7 @@ class FundamentalAnalystAgent:
             "",
             "---",
             "",
-            "## ۷. ریسک‌های کلیدی بنیادی (Fundamental Risk Matrix)",
+            "## ۷. ریسک‌های کلیدی بنیادی و بررسی گزارش حسابرس",
             "",
             "### الف) ریسک‌های سیستماتیک (کلان و بازار)",
             "1. **ریسک نرخ بهره و سیاست‌های پولی:** افزایش نرخ بهره اسناد خزانه و گواهی سپرده که می‌تواند هزینه فرصت سرمایه‌گذاری را افزایش دهد.",
@@ -253,6 +281,23 @@ class FundamentalAnalystAgent:
             "2. **نوسان نرخ مواد اولیه:** تغییرات قیمت‌های جهانی یا داخلی نهاده‌های اصلی تولید.",
             "3. **ریسک تجدید ساختار هیئت مدیره و سهامداران عمده:** هرگونه تغییر عمده در استراتژی‌های فروش و بازاریابی.",
             "",
+        ])
+
+        # PDF Insights (Auditor & Capital Increases)
+        if corpus_analysis and corpus_analysis.pdf_insights:
+            lines.append("### ج) نکات گزارش حسابرس و افزایش سرمایه (مستخرج از اسناد PDF)")
+            for p_item in corpus_analysis.pdf_insights:
+                if p_item.get("auditor_opinions"):
+                    lines.append(f"- **بندهای شرطی و نظر حسابرس (`{p_item.get('filename')}`):**")
+                    for op in p_item["auditor_opinions"]:
+                        lines.append(f"  * {op}")
+                if p_item.get("capital_increases"):
+                    lines.append(f"- **برنامه‌ها و مصوبات افزایش سرمایه (`{p_item.get('filename')}`):**")
+                    for cap in p_item["capital_increases"]:
+                        lines.append(f"  * {cap}")
+            lines.append("")
+
+        lines.extend([
             "---",
             "",
             "## ۸. امتیازدهی بنیادی و جمع‌بندی ارزندگی (Fundamental Scoring & Conclusion)",
@@ -262,7 +307,7 @@ class FundamentalAnalystAgent:
             "",
             "---",
             "*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*",
-        ]
+        ])
 
         return "\n".join(lines)
 
@@ -285,21 +330,74 @@ class FundamentalAnalystAgent:
         symbol_dir = Path(symbol_dir)
         symbol_dir.mkdir(parents=True, exist_ok=True)
 
-        # 1. Load Data
+        # 1. Scan Local Corpus
+        corpus_analysis = self.corpus_analyzer.scan_and_analyze(symbol_dir)
+        excel_metrics = corpus_analysis.excel_metrics
+
+        # 2. Load Supplementary Data
         tape_data = self._load_tape_data(symbol_dir)
         price_df = self._load_price_history(symbol_dir)
         codal_data = self._load_codal_data(symbol_dir)
         news_data = self._load_news_data(symbol_dir)
 
-        # 2. Determine Current Price
+        # 3. Determine Current Price
         price = float(current_price)
         if price <= 0 and not price_df.empty and "close" in price_df.columns:
             price = float(price_df["close"].iloc[-1])
+        if price <= 0 and corpus_analysis.market_metrics.get("last_close"):
+            price = float(corpus_analysis.market_metrics["last_close"])
         if price <= 0:
             price = float(tape_data.get("price") or tape_data.get("last_price") or tape_data.get("close") or 45000.0)
 
-        # 3. Extract or Estimate Fundamental Inputs
-        eps = float(tape_data.get("eps", price / 6.5 if price > 0 else 700.0))
+        # 4. Extract Shares Count & Market Cap
+        shares_count = float(tape_data.get("shares_count", 1_000_000_000.0))
+        market_cap_val = tape_data.get("market_cap")
+        if market_cap_val is not None and float(market_cap_val) > 0:
+            market_cap = float(market_cap_val)
+        else:
+            market_cap = price * shares_count
+
+        # 5. Extract Financial Metrics from Excel / Corpus or Fallback Models
+        if "operating_revenue" in excel_metrics:
+            annual_revenue = float(excel_metrics["operating_revenue"])
+        elif "درآمدهای عملیاتی" in excel_metrics:
+            annual_revenue = float(excel_metrics["درآمدهای عملیاتی"])
+        elif "فروش خالص" in excel_metrics:
+            annual_revenue = float(excel_metrics["فروش خالص"])
+        else:
+            annual_revenue = market_cap / 1.25 if market_cap > 0 else 5_000_000_000_000.0
+
+        if "net_profit" in excel_metrics:
+            net_profit = float(excel_metrics["net_profit"])
+        elif "سود خالص" in excel_metrics:
+            net_profit = float(excel_metrics["سود خالص"])
+        else:
+            pe_fallback = float(tape_data.get("pe", 6.5))
+            net_profit = market_cap / pe_fallback if pe_fallback > 0 else market_cap / 6.5
+
+        if "operating_profit" in excel_metrics:
+            operating_profit = float(excel_metrics["operating_profit"])
+        elif "سود عملیاتی" in excel_metrics:
+            operating_profit = float(excel_metrics["سود عملیاتی"])
+        else:
+            operating_profit = annual_revenue * 0.27
+
+        if "equity" in excel_metrics:
+            book_value = float(excel_metrics["equity"])
+        elif "حقوق صاحبان سهام" in excel_metrics:
+            book_value = float(excel_metrics["حقوق صاحبان سهام"])
+        elif "جمع حقوق صاحبان سهام" in excel_metrics:
+            book_value = float(excel_metrics["جمع حقوق صاحبان سهام"])
+        else:
+            book_value = market_cap / 2.8 if market_cap > 0 else 2_000_000_000_000.0
+
+        cogs = float(excel_metrics.get("cogs", annual_revenue * 0.65))
+
+        # Calculate EPS
+        if ("net_profit" in excel_metrics or "سود خالص" in excel_metrics) and shares_count > 0:
+            eps = net_profit / shares_count
+        else:
+            eps = float(tape_data.get("eps", price / 6.5 if price > 0 else 700.0))
         if eps <= 0:
             eps = price / 6.5 if price > 0 else 700.0
 
@@ -312,21 +410,9 @@ class FundamentalAnalystAgent:
         sector_pe_val = tape_data.get("sector_pe")
         sector_pe = round(float(sector_pe_val), 2) if sector_pe_val is not None else 7.5
 
-        shares_count = float(tape_data.get("shares_count", 1_000_000_000.0))
-        market_cap_val = tape_data.get("market_cap")
-        if market_cap_val is not None and float(market_cap_val) > 0:
-            market_cap = float(market_cap_val)
-        else:
-            market_cap = price * shares_count
-
-        annual_revenue = market_cap / 1.25 if market_cap > 0 else 5_000_000_000_000.0
-        net_profit = market_cap / pe_ratio if pe_ratio > 0 else market_cap / 6.5
-        cogs = annual_revenue * 0.65
-        operating_profit = annual_revenue * 0.27
-        book_value = market_cap / 2.8 if market_cap > 0 else 2_000_000_000_000.0
         last_dps = round(eps * 0.70, 0)
 
-        # 4. Margins Analysis
+        # 6. Margins Analysis
         margins = FinancialStatementsAnalyzer.calculate_margins(
             revenue=annual_revenue,
             cogs=cogs,
@@ -334,13 +420,13 @@ class FundamentalAnalystAgent:
             net_profit=net_profit,
         )
 
-        # 5. Monthly Sales Analysis
+        # 7. Monthly Sales Analysis
         monthly_records = self._extract_monthly_sales_records(codal_data.get("letters", []))
         monthly_analysis = MonthlySalesAnalyzer.analyze_sales_trend(monthly_records)
         monthly_growth = float(monthly_analysis.get("growth_mom_pct", 10.0))
         monthly_trend = monthly_analysis.get("trend", "صعودی (رشد فروش)")
 
-        # 6. Valuation Multiples & Scoring
+        # 8. Valuation Multiples & Scoring
         val_results = ValuationAnalyzer.calculate_ratios(
             market_cap=market_cap,
             annual_revenue=annual_revenue,
@@ -371,7 +457,7 @@ class FundamentalAnalystAgent:
         else:
             valuation_verdict = "بالاتر از ارزش ذاتی / نیازمند احتیاط (Overvalued / Caution)"
 
-        metrics = {
+        metrics: Dict[str, Any] = {
             "fundamental_score": round(score, 1),
             "pe_ratio": pe_ratio,
             "forward_pe": forward_pe,
@@ -390,9 +476,29 @@ class FundamentalAnalystAgent:
             "market_cap": market_cap,
             "current_price": price,
             "valuation_verdict": valuation_verdict,
+            "operating_revenue": annual_revenue,
+            "annual_revenue": annual_revenue,
+            "net_profit": net_profit,
+            "operating_profit": operating_profit,
+            "book_value": book_value,
         }
 
-        # 7. Generate and write comprehensive fundamental_report.md
+        # Include additional extracted banking/financial line items if available
+        if "total_assets" in excel_metrics or "مجموع دارایی‌ها" in excel_metrics:
+            metrics["total_assets"] = float(excel_metrics.get("total_assets") or excel_metrics.get("مجموع دارایی‌ها"))
+        if "deposits" in excel_metrics or "سپرده‌های سرمایه‌گذاری" in excel_metrics or "سپرده‌ها" in excel_metrics:
+            metrics["deposits"] = float(excel_metrics.get("deposits") or excel_metrics.get("سپرده‌های سرمایه‌گذاری") or excel_metrics.get("سپرده‌ها"))
+        if "loans" in excel_metrics or "تسهیلات اعطایی" in excel_metrics or "تسهیلات" in excel_metrics:
+            metrics["loans"] = float(excel_metrics.get("loans") or excel_metrics.get("تسهیلات اعطایی") or excel_metrics.get("تسهیلات"))
+        if "capital" in excel_metrics or "سرمایه" in excel_metrics:
+            metrics["capital"] = float(excel_metrics.get("capital") or excel_metrics.get("سرمایه"))
+        if "retained_earnings" in excel_metrics or "سود انباشته" in excel_metrics:
+            metrics["retained_earnings"] = float(excel_metrics.get("retained_earnings") or excel_metrics.get("سود انباشته"))
+
+        if "deposits" in metrics and "loans" in metrics and metrics["deposits"] > 0:
+            metrics["loan_to_deposit_ratio"] = round((metrics["loans"] / metrics["deposits"]) * 100.0, 1)
+
+        # 9. Generate and write comprehensive fundamental_report.md
         report_text = self._build_report_content(
             symbol=symbol,
             current_price=price,
@@ -400,6 +506,7 @@ class FundamentalAnalystAgent:
             tape_data=tape_data,
             codal_data=codal_data,
             news_data=news_data,
+            corpus_analysis=corpus_analysis,
         )
 
         report_file = symbol_dir / "fundamental_report.md"
@@ -410,4 +517,6 @@ class FundamentalAnalystAgent:
             "success": True,
             "metrics": metrics,
             "report_file": str(report_file),
+            "corpus_analysis": corpus_analysis,
         }
+

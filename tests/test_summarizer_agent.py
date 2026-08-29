@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import pandas as pd
 import pytest
 from src.agents.summarizer import SummarizerAgent
 
@@ -106,3 +107,54 @@ def test_summarize_news_empty_and_filled():
     ], "شپنا")
     assert "قرارداد جدید پالایشگاه" in filled_summary
     assert "بورس نیوز" in filled_summary
+
+
+def test_summarizer_incorporates_local_corpus(tmp_path):
+    symbol_dir = tmp_path / "وتجارت"
+    codal_dir = symbol_dir / "codal_reports"
+    news_dir = symbol_dir / "news"
+    codal_dir.mkdir(parents=True)
+    news_dir.mkdir(parents=True)
+
+    # 1. Local Excel file
+    df = pd.DataFrame({
+        "سرفصل": [
+            "درآمدهای عملیاتی",
+            "سود خالص",
+            "مجموع دارایی‌ها",
+            "سپرده‌های سرمایه‌گذاری",
+            "تسهیلات اعطایی",
+        ],
+        "مبلغ": [85000, 22000, 1500000, 1100000, 950000],
+    })
+    df.to_excel(codal_dir / "financial_statements_1403.xlsx", index=False)
+
+    # 2. Local HTML disclosure file
+    (codal_dir / "disclosure_expansion.html").write_text(
+        "<html><head><title>افشای اطلاعات بااهمیت - بهره‌برداری از طرح توسعه</title></head>"
+        "<body><h2>افشای بااهمیت گروه الف</h2><p>بهره‌برداری کامل از خط جدید تولید و جهش درآمدهای عملیاتی محقق شد.</p></body></html>",
+        encoding="utf-8",
+    )
+
+    # 3. Local News HTML file
+    (news_dir / "news_growth.html").write_text(
+        "<html><head><title>رشد چشمگیر سودآوری بانک تجارت در عملکرد ۹ ماهه</title></head>"
+        "<body><h1>ثبت رکورد جدید در جذب سپرده</h1><p>بانک تجارت در گزارش اخیر خود توانست رکورد جدیدی ثبت کند.</p></body></html>",
+        encoding="utf-8",
+    )
+
+    agent = SummarizerAgent()
+    res = agent.run("وتجارت", symbol_dir)
+
+    assert res["success"] is True
+    assert (codal_dir / "codal_summaries.md").exists()
+    assert (news_dir / "news_summary.md").exists()
+
+    codal_summary = (codal_dir / "codal_summaries.md").read_text(encoding="utf-8")
+    assert "85,000" in codal_summary or "85000" in codal_summary or "درآمدهای عملیاتی" in codal_summary
+    assert "طرح توسعه" in codal_summary or "افشای اطلاعات بااهمیت" in codal_summary
+    assert "فایل‌های اسکن‌شده" in codal_summary or "اسناد پردازش‌شده" in codal_summary or "تحلیل اسناد و فایل‌های محلی" in codal_summary
+
+    news_summary = (news_dir / "news_summary.md").read_text(encoding="utf-8")
+    assert "بانک تجارت" in news_summary or "رشد چشمگیر" in news_summary
+

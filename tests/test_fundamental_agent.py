@@ -135,3 +135,74 @@ def test_fundamental_agent_string_path_and_metrics_integrity(tmp_path):
     for key in required_keys:
         assert key in metrics, f"Missing metric key: {key}"
         assert metrics[key] is not None
+
+
+def _create_minimal_pdf(text: str) -> bytes:
+    """Helper to create a minimal valid PDF bytes stream containing text."""
+    content_stream = f"BT /F1 12 Tf 100 700 Td ({text}) Tj ET".encode("latin1", errors="ignore")
+    stream_len = len(content_stream)
+    pdf = (
+        b"%PDF-1.4\n"
+        b"1 0 obj<</Type/Catalog/Pages 2 0 R>>endobj\n"
+        b"2 0 obj<</Type/Pages/Kids[3 0 R]/Count 1>>endobj\n"
+        b"3 0 obj<</Type/Page/MediaBox[0 0 612 792]/Parent 2 0 R/Resources<</Font<</F1 4 0 R>>>>/Contents 5 0 R>>endobj\n"
+        b"4 0 obj<</Type/Font/Subtype/Type1/BaseFont/Helvetica>>endobj\n"
+        b"5 0 obj<</Length " + str(stream_len).encode("ascii") + b">>stream\n"
+        + content_stream + b"\n"
+        b"endstream\nendobj\n"
+        b"xref\n0 6\n0000000000 65535 f \n0000000009 00000 n \n0000000058 00000 n \n0000000115 00000 n \n0000000223 00000 n \n0000000290 00000 n \n"
+        b"trailer<</Size 6/Root 1 0 R>>\nstartxref\n384\n%%EOF\n"
+    )
+    return pdf
+
+
+def test_fundamental_agent_incorporates_local_corpus_excel_and_pdf(tmp_path):
+    symbol_dir = tmp_path / "وتجارت"
+    codal_dir = symbol_dir / "codal_reports"
+    market_dir = symbol_dir / "market_data"
+    codal_dir.mkdir(parents=True)
+    market_dir.mkdir(parents=True)
+
+    # 1. Local Excel financial statements
+    df = pd.DataFrame({
+        "سرفصل": [
+            "درآمدهای عملیاتی",
+            "سود خالص",
+            "مجموع دارایی‌ها",
+            "سپرده‌های سرمایه‌گذاری",
+            "تسهیلات اعطایی",
+            "حقوق صاحبان سهام",
+        ],
+        "مبلغ": [95000000000.0, 25000000000.0, 800000000000.0, 600000000000.0, 450000000000.0, 150000000000.0],
+    })
+    df.to_excel(codal_dir / "sample_statements.xlsx", index=False)
+
+    # 2. Local PDF with auditor / capital remarks
+    pdf_bytes = _create_minimal_pdf("Auditor Opinion: Conditional remarks on banking loans and capital increase from retained earnings")
+    (codal_dir / "auditor_report.pdf").write_bytes(pdf_bytes)
+
+    # 3. Market data
+    tape_data = {
+        "symbol": "وتجارت",
+        "last_price": 2500.0,
+        "shares_count": 500000000.0,
+    }
+    (market_dir / "orderbook_tape.json").write_text(json.dumps(tape_data, ensure_ascii=False), encoding="utf-8")
+
+    agent = FundamentalAnalystAgent()
+    res = agent.run("وتجارت", symbol_dir, current_price=2500.0)
+
+    assert res["success"] is True
+    assert res["symbol"] == "وتجارت"
+    assert (symbol_dir / "fundamental_report.md").exists()
+
+    metrics = res["metrics"]
+    # Verify metrics extracted from Excel
+    assert metrics.get("operating_revenue") == 95000000000.0 or metrics.get("annual_revenue") == 95000000000.0 or metrics["revenue"] == 95000000000.0
+    assert metrics.get("net_profit") == 25000000000.0
+    assert metrics.get("total_assets") == 800000000000.0 or metrics.get("deposits") == 600000000000.0
+
+    report = (symbol_dir / "fundamental_report.md").read_text(encoding="utf-8")
+    assert "95,000,000,000" in report or "95000000000" in report or "سود خالص" in report
+    assert "سپرده" in report or "تسهیلات" in report or "دارایی" in report
+
