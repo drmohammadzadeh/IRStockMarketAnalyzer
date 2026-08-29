@@ -96,6 +96,15 @@ class LocalCorpusAnalyzer:
         }
 
     @staticmethod
+    def _normalize_text(text: Any) -> str:
+        """Normalizes Persian/Arabic characters and removes non-standard whitespace."""
+        if text is None:
+            return ""
+        s = str(text).strip()
+        s = s.replace("ي", "ی").replace("ك", "ک").replace("ة", "ه").replace("آ", "ا").replace("\u200c", " ")
+        return s
+
+    @staticmethod
     def _parse_numeric(val: Any) -> Optional[float]:
         """Converts raw Persian/Arabic strings, formatted numbers, or floats to float."""
         if val is None:
@@ -138,30 +147,34 @@ class LocalCorpusAnalyzer:
         return None
 
     def _parse_excel(self, file_path: Path) -> Dict[str, Any]:
-        """Extracts financial metrics from an Excel file."""
+        """Extracts financial metrics from an Excel or HTML-table spreadsheet file."""
         extracted: Dict[str, Any] = {}
+        dataframes: List[pd.DataFrame] = []
+
         try:
             excel_data = pd.read_excel(file_path, sheet_name=None)
-        except Exception as e:
-            logger.warning(f"Error reading Excel file {file_path}: {e}")
-            return extracted
+            dataframes = list(excel_data.values())
+        except Exception:
+            # Codal often serves HTML tables with .xlsx or .xls extensions
+            try:
+                dataframes = pd.read_html(file_path)
+            except Exception as e:
+                logger.warning(f"Error reading Excel/table file {file_path}: {e}")
+                return extracted
 
-        for sheet_name, df in excel_data.items():
-            if df.empty:
+        for df in dataframes:
+            if df is None or df.empty:
                 continue
-
-            # Check if columns include key names like 'سرفصل', 'مبلغ', 'شرح', etc.
-            # Convert all cells to string for inspection
-            df_str = df.astype(str)
 
             # Strategy 1: Iterate rows and search for keyword matches
             for row_idx, row in df.iterrows():
-                row_items = [str(x).strip() for x in row.values if pd.notna(x)]
+                row_items = [self._normalize_text(x) for x in row.values if pd.notna(x)]
                 row_text = " ".join(row_items)
 
                 for metric_key, keywords in self.financial_keywords.items():
                     for kw in keywords:
-                        if kw in row_text:
+                        kw_norm = self._normalize_text(kw)
+                        if kw_norm in row_text:
                             # Search for numerical values in the row
                             for cell in row.values:
                                 num = self._parse_numeric(cell)
@@ -173,16 +186,17 @@ class LocalCorpusAnalyzer:
                                         extracted[kw] = num
                                     break
 
-            # Strategy 2: If df has 2 columns (e.g. title and amount)
+            # Strategy 2: If df has 2 or more columns
             if df.shape[1] >= 2:
                 for row_idx, row in df.iterrows():
-                    first_cell = str(row.iloc[0]).strip()
+                    first_cell = self._normalize_text(row.iloc[0])
                     for metric_key, keywords in self.financial_keywords.items():
                         for kw in keywords:
-                            if kw in first_cell:
+                            kw_norm = self._normalize_text(kw)
+                            if kw_norm in first_cell:
                                 for col_idx in range(1, df.shape[1]):
                                     num = self._parse_numeric(row.iloc[col_idx])
-                                    if num is not None:
+                                    if num is not None and abs(num) > 0:
                                         if metric_key not in extracted:
                                             extracted[metric_key] = num
                                         if kw not in extracted:

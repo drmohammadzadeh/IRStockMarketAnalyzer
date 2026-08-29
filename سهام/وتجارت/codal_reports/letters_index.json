@@ -27,7 +27,12 @@
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/KBXqFQADEOcP8QQQaQQQ1Ux3ncyA%3d%3d/0",
     "XbrlUrl": "",
     "TedanUrl": "http://www.tedan.ir",
-    "local_file": "1_اطلاعات و صورتهای مالی میاندورهای  دوره .html"
+    "local_files": [
+      "1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -57,7 +62,11 @@
     "ExcelUrl": "",
     "XbrlUrl": "",
     "TedanUrl": "http://www.tedan.ir",
-    "local_file": "2_افشای اطلاعات بااهمیت - برگزاری مزایده -.html"
+    "local_files": [
+      "2_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.pdf",
+      "2_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
+    ],
+    "local_file": "2_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
   },
   {
     "SuperVision": {
@@ -87,7 +96,12 @@
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/aEA4WeDagyLSkgHv0Y42QQQaQQQQ%3d%3d/0",
     "XbrlUrl": "",
     "TedanUrl": "http://www.tedan.ir",
-    "local_file": "3_اطلاعات و صورتهای مالی میاندورهای  دوره .html"
+    "local_files": [
+      "3_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "3_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "3_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "3_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -117,7 +131,12 @@
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/T6icKxAPzy0stODBXV4QCg%3d%3d/0",
     "XbrlUrl": "",
     "TedanUrl": "http://www.tedan.ir",
-    "local_file": "4_اطلاعات و صورتهای مالی میاندورهای تلفیقی.html"
+    "local_files": [
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -147,7 +166,12 @@
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/YoM0sjiZz8SsUX2t0dq9Qg%3d%3d/0",
     "XbrlUrl": "",
     "TedanUrl": "http://www.tedan.ir",
-    "local_file": "5_اطلاعات و صورتهای مالی میاندورهای  دوره .html"
+    "local_files": [
+      "5_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "5_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "5_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "5_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -176,7 +200,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=dbBR9y7OOObOOOR7mBQQQaQQQcCMiTBHng%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/dbBR9y7OOObOOOR7mBQQQaQQQcCMiTBHng%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "6_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "6_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "6_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "6_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -205,7 +235,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=rvYxg223xZ2cYbaK3YcwCw%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/rvYxg223xZ2cYbaK3YcwCw%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -234,7 +270,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=5ZLkrRHtAnOGNGF7pcw6Gg%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/5ZLkrRHtAnOGNGF7pcw6Gg%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "8_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "8_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "8_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "8_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
   },
   {
     "SuperVision": {
@@ -263,7 +305,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=GIs8XZwI2zKZCCRQnRVSpQ%3d%3d&ft=1005&let=11",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "9_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.pdf",
+      "9_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
+    ],
+    "local_file": "9_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
   },
   {
     "SuperVision": {
@@ -292,7 +339,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=rTx5zVWmW5f36oIUH1yhHA%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/rTx5zVWmW5f36oIUH1yhHA%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "10_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "10_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "10_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "10_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -321,7 +374,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=PEhQ3KtTyMohy7nQQQaQQQ3pwe3w%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/PEhQ3KtTyMohy7nQQQaQQQ3pwe3w%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -350,7 +409,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=WyX7WpNlL2nbpQ0kBnJMZw%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/WyX7WpNlL2nbpQ0kBnJMZw%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -379,7 +444,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=vioOOObOOOMTS3mf6LSV2XnafhBA%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/vioOOObOOOMTS3mf6LSV2XnafhBA%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "13_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "13_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "13_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "13_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -408,7 +479,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=2WUlEQQQaQQQwM3A3KVW7SvvCIKg%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/2WUlEQQQaQQQwM3A3KVW7SvvCIKg%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "14_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "14_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "14_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "14_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -437,7 +514,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=t3XjOOObOOO7P8FiB2Dm8XDVoE0A%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/t3XjOOObOOO7P8FiB2Dm8XDVoE0A%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "15_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "15_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "15_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "15_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -466,7 +549,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=KZLX0DAOOObOOOF86hGH5OcLFpvQ%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/KZLX0DAOOObOOOF86hGH5OcLFpvQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "16_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "16_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "16_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "16_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -495,7 +584,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=rJvquE5FLXsHYffI8hknWg%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/rJvquE5FLXsHYffI8hknWg%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "17_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "17_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "17_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "17_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -524,7 +619,11 @@
     "PdfUrl": "DownloadFile.aspx?hs=WQoy42LKfUpY60ougwNQOQ%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/WQoy42LKfUpY60ougwNQOQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
+    ],
+    "local_file": "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
