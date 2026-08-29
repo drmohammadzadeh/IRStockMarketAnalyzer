@@ -112,57 +112,12 @@ class ReportGenerator:
         fund_path.write_text(fund_content, encoding="utf-8")
 
         # --- Technical Report Data ---
-        current_price = float(rec.get("current_price") or 0.0)
-        rsi_val = float(tech.get("rsi") if tech.get("rsi") is not None else 50.0)
-        if rsi_val > 70:
-            rsi_status = "اشباع خرید"
-        elif rsi_val < 35:
-            rsi_status = "اشباع فروش (فرصت خرید)"
-        else:
-            rsi_status = "خنثی / تعادلی"
-
-        ema20_val = float(tech.get("ema20") or 0.0)
-        ema_status = "حمایت پویا" if current_price >= ema20_val else "مقاومت نزدیک"
-        nearest_support = float(tech.get("nearest_support") or 0.0)
-        nearest_resistance = float(tech.get("nearest_resistance") or 0.0)
-        buyer_power = float(tech.get("buyer_power") if tech.get("buyer_power") is not None else 1.0)
-        bp_desc = "ورود پول هوشمند / خریدار قوی" if buyer_power >= 1.2 else "تعادل خریدار و فروشنده"
-
         tech_path = symbol_dir / "technical_report.md"
-        tech_content = f"""# گزارش تحلیلی تکنیکال و تابلوخوانی نماد {symbol}
-
-**تاریخ گزارش:** {now_shamsi}  
-**آخرین قیمت:** {current_price:,.0f} ریال
-
----
-
-## ۱. وضعیت اندیکاتورها و سطوح کلیدی
-| شاخص / سطح | مقدار | وضعیت سیگنال |
-| :--- | :--- | :--- |
-| **RSI (14)** | {rsi_val:.1f} | {rsi_status} |
-| **میانگین نمایی ۲۰ روزه (EMA 20)** | {ema20_val:,.0f} ریال | {ema_status} |
-| **نزدیک‌ترین حمایت معتبر** | {nearest_support:,.0f} ریال | سطح بازگشتی و کف کانال |
-| **نزدیک‌ترین مقاومت معتبر** | {nearest_resistance:,.0f} ریال | سقف پیوت ماژور |
-
----
-
-## ۲. تحلیل تابلوخوانی و جریان نقدینگی
-- **نسبت قدرت خریدار به فروشنده:** {buyer_power:.2f} ({bp_desc})
-
----
-
-## ۳. نمودارهای تکنیکال
-- ![داشبورد تحلیلی پیشرفته Gemini Nano Banana Pro](charts/ai_dashboard.png)
-- ![نمودار شمعی و میانگین‌ها](charts/candlestick_overview.png)
-- ![اسیلاتورهای تکانه](charts/indicators_momentum.png)
-- ![جریان نقدینگی](charts/tape_reading_money_flow.png)
-
----
-*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
-"""
+        tech_content = ReportGenerator.generate_technical_report(symbol, tech, rec, chart_paths)
         tech_path.write_text(tech_content, encoding="utf-8")
 
         # --- Recommendation Report Data ---
+        current_price = float(rec.get("current_price") or 0.0)
         verdict = rec.get("overall_verdict", "نگهداری")
         action_desc = rec.get("action_desc", "")
         entry_zone = rec.get("entry_zone", "")
@@ -236,3 +191,65 @@ class ReportGenerator:
             "technical": tech_path,
             "recommendation": rec_path,
         }
+
+    @staticmethod
+    def generate_technical_report(
+        symbol: str,
+        tech: Optional[Dict[str, Any]] = None,
+        rec: Optional[Dict[str, Any]] = None,
+        chart_paths: Optional[List[Union[str, Path]]] = None,
+    ) -> str:
+        """Generates technical_report.md content string without AI dashboard references."""
+        tech = tech or {}
+        rec = rec or {}
+        now_shamsi = jdatetime.datetime.now().strftime("%Y/%m/%d - %H:%M")
+
+        current_price = float(rec.get("current_price") or tech.get("price") or tech.get("current_price") or 0.0)
+        rsi_val = float(tech.get("rsi") if tech.get("rsi") is not None else 50.0)
+        if rsi_val > 70:
+            rsi_status = "اشباع خرید"
+        elif rsi_val < 35:
+            rsi_status = "اشباع فروش (فرصت خرید)"
+        else:
+            rsi_status = "خنثی / تعادلی"
+
+        ema20_val = float(tech.get("ema20") or 0.0)
+        ema_status = "حمایت پویا" if current_price >= ema20_val else "مقاومت نزدیک"
+        nearest_support = float(tech.get("nearest_support") or 0.0)
+        nearest_resistance = float(tech.get("nearest_resistance") or 0.0)
+        buyer_power = float(tech.get("buyer_power") if tech.get("buyer_power") is not None else 1.0)
+        bp_desc = "ورود پول هوشمند / خریدار قوی" if buyer_power >= 1.2 else "تعادل خریدار و فروشنده"
+
+        return f"""# گزارش تحلیلی تکنیکال و تابلوخوانی نماد {symbol}
+
+**تاریخ گزارش:** {now_shamsi}  
+**آخرین قیمت:** {current_price:,.0f} ریال
+
+---
+
+## ۱. وضعیت اندیکاتورها و سطوح کلیدی
+| شاخص / سطح | مقدار | وضعیت سیگنال |
+| :--- | :--- | :--- |
+| **RSI (14)** | {rsi_val:.1f} | {rsi_status} |
+| **میانگین نمایی ۲۰ روزه (EMA 20)** | {ema20_val:,.0f} ریال | {ema_status} |
+| **نزدیک‌ترین حمایت معتبر** | {nearest_support:,.0f} ریال | سطح بازگشتی و کف کانال |
+| **نزدیک‌ترین مقاومت معتبر** | {nearest_resistance:,.0f} ریال | سقف پیوت ماژور |
+
+---
+
+## ۲. تحلیل تابلوخوانی و جریان نقدینگی
+- **نسبت قدرت خریدار به فروشنده:** {buyer_power:.2f} ({bp_desc})
+
+---
+
+## ۳. نمودارهای تکنیکال
+- ![نمودار شمعی و میانگین‌ها](charts/candlestick_overview.png)
+- ![اسیلاتورهای تکانه](charts/indicators_momentum.png)
+- ![جریان نقدینگی](charts/tape_reading_money_flow.png)
+
+---
+*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
+"""
+
+
+MarkdownReportGenerator = ReportGenerator

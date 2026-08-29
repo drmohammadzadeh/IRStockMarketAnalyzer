@@ -6,11 +6,6 @@
 
 ---
 
-## 🖼️ داشبورد تحلیلی هوشمند (تولیدشده با Gemini Nano Banana Pro)
-![داشبورد تحلیلی هوشمند وتجارت](charts/ai_dashboard.png)
-
----
-
 ## 📌 مشخصات عمومی شرکت و بازار
 
 | مشخصه | شرح |
@@ -77,8 +72,7 @@
 ├── market_data/                   # پوشه دیتای بازار و تابلوی معاملات TSETMC
 │   ├── trade_history.csv          # تاریخچه کامل قیمت‌ها و حجم‌های معاملاتی
 │   └── orderbook_tape.json        # اطلاعات سرانه حقیقی/حقوقی و قدرت خریدار
-└── charts/                        # نمودارهای تصویری
-    ├── ai_dashboard.png           # داشبورد فوق‌پیشرفته هوش مصنوعی (Gemini Nano Banana Pro)
+└── charts/                        # نمودارهای تصویری با تایپوگرافی فارسی
     ├── candlestick_overview.png   # نمودار شمعی، میانگین‌ها و باندهای بولینگر
     ├── indicators_momentum.png    # اسیلاتورهای RSI و MACD با تفکیک مناطق بحرانی
     └── tape_reading_money_flow.png # نوار قدرت خریداران حقیقی در برابر فروشندگان

@@ -306,7 +306,6 @@ class TechnicalAnalystAgent:
             "---",
             "",
             "## ۶. نمودارهای تحلیل تکنیکال و بصری",
-            "- ![داشبورد تحلیلی پیشرفته Gemini Nano Banana Pro](charts/ai_dashboard.png)",
             "- ![نمودار شمعی و میانگین‌های متحرک](charts/candlestick_overview.png)",
             "- ![اسیلاتورهای تکانه و مومنتوم](charts/indicators_momentum.png)",
             "- ![جریان نقدینگی و تابلوخوانی](charts/tape_reading_money_flow.png)",
@@ -316,6 +315,54 @@ class TechnicalAnalystAgent:
         ])
 
         return "\n".join(lines)
+
+    def generate_report(
+        self,
+        symbol: str,
+        levels_or_df: Any = None,
+        tape_data: Optional[Dict[str, Any]] = None,
+        divergences_or_charts: Optional[Any] = None,
+        chart_paths: Optional[List[Any]] = None,
+        **kwargs,
+    ) -> str:
+        """Generates technical analysis report content string."""
+        if isinstance(levels_or_df, pd.DataFrame):
+            df = levels_or_df
+            levels = tape_data if isinstance(tape_data, dict) else {}
+            tape = divergences_or_charts if isinstance(divergences_or_charts, dict) else {}
+            divs = kwargs.get("divergences", {})
+            charts = chart_paths or []
+        else:
+            levels = levels_or_df if isinstance(levels_or_df, dict) else {}
+            tape = tape_data if isinstance(tape_data, dict) else {}
+            divs = kwargs.get("divergences", {})
+            if isinstance(divergences_or_charts, list):
+                charts = divergences_or_charts
+            else:
+                charts = chart_paths or []
+
+            current_price = float(levels.get("current_price", levels.get("price", 1000.0)))
+            df = pd.DataFrame([{
+                "open": current_price,
+                "high": current_price,
+                "low": current_price,
+                "close": current_price,
+                "volume": 1000000.0,
+                "rsi": float(levels.get("rsi", 50.0)),
+                "ema20": float(levels.get("ema20", current_price)),
+                "ema50": float(levels.get("ema50", current_price)),
+                "ema100": float(levels.get("ema100", current_price)),
+                "ema200": float(levels.get("ema200", current_price)),
+            }])
+
+        return self._build_report_content(
+            symbol=symbol,
+            df=df,
+            levels=levels,
+            tape_data=tape,
+            divergences=divs,
+            chart_paths=charts,
+        )
 
     def run(self, symbol: str, symbol_dir: Union[str, Path]) -> Dict[str, Any]:
         """Executes full technical analysis, produces charts, and saves technical_report.md.
