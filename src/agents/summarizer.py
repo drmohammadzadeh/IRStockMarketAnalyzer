@@ -92,20 +92,26 @@ class SummarizerAgent:
         # PDF Insights
         if corpus_analysis and corpus_analysis.pdf_insights:
             for pdf_item in corpus_analysis.pdf_insights[:5]:
-                lines.append(f"### 📑 نکات مستخرج از سند PDF: {pdf_item.get('filename')}")
-                if pdf_item.get("auditor_opinions"):
-                    lines.append("- **نکات و بندهای شرطی حسابرس:**")
-                    for op in pdf_item["auditor_opinions"]:
-                        lines.append(f"  * {op}")
-                if pdf_item.get("capital_increases"):
-                    lines.append("- **برنامه‌های افزایش سرمایه:**")
-                    for cap in pdf_item["capital_increases"]:
-                        lines.append(f"  * {cap}")
-                if pdf_item.get("board_resolutions"):
-                    lines.append("- **مصوبات هیئت مدیره و مجمع:**")
-                    for res in pdf_item["board_resolutions"]:
-                        lines.append(f"  * {res}")
-                lines.append("")
+                has_content = (
+                    bool(pdf_item.get("auditor_opinions"))
+                    or bool(pdf_item.get("capital_increases"))
+                    or bool(pdf_item.get("board_resolutions"))
+                )
+                if has_content:
+                    lines.append(f"### 📑 نکات مستخرج از سند PDF: {pdf_item.get('filename')}")
+                    if pdf_item.get("auditor_opinions"):
+                        lines.append("- **نکات و بندهای شرطی حسابرس:**")
+                        for op in pdf_item["auditor_opinions"]:
+                            lines.append(f"  * {op}")
+                    if pdf_item.get("capital_increases"):
+                        lines.append("- **برنامه‌های افزایش سرمایه:**")
+                        for cap in pdf_item["capital_increases"]:
+                            lines.append(f"  * {cap}")
+                    if pdf_item.get("board_resolutions"):
+                        lines.append("- **مصوبات هیئت مدیره و مجمع:**")
+                        for res in pdf_item["board_resolutions"]:
+                            lines.append(f"  * {res}")
+                    lines.append("")
 
         # HTML Disclosures
         if corpus_analysis and corpus_analysis.html_disclosures:

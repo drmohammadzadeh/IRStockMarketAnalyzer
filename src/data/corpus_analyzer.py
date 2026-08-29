@@ -162,6 +162,14 @@ class LocalCorpusAnalyzer:
                 logger.warning(f"Error reading Excel/table file {file_path}: {e}")
                 return extracted
 
+        unit_factor = 1.0
+        # Check text in sheet to see if unit is میلیون ریال or هزار ریال
+        full_sample_text = " ".join([str(df.to_string())[:1000] for df in dataframes if df is not None and not df.empty])
+        if "میلیون ریال" in full_sample_text or "میلیون" in full_sample_text:
+            unit_factor = 1_000_000.0
+        elif "هزار ریال" in full_sample_text:
+            unit_factor = 1_000.0
+
         for df in dataframes:
             if df is None or df.empty:
                 continue
@@ -179,11 +187,12 @@ class LocalCorpusAnalyzer:
                             for cell in row.values:
                                 num = self._parse_numeric(cell)
                                 if num is not None and abs(num) > 0:
+                                    normalized_num = num * unit_factor
                                     if metric_key not in extracted or extracted[metric_key] is None:
-                                        extracted[metric_key] = num
+                                        extracted[metric_key] = normalized_num
                                     # Also save by exact keyword found
                                     if kw not in extracted:
-                                        extracted[kw] = num
+                                        extracted[kw] = normalized_num
                                     break
 
             # Strategy 2: If df has 2 or more columns
@@ -197,10 +206,11 @@ class LocalCorpusAnalyzer:
                                 for col_idx in range(1, df.shape[1]):
                                     num = self._parse_numeric(row.iloc[col_idx])
                                     if num is not None and abs(num) > 0:
+                                        normalized_num = num * unit_factor
                                         if metric_key not in extracted:
-                                            extracted[metric_key] = num
+                                            extracted[metric_key] = normalized_num
                                         if kw not in extracted:
-                                            extracted[kw] = num
+                                            extracted[kw] = normalized_num
                                         break
 
         return extracted
@@ -293,8 +303,9 @@ class LocalCorpusAnalyzer:
             sentiment_positive = ["رشد", "افزایش", "سودآوری", "جهش", "رکورد", "مثبت", "توسعه", "پیشرفت", "بهبود"]
             sentiment_negative = ["افت", "کاهش", "زیان", "جریمه", "ریزش", "منفی", "توقف", "بحران", "انحلال"]
 
-            pos_hits = [w for w in sentiment_positive if w in body_text or w in title]
-            neg_hits = [w for w in sentiment_negative if w in body_text or w in title]
+            clean_text = (body_text + " " + title).replace("صورت سود و زیان", "").replace("سود و زیان", "").replace("سود (زیان)", "").replace("سود(زیان)", "")
+            pos_hits = [w for w in sentiment_positive if w in clean_text]
+            neg_hits = [w for w in sentiment_negative if w in clean_text]
 
             sentiment = "خنثی"
             if len(pos_hits) > len(neg_hits):
@@ -385,10 +396,19 @@ class LocalCorpusAnalyzer:
         html_disclosures: List[Dict[str, Any]] = []
         news_catalysts: List[Dict[str, Any]] = []
 
-        # Recursively walk all files
-        for p in target_dir.rglob("*"):
-            if not p.is_file():
-                continue
+        # Recursively walk all files, prioritizing consolidated parent statements and recent reports
+        all_files = [p for p in target_dir.rglob("*") if p.is_file()]
+        def file_sort_key(p: Path):
+            name = p.name.lower()
+            is_consolidated = 0 if ("تلفیقی" in name or "اصلی" in name) else 1
+            import re
+            m = re.match(r"^(\d+)_", name)
+            prefix = int(m.group(1)) if m else 999
+            return (is_consolidated, prefix, str(p))
+
+        all_files.sort(key=file_sort_key)
+
+        for p in all_files:
 
             rel_str = str(p.relative_to(target_dir))
             scanned_files.append(rel_str)
