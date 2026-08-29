@@ -303,3 +303,43 @@ def test_crawler_downloads_third_party_documents_depth_2(tmp_path):
     assert len(news_files) >= 1
 
 
+def test_discover_authoritative_sources():
+    crawler = CrawlerAgent()
+    sources = crawler._discover_authoritative_sources("خودرو", inscode="65883838195688438")
+
+    assert any("tsetmc.com/instInfo/65883838195688438" in s for s in sources)
+    assert any("codal.ir/ReportList.aspx" in s for s in sources)
+    assert any("bourse24.ir/news/tag" in s for s in sources)
+    assert any("sena.ir/search" in s for s in sources)
+    assert any("rahavard365.com/search" in s for s in sources)
+    assert any("donya-e-eqtesad.com/search" in s for s in sources)
+
+
+def test_crawler_prioritizes_user_links_and_combines_with_deep_research(tmp_path):
+    symbol_dir = tmp_path / "تست"
+    symbol_dir.mkdir(parents=True)
+    links_file = symbol_dir / "links.txt"
+    user_custom_url = "https://custom-financial-portal.ir/analysis/123"
+    links_file.write_text(f"{user_custom_url}\n", encoding="utf-8")
+
+    mock_client = MagicMock()
+    mock_resp = MagicMock()
+    mock_resp.status_code = 200
+    mock_resp.text = "<html><head><title>سایت مالی</title></head><body><p>محتوای تحلیلی نماد</p></body></html>"
+    mock_resp.content = mock_resp.text.encode("utf-8")
+    mock_resp.json.return_value = {"Letters": []}
+    mock_client.get.return_value = mock_resp
+
+    crawler = CrawlerAgent(client=mock_client)
+    res = crawler.run("تست", symbol_dir)
+
+    assert res["success"] is True
+    sources_examined = res.get("sources_examined", [])
+    # User's custom URL from links.txt must be first in priority
+    assert len(sources_examined) > 0
+    assert sources_examined[0] == user_custom_url
+    # Deep research discovered authoritative sources are also included
+    assert any("codal.ir/ReportList.aspx" in s for s in sources_examined)
+    assert any("bourse24.ir/news/tag" in s for s in sources_examined)
+
+

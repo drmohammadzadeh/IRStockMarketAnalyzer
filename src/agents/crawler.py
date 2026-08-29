@@ -390,6 +390,33 @@ class CrawlerAgent:
             })
         return news_items
 
+    def _discover_authoritative_sources(self, symbol: str, inscode: Optional[str] = None) -> List[str]:
+        """Deep research discovery of authoritative financial sources for the target symbol."""
+        discovered = []
+        symbol_clean = symbol.strip()
+        symbol_quote = urllib.parse.quote(symbol_clean)
+
+        # 1. TSETMC Instrument URL if inscode available
+        if inscode:
+            discovered.append(f"https://www.tsetmc.com/instInfo/{inscode}")
+
+        # 2. Codal Official Search URL
+        discovered.append(f"https://codal.ir/ReportList.aspx?search&Symbol={symbol_quote}")
+
+        # 3. Bourse24 Dedicated Tag / News
+        discovered.append(f"https://www.bourse24.ir/news/tag/{symbol_quote}")
+
+        # 4. Sena (Securities & Exchange News Agency)
+        discovered.append(f"https://www.sena.ir/search?q={symbol_quote}")
+
+        # 5. Rahavard 365 Search / Asset
+        discovered.append(f"https://rahavard365.com/search?q={symbol_quote}")
+
+        # 6. Donya-e-Eqtesad News
+        discovered.append(f"https://donya-e-eqtesad.com/search?q={symbol_quote}")
+
+        return discovered
+
     def _fetch_market_data(self, symbol: str, inscode: Optional[str] = None) -> tuple:
         if inscode:
             data = self.tsetmc.fetch_symbol_data(symbol, inscode=inscode)
@@ -403,9 +430,11 @@ class CrawlerAgent:
         """Execute crawler pipeline for a given symbol and store results in symbol_dir.
 
         Enforces:
-        1. Depth-2 recursive crawling for source and child pages.
-        2. Maximum 50 total downloaded files.
-        3. Minimum quota of at least 20 official PDF/XLSX reports in codal_reports/.
+        1. Deep research discovery of authoritative financial websites.
+        2. Absolute priority and mandatory inspection of user links in links.txt.
+        3. Depth-2 recursive crawling for source and child pages.
+        4. Maximum 50 total downloaded files.
+        5. Minimum quota of at least 20 official PDF/XLSX reports in codal_reports/.
         """
         symbol_dir = Path(symbol_dir)
         symbol_dir.mkdir(parents=True, exist_ok=True)
@@ -419,10 +448,20 @@ class CrawlerAgent:
 
         total_downloaded = 0
 
-        # 0. Parse links.txt if exists
+        # 0. Deep Research & User Links Processing
         links_file = symbol_dir / "links.txt"
         parsed_links = self.codal.parse_links_file(links_file) if links_file.exists() else {}
         extracted_inscode = self.codal.extract_inscode_from_file(links_file) if links_file.exists() else None
+
+        # Discover authoritative sources via deep research
+        discovered_sources = self._discover_authoritative_sources(symbol, inscode=extracted_inscode)
+
+        # Combine user links from links.txt (highest priority) with discovered authoritative sources without duplicates
+        user_urls = parsed_links.get("third_party", []) + parsed_links.get("codal_direct", [])
+        all_portal_urls = list(user_urls)
+        for d_url in discovered_sources:
+            if d_url not in all_portal_urls:
+                all_portal_urls.append(d_url)
 
         # 1. Codal Reports (Level 1 + Level 2 Document Downloads)
         letters = self._fetch_codal_letters(symbol, symbol_dir)
@@ -435,8 +474,7 @@ class CrawlerAgent:
             min_quota=self.MIN_REPORTS_QUOTA,
         )
 
-        # 2. Recursive Depth-2 Crawling on Third-Party & Portal Links
-        all_portal_urls = parsed_links.get("third_party", []) + parsed_links.get("codal_direct", [])
+        # 2. Recursive Depth-2 Crawling on Third-Party & Portal Links (User links + Deep Research sources)
         crawled_articles, total_downloaded, extra_pdf_xlsx = self._crawl_recursive_sources(
             urls=all_portal_urls,
             news_dir=news_dir,
@@ -471,5 +509,6 @@ class CrawlerAgent:
             "news_count": len(news_list),
             "total_downloaded_files": total_downloaded,
             "has_market_history": not history_df.empty if isinstance(history_df, pd.DataFrame) else False,
+            "sources_examined": all_portal_urls,
         }
 
