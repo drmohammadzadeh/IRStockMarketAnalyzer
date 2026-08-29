@@ -59,7 +59,6 @@ class LocalCorpusAnalyzer:
                 "جمع کل دارایی‌ها",
                 "جمع داراییها",
                 "کل دارایی‌ها",
-                "دارایی‌ها",
             ],
             "deposits": [
                 "سپرده‌ها",
@@ -92,6 +91,7 @@ class LocalCorpusAnalyzer:
                 "جمع حقوق صاحبان سهام",
                 "حقوق مالکانه",
                 "جمع حقوق مالکانه",
+                "حقوق مالکانه قابل انتساب به مالکان شرکت اصلی",
             ],
         }
 
@@ -101,7 +101,7 @@ class LocalCorpusAnalyzer:
         if text is None:
             return ""
         s = str(text).strip()
-        s = s.replace("ي", "ی").replace("ك", "ک").replace("ة", "ه").replace("آ", "ا").replace("\u200c", " ")
+        s = s.replace("ي", "ی").replace("ى", "ی").replace("ك", "ک").replace("ة", "ه").replace("آ", "ا").replace("\u200c", " ")
         return s
 
     @staticmethod
@@ -162,6 +162,11 @@ class LocalCorpusAnalyzer:
                 logger.warning(f"Error reading Excel/table file {file_path}: {e}")
                 return extracted
 
+        full_sample_text = " ".join([str(df.to_string())[:1000] for df in dataframes if df is not None and not df.empty])
+        is_million_rials = ("میلیون" in full_sample_text or "میلیون ریال" in full_sample_text)
+        if is_million_rials:
+            extracted["unit"] = "million_rials"
+
         for df in dataframes:
             if df is None or df.empty:
                 continue
@@ -175,17 +180,28 @@ class LocalCorpusAnalyzer:
                     for kw in keywords:
                         kw_norm = self._normalize_text(kw)
                         if kw_norm in row_text:
+                            if metric_key == "capital" and any(neg in row_text for neg in ["سرمایه گذاری", "سرمایه گذار", "سهامدار", "شرکت", "عضو"]):
+                                continue
                             # Search for numerical values in the row
                             for cell in row.values:
                                 num = self._parse_numeric(cell)
                                 if num is not None and abs(num) > 0:
-                                    if metric_key not in extracted or extracted[metric_key] is None:
+                                    should_update = (
+                                        metric_key not in extracted
+                                        or extracted[metric_key] is None
+                                        or (num > extracted[metric_key] and metric_key in ("total_assets", "operating_revenue", "equity", "capital"))
+                                    )
+                                    if should_update:
                                         extracted[metric_key] = num
                                         extracted[f"{metric_key}_raw"] = num
-                                        extracted[f"{metric_key}_million_rials"] = num
-                                        extracted[f"{metric_key}_rials"] = num * 1_000_000.0
+                                        if is_million_rials:
+                                            extracted[f"{metric_key}_unit"] = "million_rials"
+                                            extracted[f"{metric_key}_million_rials"] = num
+                                            extracted[f"{metric_key}_rials"] = num * 1_000_000.0
+                                        else:
+                                            extracted[f"{metric_key}_rials"] = num
                                     # Also save by exact keyword found
-                                    if kw not in extracted:
+                                    if kw not in extracted or (num > extracted[kw] and metric_key in ("total_assets", "operating_revenue", "equity", "capital")):
                                         extracted[kw] = num
                                     break
 
@@ -197,15 +213,26 @@ class LocalCorpusAnalyzer:
                         for kw in keywords:
                             kw_norm = self._normalize_text(kw)
                             if kw_norm in first_cell:
+                                if metric_key == "capital" and any(neg in first_cell for neg in ["سرمایه گذاری", "سرمایه گذار", "سهامدار", "شرکت", "عضو"]):
+                                    continue
                                 for col_idx in range(1, df.shape[1]):
                                     num = self._parse_numeric(row.iloc[col_idx])
                                     if num is not None and abs(num) > 0:
-                                        if metric_key not in extracted:
+                                        should_update = (
+                                            metric_key not in extracted
+                                            or extracted[metric_key] is None
+                                            or (num > extracted[metric_key] and metric_key in ("total_assets", "operating_revenue", "equity", "capital"))
+                                        )
+                                        if should_update:
                                             extracted[metric_key] = num
                                             extracted[f"{metric_key}_raw"] = num
-                                            extracted[f"{metric_key}_million_rials"] = num
-                                            extracted[f"{metric_key}_rials"] = num * 1_000_000.0
-                                        if kw not in extracted:
+                                            if is_million_rials:
+                                                extracted[f"{metric_key}_unit"] = "million_rials"
+                                                extracted[f"{metric_key}_million_rials"] = num
+                                                extracted[f"{metric_key}_rials"] = num * 1_000_000.0
+                                            else:
+                                                extracted[f"{metric_key}_rials"] = num
+                                        if kw not in extracted or (num > extracted[kw] and metric_key in ("total_assets", "operating_revenue", "equity", "capital")):
                                             extracted[kw] = num
                                         break
 

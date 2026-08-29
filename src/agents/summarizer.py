@@ -53,7 +53,7 @@ class SummarizerAgent:
                 if key in corpus_analysis.excel_metrics:
                     val = corpus_analysis.excel_metrics[key]
                     if isinstance(val, (int, float)):
-                        if 0 < abs(val) <= 1e9:
+                        if 0 < abs(val) < 1e10:
                             million_rials = val
                             rials = val * 1_000_000.0
                         else:

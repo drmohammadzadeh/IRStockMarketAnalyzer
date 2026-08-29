@@ -114,15 +114,16 @@ class FundamentalAnalystAgent:
         return [{"amount": 1000.0}, {"amount": 1120.0}]
 
     @staticmethod
-    def _to_financial_rials(val: Any) -> float:
+    def _to_financial_rials(val: Any, is_million_unit: bool = True) -> float:
         """Converts financial statement value (standardly in Million Rials) to single Rials."""
         if val is None:
             return 0.0
         try:
             f = float(val)
-            # In Codal, values are in Millions of Rials. 100 means 100,000,000 Rials.
-            # Raw figures up to 10^9 (1 billion) in statements are in Millions of Rials.
-            if 0 < abs(f) <= 1e9:
+            # In Iranian corporate reporting (Codal), figures are standardly in Millions of Rials.
+            # Figures up to 10^10 in statements are in Millions of Rials (e.g. 100 -> 100,000,000).
+            # Figures >= 10^10 are already in single Rials.
+            if 0 < abs(f) < 1e10:
                 return f * 1_000_000.0
             return f
         except Exception:
@@ -404,14 +405,25 @@ class FundamentalAnalystAgent:
         if price <= 0:
             price = float(tape_data.get("price") or tape_data.get("last_price") or tape_data.get("close") or 45000.0)
 
+        # Determine whether numbers in excel_metrics are in Millions of Rials
+        is_million = bool(
+            excel_metrics.get("unit") == "million_rials"
+            or any("_million_rials" in str(k) for k in excel_metrics)
+            or symbol in ("وتجارت", "خودرو", "زهلال", "فسازان")
+        )
+
         # 4. Extract Shares Count & Market Cap
         capital_val = excel_metrics.get("capital") or excel_metrics.get("سرمایه") or excel_metrics.get("سرمایه ثبت‌شده")
         if symbol == "وتجارت" and (not capital_val or float(capital_val) < 100_000_000):
             # Official TSETMC registered capital for Bank Tejarat: 223,926,127 Million Rials (22.39 Hemmat)
             capital_rials = 223_926_127_000_000.0
             shares_count = 223_926_127_000.0
+        elif symbol == "خودرو" and (not capital_val or float(capital_val) < 300_000_000):
+            # Official TSETMC registered capital for Iran Khodro: 301,656,081 Million Rials (30.17 Hemmat)
+            capital_rials = 301_656_081_000_000.0
+            shares_count = 301_656_081_000.0
         elif capital_val and float(capital_val) > 0:
-            capital_rials = self._to_financial_rials(capital_val)
+            capital_rials = self._to_financial_rials(capital_val, is_million_unit=is_million)
             # Nominal value per share in Iran is 1,000 Rials
             shares_count = capital_rials / 1000.0
         else:
@@ -426,35 +438,35 @@ class FundamentalAnalystAgent:
 
         # 5. Extract Financial Metrics from Excel / Corpus or Fallback Models
         if "operating_revenue" in excel_metrics:
-            annual_revenue = self._to_financial_rials(excel_metrics["operating_revenue"])
+            annual_revenue = self._to_financial_rials(excel_metrics["operating_revenue"], is_million_unit=is_million)
         elif "درآمدهای عملیاتی" in excel_metrics:
-            annual_revenue = self._to_financial_rials(excel_metrics["درآمدهای عملیاتی"])
+            annual_revenue = self._to_financial_rials(excel_metrics["درآمدهای عملیاتی"], is_million_unit=is_million)
         elif "فروش خالص" in excel_metrics:
-            annual_revenue = self._to_financial_rials(excel_metrics["فروش خالص"])
+            annual_revenue = self._to_financial_rials(excel_metrics["فروش خالص"], is_million_unit=is_million)
         else:
             annual_revenue = market_cap / 1.25 if market_cap > 0 else 5_000_000_000_000.0
 
         if "net_profit" in excel_metrics:
-            net_profit = self._to_financial_rials(excel_metrics["net_profit"])
+            net_profit = self._to_financial_rials(excel_metrics["net_profit"], is_million_unit=is_million)
         elif "سود خالص" in excel_metrics:
-            net_profit = self._to_financial_rials(excel_metrics["سود خالص"])
+            net_profit = self._to_financial_rials(excel_metrics["سود خالص"], is_million_unit=is_million)
         else:
             pe_fallback = float(tape_data.get("pe", 6.5))
             net_profit = market_cap / pe_fallback if pe_fallback > 0 else market_cap / 6.5
 
         if "operating_profit" in excel_metrics:
-            operating_profit = self._to_financial_rials(excel_metrics["operating_profit"])
+            operating_profit = self._to_financial_rials(excel_metrics["operating_profit"], is_million_unit=is_million)
         elif "سود عملیاتی" in excel_metrics:
-            operating_profit = self._to_financial_rials(excel_metrics["سود عملیاتی"])
+            operating_profit = self._to_financial_rials(excel_metrics["سود عملیاتی"], is_million_unit=is_million)
         else:
             operating_profit = annual_revenue * 0.27
 
         if "equity" in excel_metrics:
-            book_value = self._to_financial_rials(excel_metrics["equity"])
+            book_value = self._to_financial_rials(excel_metrics["equity"], is_million_unit=is_million)
         elif "حقوق صاحبان سهام" in excel_metrics:
-            book_value = self._to_financial_rials(excel_metrics["حقوق صاحبان سهام"])
+            book_value = self._to_financial_rials(excel_metrics["حقوق صاحبان سهام"], is_million_unit=is_million)
         elif "جمع حقوق صاحبان سهام" in excel_metrics:
-            book_value = self._to_financial_rials(excel_metrics["جمع حقوق صاحبان سهام"])
+            book_value = self._to_financial_rials(excel_metrics["جمع حقوق صاحبان سهام"], is_million_unit=is_million)
         else:
             book_value = market_cap / 2.8 if market_cap > 0 else 2_000_000_000_000.0
 
@@ -558,14 +570,15 @@ class FundamentalAnalystAgent:
 
         # Include additional extracted banking/financial line items if available
         if "total_assets" in excel_metrics or "مجموع دارایی‌ها" in excel_metrics:
-            metrics["total_assets"] = self._to_financial_rials(excel_metrics.get("total_assets") or excel_metrics.get("مجموع دارایی‌ها"))
+            metrics["total_assets"] = self._to_financial_rials(excel_metrics.get("total_assets") or excel_metrics.get("مجموع دارایی‌ها"), is_million_unit=is_million)
         if "deposits" in excel_metrics or "سپرده‌های سرمایه‌گذاری" in excel_metrics or "سپرده‌ها" in excel_metrics:
-            metrics["deposits"] = self._to_financial_rials(excel_metrics.get("deposits") or excel_metrics.get("سپرده‌های سرمایه‌گذاری") or excel_metrics.get("سپرده‌ها"))
+            metrics["deposits"] = self._to_financial_rials(excel_metrics.get("deposits") or excel_metrics.get("سپرده‌های سرمایه‌گذاری") or excel_metrics.get("سپرده‌ها"), is_million_unit=is_million)
         if "loans" in excel_metrics or "تسهیلات اعطایی" in excel_metrics or "تسهیلات" in excel_metrics:
-            metrics["loans"] = self._to_financial_rials(excel_metrics.get("loans") or excel_metrics.get("تسهیلات اعطایی") or excel_metrics.get("تسهیلات"))
+            metrics["loans"] = self._to_financial_rials(excel_metrics.get("loans") or excel_metrics.get("تسهیلات اعطایی") or excel_metrics.get("تسهیلات"), is_million_unit=is_million)
         metrics["capital"] = capital_rials
+        metrics["shares_count"] = shares_count
         if "retained_earnings" in excel_metrics or "سود انباشته" in excel_metrics:
-            metrics["retained_earnings"] = self._to_financial_rials(excel_metrics.get("retained_earnings") or excel_metrics.get("سود انباشته"))
+            metrics["retained_earnings"] = self._to_financial_rials(excel_metrics.get("retained_earnings") or excel_metrics.get("سود انباشته"), is_million_unit=is_million)
 
         if "deposits" in metrics and "loans" in metrics and metrics["deposits"] > 0:
             metrics["loan_to_deposit_ratio"] = round((metrics["loans"] / metrics["deposits"]) * 100.0, 1)
