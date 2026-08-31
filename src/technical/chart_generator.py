@@ -74,6 +74,19 @@ class ChartGenerator:
             2, 1, figsize=(12, 7), gridspec_kw={"height_ratios": [3, 1]}, dpi=150
         )
 
+        if df.empty or "close" not in df.columns:
+            ax1.text(0.5, 0.5, fa_text(f"نماد {symbol} - در مرحله عرضه اولیه / سابقه معاملاتی ثبت نشده است"),
+                     ha="center", va="center", transform=ax1.transAxes, fontsize=13, color="#555555")
+            ax2.text(0.5, 0.5, fa_text("اطلاعات حجم معاملات پس از شروع دادوستد نمایش داده می‌شود"),
+                     ha="center", va="center", transform=ax2.transAxes, fontsize=11, color="#777777")
+            ax1.set_title(fa_text(f"نمودار روند قیمتی نماد {symbol} (عرضه اولیه)"), fontsize=14, fontweight="bold")
+            ax1.grid(True, alpha=0.3)
+            ax2.grid(True, alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(out_path)
+            plt.close(fig)
+            return
+
         # Plot price and EMAs
         if "close" in subset.columns:
             ax1.plot(
@@ -162,6 +175,19 @@ class ChartGenerator:
             2, 1, figsize=(12, 6), sharex=True, dpi=150
         )
 
+        if df.empty or "rsi" not in df.columns:
+            ax1.text(0.5, 0.5, fa_text(f"اسیلاتورهای تکانه نماد {symbol} پس از آغاز معاملات محاسبه خواهند شد"),
+                     ha="center", va="center", transform=ax1.transAxes, fontsize=12, color="#555555")
+            ax2.text(0.5, 0.5, fa_text("هیستوگرام و خط سیگنال MACD نیازمند ثبت سوابق معاملاتی است"),
+                     ha="center", va="center", transform=ax2.transAxes, fontsize=11, color="#777777")
+            ax1.set_title(fa_text(f"اسیلاتورهای تکانه نماد {symbol} (عرضه اولیه)"), fontsize=13, fontweight="bold")
+            ax1.grid(True, alpha=0.3)
+            ax2.grid(True, alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(out_path)
+            plt.close(fig)
+            return
+
         # RSI
         if "rsi" in subset.columns:
             ax1.plot(
@@ -224,6 +250,16 @@ class ChartGenerator:
         """Plots cumulative money flow approximation."""
         subset = df.tail(80).reset_index(drop=True)
         fig, ax = plt.subplots(figsize=(12, 4.5), dpi=150)
+
+        if df.empty or "close" not in df.columns:
+            ax.text(0.5, 0.5, fa_text(f"روند جریان نقدینگی و قدرت خریداران نماد {symbol} پس از روز اول عرضه ثبت می‌شود"),
+                    ha="center", va="center", transform=ax.transAxes, fontsize=12, color="#555555")
+            ax.set_title(fa_text(f"جریان نقدینگی نماد {symbol} (عرضه اولیه)"), fontsize=13, fontweight="bold")
+            ax.grid(True, alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(out_path)
+            plt.close(fig)
+            return
 
         # Approximate flow based on price change * volume
         if "close" in subset.columns and "volume" in subset.columns:

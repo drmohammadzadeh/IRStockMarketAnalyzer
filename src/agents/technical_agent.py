@@ -431,6 +431,7 @@ class TechnicalAnalystAgent:
             swing_high = 0.0
             swing_low = 0.0
             fib_levels = {}
+            chart_paths = ChartGenerator.generate_all_charts(df_ind, symbol, charts_dir)
 
         # 3. Build and write technical_report.md
         report_text = self._build_report_content(
