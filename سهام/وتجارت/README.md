@@ -41,42 +41,34 @@
 
 ## 📂 ساختار گزارش‌ها و فایل‌های استخراج‌شده نماد وتجارت
 
-مطابق دستورات مندرج در `links.txt`، تمامی فایل‌های گزارشات کدال، اخبار بورس ۲۴، تحلیل‌های مرجع رهاورد و دیتای تابلوی معاملات استخراج و دانلود گردید:
+مطابق دستورات مندرج در `links.txt`، تمامی فایل‌های گزارشات کدال، اخبار بورس ۲۴، تحلیل‌های مرجع رهاورد و دیتای تابلوی معاملات استخراج و سازمان‌دهی شده‌اند و به صورت مستقیم از طریق پیوندهای زیر قابل مشاهده هستند:
 
-```text
-سهام/وتجارت/
-├── README.md                      # همین فایل (داشبورد و شناسنامه سهم)
-├── links.txt                      # فایل پیوندها و دستورالعمل‌های استخراج
-├── final_recommendation.md        # گزارش پیشنهاد معاملاتی و مدیریت ریسک جامع
-├── fundamental_report.md          # گزارش فوق‌تفصیلی بنیادی (۸ بخش کامل)
-├── technical_report.md            # گزارش فوق‌تفصیلی تکنیکال و تابلوخوانی
-├── strategy_recommendation.json   # فایل ساختاریافته داده‌های استراتژی
-├── codal_reports/                 # پوشه اسناد و فایل‌های دانلودشده کدال
-│   ├── 1_اطلاعات و صورتهای مالی میاندورهای.html
-│   ├── 1cae64a7-f4fa-4401-81ed-7b3a5a147f1e.xls   # فایل اکسل صورت مالی کدال
-│   ├── 35b330da-f038-4c60-88ae-99cd1e84ba7d.xls   # فایل اکسل ترازنامه کدال
-│   ├── seo-codal-report.pdf       # فایل رسمی PDF کدال
-│   ├── seo-codal-report1.pdf      # فایل رسمی PDF کدال
-│   ├── seo-codal-report2.pdf      # فایل رسمی PDF کدال
-│   ├── letters_index.json         # لیست کلیه اطلاعیه‌ها و کدهای رهگیری
-│   └── codal_summaries.md         # خلاصه تحلیلی صورت‌های مالی و درآمد تسهیلات
-├── news/                          # پوشه اخبار و فایل‌های دانلودشده از بورس ۲۴ و رهاورد
-│   ├── news_1_وتجارت برای واگذاری سهام ۲ شرکت.html
-│   ├── news_3_واگذاری سهام سیمان تجارت مهریز.html
-│   ├── news_4_نقشه راه نمادهای گروه بانکی.html
-│   ├── news_5_همگرایی سیگنالهای مثبت دادگاهی و ارزی.html
-│   ├── news_6_تراز مثبت ۵۷۲ میلیارد تومانی بانک.html
-│   ├── news_7_افشای بانک تجارت درباره وضعیت معدن مس.html
-│   ├── news_archive.json          # آرشیو ساختاریافته تمامی اخبار و تحلیل‌ها
-│   └── news_summary.md            # خلاصه خبرها، کاتالیزورها و سنتیمنت بازار
-├── market_data/                   # پوشه دیتای بازار و تابلوی معاملات TSETMC
-│   ├── trade_history.csv          # تاریخچه کامل قیمت‌ها و حجم‌های معاملاتی
-│   └── orderbook_tape.json        # اطلاعات سرانه حقیقی/حقوقی و قدرت خریدار
-└── charts/                        # نمودارهای تصویری با تایپوگرافی فارسی
-    ├── candlestick_overview.png   # نمودار شمعی، میانگین‌ها و باندهای بولینگر
-    ├── indicators_momentum.png    # اسیلاتورهای RSI و MACD با تفکیک مناطق بحرانی
-    └── tape_reading_money_flow.png # نوار قدرت خریداران حقیقی در برابر فروشندگان
-```
+### 📑 اسناد اصلی تحلیل و استراتژی
+- 📄 [**README.md**](README.md): شناسنامه جامع و داشبورد مدیریتی نماد
+- 🎯 [**final_recommendation.md**](final_recommendation.md): گزارش پیشنهاد معاملاتی و مدیریت ریسک جامع
+- 📑 [**fundamental_report.md**](fundamental_report.md): گزارش فوق‌تفصیلی بنیادی و بانکی (۸ بخش کامل)
+- 📈 [**technical_report.md**](technical_report.md): گزارش فوق‌تفصیلی تکنیکال و تابلوخوانی
+- ⚙️ [**strategy_recommendation.json**](strategy_recommendation.json): داده‌های ساختاریافته پارامترهای استراتژی معاملاتی
+- 🔗 [**links.txt**](links.txt): فایل پیوندها و دستورالعمل‌های استخراج
+
+### 🏢 گزارش‌ها و صورت‌های مالی کدال (`codal_reports/`)
+- 📊 [**codal_summaries.md**](codal_reports/codal_summaries.md): خلاصه تحلیلی صورت‌های مالی و درآمد تسهیلات
+- 🗂️ [**letters_index.json**](codal_reports/letters_index.json): لیست کلیه اطلاعیه‌ها و کدهای رهگیری رسمی کدال
+- 📑 [**گزارش رسمی صورت‌های مالی کدال (PDF)**](codal_reports/seo-codal-report.pdf)
+- 📊 [**فایل اکسل صورت مالی کدال (XLS)**](codal_reports/1cae64a7-f4fa-4401-81ed-7b3a5a147f1e.xls) | [**اکسل ترازنامه**](codal_reports/35b330da-f038-4c60-88ae-99cd1e84ba7d.xls)
+
+### 📰 اخبار، رویدادها و سنتیمنت بازار (`news/`)
+- 📰 [**news_summary.md**](news/news_summary.md): خلاصه خبرها، کاتالیزورها و سنتیمنت بازار
+- 🗃️ [**news_archive.json**](news/news_archive.json): آرشیو ساختاریافته تمامی اخبار و تحلیل‌ها
+
+### 📊 داده‌های تابلوی معاملات و نقدینگی (`market_data/`)
+- 📈 [**trade_history.csv**](market_data/trade_history.csv): تاریخچه کامل قیمت‌ها و حجم‌های معاملاتی
+- 👥 [**orderbook_tape.json**](market_data/orderbook_tape.json): اطلاعات سرانه حقیقی/حقوقی و قدرت خریدار
+
+### 🖼️ نمودارهای تحلیلی و گرافیکی (`charts/`)
+- 🕯️ [**candlestick_overview.png**](charts/candlestick_overview.png): نمودار شمعی، میانگین‌ها و باندهای بولینگر
+- 📉 [**indicators_momentum.png**](charts/indicators_momentum.png): اسیلاتورهای RSI و MACD با تفکیک مناطق بحرانی
+- 🌊 [**tape_reading_money_flow.png**](charts/tape_reading_money_flow.png): نوار قدرت خریداران حقیقی در برابر فروشندگان
 
 ---
 
