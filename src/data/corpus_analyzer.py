@@ -157,7 +157,23 @@ class LocalCorpusAnalyzer:
         except Exception:
             # Codal often serves HTML tables with .xlsx or .xls extensions
             try:
-                dataframes = pd.read_html(file_path)
+                text = file_path.read_text(encoding="utf-8", errors="ignore")
+                soup = BeautifulSoup(text, "html.parser")
+                tables = soup.find_all("table")
+                for table in tables:
+                    rows = []
+                    for tr in table.find_all("tr"):
+                        cells = [td.get_text().strip() for td in tr.find_all(["td", "th"])]
+                        if cells:
+                            rows.append(cells)
+                    if rows:
+                        dataframes.append(pd.DataFrame(rows))
+                if not dataframes:
+                    try:
+                        import io
+                        dataframes = pd.read_html(io.StringIO(text), flavor="bs4")
+                    except Exception:
+                        pass
             except Exception as e:
                 logger.warning(f"Error reading Excel/table file {file_path}: {e}")
                 return extracted
