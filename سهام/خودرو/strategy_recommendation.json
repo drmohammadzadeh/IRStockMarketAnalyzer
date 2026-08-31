@@ -4,60 +4,60 @@
   "plan": {
     "overall_verdict": "نگهداری با رعایت حد ضرر (Hold)",
     "action_desc": "حفظ موقعیت سهامداری با پایبندی دقیق به حد ضرر تعیین‌شده تا شفاف‌تر شدن جهت شکست حمایت یا مقاومت توصیه می‌شود.",
-    "current_price": 715.0,
-    "entry_zone": "701 تا 729 ریال",
-    "entry_min": 700.7,
-    "entry_max": 729.3,
-    "target_1": 716.0,
-    "target_2": 787.6,
-    "stop_loss": 643.5,
-    "risk_reward_ratio": 0.01,
+    "current_price": 730.0,
+    "entry_zone": "715 تا 745 ریال",
+    "entry_min": 715.4,
+    "entry_max": 744.6,
+    "target_1": 736.0,
+    "target_2": 809.6,
+    "stop_loss": 657.0,
+    "risk_reward_ratio": 0.08,
     "score": -2,
     "horizons": {
       "short_term": {
         "title": "کوتاه‌مدت (۱ تا ۴ هفته)",
         "strategy": "نوسان‌گیری با تکیه بر تابلوی معاملات، ورود پول هوشمند و شکست مقاومت اول",
-        "target": 716.0,
-        "expected_return_pct": 0.1,
-        "stop_loss": 643.5,
+        "target": 736.0,
+        "expected_return_pct": 0.8,
+        "stop_loss": 657.0,
         "risk_pct": 10.0
       },
       "mid_term": {
         "title": "میان‌مدت (۱ تا ۳ ماه)",
         "strategy": "بهره‌گیری از شکست الگوهای ماژور و گزارش‌های فعالیت ماهانه کدال",
-        "target": 787.6,
-        "expected_return_pct": 10.2,
-        "stop_loss": 624.19,
+        "target": 809.6,
+        "expected_return_pct": 10.9,
+        "stop_loss": 637.29,
         "risk_pct": 12.7
       },
       "long_term": {
         "title": "بلندمدت (۶ تا ۱۲ ماه)",
         "strategy": "دید بنیادی و سرمایه‌گذاری بر پایه ارزش ذاتی، P/E رو به جلو و سود تقسیمی مجمع (DPS)",
-        "target": 984.5,
-        "expected_return_pct": 37.7,
-        "stop_loss": 600.1,
-        "risk_pct": 16.1
+        "target": 1012.0,
+        "expected_return_pct": 38.6,
+        "stop_loss": 614.16,
+        "risk_pct": 15.9
       }
     },
     "portfolio_allocation_pct": 5.0,
     "sizing_strategy": "عدم افزایش حجم و سرمایه جدید در قیمت‌های جاری؛ حفظ پوزیشن‌های قبلی با تریلینگ استاپ.",
     "invalidation_triggers": [
-      "تثبیت کندل روزانه زیر قیمت 644 ریال با حجم معاملات فراتر از میانگین ماهانه.",
+      "تثبیت کندل روزانه زیر قیمت 657 ریال با حجم معاملات فراتر از میانگین ماهانه.",
       "خروج سنگین نقدینگی حقیقی و نزول نسبت قدرت خریدار به زیر ۰.۷۵ در دو روز متوالی.",
       "افت محسوس در درآمد یا نرخ‌های فروش ماهانه در سامانه کدال (بیش از ۱۵ درصد نسبت به دوره قبل).",
       "شکست قطعی کف سوئینگ ماژور در محدوده 446 ریال."
     ],
-    "buyer_power": 1.1774452255144943,
+    "buyer_power": 0.8265158549134284,
     "fund_score": 8.5,
-    "rsi": 80.12672242929276,
-    "atr": 22.857142857142858,
+    "rsi": 81.65954767943883,
+    "atr": 23.857142857142858,
     "pe_ratio": 6.5,
-    "dividend_yield": 10.77
+    "dividend_yield": 10.82
   },
-  "entry_zone": "701 تا 729 ریال",
-  "target_1": 716.0,
-  "target_2": 787.6,
-  "stop_loss": 643.5,
-  "risk_reward_ratio": 0.01,
+  "entry_zone": "715 تا 745 ریال",
+  "target_1": 736.0,
+  "target_2": 809.6,
+  "stop_loss": 657.0,
+  "risk_reward_ratio": 0.08,
   "portfolio_allocation_pct": 5.0
 }

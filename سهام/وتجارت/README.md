@@ -52,10 +52,11 @@
 - 🔗 [**links.txt**](links.txt): فایل پیوندها و دستورالعمل‌های استخراج
 
 ### 🏢 گزارش‌ها و صورت‌های مالی کدال (`codal_reports/`)
-- 📊 [**codal_summaries.md**](codal_reports/codal_summaries.md): خلاصه تحلیلی صورت‌های مالی و درآمد تسهیلات
+- 📊 [**codal_summaries.md**](codal_reports/codal_summaries.md): خلاصه تحلیلی صورت‌های مالی، درآمد تسهیلات و ترازنامه
 - 🗂️ [**letters_index.json**](codal_reports/letters_index.json): لیست کلیه اطلاعیه‌ها و کدهای رهگیری رسمی کدال
-- 📑 [**گزارش رسمی صورت‌های مالی کدال (PDF)**](codal_reports/seo-codal-report.pdf)
-- 📊 [**فایل اکسل صورت مالی کدال (XLS)**](codal_reports/1cae64a7-f4fa-4401-81ed-7b3a5a147f1e.xls) | [**اکسل ترازنامه**](codal_reports/35b330da-f038-4c60-88ae-99cd1e84ba7d.xls)
+- 📑 [**اطلاعات و صورت‌های مالی میاندوره‌ای (PDF)**](codal_reports/1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf) | [**نسخه اکسل (XLSX)**](codal_reports/1_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx)
+- 📊 [**گزارش فعالیت ماهانه (PDF)**](codal_reports/1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf) | [**نسخه اکسل (XLSX)**](codal_reports/1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx)
+- 🏢 [**افشای اطلاعات بااهمیت برگزاری مزایده (PDF)**](codal_reports/2_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.pdf) | [**نسخه HTML**](codal_reports/2_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html)
 
 ### 📰 اخبار، رویدادها و سنتیمنت بازار (`news/`)
 - 📰 [**news_summary.md**](news/news_summary.md): خلاصه خبرها، کاتالیزورها و سنتیمنت بازار

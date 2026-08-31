@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	افشای اطلاعات با اهمیت
+</title>
+    <style type="text/css">
+        .company-info {
+            width: 99%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            margin: 7px;
+        }
+
+            .company-info td {
+                border: 1px solid #ccc;
+                height: 23px;
+                padding-right: 5px;
+            }
+
+                .company-info td > span {
+                    color: #C04000;
+                    display: inline-block;
+                    padding-right: 6px;
+                }
+
+                .company-info td:first-child {
+                    width: 50%;
+                }
+
+        body {
+            direction: rtl;
+            text-align: right;
+            font: 1.05em 'B Mitra';
+        }
+
+        .main_note {
+            position: relative;
+            background-color: #fafafa;
+            border: 1px solid #ccc;
+            border-top: 3px solid #fc4545;
+            margin-right: auto;
+            margin-left: auto;
+            clear: both;
+            text-align: center;
+        }
+
+            .main_note .verify {
+                font-family: tahoma;
+                font-size: 1em;
+                text-align: left;
+                font-weight: normal;
+                margin-left: 5px;
+                color: #0759f0;
+                position: absolute;
+                left: 10px;
+            }
+
+            .main_note .noteholder {
+                width: auto !important;
+                display: inline-block !important;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        .main-title {
+            font: bold 1.1em 'B Mitra';
+        }
+
+        .form-selector {
+            padding: 5px 0 10px 2px;
+            background-color: #f1f9fe;
+        }
+
+        .read-only-input {
+            display: inline-block;
+            height: 27px;
+            color: #3075a3;
+            width: 130px;
+            text-align: center;
+            border-bottom: 1px dotted #bbb;
+        }
+
+        .readonly-textarea {
+            display: inline-block;
+            color: #3075a3;
+            resize: none;
+            width: 90%;
+            text-align: right;
+            border-bottom: 1px dotted #bbb;
+        }
+
+        input[type=submit]:hover, input[type=button]:hover {
+            border-width: 0;
+            background-color: #f37e17;
+            font-size: 8pt;
+            font-family: Tahoma;
+            color: White;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        input[type=submit], input[type=button] {
+            border-width: 0;
+            background-color: #007ec8;
+            font-size: 8pt;
+            font-family: Tahoma;
+            color: White;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        ul {
+            display: inherit;
+            padding-right: 0px !important;
+        }
+
+        .modal {
+            position: fixed;
+            z-index: 999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            background-color: Black;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .loadingIcon {
+            z-index: 1000;
+            background-image: url('../Images/loading3.gif');
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            position: fixed;
+            z-index: 9999999;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .caption-disclosure {
+            font: bold .85em 'B Mitra';
+        }
+
+        .title-disclosure {
+            font: bold 1.05em 'B Mitra';
+        }
+
+        [ng\:cloak],   [ng-cloak],   [data-ng-cloak],   [x-ng-cloak],   .ng-cloak,   .x-ng-cloak  {
+            display: none !important;
+        }
+    </style>
+
+    <script src="../js/jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript" src="../js/Maskdiv.js"></script>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico?v=RyQ5xz7ege">
+    <script src="../js/Common.js"></script>
+    <script type="text/javascript" src="../js/angular.min.js"></script>
+     
+    <script type="text/javascript" src="../js/CodalApp.js"></script>
+    <script src="../js/directives/disclosureCodalFieldGroup.js"></script>
+    <script type="text/javascript" src="../js/directives/currencyInputDirective.js"></script>
+    <script type="text/javascript" src="../js/disclosureCodalController.js"></script>
+    <script src="../js/directives/signatureDirective/signatureDirective.js"></script>
+    <link href="../css/style.css" rel="stylesheet" type="text/css"><link href="../css/MasterMenu.css" rel="stylesheet" type="text/css">
+    
+
+    <script type="text/javascript">
+        var clientDataSource = {"HeaderData":{"Result":{"CompanyName":"بانک تجارت","CompanySymbol":"وتجارت","ISIC":"571919","CompanyState":"پذيرفته شده در بورس تهران","PublishDate":"1405/05/29","ListedCapital":1590603130,"UnAuthorizedCapital":0,"PeriodEndToDate":"1405/12/29","TracingNo":1587345,"IsReadonly":true},"Message":null,"ExceptionMessage":null,"Status":0},"FormTitle":{"Result":[{"Code":55000,"ParentCode":null,"Name":"OtherImportantInformation","Title":"ساير اطلاعات بااهميت - صورتهاي مالي 6ماهه منتهي ب 1405/03/31 شرکت مهراصل- گروه ب","CustomTitle":"صورتهاي مالي 6ماهه منتهي ب 1405/03/31 شرکت مهراصل","EnTitle":null,"WarningMessage":"","IsDeleted":0,"DisclosureCategoryId":8,"CategoryName":"سایر اطلاعات با اهمیت"}],"Message":null,"ExceptionMessage":null,"Status":0},"FormData":{"Result":{"LetterID":1513724,"Fields":[{"Code":55000000,"SubjectCode":0,"ParentCode":null,"Caption":"","Name":"EX-Title","DataType":100,"Unit":"0","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}],"CanBeNull":false,"DisplayOrder":0,"Value":"صورتهاي مالي 6ماهه منتهي ب 1405/03/31 شرکت مهراصل","IsUnknown":false,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":false,"Units":"0","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}]},{"Code":55000001,"SubjectCode":0,"ParentCode":null,"Caption":"تاريخ رويداد","Name":"EventDate","DataType":4,"Unit":"0","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}],"CanBeNull":false,"DisplayOrder":1,"Value":"1405/05/29","IsUnknown":false,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":true,"Units":"0","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}]},{"Code":55000002,"SubjectCode":0,"ParentCode":null,"Caption":"مقياس اثرات مالي رويداد","Name":"FinancialIncidenceScale","DataType":11,"Unit":"0","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}],"CanBeNull":false,"DisplayOrder":2,"Value":null,"IsUnknown":false,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":false,"Units":"0","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}]},{"Code":55000003,"SubjectCode":0,"ParentCode":55000002,"Caption":"نسبت به كل دارايي ها در سال مالي قبل","Name":"ProportionToLastYearAssets","DataType":2,"Unit":"5","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"درصد","Value":"5"}],"CanBeNull":true,"DisplayOrder":3,"Value":null,"IsUnknown":true,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":false,"Units":"5","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"درصد","Value":"5"}]},{"Code":55000004,"SubjectCode":0,"ParentCode":55000002,"Caption":"نسبت به كل درآمد فروش در سال مالي قبل","Name":"ProportionToLastYearRevenue","DataType":2,"Unit":"5","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"درصد","Value":"5"}],"CanBeNull":true,"DisplayOrder":4,"Value":null,"IsUnknown":true,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":false,"Units":"5","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"درصد","Value":"5"}]},{"Code":55000005,"SubjectCode":0,"ParentCode":null,"Caption":"شرح رویداد","Name":"Description","DataType":3,"Unit":"0","UnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}],"CanBeNull":false,"DisplayOrder":5,"Value":"اطلاعات و صورتهاي مالي 6ماهه منتهي به 1405/03/31 شرکت صنایع معدنی و تولیدی مهراصل (حسابرسي شده) (سهامي خاص)","IsUnknown":false,"RequiredMinLength":0,"MaxLength":0,"ValidateForDelay":false,"Units":"0","SelectedUnit":-1,"AllUnitList":[{"Attributes":{"Keys":[],"Count":0,"CssStyle":{"Keys":[],"Count":0,"Value":null}},"Enabled":true,"Selected":false,"Text":"","Value":"0"}]}],"SelectedFormCode":55000,"CustomTitle":"ساير اطلاعات بااهميت - صورتهاي مالي 6ماهه منتهي ب 1405/03/31 شرکت مهراصل- گروه ب","ThumbPrint":"","Signer":null,"Signature":null,"RawSignData":null,"UnMatchedData":"","Verified":true,"DisclosureCategoryId":8,"CategoryName":"سایر اطلاعات با اهمیت"},"Message":null,"ExceptionMessage":null,"Status":0}};
+        //data = data.replace(/\\n/g, "\\n")
+        //.replace(/\\'/g, "\\'")
+        //.replace(/\\"/g, '\\"')
+        //.replace(/\\&/g, "\\&")
+        //.replace(/\\r/g, "\\r")
+        //.replace(/\\t/g, "\\t")
+        //.replace(/\\b/g, "\\b")
+        //.replace(/\\f/g, "\\f");
+        //data = data.replace(/[\u0000-\u0019]+/g, "");
+
+        //var clientDataSource = JSON.parse(data);
+        angular.module('codalApp').value('cdatasource', clientDataSource);
+    </script>
+
+<meta http-equiv="Cache - Control" content="no - cache, no - store, must - revalidate">
+<meta http-equiv="Pragma" content="no - cache">
+<meta http-equiv="Expires" content="0"></head>
+<body>
+    <div id="disclosureform" data-ng-app="codalApp" class="ng-cloak">
+        <div data-ng-controller="disclosureCodalController as ctrl">
+            <div class="header">
+                <style>
+                    .ex-message {
+                        color: red;
+                    }
+
+                    .sucess-message {
+                        display: block;
+                        color: green;
+                        background-color: #C1E2B4;
+                        text-align: center;
+                        height: 30px;
+                        padding-top: 3px;
+                        font: bold 1.2em 'B Mitra';
+                    }
+
+                    .faild-message {
+                        display: block;
+                        color: red;
+                        background-color: #fe8981;
+                        text-align: center;
+                        height: 30px;
+                        padding-top: 3px;
+                        font: bold 1.2em 'B Mitra';
+                    }
+
+                    .no-message {
+                        display: none;
+                    }
+                </style>
+                
+                <div class="modal" data-ng-show="ctrl.loading">
+                    <div class="loadingIcon">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="master-header">
+                            <table class="company-info">
+                                <tr>
+                                    <td>شرکت: <span>{{ctrl.headerInfo.CompanyName}}</span></td>
+                                    <td>سرمایه ثبت شده: <span>{{ctrl.headerInfo.ListedCapital}}</span></td>                                    
+                                </tr>
+                                <tr>
+                                    <td>نماد: <span>{{ctrl.headerInfo.CompanySymbol}}</span></td>                                    
+                                    <td>سرمایه ثبت نشده: <span>{{ctrl.headerInfo.UnAuthorizedCapital}}</span></td>                                   
+                                </tr>
+                                <tr>
+                                    <td>کد صنعت (ISIC): <span>{{ctrl.headerInfo.ISIC}}</span></td>                                    
+                                    <td>شماره پیگیری:<span> {{ctrl.headerInfo.TracingNo}}</span></td>                                    
+                                </tr>
+                                <tr>                                    
+                                    <td>سال مالی منتهی به: <span>{{ctrl.headerInfo.PeriodEndToDate}}</span></td>                                    
+                                    <td>وضعیت ناشر:<span> {{ctrl.headerInfo.CompanyState}}</span></td>                                    
+                                </tr>
+                            </table>
+                            <div signaturedirective="" verified="ctrl.datasource.Verified" ,="" signer="ctrl.datasource.Signer"></div>
+                            <div data-ng-class="ctrl.responseStatus == 0 ? 'no-message' : ctrl.responseStatus == 1 ? 'sucess-message' : 'faild-message'">{{ctrl.responseMessage}}</div>
+           
+                        </div>
+
+                        <div class="div-warning-new-version">
+                        
+
+<br>
+
+
+                        </div>
+
+                        <div class="form-selector" pdf-save-content="formtoprint">
+                       
+                            <img src="../Images/FlatIcons/Target-32.png" style="vertical-align: middle; padding-left: 4px;">
+                            <span>عنوان موضوع افشاء:</span>
+                            <span class="main-title">{{ctrl.formTypesDataSource[0].Title}}</span>
+                        </div>
+                        <table style="width: 70%; border-collapse: collapse; border:1px solid #ccc; border-top:none; margin:0 auto;">
+                            <tbody>
+                                <tr>
+                                    <td style="height:30px;"></td>
+                                </tr>
+                                <tr data-ng-repeat="child in ctrl.dataSourceObject.children">
+                                    <td>                                             
+                                         <div disclosure-codal-field-group="" group="child"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:15px;"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align:left; padding-left:30px;">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="height:25px;"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).on('blur', '.numeric-input', function () {
+            var txt = $(this);
+            txt.val(formatCurrency(txt.val()));
+        });
+
+        $(document).on('focus', '.numeric-input', function () {
+            var txt = $(this);
+            txt.val(DeformatCurrency(txt.val()));
+            txt.select();
+        });
+    </script>
+</body>
+</html>
