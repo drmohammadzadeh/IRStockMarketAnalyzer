@@ -28,6 +28,11 @@ class TSETMCFetcher:
     def search_inscode(self, symbol: str) -> Optional[str]:
         """Search for symbol's inscode on TSETMC."""
         cleaned_symbol = symbol.strip()
+
+        def normalize_fa(s: str) -> str:
+            return s.replace("ي", "ی").replace("ك", "ک").replace("آ", "ا").replace("ة", "ه").strip()
+
+        norm_target = normalize_fa(cleaned_symbol)
         url = TSETMC_SEARCH_URL.format(query=cleaned_symbol)
         try:
             resp = self.client.get(url)
@@ -38,7 +43,8 @@ class TSETMCFetcher:
                 fields = part.split(",")
                 if len(fields) >= 2:
                     row_symbol = fields[0].strip()
-                    if row_symbol == cleaned_symbol or cleaned_symbol in row_symbol:
+                    norm_row = normalize_fa(row_symbol)
+                    if norm_row == norm_target or norm_target in norm_row:
                         # In real TSETMC response: symbol, name, inscode, ...
                         # In mock/test responses: symbol, inscode, ...
                         for candidate in fields[1:]:
