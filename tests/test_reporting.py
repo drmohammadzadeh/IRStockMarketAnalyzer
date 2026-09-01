@@ -112,3 +112,40 @@ def test_generate_markdown_reports_accepts_str_path(tmp_path):
     assert Path(files["fundamental"]).exists()
     assert Path(files["technical"]).exists()
     assert Path(files["recommendation"]).exists()
+
+
+def test_generate_portfolio_summary_table():
+    sample_stocks = [
+        {
+            "symbol": "تابان",
+            "name": "گروه پتروشیمی تابان فردا",
+            "score_weighted": 4.8,
+            "score_rules": 5.0,
+            "score_horizon": 4.9,
+            "score_final": 4.9,
+            "stars": "★★★★★",
+            "badge": "🚀 خرید قاطع (Strong Buy)",
+            "rationale": "نسبت P/NAV حدود ۴۰٪، تخفیف ۶۰٪ در عرضه اولیه",
+        },
+        {
+            "symbol": "تلیسه",
+            "name": "دامداری تلیسه نمونه",
+            "score_weighted": 3.2,
+            "score_rules": 3.0,
+            "score_horizon": 3.1,
+            "score_final": 3.1,
+            "stars": "★★★☆☆",
+            "badge": "🟡 نگهداری (Hold)",
+            "rationale": "سودآوری عملیاتی مطلوب، قیمت منصفانه",
+        },
+    ]
+
+    table_md = ReportGenerator.generate_portfolio_summary_table(sample_stocks)
+    assert "| نماد |" in table_md
+    assert "تابان" in table_md
+    assert "تلیسه" in table_md
+    assert "4.9" in table_md
+    assert "3.1" in table_md
+    assert "Strong Buy" in table_md
+    assert "Hold" in table_md
+

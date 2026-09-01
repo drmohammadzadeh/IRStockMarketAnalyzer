@@ -279,5 +279,34 @@ class ReportGenerator:
 *نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*
 """
 
+    @staticmethod
+    def generate_portfolio_summary_table(stocks_data: List[Dict[str, Any]]) -> str:
+        """Generates the master comparative table of all analyzed stocks with their 3-tier scores and final rating."""
+        lines = [
+            "| ردیف | نماد | نام شرکت / دارایی | رویکرد ۱ (تجمیع وزنی) | رویکرد ۲ (درخت تصمیم) | رویکرد ۳ (افق‌ها و R/R) | امتیاز نهایی (۱ تا ۵) | سیگنال و وضعیت نهایی | مبنا و منطق اصلی محاسبات |",
+            "| :---: | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :--- |",
+        ]
+
+        # Sort descending by final score
+        sorted_stocks = sorted(stocks_data, key=lambda x: float(x.get("score_final", 0.0)), reverse=True)
+
+        for idx, item in enumerate(sorted_stocks, start=1):
+            sym = item.get("symbol", "")
+            name = item.get("name", sym)
+            s1 = f"{float(item.get('score_weighted', 3.0)):.1f}"
+            s2 = f"{float(item.get('score_rules', 3.0)):.1f}"
+            s3 = f"{float(item.get('score_horizon', 3.0)):.1f}"
+            s_final = f"{float(item.get('score_final', 3.0)):.1f}"
+            stars = item.get("stars", "★★★☆☆")
+            badge = item.get("badge", "🟡 نگهداری (Hold)")
+            rationale = item.get("rationale", "")
+
+            # Convert Persian digits for table display if helpful, or keep standard numbers
+            lines.append(
+                f"| {idx} | [**{sym}**]({sym}/README.md) | {name} | **{s1}** | **{s2}** | **{s3}** | **{s_final} از ۵ ({stars})** | **{badge}** | {rationale} |"
+            )
+
+        return "\n".join(lines)
+
 
 MarkdownReportGenerator = ReportGenerator

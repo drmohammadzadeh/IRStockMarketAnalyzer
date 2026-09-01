@@ -6,8 +6,8 @@ import jdatetime
 
 class StrategyAgent:
     """Strategy & Risk Recommender Agent synthesizing technical, fundamental,
-
-    orderbook tape reading, and news sentiment into actionable trading recommendations.
+    orderbook tape reading, and news sentiment into actionable trading recommendations
+    and computing multi-tier 1 to 5 recommendation scores.
     """
 
     def __init__(self):
@@ -33,6 +33,165 @@ class StrategyAgent:
                 return ""
         return ""
 
+    @staticmethod
+    def calculate_three_tier_scores(
+        tech: Dict[str, Any],
+        fund: Dict[str, Any],
+        news_text: str = "",
+        codal_text: str = "",
+        rr_ratio: float = 1.0,
+    ) -> Dict[str, Any]:
+        """Calculates 1-to-5 scores across 3 distinct financial approaches:
+        1. Multi-Factor Weighted Scoring ($S_1$)
+        2. Rule-Based Decision Tree & Veto Filters ($S_2$)
+        3. Multi-Horizon Risk/Reward Quality ($S_3$)
+        and computes Consensus Final Score ($S_{Final}$).
+        """
+        current_price = float(tech.get("current_price") or tech.get("price") or 1000.0)
+        ema20 = float(tech.get("ema20") or current_price)
+        ema50 = float(tech.get("ema50") or current_price)
+        rsi = float(tech.get("rsi") if tech.get("rsi") is not None else 50.0)
+        buyer_power = float(tech.get("buyer_power") if tech.get("buyer_power") is not None else 1.0)
+        fund_score = float(fund.get("fundamental_score") if fund.get("fundamental_score") is not None else 5.0)
+        pe_ratio = float(fund.get("pe_ratio") if fund.get("pe_ratio") is not None else 7.0)
+        dividend_yield = float(fund.get("dividend_yield_pct") if fund.get("dividend_yield_pct") is not None else 0.0)
+
+        # 1. Normalized Pillar Scores (0 to 10 scale)
+        s_fund = max(0.0, min(10.0, fund_score))
+
+        s_tech = 5.0
+        if current_price >= ema20 >= ema50:
+            s_tech += 2.5
+        elif current_price < ema20 < ema50:
+            s_tech -= 2.5
+        elif current_price >= ema20:
+            s_tech += 1.0
+
+        if 40 <= rsi <= 60:
+            s_tech += 1.5
+        elif 30 <= rsi < 40 or 60 < rsi <= 70:
+            s_tech += 0.5
+        elif rsi > 75:
+            s_tech -= 1.5
+        elif rsi < 30:
+            s_tech += 1.0
+        s_tech = max(0.0, min(10.0, s_tech))
+
+        if buyer_power >= 2.0:
+            s_tape = 10.0
+        elif buyer_power >= 1.5:
+            s_tape = 8.5
+        elif buyer_power >= 1.2:
+            s_tape = 7.5
+        elif buyer_power >= 1.0:
+            s_tape = 6.0
+        elif buyer_power >= 0.8:
+            s_tape = 4.5
+        else:
+            s_tape = 2.5
+
+        combined_text = (news_text + " " + codal_text).lower()
+        s_news = 5.0
+        pos_words = ["مثبت", "رشد", "افزایش", "صادرات", "سودآوری", "تقاضا", "قرارداد", "تجدید ارزیابی", "عرضه اولیه", "تخفیف"]
+        neg_words = ["ریسک", "کاهش", "ضرر", "افت", "توقف", "منفی", "ماده ۱۴۱", "زیان"]
+        pos_cnt = sum(1 for w in pos_words if w in combined_text)
+        neg_cnt = sum(1 for w in neg_words if w in combined_text)
+        s_news += min(4.0, pos_cnt * 1.0)
+        s_news -= min(4.0, neg_cnt * 1.5)
+        s_news = max(0.0, min(10.0, s_news))
+
+        # --- Approach 1: Multi-Factor Weighted Scoring (S1) ---
+        norm_s1 = (0.35 * (s_fund / 10.0) + 0.30 * (s_tech / 10.0) + 0.25 * (s_tape / 10.0) + 0.10 * (s_news / 10.0))
+        score_weighted = round(max(1.0, min(5.0, 1.0 + 4.0 * norm_s1)), 1)
+        r1_reason = f"بنیادی ({s_fund:.1f}/۱۰ با وزن ۳۵٪) + تکنیکال ({s_tech:.1f}/۱۰ با وزن ۳۰٪) + تابلوخوانی ({s_tape:.1f}/۱۰ با وزن ۲۵٪) + اخبار ({s_news:.1f}/۱۰ با وزن ۱۰٪)"
+
+        # --- Approach 2: Rule-Based Decision Tree & Veto Filters (S2) ---
+        if rsi >= 85 and buyer_power < 0.8:
+            score_rules = 2.0
+            r2_reason = "وتوی نزولی: اشباع خرید شدید (RSI بالای ۸۵) همراه با خروج نقدینگی"
+        elif s_fund <= 2.0 and current_price < ema50:
+            score_rules = 1.5
+            r2_reason = "وتوی نزولی: ضعف بنیادین و قرارگیری در کانال نزولی زیر میانگین‌ها"
+        elif s_fund >= 8.0 and current_price >= ema20 and buyer_power >= 1.4:
+            score_rules = 5.0
+            r2_reason = "گیت صعودی ممتاز: همگرایی ارزندگی عالی، روند صعودی تثبیت‌شده و ورود پرقدرت پول هوشمند"
+        elif s_fund >= 6.0 and (current_price >= ema50 or buyer_power >= 1.1):
+            score_rules = 4.0
+            r2_reason = "گیت مساعد: ارزندگی بنیادی مطلوب و حمایت خریداران حقیقی"
+        elif s_fund >= 4.0:
+            score_rules = 3.0
+            r2_reason = "گیت تعادلی: قیمت منصفانه بدون خطر ساختاری یا هیجان خرید مفرط"
+        else:
+            score_rules = 2.0
+            r2_reason = "گیت احتیاطی: ریسک اصلاح قیمت و ارزندگی ضعیف"
+
+        score_rules = round(max(1.0, min(5.0, score_rules)), 1)
+
+        # --- Approach 3: Multi-Horizon & Risk/Reward Quality (S3) ---
+        h_st = (0.5 * (s_tape / 10.0) + 0.5 * (s_tech / 10.0))
+        h_mt = (0.5 * (s_tech / 10.0) + 0.5 * (s_fund / 10.0))
+        h_lt = (0.7 * (s_fund / 10.0) + 0.3 * min(1.0, dividend_yield / 15.0))
+
+        if rr_ratio >= 2.0:
+            q_rr = 1.10
+        elif rr_ratio >= 1.5:
+            q_rr = 1.00
+        else:
+            q_rr = 0.85
+
+        norm_s3 = (0.35 * h_st + 0.35 * h_mt + 0.30 * h_lt) * q_rr
+        score_horizon = round(max(1.0, min(5.0, 1.0 + 4.0 * norm_s3)), 1)
+        r3_reason = f"افق کوتاه‌مدت ({h_st*10:.1f}/۱۰) + میان‌مدت ({h_mt*10:.1f}/۱۰) + بلندمدت ({h_lt*10:.1f}/۱۰) با ضریب R/R={rr_ratio:.2f}"
+
+        # --- Consensus Final Score ---
+        score_final = round((score_weighted + score_rules + score_horizon) / 3.0, 1)
+
+        if score_final >= 4.5:
+            stars = "★★★★★"
+            badge = "🚀 خرید قاطع (Strong Buy)"
+        elif score_final >= 3.5:
+            stars = "★★★★☆"
+            badge = "🟢 خرید / ورود پله‌ای (Buy)"
+        elif score_final >= 2.5:
+            stars = "★★★☆☆"
+            badge = "🟡 نگهداری / نظاره‌گر (Hold)"
+        elif score_final >= 1.5:
+            stars = "★★☆☆☆"
+            badge = "🟠 کاهش حجم / فروش (Sell)"
+        else:
+            stars = "★☆☆☆☆"
+            badge = "🔴 فروش قاطع و خروج (Strong Sell)"
+
+        table_markdown = f"""| رویکرد تحلیلی | امتیاز (۱ تا ۵) | مبنا و منطق محاسبه |
+| :--- | :---: | :--- |
+| **رویکرد ۱: مدل تجمیع وزنی چندعاملی** | **{score_weighted}** | {r1_reason} |
+| **رویکرد ۲: مدل درخت تصمیم و فیلترهای وتو** | **{score_rules}** | {r2_reason} |
+| **رویکرد ۳: مدل همگرایی افق‌های زمانی و R/R** | **{score_horizon}** | {r3_reason} |
+| **🌟 امتیاز نهایی اجماع (Composite Score)** | **{score_final} از ۵ ({stars})** | **{badge}** |"""
+
+        return {
+            "score_weighted": score_weighted,
+            "score_rules": score_rules,
+            "score_horizon": score_horizon,
+            "score_final": score_final,
+            "stars": stars,
+            "badge": badge,
+            "rationale_weighted": r1_reason,
+            "rationale_rules": r2_reason,
+            "rationale_horizon": r3_reason,
+            "table_markdown": table_markdown,
+            "sub_metrics": {
+                "s_fund": s_fund,
+                "s_tech": s_tech,
+                "s_tape": s_tape,
+                "s_news": s_news,
+                "h_st": round(h_st * 10, 1),
+                "h_mt": round(h_mt * 10, 1),
+                "h_lt": round(h_lt * 10, 1),
+                "q_rr": q_rr,
+            },
+        }
+
     def _calculate_recommendation_plan(
         self,
         tech: Dict[str, Any],
@@ -41,8 +200,7 @@ class StrategyAgent:
         codal_text: str,
     ) -> Dict[str, Any]:
         """Calculates quantitative entry, targets, dynamic stop-loss,
-
-        risk/reward ratio, multi-horizon breakdowns, and portfolio sizing.
+        risk/reward ratio, multi-horizon breakdowns, portfolio sizing, and 3-tier recommendation scoring.
         """
         # 1. Price extraction
         current_price_raw = tech.get("current_price") or tech.get("price") or fund.get("current_price")
@@ -103,22 +261,26 @@ class StrategyAgent:
         # 6. Risk / Reward ratio
         rr_ratio = round(reward_1 / risk_per_share, 2) if risk_per_share > 0 else 1.0
 
-        # 7. Convergence Matrix Scoring
-        score = 0
+        # 7. Calculate 3-Tier Scores
+        scoring = self.calculate_three_tier_scores(
+            tech=tech,
+            fund=fund,
+            news_text=news_text,
+            codal_text=codal_text,
+            rr_ratio=rr_ratio,
+        )
 
-        # Tape / Buyer power
+        score = 0
         if buyer_power >= 1.3:
             score += 2
         elif buyer_power <= 0.8:
             score -= 2
 
-        # Fundamentals
         if fund_score >= 7.0:
             score += 2
         elif fund_score < 4.0:
             score -= 2
 
-        # RSI Momentum
         if 35 <= rsi <= 55:
             score += 1
         elif rsi > 75:
@@ -126,13 +288,11 @@ class StrategyAgent:
         elif rsi < 30:
             score += 1
 
-        # R/R attractiveness
         if rr_ratio >= 2.0:
             score += 2
         elif rr_ratio < 1.0:
             score -= 2
 
-        # News & Codal sentiment adjustments
         combined_text = (news_text + " " + codal_text).lower()
         if any(w in combined_text for w in ["مثبت", "رشد", "افزایش", "صادرات", "سودآوری", "تقاضا"]):
             score += 1
@@ -140,17 +300,17 @@ class StrategyAgent:
             score -= 1
 
         # 8. Final Verdict Determination
-        if score >= 4:
+        if scoring["score_final"] >= 4.5:
             verdict = "خرید قوی (Strong Buy)"
             action_desc = "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
             portfolio_allocation_pct = 15.0
             sizing_strategy = "ورود در ۳ پله: ۴۰٪ در محدوده فعلی، ۳۰٪ در پولبک به حمایت، ۳۰٪ پس از تثبیت بالای مقاومت اول."
-        elif 1 <= score < 4:
+        elif scoring["score_final"] >= 3.5:
             verdict = "خرید پله‌ای (Accumulate)"
             action_desc = "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
             portfolio_allocation_pct = 10.0
             sizing_strategy = "ورود در ۳ پله متوالی با فواصل قیمتی ۲ الی ۳ درصدی برای میانگین‌سازی کنترل‌شده."
-        elif -2 <= score < 1:
+        elif scoring["score_final"] >= 2.5:
             verdict = "نگهداری با رعایت حد ضرر (Hold)"
             action_desc = "حفظ موقعیت سهامداری با پایبندی دقیق به حد ضرر تعیین‌شده تا شفاف‌تر شدن جهت شکست حمایت یا مقاومت توصیه می‌شود."
             portfolio_allocation_pct = 5.0
@@ -213,6 +373,7 @@ class StrategyAgent:
             "stop_loss": stop_loss,
             "risk_reward_ratio": rr_ratio,
             "score": score,
+            "scoring": scoring,
             "horizons": horizons,
             "portfolio_allocation_pct": portfolio_allocation_pct,
             "sizing_strategy": sizing_strategy,
@@ -246,6 +407,7 @@ class StrategyAgent:
         stop_loss = plan["stop_loss"]
         rr_ratio = plan["risk_reward_ratio"]
         action_desc = plan["action_desc"]
+        scoring = plan.get("scoring", {})
 
         st = plan["horizons"]["short_term"]
         mt = plan["horizons"]["mid_term"]
@@ -258,10 +420,16 @@ class StrategyAgent:
             "",
             f"**تاریخ تدوین استراتژی:** {now_shamsi}  ",
             f"**سیگنال و وضعیت نهایی:** **{verdict}**  ",
+            f"**امتیاز اجماع توصیه معاملاتی:** **{scoring.get('score_final', '3.0')} از ۵ ({scoring.get('stars', '★★★☆☆')})** | **{scoring.get('badge', '')}**  ",
             f"**آخرین قیمت معاملاتی:** {current_price:,.0f} ریال  ",
             f"**کیفیت ریسک به ریوارد (R/R):** {rr_badge}  ",
             "",
             f"> **خلاصه اجرایی و چشم‌انداز:** {action_desc}",
+            "",
+            "---",
+            "",
+            "## 🎯 جدول جامع امتیازدهی سه‌گانه توصیه خرید/فروش (مقیاس ۱ تا ۵)",
+            scoring.get("table_markdown", ""),
             "",
             "---",
             "",
@@ -335,7 +503,6 @@ class StrategyAgent:
         fund_metrics: Optional[Dict[str, Any]] = None,
     ) -> Dict[str, Any]:
         """Executes the strategy synthesis workflow, builds recommendation plan,
-
         and creates final_recommendation.md and strategy_recommendation.json.
         """
         symbol_dir = Path(symbol_dir)
@@ -374,6 +541,7 @@ class StrategyAgent:
                     "symbol": symbol,
                     "verdict": verdict,
                     "plan": plan,
+                    "scoring": plan.get("scoring", {}),
                     "entry_zone": plan["entry_zone"],
                     "target_1": plan["target_1"],
                     "target_2": plan["target_2"],

@@ -172,3 +172,49 @@ def test_strategy_agent_defaults_and_missing_inputs(tmp_path):
     assert "verdict" in json_data
     assert "entry_zone" in json_data
     assert "stop_loss" in json_data
+
+
+def test_strategy_agent_three_tier_scores(tmp_path):
+    symbol_dir = tmp_path / "تلیسه"
+    symbol_dir.mkdir(parents=True)
+
+    tech_metrics = {
+        "current_price": 10060.0,
+        "rsi": 72.1,
+        "buyer_power": 1.18,
+        "nearest_support": 9054.0,
+        "nearest_resistance": 10190.0,
+        "swing_high": 11209.0,
+        "swing_low": 8500.0,
+        "atr": 355.0,
+        "ema20": 9400.0,
+        "ema50": 8900.0,
+    }
+    fund_metrics = {
+        "fundamental_score": 5.5,
+        "pe_ratio": 8.9,
+        "ps_ratio": 2.7,
+        "dividend_yield_pct": 8.5,
+    }
+
+    agent = StrategyAgent()
+    res = agent.run("تلیسه", symbol_dir, tech_metrics, fund_metrics)
+
+    assert res["success"] is True
+    plan = res["plan"]
+    assert "scoring" in plan
+    scoring = plan["scoring"]
+    assert 1.0 <= scoring["score_weighted"] <= 5.0
+    assert 1.0 <= scoring["score_rules"] <= 5.0
+    assert 1.0 <= scoring["score_horizon"] <= 5.0
+    assert 1.0 <= scoring["score_final"] <= 5.0
+    assert "stars" in scoring
+    assert "table_markdown" in scoring
+
+    content = (symbol_dir / "final_recommendation.md").read_text(encoding="utf-8")
+    assert "جدول جامع امتیازدهی سه‌گانه توصیه خرید/فروش" in content
+    assert "رویکرد ۱: مدل تجمیع وزنی چندعاملی" in content
+    assert "رویکرد ۲: مدل درخت تصمیم و فیلترهای وتو" in content
+    assert "رویکرد ۳: مدل همگرایی افق‌های زمانی و R/R" in content
+    assert "امتیاز نهایی اجماع" in content
+

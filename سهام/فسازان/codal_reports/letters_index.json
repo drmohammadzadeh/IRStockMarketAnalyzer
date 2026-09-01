@@ -5,6 +5,39 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1591931,
+    "Symbol": "فسازان",
+    "CompanyName": "غلتک سازان سپاهان",
+    "UnderSupervision": 0,
+    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۵/۳۱",
+    "LetterCode": "ن-۳۰",
+    "SentDateTime": "۱۴۰۵/۰۶/۰۷ ۱۰:۵۲:۴۰",
+    "PublishDateTime": "۱۴۰۵/۰۶/۰۷ ۱۰:۵۲:۴۰",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=6uTfNdgq3mhg8Q5rR5VyWg%3d%3d&rt=0&let=58&ct=0&ft=-1",
+    "HasExcel": true,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": false,
+    "AttachmentUrl": "",
+    "PdfUrl": "DownloadFile.aspx?hs=6uTfNdgq3mhg8Q5rR5VyWg%3d%3d&ft=1005&let=58",
+    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/6uTfNdgq3mhg8Q5rR5VyWg%3d%3d/0",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1583477,
     "Symbol": "فسازان",
     "CompanyName": "غلتک سازان سپاهان",
@@ -24,7 +57,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=XFhWZhIUcnD89VAXJhoQHA%3d%3d&ft=1005&let=19",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "2_معرفی_تغییر_در_ترکیب_اعضای_هیئت_مدی.pdf",
+      "2_معرفی_تغییر_در_ترکیب_اعضای_هیئت_مدی.html"
+    ],
+    "local_file": "2_معرفی_تغییر_در_ترکیب_اعضای_هیئت_مدی.html"
   },
   {
     "SuperVision": {
@@ -51,7 +89,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=CUBfa6Qxy84nzaCOOObOOOceSejQ%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/CUBfa6Qxy84nzaCOOObOOOceSejQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "3_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "3_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "3_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "3_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
   },
   {
     "SuperVision": {
@@ -78,7 +122,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=12V1Sl1WdMR57OOObOOOzQQQaQQQMuINbw%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/12V1Sl1WdMR57OOObOOOzQQQaQQQMuINbw%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.xlsx",
+      "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "4_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
   },
   {
     "SuperVision": {
@@ -105,7 +155,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=OOObOOOFG0N1QQQaQQQ8VOQQQaQQQaxf07JztFOOObOOOQ%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/OOObOOOFG0N1QQQaQQQ8VOQQQaQQQaxf07JztFOOObOOOQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "5_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "5_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "5_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "5_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
   },
   {
     "SuperVision": {
@@ -132,7 +188,12 @@
     "PdfUrl": "",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "6_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.pdf",
+      "6_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
+    ],
+    "local_file": "6_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
   },
   {
     "SuperVision": {
@@ -159,7 +220,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=rOpIRRN02TEOSHSxXPfF0w%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/rOpIRRN02TEOSHSxXPfF0w%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "7_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "7_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "7_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "7_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
   },
   {
     "SuperVision": {
@@ -186,7 +253,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=K62so4TjwRUhmUovvKQF7g%3d%3d&ft=1005&let=20",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "8_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.pdf",
+      "8_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
+    ],
+    "local_file": "8_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
   },
   {
     "SuperVision": {
@@ -213,7 +285,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=u5uaF4q7lqghAVLotOOObOOOZMsA%3d%3d&ft=1005&let=128",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "9_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.pdf",
+      "9_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
+    ],
+    "local_file": "9_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
   },
   {
     "SuperVision": {
@@ -240,7 +317,12 @@
     "PdfUrl": "",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "10_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.pdf",
+      "10_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
+    ],
+    "local_file": "10_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
   },
   {
     "SuperVision": {
@@ -267,7 +349,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=xVgUQ7aj7pAk3LpJIB8tjA%3d%3d&ft=1005&let=2020",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "11_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.pdf",
+      "11_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
+    ],
+    "local_file": "11_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
   },
   {
     "SuperVision": {
@@ -294,7 +381,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=2znaxSYNLMyY7OBmsWMhhQ%3d%3d&ft=1005&let=2020",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "12_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.pdf",
+      "12_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
+    ],
+    "local_file": "12_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
   },
   {
     "SuperVision": {
@@ -321,7 +413,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=bvUVx67Zd9DAeRkVMPekBw%3d%3d&ft=1005&let=148",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "13_اطلاعات_حاصل_از_برگزاری_کنفرانس_اطل.pdf",
+      "13_اطلاعات_حاصل_از_برگزاری_کنفرانس_اطل.html"
+    ],
+    "local_file": "13_اطلاعات_حاصل_از_برگزاری_کنفرانس_اطل.html"
   },
   {
     "SuperVision": {
@@ -348,7 +445,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=d4XBenryT0wj9QQQaQQQ2Zsd13Dg%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/d4XBenryT0wj9QQQaQQQ2Zsd13Dg%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "14_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf",
+      "14_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.xlsx",
+      "14_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
+    ],
+    "local_file": "14_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
   },
   {
     "SuperVision": {
@@ -375,7 +478,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=Gk2sioN0L5k1cyRuQ8OOObOOODSg%3d%3d&ft=1005&let=150",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "15_ضرورت_برگزاری_کنفرانس_اطلاع_رسانی.pdf",
+      "15_ضرورت_برگزاری_کنفرانس_اطلاع_رسانی.html"
+    ],
+    "local_file": "15_ضرورت_برگزاری_کنفرانس_اطلاع_رسانی.html"
   },
   {
     "SuperVision": {
@@ -402,7 +510,12 @@
     "PdfUrl": "",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "16_گزارش_فعالیت_هیئت_مدیره_دوره_۱۲_ماه.pdf",
+      "16_گزارش_فعالیت_هیئت_مدیره_دوره_۱۲_ماه.html"
+    ],
+    "local_file": "16_گزارش_فعالیت_هیئت_مدیره_دوره_۱۲_ماه.html"
   },
   {
     "SuperVision": {
@@ -429,7 +542,13 @@
     "PdfUrl": "DownloadFile.aspx?hs=ailcTokzjWTrxYDy8B9Pow%3d%3d&ft=1005&let=6",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/ailcTokzjWTrxYDy8B9Pow%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "17_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.pdf",
+      "17_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.xlsx",
+      "17_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.html"
+    ],
+    "local_file": "17_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.html"
   },
   {
     "SuperVision": {
@@ -456,7 +575,12 @@
     "PdfUrl": "",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "18_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.pdf",
+      "18_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
+    ],
+    "local_file": "18_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
   },
   {
     "SuperVision": {
@@ -483,7 +607,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=rT4kyGLGpCKRZKvePOOObOOOSasg%3d%3d&ft=1005&let=90",
     "ExcelUrl": "",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "19_گزارش_کنترل_های_داخلی_در_تاریخ_۱۴۰۴.pdf",
+      "19_گزارش_کنترل_های_داخلی_در_تاریخ_۱۴۰۴.html"
+    ],
+    "local_file": "19_گزارش_کنترل_های_داخلی_در_تاریخ_۱۴۰۴.html"
   },
   {
     "SuperVision": {
@@ -510,33 +639,12 @@
     "PdfUrl": "DownloadFile.aspx?hs=Z1tY8tXSc9JTNZfoOyUrcQ%3d%3d&ft=1005&let=58",
     "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/Z1tY8tXSc9JTNZfoOyUrcQ%3d%3d/0",
     "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1545503,
-    "Symbol": "فسازان",
-    "CompanyName": "غلتک سازان سپاهان",
-    "UnderSupervision": 0,
-    "Title": "آگهی دعوت به مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۵۰",
-    "SentDateTime": "۱۴۰۵/۰۳/۱۶ ۰۸:۳۸:۰۱",
-    "PublishDateTime": "۱۴۰۵/۰۳/۱۶ ۰۸:۳۸:۰۱",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=GOOObOOOT4R3VqfV65RxBM0QQQaQQQxaQQQaQQQg%3d%3d&rt=0&let=16&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=GOOObOOOT4R3VqfV65RxBM0QQQaQQQxaQQQaQQQg%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=GOOObOOOT4R3VqfV65RxBM0QQQaQQQxaQQQaQQQg%3d%3d&ft=1005&let=16",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir"
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "20_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
+      "20_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.xlsx",
+      "20_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    ],
+    "local_file": "20_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
   }
 ]

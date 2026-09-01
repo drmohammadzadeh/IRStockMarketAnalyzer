@@ -1,1 +1,2 @@
-date,open,high,low,close,volume
+date,open,high,low,close,last,yesterday,volume,value,trades
+2026-08-31,12800.0,12800.0,12800.0,12800.0,12800.0,1000.0,5999978423.0,76799723814400.0,1992921.0
