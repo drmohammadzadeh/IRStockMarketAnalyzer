@@ -1,3 +1,4 @@
+# Author: alimohammadzadeh@ut.ac.ir
 import json
 from pathlib import Path
 from typing import Dict, Any, Optional, Union
@@ -6,7 +7,7 @@ import jdatetime
 
 class StrategyAgent:
     """Strategy & Risk Recommender Agent synthesizing technical, fundamental,
-    orderbook tape reading, and news sentiment into actionable trading recommendations
+    orderbook tape reading, and news/social sentiment into actionable trading recommendations
     and computing multi-tier 1 to 5 recommendation scores.
     """
 
@@ -33,6 +34,16 @@ class StrategyAgent:
                 return ""
         return ""
 
+    def _load_social_sentiment(self, symbol_dir: Path) -> Optional[Dict[str, Any]]:
+        """Reads social sentiment JSON if present."""
+        sentiment_file = symbol_dir / "news" / "social_sentiment.json"
+        if sentiment_file.exists():
+            try:
+                return json.loads(sentiment_file.read_text(encoding="utf-8"))
+            except Exception:
+                return None
+        return None
+
     @staticmethod
     def calculate_three_tier_scores(
         tech: Dict[str, Any],
@@ -40,6 +51,7 @@ class StrategyAgent:
         news_text: str = "",
         codal_text: str = "",
         rr_ratio: float = 1.0,
+        social_sentiment: Optional[Union[Dict[str, Any], float]] = None,
     ) -> Dict[str, Any]:
         """Calculates 1-to-5 scores across 3 distinct financial approaches:
         1. Multi-Factor Weighted Scoring ($S_1$)
@@ -91,13 +103,25 @@ class StrategyAgent:
             s_tape = 2.5
 
         combined_text = (news_text + " " + codal_text).lower()
-        s_news = 5.0
+        s_news_text = 5.0
         pos_words = ["مثبت", "رشد", "افزایش", "صادرات", "سودآوری", "تقاضا", "قرارداد", "تجدید ارزیابی", "عرضه اولیه", "تخفیف"]
         neg_words = ["ریسک", "کاهش", "ضرر", "افت", "توقف", "منفی", "ماده ۱۴۱", "زیان"]
         pos_cnt = sum(1 for w in pos_words if w in combined_text)
         neg_cnt = sum(1 for w in neg_words if w in combined_text)
-        s_news += min(4.0, pos_cnt * 1.0)
-        s_news -= min(4.0, neg_cnt * 1.5)
+        s_news_text += min(4.0, pos_cnt * 1.0)
+        s_news_text -= min(4.0, neg_cnt * 1.5)
+        s_news_text = max(0.0, min(10.0, s_news_text))
+
+        sentiment_score = None
+        if isinstance(social_sentiment, dict):
+            sentiment_score = float(social_sentiment.get("composite_sentiment_score", 5.0))
+        elif isinstance(social_sentiment, (int, float)):
+            sentiment_score = float(social_sentiment)
+
+        if sentiment_score is not None:
+            s_news = round(0.5 * s_news_text + 0.5 * sentiment_score, 2)
+        else:
+            s_news = s_news_text
         s_news = max(0.0, min(10.0, s_news))
 
         # --- Approach 1: Multi-Factor Weighted Scoring (S1) ---
@@ -198,6 +222,7 @@ class StrategyAgent:
         fund: Dict[str, Any],
         news_text: str,
         codal_text: str,
+        social_sentiment: Optional[Union[Dict[str, Any], float]] = None,
     ) -> Dict[str, Any]:
         """Calculates quantitative entry, targets, dynamic stop-loss,
         risk/reward ratio, multi-horizon breakdowns, portfolio sizing, and 3-tier recommendation scoring.
@@ -268,6 +293,7 @@ class StrategyAgent:
             news_text=news_text,
             codal_text=codal_text,
             rr_ratio=rr_ratio,
+            social_sentiment=social_sentiment,
         )
 
         score = 0
@@ -513,12 +539,14 @@ class StrategyAgent:
 
         news_text = self._load_news_summary(symbol_dir)
         codal_text = self._load_codal_summary(symbol_dir)
+        social_sentiment = self._load_social_sentiment(symbol_dir)
 
         plan = self._calculate_recommendation_plan(
             tech=tech,
             fund=fund,
             news_text=news_text,
             codal_text=codal_text,
+            social_sentiment=social_sentiment,
         )
 
         verdict = plan["overall_verdict"]
@@ -562,4 +590,5 @@ class StrategyAgent:
             "plan": plan,
             "report_file": str(report_file),
             "json_file": str(json_file),
+            "social_sentiment": social_sentiment,
         }

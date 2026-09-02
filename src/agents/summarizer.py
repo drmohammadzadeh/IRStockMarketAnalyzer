@@ -1,3 +1,4 @@
+# Author: alimohammadzadeh@ut.ac.ir
 import json
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Union
@@ -169,6 +170,7 @@ class SummarizerAgent:
         news_items: List[Dict[str, Any]],
         symbol: str,
         corpus_analysis: Optional[CorpusAnalysisResult] = None,
+        social_sentiment: Optional[Dict[str, Any]] = None,
     ) -> str:
         try:
             now_shamsi = jdatetime.datetime.now().strftime("%Y/%m/%d - %H:%M")
@@ -217,15 +219,51 @@ class SummarizerAgent:
         else:
             lines.append("- خبر منفی یا شوک خبری بااهمیتی در رسانه‌های رسمی بازار سرمایه پیرامون این نماد مخابره نشده است.")
 
-        lines.extend([
-            "---",
-            "## ۲. جمع‌بندی ریسک‌ها و فرصت‌های خبری",
-            "- **فرصت‌ها:** تداوم تقاضا در صنعت مربوطه و اخبار مثبت افزایش سرمایه یا تعدیل مثبت سودآوری.",
-            "- **ریسک‌ها:** نوسانات عمومی بازار و تصمیمات رگولاتوری نرخ بهره یا خوراک/انرژی.",
-            "",
-            "---",
-            "*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*",
-        ])
+        if social_sentiment and isinstance(social_sentiment, dict):
+            comp_score = float(social_sentiment.get("composite_sentiment_score", 5.0))
+            verdict_text = social_sentiment.get("sentiment_verdict", "خنثی / بدون جهت‌گیری خاص")
+            sahamyab = social_sentiment.get("sahamyab", {})
+            rahavard = social_sentiment.get("rahavard365", {})
+
+            lines.extend([
+                "---",
+                "## ۲. تحلیل جو روانی و دیدگاه‌های سهامداران در شبکه‌های اجتماعی (سهام‌یاب و ره‌آورد ۳۶۰)",
+                f"- **نمره ترکیبی شاخص احساسات (Composite Sentiment Score):** **{comp_score:.1f} از ۱۰.۰**",
+                f"- **ارزیابی روانی و جهت‌گیری فعالان:** {verdict_text}",
+                "",
+                "### 💬 پایش نظرات و بازخوردها در پلتفرم‌های بورسی:",
+                f"- **شبکه اجتماعی سهام‌یاب:** مجموعاً {sahamyab.get('total_posts', 0)} پیام رصد شد ({sahamyab.get('bullish_count', 0)} دیدگاه صعودی، {sahamyab.get('bearish_count', 0)} دیدگاه نزولی، {sahamyab.get('neutral_count', 0)} خنثی).",
+                f"- **تالار گفتگوی ره‌آورد ۳۶۰:** مجموعاً {rahavard.get('total_posts', 0)} تحلیل و دیدگاه رصد شد ({rahavard.get('bullish_count', 0)} صعودی، {rahavard.get('bearish_count', 0)} نزولی، {rahavard.get('neutral_count', 0)} خنثی).",
+            ])
+            sample_sy = sahamyab.get("sample_comments", []) if isinstance(sahamyab, dict) else []
+            sample_rh = rahavard.get("sample_comments", []) if isinstance(rahavard, dict) else []
+            all_samples = list(sample_sy[:3]) + list(sample_rh[:3])
+            if all_samples:
+                lines.append("\n**گزیده نظرات شاخص کاربران:**")
+                for s in all_samples:
+                    if s:
+                        lines.append(f"  * «{str(s).strip()[:150]}»")
+            lines.append("")
+
+            lines.extend([
+                "---",
+                "## ۳. جمع‌بندی ریسک‌ها و فرصت‌های خبری",
+                "- **فرصت‌ها:** تداوم تقاضا در صنعت مربوطه و اخبار مثبت افزایش سرمایه یا تعدیل مثبت سودآوری.",
+                "- **ریسک‌ها:** نوسانات عمومی بازار و تصمیمات رگولاتوری نرخ بهره یا خوراک/انرژی.",
+                "",
+                "---",
+                "*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*",
+            ])
+        else:
+            lines.extend([
+                "---",
+                "## ۲. جمع‌بندی ریسک‌ها و فرصت‌های خبری",
+                "- **فرصت‌ها:** تداوم تقاضا در صنعت مربوطه و اخبار مثبت افزایش سرمایه یا تعدیل مثبت سودآوری.",
+                "- **ریسک‌ها:** نوسانات عمومی بازار و تصمیمات رگولاتوری نرخ بهره یا خوراک/انرژی.",
+                "",
+                "---",
+                "*نویسنده و توسعه دهنده: alimohammadzadeh@ut.ac.ir*",
+            ])
 
         return "\n".join(lines)
 
@@ -260,11 +298,22 @@ class SummarizerAgent:
             except Exception:
                 news_items = []
 
+        # Load social sentiment if available
+        social_sentiment = None
+        sentiment_file = news_dir / "social_sentiment.json"
+        if sentiment_file.exists():
+            try:
+                social_sentiment = json.loads(sentiment_file.read_text(encoding="utf-8"))
+            except Exception:
+                social_sentiment = None
+
         codal_summary_text = self.summarize_codal_letters(letters, symbol, corpus_analysis=corpus_analysis)
         codal_summary_file = codal_dir / "codal_summaries.md"
         codal_summary_file.write_text(codal_summary_text, encoding="utf-8")
 
-        news_summary_text = self.summarize_news(news_items, symbol, corpus_analysis=corpus_analysis)
+        news_summary_text = self.summarize_news(
+            news_items, symbol, corpus_analysis=corpus_analysis, social_sentiment=social_sentiment
+        )
         news_summary_file = news_dir / "news_summary.md"
         news_summary_file.write_text(news_summary_text, encoding="utf-8")
 
@@ -276,5 +325,6 @@ class SummarizerAgent:
             "codal_summary": codal_summary_text,
             "news_summary": news_summary_text,
             "corpus_analysis": corpus_analysis,
+            "social_sentiment": social_sentiment,
         }
 

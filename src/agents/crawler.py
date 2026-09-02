@@ -1,3 +1,4 @@
+# Author: alimohammadzadeh@ut.ac.ir
 import json
 import re
 import urllib.parse
@@ -9,10 +10,11 @@ from bs4 import BeautifulSoup
 from src.config import HEADERS, REQUEST_TIMEOUT
 from src.data.tsetmc_fetcher import TSETMCFetcher
 from src.data.codal_fetcher import CodalFetcher, clean_corrupted_codal_reports
+from src.data.social_crawler import SocialSentimentCrawler
 
 
 class CrawlerAgent:
-    """Crawler and downloader agent for Codal announcements, news feeds, and TSETMC market data
+    """Crawler and downloader agent for Codal announcements, news feeds, social sentiment, and TSETMC market data
 
     with recursive depth-2 crawling, 50-file cap, and PDF/XLSX quota management.
     """
@@ -20,7 +22,11 @@ class CrawlerAgent:
     MAX_TOTAL_FILES: int = 50
     MIN_REPORTS_QUOTA: int = 20
 
-    def __init__(self, client: Optional[httpx.Client] = None):
+    def __init__(
+        self,
+        client: Optional[httpx.Client] = None,
+        social_crawler: Optional[SocialSentimentCrawler] = None,
+    ):
         self.client = client or httpx.Client(
             headers=HEADERS,
             timeout=REQUEST_TIMEOUT,
@@ -30,6 +36,7 @@ class CrawlerAgent:
         )
         self.tsetmc = TSETMCFetcher(self.client)
         self.codal = CodalFetcher(self.client)
+        self.social_crawler = social_crawler or SocialSentimentCrawler(self.client)
 
     @staticmethod
     def _sanitize_filename(name: str, max_len: int = 40) -> str:
@@ -522,6 +529,9 @@ class CrawlerAgent:
             json.dumps(client_data, ensure_ascii=False, indent=2), encoding="utf-8"
         )
 
+        # 4. Social Sentiment (Sahamyab & Rahavard365)
+        social_sentiment_res = self.social_crawler.crawl_and_save(symbol, symbol_dir)
+
         return {
             "symbol": symbol,
             "success": True,
@@ -532,5 +542,6 @@ class CrawlerAgent:
             "total_downloaded_files": total_downloaded,
             "has_market_history": not history_df.empty if isinstance(history_df, pd.DataFrame) else False,
             "sources_examined": all_portal_urls,
+            "social_sentiment": social_sentiment_res,
         }
 
