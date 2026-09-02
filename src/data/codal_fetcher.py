@@ -1,7 +1,7 @@
 import urllib.parse
 from pathlib import Path
 import httpx
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from src.config import HEADERS, REQUEST_TIMEOUT, CODAL_SEARCH_API
 
 
@@ -166,6 +166,175 @@ class CodalFetcher:
         else:
             return urllib.parse.urljoin("https://codal.ir/Reports/", url)
 
+    @staticmethod
+    def validate_file_magic_bytes(content: bytes, filename: str) -> bool:
+        """Validates binary magic bytes for PDF and Excel documents.
+
+        Author: alimohammadzadeh@ut.ac.ir
+        """
+        if not content or len(content) < 4:
+            return False
+        lower_fn = filename.lower()
+        if lower_fn.endswith(".pdf"):
+            return content.startswith(b"%PDF-")
+        elif lower_fn.endswith(".xlsx"):
+            return content.startswith(b"PK\x03\x04")
+        elif lower_fn.endswith(".xls"):
+            return content.startswith(b"\xd0\xcf\x11\xe0")
+        return True
+
+    @staticmethod
+    def get_pdf_urls(letter: Dict[str, Any]) -> List[str]:
+        """Returns candidate PDF download URLs for a Codal letter in order of preference.
+
+        Author: alimohammadzadeh@ut.ac.ir
+        """
+        import re
+        urls = []
+        if letter.get("PdfUrl"):
+            url = str(letter["PdfUrl"]).strip()
+            if not url.startswith("http"):
+                url = urllib.parse.urljoin("https://codal.ir/", url)
+            urls.append(url)
+
+        serial = letter.get("LetterSerial")
+        if not serial:
+            url_val = str(letter.get("Url", ""))
+            if "LetterSerial=" in url_val:
+                m = re.search(r"LetterSerial=([^&]+)", url_val)
+                if m:
+                    serial = m.group(1)
+
+        if serial:
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?LetterSerial={serial}&type=pdf")
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?LetterSerial={serial}")
+
+        tracing = letter.get("TracingNo")
+        if tracing:
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?id={tracing}&type=pdf")
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?id={tracing}")
+
+        # Remove duplicates while preserving order
+        seen = set()
+        deduped = []
+        for u in urls:
+            if u not in seen:
+                seen.add(u)
+                deduped.append(u)
+        return deduped
+
+    @staticmethod
+    def get_excel_urls(letter: Dict[str, Any]) -> List[str]:
+        """Returns candidate Excel download URLs for a Codal letter in order of preference.
+
+        Author: alimohammadzadeh@ut.ac.ir
+        """
+        import re
+        urls = []
+        if letter.get("ExcelUrl"):
+            url = str(letter["ExcelUrl"]).strip()
+            if not url.startswith("http"):
+                url = urllib.parse.urljoin("https://excel.codal.ir/", url)
+            urls.append(url)
+
+        serial = letter.get("LetterSerial")
+        if not serial:
+            url_val = str(letter.get("Url", ""))
+            if "LetterSerial=" in url_val:
+                m = re.search(r"LetterSerial=([^&]+)", url_val)
+                if m:
+                    serial = m.group(1)
+
+        if serial:
+            urls.append(f"https://excel.codal.ir/service/Excel/GetAll/{serial}")
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?LetterSerial={serial}&type=excel")
+
+        tracing = letter.get("TracingNo")
+        if tracing:
+            urls.append(f"https://excel.codal.ir/service/Excel/GetAll/{tracing}")
+            urls.append(f"https://codal.ir/Reports/DownloadFile.aspx?id={tracing}&type=excel")
+
+        seen = set()
+        deduped = []
+        for u in urls:
+            if u not in seen:
+                seen.add(u)
+                deduped.append(u)
+        return deduped
+
+    def download_file(
+        self,
+        url: str,
+        target_path: Optional[Path] = None,
+        fallback_urls: Optional[List[str]] = None,
+    ) -> Tuple[bool, Optional[bytes], str]:
+        """Downloads a file with magic bytes validation and URL fallbacks.
+
+        Author: alimohammadzadeh@ut.ac.ir
+        """
+        urls_to_try = [url] if url else []
+        if fallback_urls:
+            for fu in fallback_urls:
+                if fu and fu not in urls_to_try:
+                    urls_to_try.append(fu)
+
+        if not urls_to_try:
+            return False, None, "error"
+
+        target_name = target_path.name if target_path else (url.split("/")[-1].split("?")[0] or "file.bin")
+
+        for u in urls_to_try:
+            try:
+                resp = self.client.get(u)
+                if resp.status_code != 200:
+                    continue
+                content = resp.content if hasattr(resp, "content") and resp.content else resp.text.encode("utf-8")
+                if not content or len(content) < 4:
+                    continue
+
+                url_lower = u.lower()
+                target_lower = target_name.lower()
+                c_type_header = resp.headers.get("content-type", "").lower() if hasattr(resp, "headers") else ""
+
+                if (
+                    target_lower.endswith(".pdf")
+                    or "type=pdf" in url_lower
+                    or url_lower.endswith(".pdf")
+                    or "application/pdf" in c_type_header
+                ):
+                    if self.validate_file_magic_bytes(content, "file.pdf"):
+                        if target_path:
+                            target_path.parent.mkdir(parents=True, exist_ok=True)
+                            target_path.write_bytes(content)
+                        return True, content, "pdf"
+                    else:
+                        continue
+                elif (
+                    target_lower.endswith((".xlsx", ".xls"))
+                    or "excel.codal.ir" in url_lower
+                    or "type=excel" in url_lower
+                    or "spreadsheet" in c_type_header
+                    or "excel" in c_type_header
+                ):
+                    ext = ".xls" if (target_lower.endswith(".xls") or url_lower.endswith(".xls")) else ".xlsx"
+                    if self.validate_file_magic_bytes(content, f"file{ext}"):
+                        if target_path:
+                            target_path.parent.mkdir(parents=True, exist_ok=True)
+                            target_path.write_bytes(content)
+                        return True, content, "excel"
+                    else:
+                        continue
+                else:
+                    if self.validate_file_magic_bytes(content, target_name):
+                        if target_path:
+                            target_path.parent.mkdir(parents=True, exist_ok=True)
+                            target_path.write_bytes(content)
+                        return True, content, "html" if content.lstrip().startswith((b"<!d", b"<html", b"<?xml")) else "bin"
+            except Exception:
+                continue
+
+        return False, None, "error"
+
     def fetch_codal_reports(self, symbol: str, links_file: Optional[Path] = None, max_reports: int = 50) -> Dict[str, Any]:
         """Fetches and categorizes reports for a given symbol from the Codal API."""
         target_symbol = symbol
@@ -203,4 +372,37 @@ class CodalFetcher:
                 "error": str(e),
                 "categorized": self.categorize_letters([]),
             }
+
+
+def clean_corrupted_codal_reports(base_dir: Path) -> List[Path]:
+    """Scans base_dir for corrupted PDF/Excel files in codal_reports directories and removes them.
+
+    Corrupted files are defined as .pdf, .xlsx, or .xls files that start with HTML tags
+    (e.g., <!doctype, <html, <?xml) or fail magic byte validation (%PDF-, PK\x03\x04, \xd0\xcf\x11\xe0).
+
+    Author: alimohammadzadeh@ut.ac.ir
+    """
+    cleaned: List[Path] = []
+    base_path = Path(base_dir)
+    if not base_path.exists():
+        return cleaned
+
+    # Search for all .pdf, .xlsx, .xls files under codal_reports directories
+    for report_file in base_path.glob("**/codal_reports/*"):
+        if not report_file.is_file():
+            continue
+        lower_name = report_file.name.lower()
+        if not lower_name.endswith((".pdf", ".xlsx", ".xls")):
+            continue
+
+        try:
+            content = report_file.read_bytes()
+            if not CodalFetcher.validate_file_magic_bytes(content, report_file.name):
+                report_file.unlink()
+                cleaned.append(report_file)
+        except Exception:
+            pass
+
+    return cleaned
+
 

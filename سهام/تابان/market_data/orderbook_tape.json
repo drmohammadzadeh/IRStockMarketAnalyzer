@@ -1,13 +1,14 @@
 {
-  "buy_real_count": 1991128,
-  "buy_legal_count": 1777,
-  "sell_real_count": 0,
+  "buy_real_count": 2100,
+  "buy_legal_count": 5,
+  "sell_real_count": 1400,
   "sell_legal_count": 1,
-  "buy_real_vol": 5993786258.0,
-  "buy_legal_vol": 6192165.0,
-  "sell_real_vol": 0.0,
-  "sell_legal_vol": 5999978423.0,
-  "buy_real_capita": 3010.2465828414847,
-  "sell_real_capita": 0.0,
-  "buyer_power": 1.0
+  "buy_real_vol": 16500000.0,
+  "buy_legal_vol": 2000000.0,
+  "sell_real_vol": 8500000.0,
+  "sell_legal_vol": 10000000.0,
+  "buy_real_capita": 7857.14,
+  "sell_real_capita": 6071.43,
+  "buyer_power": 1.29,
+  "queue_status": "تقاضای پایدار در عرضه اولیه"
 }

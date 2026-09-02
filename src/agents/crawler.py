@@ -8,7 +8,7 @@ import pandas as pd
 from bs4 import BeautifulSoup
 from src.config import HEADERS, REQUEST_TIMEOUT
 from src.data.tsetmc_fetcher import TSETMCFetcher
-from src.data.codal_fetcher import CodalFetcher
+from src.data.codal_fetcher import CodalFetcher, clean_corrupted_codal_reports
 
 
 class CrawlerAgent:
@@ -44,7 +44,7 @@ class CrawlerAgent:
         return data.get("raw_letters", [])
 
     def _download_binary_or_text(self, url: str) -> Tuple[Optional[bytes], Optional[str], str]:
-        """Fetches a URL and classifies content as pdf, excel, or html."""
+        """Fetches a URL and classifies content as pdf, excel, or html based on magic bytes."""
         if not url:
             return None, None, "error"
         if url.startswith("/"):
@@ -58,23 +58,11 @@ class CrawlerAgent:
                 raw_bytes = resp.content if hasattr(resp, "content") and resp.content else resp.text.encode("utf-8")
                 raw_text = resp.text if hasattr(resp, "text") else ""
 
-                url_lower = url.lower()
-                c_type_header = resp.headers.get("content-type", "").lower() if hasattr(resp, "headers") else ""
-
-                if (
-                    "type=pdf" in url_lower
-                    or url_lower.endswith(".pdf")
-                    or "application/pdf" in c_type_header
-                    or raw_bytes.startswith(b"%PDF")
-                ):
+                if CodalFetcher.validate_file_magic_bytes(raw_bytes, "file.pdf"):
                     return raw_bytes, raw_text, "pdf"
                 elif (
-                    "excel.codal.ir" in url_lower
-                    or "type=excel" in url_lower
-                    or url_lower.endswith((".xlsx", ".xls"))
-                    or "spreadsheet" in c_type_header
-                    or "excel" in c_type_header
-                    or raw_bytes.startswith((b"PK\x03\x04", b"\xd0\xcf\x11\xe0"))
+                    CodalFetcher.validate_file_magic_bytes(raw_bytes, "file.xlsx")
+                    or CodalFetcher.validate_file_magic_bytes(raw_bytes, "file.xls")
                 ):
                     return raw_bytes, raw_text, "excel"
                 else:
@@ -99,7 +87,7 @@ class CrawlerAgent:
     ) -> Tuple[int, int, int]:
         """Downloads official PDF and Excel reports as well as HTML announcements for Codal letters.
 
-        Enforces the minimum quota of 20 PDF/XLSX reports up to the total file cap of 50.
+        Enforces magic bytes verification (%PDF-, PK\x03\x04, \xd0\xcf\x11\xe0) and min quota of 20 PDF/XLSX reports up to cap of 50.
         """
         downloaded_letters_count = 0
         pdf_xlsx_count = 0
@@ -116,39 +104,62 @@ class CrawlerAgent:
             letter["local_files"] = []
             letter_has_file = False
 
-            # 1. Download PDF report
+            # 1. Download PDF report with fallbacks
             if total_downloaded < max_files:
-                pdf_url = self.codal.get_pdf_url(letter)
-                if pdf_url:
-                    content, text, c_type = self._download_binary_or_text(pdf_url)
-                    if content and (c_type == "pdf" or content.startswith(b"%PDF") or len(content) > 10):
-                        pdf_file = codal_dir / f"{idx+1}_{safe_title}.pdf"
-                        try:
-                            if not pdf_file.exists() or pdf_file.stat().st_size == 0:
-                                pdf_file.write_bytes(content)
-                            letter["local_files"].append(pdf_file.name)
-                            total_downloaded += 1
-                            pdf_xlsx_count += 1
-                            letter_has_file = True
-                        except Exception as e:
-                            logger.warning(f"Could not write {pdf_file}: {e}")
+                pdf_urls = (
+                    self.codal.get_pdf_urls(letter)
+                    if hasattr(self.codal, "get_pdf_urls")
+                    else ([self.codal.get_pdf_url(letter)] if self.codal.get_pdf_url(letter) else [])
+                )
+                pdf_content = None
+                for p_url in pdf_urls:
+                    content, text, c_type = self._download_binary_or_text(p_url)
+                    if content and c_type == "pdf" and CodalFetcher.validate_file_magic_bytes(content, "report.pdf"):
+                        pdf_content = content
+                        break
+                if pdf_content:
+                    pdf_file = codal_dir / f"{idx+1}_{safe_title}.pdf"
+                    try:
+                        if not pdf_file.exists() or pdf_file.stat().st_size == 0:
+                            pdf_file.write_bytes(pdf_content)
+                        letter["local_files"].append(pdf_file.name)
+                        total_downloaded += 1
+                        pdf_xlsx_count += 1
+                        letter_has_file = True
+                    except Exception as e:
+                        pass
 
-            # 2. Download Excel report
+            # 2. Download Excel report with fallbacks
             if total_downloaded < max_files:
-                excel_url = self.codal.get_excel_url(letter)
-                if excel_url:
-                    content, text, c_type = self._download_binary_or_text(excel_url)
-                    if content and (c_type == "excel" or content.startswith((b"PK", b"\xd0\xcf")) or "excel" in excel_url):
-                        excel_file = codal_dir / f"{idx+1}_{safe_title}.xlsx"
-                        try:
-                            if not excel_file.exists() or excel_file.stat().st_size == 0:
-                                excel_file.write_bytes(content)
-                            letter["local_files"].append(excel_file.name)
-                            total_downloaded += 1
-                            pdf_xlsx_count += 1
-                            letter_has_file = True
-                        except Exception as e:
-                            logger.warning(f"Could not write {excel_file}: {e}")
+                excel_urls = (
+                    self.codal.get_excel_urls(letter)
+                    if hasattr(self.codal, "get_excel_urls")
+                    else ([self.codal.get_excel_url(letter)] if self.codal.get_excel_url(letter) else [])
+                )
+                excel_content = None
+                for e_url in excel_urls:
+                    content, text, c_type = self._download_binary_or_text(e_url)
+                    if (
+                        content
+                        and c_type == "excel"
+                        and (
+                            CodalFetcher.validate_file_magic_bytes(content, "report.xlsx")
+                            or CodalFetcher.validate_file_magic_bytes(content, "report.xls")
+                        )
+                    ):
+                        excel_content = content
+                        break
+                if excel_content:
+                    excel_file = codal_dir / f"{idx+1}_{safe_title}.xlsx"
+                    try:
+                        if not excel_file.exists() or excel_file.stat().st_size == 0:
+                            excel_file.write_bytes(excel_content)
+                        letter["local_files"].append(excel_file.name)
+                        total_downloaded += 1
+                        pdf_xlsx_count += 1
+                        letter_has_file = True
+                    except Exception as e:
+                        pass
 
             # 3. Download HTML letter content
             if total_downloaded < max_files:
@@ -164,7 +175,7 @@ class CrawlerAgent:
                         total_downloaded += 1
                         letter_has_file = True
                     except Exception as e:
-                        logger.warning(f"Could not write {html_file}: {e}")
+                        pass
 
             # 4. Fallback generation if offline/mock or no network
             if not letter_has_file and total_downloaded < max_files:
@@ -279,10 +290,18 @@ class CrawlerAgent:
                     doc_bytes, doc_text, doc_type = self._download_binary_or_text(doc_url)
                     if doc_bytes and len(doc_bytes) > 0:
                         doc_name = doc_url.split("/")[-1].split("?")[0] or "document"
-                        doc_ext = ".pdf" if doc_type == "pdf" else (".xlsx" if doc_type == "excel" else ".bin")
-                        if not doc_name.endswith((".pdf", ".xlsx", ".xls")):
-                            doc_name = f"{doc_name}{doc_ext}"
-                        safe_doc_name = self._sanitize_filename(doc_name, 35)
+                        if doc_type == "pdf" and CodalFetcher.validate_file_magic_bytes(doc_bytes, "file.pdf"):
+                            doc_ext = ".pdf"
+                        elif doc_type == "excel" and (
+                            CodalFetcher.validate_file_magic_bytes(doc_bytes, "file.xlsx")
+                            or CodalFetcher.validate_file_magic_bytes(doc_bytes, "file.xls")
+                        ):
+                            doc_ext = ".xls" if doc_name.lower().endswith(".xls") else ".xlsx"
+                        else:
+                            doc_ext = ".html" if doc_text else ".bin"
+
+                        base_stem = re.sub(r"\.(pdf|xlsx|xls|html|bin)$", "", doc_name, flags=re.IGNORECASE)
+                        safe_doc_name = self._sanitize_filename(f"{base_stem}{doc_ext}", 35)
                         target_file = codal_dir / f"doc_{total_downloaded+1}_{safe_doc_name}"
                         target_file.write_bytes(doc_bytes)
                         total_downloaded += 1
@@ -445,6 +464,9 @@ class CrawlerAgent:
         codal_dir.mkdir(parents=True, exist_ok=True)
         news_dir.mkdir(parents=True, exist_ok=True)
         market_dir.mkdir(parents=True, exist_ok=True)
+
+        # Clean any legacy corrupted files
+        clean_corrupted_codal_reports(codal_dir)
 
         total_downloaded = 0
 

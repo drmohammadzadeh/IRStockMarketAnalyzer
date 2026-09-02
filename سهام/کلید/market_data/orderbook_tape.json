@@ -1,13 +1,14 @@
 {
-  "buy_real_count": 977,
-  "buy_legal_count": 2,
-  "sell_real_count": 855,
-  "sell_legal_count": 3,
-  "buy_real_vol": 64868042.0,
-  "buy_legal_vol": 2063530.0,
-  "sell_real_vol": 64887824.0,
-  "sell_legal_vol": 2043748.0,
-  "buy_real_capita": 66395.12998976458,
-  "sell_real_capita": 75892.1918128655,
-  "buyer_power": 0.8748611471583438
+  "buy_real_count": 310,
+  "buy_legal_count": 3,
+  "sell_real_count": 340,
+  "sell_legal_count": 2,
+  "buy_real_vol": 1850000.0,
+  "buy_legal_vol": 600000.0,
+  "sell_real_vol": 1950000.0,
+  "sell_legal_vol": 500000.0,
+  "buy_real_capita": 5967.74,
+  "sell_real_capita": 5735.29,
+  "buyer_power": 1.04,
+  "queue_status": "معاملات تعادلی در محدوده NAV"
 }
