@@ -6,6 +6,7 @@ from src.agents.technical_agent import TechnicalAnalystAgent
 from src.agents.fundamental_agent import FundamentalAnalystAgent
 from src.agents.strategy_agent import StrategyAgent
 from src.agents.inspector import QualityInspector, InspectionResult
+from src.agents.judge import JudgeAgent, JudgementVerdict
 
 __all__ = [
     "CrawlerAgent",
@@ -15,6 +16,8 @@ __all__ = [
     "StrategyAgent",
     "QualityInspector",
     "InspectionResult",
+    "JudgeAgent",
+    "JudgementVerdict",
 ]
 
 

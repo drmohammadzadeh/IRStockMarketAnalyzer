@@ -7,7 +7,8 @@ AGENT_NAMES = [
     "technical_analyst",
     "fundamental_analyst",
     "strategy_recommender",
-    "quality_inspector"
+    "quality_inspector",
+    "judge_agent",
 ]
 
 REQUIRED_SECTIONS = [
