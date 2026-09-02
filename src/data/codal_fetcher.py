@@ -178,9 +178,9 @@ class CodalFetcher:
         if lower_fn.endswith(".pdf"):
             return content.startswith(b"%PDF-")
         elif lower_fn.endswith(".xlsx"):
-            return content.startswith(b"PK\x03\x04")
+            return content.startswith(b"PK\x03\x04") or content.startswith(b"\xd0\xcf\x11\xe0")
         elif lower_fn.endswith(".xls"):
-            return content.startswith(b"\xd0\xcf\x11\xe0")
+            return content.startswith(b"\xd0\xcf\x11\xe0") or content.startswith(b"PK\x03\x04")
         return True
 
     @staticmethod
@@ -387,8 +387,13 @@ def clean_corrupted_codal_reports(base_dir: Path) -> List[Path]:
     if not base_path.exists():
         return cleaned
 
-    # Search for all .pdf, .xlsx, .xls files under codal_reports directories
-    for report_file in base_path.glob("**/codal_reports/*"):
+    # Search for all .pdf, .xlsx, .xls files under base_dir (or inside codal_reports)
+    if base_path.name == "codal_reports":
+        report_files = [f for f in base_path.iterdir() if f.is_file()]
+    else:
+        report_files = list(base_path.glob("**/codal_reports/*"))
+
+    for report_file in report_files:
         if not report_file.is_file():
             continue
         lower_name = report_file.name.lower()

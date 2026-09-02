@@ -1,14 +1,13 @@
 {
-  "buy_real_count": 45,
-  "buy_legal_count": 1,
-  "sell_real_count": 55,
-  "sell_legal_count": 0,
-  "buy_real_vol": 160000.0,
-  "buy_legal_vol": 25000.0,
-  "sell_real_vol": 185000.0,
-  "sell_legal_vol": 0.0,
-  "buy_real_capita": 3555.56,
-  "sell_real_capita": 3363.64,
-  "buyer_power": 1.06,
-  "queue_status": "معاملات باثبات با حجم کنترل‌شده"
+  "buy_real_count": 404,
+  "buy_legal_count": 2,
+  "sell_real_count": 6050,
+  "sell_legal_count": 5,
+  "buy_real_vol": 3461955.0,
+  "buy_legal_vol": 299606.0,
+  "sell_real_vol": 3021140.0,
+  "sell_legal_vol": 740421.0,
+  "buy_real_capita": 8569.195544554455,
+  "sell_real_capita": 499.3619834710744,
+  "buyer_power": 17.160288184114094
 }

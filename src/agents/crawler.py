@@ -60,7 +60,7 @@ class CrawlerAgent:
             url = urllib.parse.urljoin("https://codal.ir/Reports/", url)
 
         try:
-            resp = self.client.get(url)
+            resp = self.client.get(url, timeout=2.0)
             if resp.status_code == 200:
                 raw_bytes = resp.content if hasattr(resp, "content") and resp.content else resp.text.encode("utf-8")
                 raw_text = resp.text if hasattr(resp, "text") else ""
@@ -127,8 +127,7 @@ class CrawlerAgent:
                 if pdf_content:
                     pdf_file = codal_dir / f"{idx+1}_{safe_title}.pdf"
                     try:
-                        if not pdf_file.exists() or pdf_file.stat().st_size == 0:
-                            pdf_file.write_bytes(pdf_content)
+                        pdf_file.write_bytes(pdf_content)
                         letter["local_files"].append(pdf_file.name)
                         total_downloaded += 1
                         pdf_xlsx_count += 1
@@ -159,8 +158,7 @@ class CrawlerAgent:
                 if excel_content:
                     excel_file = codal_dir / f"{idx+1}_{safe_title}.xlsx"
                     try:
-                        if not excel_file.exists() or excel_file.stat().st_size == 0:
-                            excel_file.write_bytes(excel_content)
+                        excel_file.write_bytes(excel_content)
                         letter["local_files"].append(excel_file.name)
                         total_downloaded += 1
                         pdf_xlsx_count += 1
@@ -252,12 +250,12 @@ class CrawlerAgent:
         articles: List[Dict[str, Any]] = []
         extra_pdf_xlsx = 0
 
-        for url in urls:
+        for url in urls[:6]:
             if total_downloaded >= max_files:
                 break
             try:
                 domain = urllib.parse.urlparse(url).netloc
-                resp = self.client.get(url)
+                resp = self.client.get(url, timeout=2.0)
                 if resp.status_code != 200:
                     continue
 
@@ -291,7 +289,7 @@ class CrawlerAgent:
                             child_article_links.append(full_href)
 
                 # Process Level 2 Document Links
-                for doc_url in child_doc_links:
+                for doc_url in child_doc_links[:10]:
                     if total_downloaded >= max_files:
                         break
                     doc_bytes, doc_text, doc_type = self._download_binary_or_text(doc_url)
@@ -316,12 +314,12 @@ class CrawlerAgent:
                             extra_pdf_xlsx += 1
 
                 # Process Level 2 Article Links
-                if child_article_links:
-                    for c_idx, c_url in enumerate(child_article_links):
-                        if total_downloaded >= max_files:
+                if child_article_links and len(articles) < 5:
+                    for c_idx, c_url in enumerate(child_article_links[:3]):
+                        if total_downloaded >= max_files or len(articles) >= 5:
                             break
                         try:
-                            c_resp = self.client.get(c_url)
+                            c_resp = self.client.get(c_url, timeout=2.0)
                             if c_resp.status_code == 200:
                                 c_soup = BeautifulSoup(c_resp.text, "html.parser")
                                 c_title = (

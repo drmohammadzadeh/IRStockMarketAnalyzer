@@ -1,14 +1,13 @@
 {
-  "buy_real_count": 120,
-  "buy_legal_count": 1,
-  "sell_real_count": 140,
-  "sell_legal_count": 1,
-  "buy_real_vol": 620000.0,
-  "buy_legal_vol": 230000.0,
-  "sell_real_vol": 700000.0,
-  "sell_legal_vol": 150000.0,
-  "buy_real_capita": 5166.67,
-  "sell_real_capita": 5000.0,
-  "buyer_power": 1.03,
-  "queue_status": "نوسان آرام در محدوده NAV ملکی"
+  "buy_real_count": 92,
+  "buy_legal_count": 2,
+  "sell_real_count": 13,
+  "sell_legal_count": 0,
+  "buy_real_vol": 232393.0,
+  "buy_legal_vol": 811056.0,
+  "sell_real_vol": 1043449.0,
+  "sell_legal_vol": 0.0,
+  "buy_real_capita": 2526.0108695652175,
+  "sell_real_capita": 80265.30769230769,
+  "buyer_power": 0.03147076790945013
 }

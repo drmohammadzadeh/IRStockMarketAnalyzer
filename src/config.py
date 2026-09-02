@@ -15,5 +15,5 @@ TSETMC_HISTORY_URL = "https://old.tsetmc.com/tsev2/data/InstTradeHistory.aspx?i=
 TSETMC_CLIENT_TYPE_URL = "https://old.tsetmc.com/tsev2/data/clienttype.aspx?i={inscode}"
 CODAL_SEARCH_API = "https://search.codal.ir/api/search/v2/q"
 
-REQUEST_TIMEOUT = 15
+REQUEST_TIMEOUT = 5
 MAX_RETRIES = 3

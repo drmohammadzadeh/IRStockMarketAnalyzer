@@ -53,9 +53,9 @@ class JudgeAgent:
         if lower_fn.endswith(".pdf"):
             return content.startswith(b"%PDF-")
         elif lower_fn.endswith(".xlsx"):
-            return content.startswith(b"PK\x03\x04")
+            return content.startswith(b"PK\x03\x04") or content.startswith(b"\xd0\xcf\x11\xe0")
         elif lower_fn.endswith(".xls"):
-            return content.startswith(b"\xd0\xcf\x11\xe0")
+            return content.startswith(b"\xd0\xcf\x11\xe0") or content.startswith(b"PK\x03\x04")
         elif lower_fn.endswith(".png"):
             return content.startswith(b"\x89PNG")
         return True

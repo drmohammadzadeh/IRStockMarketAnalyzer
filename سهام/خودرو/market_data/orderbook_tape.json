@@ -1,14 +1,13 @@
 {
-  "buy_real_count": 1850,
-  "buy_legal_count": 8,
-  "sell_real_count": 2900,
-  "sell_legal_count": 5,
-  "buy_real_vol": 180000000.0,
-  "buy_legal_vol": 140000000.0,
-  "sell_real_vol": 260000000.0,
-  "sell_legal_vol": 60000000.0,
-  "buy_real_capita": 97297.3,
-  "sell_real_capita": 89655.17,
-  "buyer_power": 1.09,
-  "queue_status": "نوسان منفی همراه با برتری نسبی سرانه خرید"
+  "buy_real_count": 6833,
+  "buy_legal_count": 35,
+  "sell_real_count": 5313,
+  "sell_legal_count": 38,
+  "buy_real_vol": 9327524208.0,
+  "buy_legal_vol": 5104316770.0,
+  "sell_real_vol": 11350923399.0,
+  "sell_legal_vol": 3080917579.0,
+  "buy_real_capita": 1365070.131421045,
+  "sell_real_capita": 2136443.3274985882,
+  "buyer_power": 0.6389451636048357
 }

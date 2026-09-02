@@ -1,14 +1,13 @@
 {
-  "buy_real_count": 160,
-  "buy_legal_count": 2,
-  "sell_real_count": 190,
-  "sell_legal_count": 1,
-  "buy_real_vol": 950000.0,
-  "buy_legal_vol": 300000.0,
-  "sell_real_vol": 1100000.0,
-  "sell_legal_vol": 150000.0,
-  "buy_real_capita": 5937.5,
-  "sell_real_capita": 5789.47,
-  "buyer_power": 1.03,
-  "queue_status": "اصلاح آرام در محدوده حمایتی"
+  "buy_real_count": 1290,
+  "buy_legal_count": 11,
+  "sell_real_count": 602,
+  "sell_legal_count": 8,
+  "buy_real_vol": 41806359.0,
+  "buy_legal_vol": 18962333.0,
+  "sell_real_vol": 45930521.0,
+  "sell_legal_vol": 14838171.0,
+  "buy_real_capita": 32408.03023255814,
+  "sell_real_capita": 76296.54651162791,
+  "buyer_power": 0.4247640517728941
 }
