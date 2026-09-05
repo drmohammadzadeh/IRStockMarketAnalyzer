@@ -1,0 +1,26 @@
+{
+  "symbol": "غمهرا",
+  "fetch_timestamp": "2026-09-05 13:40:40",
+  "sahamyab": {
+    "total_posts": 10,
+    "bullish_count": 2,
+    "bearish_count": 1,
+    "neutral_count": 7,
+    "sample_comments": [
+      "#شفارا. سهمیو خالی میکنن که چندین برابر شده. یا اوضاعش خیلی دواغون باشه . شفارا چقدر رشد کرده مگه",
+      "#ونیرو 🤣🤣🤣🤣",
+      "#دزاگرس بازیگر بیخودی داره",
+      "#ومعادن \nدقیقا همینه",
+      "#عیار بازار خودرو ریزشی شد احتمالا طلا هم ریزشی بشه"
+    ]
+  },
+  "rahavard365": {
+    "total_posts": 0,
+    "bullish_count": 0,
+    "bearish_count": 0,
+    "neutral_count": 0,
+    "sample_comments": []
+  },
+  "composite_sentiment_score": 5.5,
+  "sentiment_verdict": "جو خنثی و بدون جهت‌گیری مشخص در میان فعالان بازار"
+}

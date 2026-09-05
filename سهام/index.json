@@ -341,6 +341,83 @@
     "score": 2
   },
   {
+    "symbol": "غمهرا",
+    "name": "گروه تولیدی مهرام",
+    "logo": "",
+    "current_price": 17300.0,
+    "change_percent": -2.75,
+    "volume": "3.9M",
+    "market_cap": "17,300 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 17150.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 17660.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 18180.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 18020.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 17920.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 18390.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 18060.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 17730.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 17750.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 18230.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 18390.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 17850.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 17790.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17300.0
+      }
+    ],
+    "links": {
+      "tsetmc": "http://www.tsetmc.com/Loader.aspx?ParTree=151311&i=6131290133202745",
+      "rahavard": "https://rahavard365.com/asset/search?q=%D8%BA%D9%85%D9%87%D8%B1%D8%A7",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%BA%D9%85%D9%87%D8%B1%D8%A7",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 1
+  },
+  {
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",
