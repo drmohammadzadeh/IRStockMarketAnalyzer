@@ -9,3 +9,17 @@ build/
 *.egg-info/
 .venv/
 .superpowers/
+
+# ==============================================================================
+# Local-Only Engine & Internal Folders (Excluded from GitHub repository)
+# ==============================================================================
+/.agents/
+/docs/
+/src/
+/tests/
+
+# Local-Only Scripts & Configurations
+/*.py
+/requirements.txt
+run_portfolio.py
+main.py
