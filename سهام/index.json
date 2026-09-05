@@ -1,0 +1,574 @@
+[
+  {
+    "symbol": "بانیان",
+    "name": "صندوق املاک و مستغلات بانیان مسکن",
+    "logo": "",
+    "current_price": 17620.0,
+    "change_percent": -2.97,
+    "volume": "1.0M",
+    "market_cap": "17,620 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 14920.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 15360.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 15820.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 16290.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 16770.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 17270.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 17780.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 18290.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 18740.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 19190.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 19160.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 18590.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 18160.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17620.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/64899658576570461",
+      "rahavard": "https://rahavard365.com/asset/42310",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 2
+  },
+  {
+    "symbol": "تابان",
+    "name": "گروه پتروشیمی تابان فردا",
+    "logo": "",
+    "current_price": 13570.0,
+    "change_percent": 2.96,
+    "volume": "16.7M",
+    "market_cap": "13,570 B",
+    "chart_14d": [
+      {
+        "date": "۹ شهریور",
+        "price": 12800.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 13180.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 13570.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=تابان",
+      "rahavard": "https://rahavard365.com/",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D8%A7%D8%A8%D8%A7%D9%86",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 5
+  },
+  {
+    "symbol": "تلیسه",
+    "name": "دامداری تلیسه نمونه",
+    "logo": "",
+    "current_price": 9630.0,
+    "change_percent": -2.92,
+    "volume": "12.9M",
+    "market_cap": "9,630 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 8810.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 9050.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 9320.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 9250.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 9360.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 9600.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 9430.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 9160.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 9250.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 9520.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 9800.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 10060.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 9920.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 9630.0
+      }
+    ],
+    "links": {
+      "tsetmc": "http://www.tsetmc.com/Loader.aspx?ParTree=151311&i=41781090739318251",
+      "rahavard": "https://rahavard365.com/asset/13444/%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -2
+  },
+  {
+    "symbol": "خودرو",
+    "name": "ایران خودرو",
+    "logo": "",
+    "current_price": 694.0,
+    "change_percent": -2.53,
+    "volume": "12.8B",
+    "market_cap": "209,349 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 581.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 597.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 614.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 620.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 629.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 647.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 665.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 682.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 696.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 715.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 730.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 713.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 712.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 694.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/65883838195688438",
+      "rahavard": "https://rahavard365.com/asset/167",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AE%D9%88%D8%AF%D8%B1%D9%88",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 0
+  },
+  {
+    "symbol": "زهلال",
+    "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
+    "logo": "",
+    "current_price": 49080.0,
+    "change_percent": 0.0,
+    "volume": "3.8M",
+    "market_cap": "49,080 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 47450.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 48240.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 48900.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 48420.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 48500.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 48880.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 47530.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 46950.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 48310.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 49030.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 49310.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 48430.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 49080.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 49080.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=زهلال",
+      "rahavard": "https://rahavard365.com/asset/search?q=زهلال",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%B2%D9%87%D9%84%D8%A7%D9%84&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=1&ReportingType=-1&name=%DA%A9%D8%B4%D8%AA%20%D9%88%20%D8%B5%D9%86%D8%B9%D8%AA%20%D9%87%D9%84%D8%A7%D9%84&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/README.md"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 2
+  },
+  {
+    "symbol": "فسازان",
+    "name": "غلتک‌سازان سپاهان",
+    "logo": "",
+    "current_price": 12090.0,
+    "change_percent": -2.58,
+    "volume": "41.0M",
+    "market_cap": "12,090 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 10560.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 10450.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 10740.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 10530.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 10520.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 10800.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 11110.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 11120.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 11430.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 11770.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 12040.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 12340.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 12410.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 12090.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/History/12874072841236826/20260823",
+      "rahavard": "https://rahavard365.com/asset/5522/%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=0&ReportingType=1000000&name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable&Name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&IndustryGroup=27",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -2
+  },
+  {
+    "symbol": "وتجارت",
+    "name": "بانک تجارت",
+    "logo": "",
+    "current_price": 982.0,
+    "change_percent": -2.87,
+    "volume": "33.6B",
+    "market_cap": "219,895 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 752.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 758.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 780.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 803.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 826.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 850.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 875.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 901.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 928.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 955.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 983.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 1012.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 1011.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 982.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=وتجارت",
+      "rahavard": "https://rahavard365.com/asset/461",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=وتجارت",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -4
+  },
+  {
+    "symbol": "کلید",
+    "name": "صندوق املاک و مستغلات کلید",
+    "logo": "",
+    "current_price": 17072.0,
+    "change_percent": 0.03,
+    "volume": "62.9M",
+    "market_cap": "17,072 B",
+    "chart_14d": [
+      {
+        "date": "۲۴ مرداد",
+        "price": 15713.0
+      },
+      {
+        "date": "۲۵ مرداد",
+        "price": 16009.0
+      },
+      {
+        "date": "۲۶ مرداد",
+        "price": 16257.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 15896.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 15877.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 16075.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 16347.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 16760.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 17147.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 17554.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 17416.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 17142.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 17067.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17072.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/45292762906823004",
+      "rahavard": "https://rahavard365.com/asset/34513",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%DA%A9%D9%84%DB%8C%D8%AF",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/README.md"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -2
+  }
+]
