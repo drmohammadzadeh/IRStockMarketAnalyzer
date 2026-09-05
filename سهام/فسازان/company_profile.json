@@ -1,0 +1,24 @@
+{
+  "symbol": "فسازان",
+  "name": "غلتک‌سازان سپاهان",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "12874072841236826",
+  "sector_name": "فلزات اساسی",
+  "subsector_name": "تولید قطعات سنگین ریخته‌گری و غلتک نورد",
+  "core_business": "تولید انواع غلتک‌های نورد، شمش و قطعات ریخته‌گری سنگین فولادی و چدنی",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

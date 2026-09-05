@@ -1,0 +1,24 @@
+{
+  "symbol": "خودرو",
+  "name": "ایران خودرو",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "65883838195688438",
+  "sector_name": "خودرو و ساخت قطعات",
+  "subsector_name": "طراحی و تولید خودروهای سواری و تجاری",
+  "core_business": "طراحی، تولید و مونتاژ انواع خودروهای سواری، تجاری و قطعات وابسته",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

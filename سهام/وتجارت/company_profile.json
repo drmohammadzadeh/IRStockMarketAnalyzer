@@ -1,0 +1,29 @@
+{
+  "symbol": "وتجارت",
+  "name": "بانک تجارت",
+  "archetype": "BANKING",
+  "inscode": "17943142287881964",
+  "sector_name": "بانکها و موسسات اعتباری",
+  "subsector_name": "بانکداری تجاری و خرد",
+  "core_business": "واسطه‌گری وجوه، جذب سپرده‌ها، اعطای تسهیلات ریالی و ارزی، ارائه خدمات ارزی و کارمزدی",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/B",
+  "applicable_metrics": [
+    "P/B",
+    "P/E",
+    "NII",
+    "LDR",
+    "NPL",
+    "Capital Adequacy"
+  ],
+  "forbidden_terms": [
+    "مواد اولیه",
+    "انبار کالا",
+    "بهای تمام‌شده کالای فروش‌رفته",
+    "خطوط تولید",
+    "ظرفیت تولید",
+    "خط تولید",
+    "انبار کالای ساخته‌شده"
+  ]
+}

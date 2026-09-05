@@ -1,0 +1,24 @@
+{
+  "symbol": "بانیان",
+  "name": "نیان الکترونیک",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "64899658576570461",
+  "sector_name": "دستگاه‌ها و وسایل ارتباطی / برق و الکترونیک",
+  "subsector_name": "تجهیزات تغذیه مخابراتی و انرژی",
+  "core_business": "طراحی و ساخت سیستم‌های تغذیه مخابراتی، مبدل‌های انرژی و ایستگاه‌های شارژ خودرو برقی",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

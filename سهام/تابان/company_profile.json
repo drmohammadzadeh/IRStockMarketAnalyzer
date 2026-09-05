@@ -1,0 +1,25 @@
+{
+  "symbol": "تابان",
+  "name": "گروه پتروشیمی تابان فردا",
+  "archetype": "INVESTMENT_HOLDING",
+  "inscode": "31278144249117651",
+  "sector_name": "سرمایه‌گذاری‌ها",
+  "subsector_name": "هلدینگ‌های پتروشیمی و چندرشته‌ای",
+  "core_business": "سرمایه‌گذاری در سهام شرکت‌های بورسی و غیربورسی حوزه پتروشیمی و انرژی، کسب سود نقدی مجامع (DPS)",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "P/E",
+    "DPS Cover",
+    "Portfolio Value"
+  ],
+  "forbidden_terms": [
+    "خط تولید مستقیم",
+    "مواد اولیه صنعتی",
+    "انبار کالای ساخته‌شده",
+    "مواد اولیه",
+    "خط تولید"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "symbol": "تلیسه",
+  "name": "دامداری تلیسه نمونه",
+  "archetype": "AGRICULTURE_LIVESTOCK",
+  "inscode": "41781090739318251",
+  "sector_name": "زراعت و خدمات وابسته",
+  "subsector_name": "دامپروری و پرورش گله دام سنگین",
+  "core_business": "پرورش گله دام سنگین، تولید شیر خام و گوشت، کشت نباتات علوفه‌ای",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "Gross Margin",
+    "Production Tonnage"
+  ],
+  "forbidden_terms": [
+    "قطعات خودرو",
+    "شمش فولادی",
+    "تسهیلات اعطایی",
+    "سپرده‌های سرمایه‌گذاری"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "symbol": "غمهرا",
+  "name": "گروه تولیدی مهرام",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "6131290133202745",
+  "sector_name": "محصولات غذایی و آشامیدنی بجز قند و شکر",
+  "subsector_name": "تولید سس و چاشنی",
+  "core_business": "تولید انواع سس‌های سرد و گرم، چاشنی‌ها و فرآورده‌های غذایی کنسروی",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

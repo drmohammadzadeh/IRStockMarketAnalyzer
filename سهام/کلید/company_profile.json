@@ -1,0 +1,28 @@
+{
+  "symbol": "کلید",
+  "name": "صندوق سرمایه‌گذاری املاک و مستغلات مدیریت ارزش مسکن",
+  "archetype": "REIT_FUND",
+  "inscode": "45292762906823004",
+  "sector_name": "صندوق سرمایه‌گذاری قابل معامله",
+  "subsector_name": "املاک و مستغلات",
+  "core_business": "سرمایه‌گذاری در املاک و مستغلات، کسب درآمد پایدار از اجاره‌داری و بازده ارزش دارایی‌های ملکی",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "Rental Yield",
+    "NAV Per Unit",
+    "Occupancy Rate"
+  ],
+  "forbidden_terms": [
+    "تولید",
+    "خط تولید",
+    "مواد اولیه",
+    "انبار کالای ساخته‌شده",
+    "کانال‌های توزیع",
+    "قطعی گاز و برق صنعتی",
+    "صادرات",
+    "دلار نیما"
+  ]
+}
