@@ -1,4 +1,4 @@
-# Author: alimohammadzadeh@ut.ac.ir
+# Website: tjb24.ir
 import sys
 from pathlib import Path
 from typing import Optional, Dict, Any, Union
