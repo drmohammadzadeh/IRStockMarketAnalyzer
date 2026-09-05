@@ -17,6 +17,7 @@ build/
 /docs/
 /src/
 /tests/
+/browser/
 
 # Local-Only Scripts & Configurations
 /*.py
