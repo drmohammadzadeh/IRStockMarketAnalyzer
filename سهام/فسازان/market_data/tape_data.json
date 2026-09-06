@@ -1,0 +1,31 @@
+{
+  "symbol": "فسازان",
+  "date": "20260906",
+  "close_price": 12750.0,
+  "last_price": 12760.0,
+  "yesterday_price": 12390.0,
+  "close_change_percent": 2.91,
+  "last_change_percent": 2.99,
+  "volume": 26952884.0,
+  "value": 343776617070.0,
+  "client_type": {
+    "buy_real_count": 508,
+    "buy_legal_count": 8,
+    "sell_real_count": 383,
+    "sell_legal_count": 8,
+    "buy_real_vol": 25429586.0,
+    "buy_legal_vol": 6342357.0,
+    "sell_real_vol": 27443737.0,
+    "sell_legal_vol": 4328206.0,
+    "buy_real_capita": 50058.240157480315,
+    "sell_real_capita": 71654.66579634465,
+    "buyer_power": 0.6986040560115759
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 12750.0,
+    "rahavard_close": 12750.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

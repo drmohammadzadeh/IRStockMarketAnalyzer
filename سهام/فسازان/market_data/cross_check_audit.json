@@ -1,0 +1,28 @@
+{
+  "symbol": "فسازان",
+  "inscode": "12874072841236826",
+  "asset_id": "5522",
+  "live_info": {
+    "date": "20260906",
+    "close_price": 12750.0,
+    "last_price": 12760.0,
+    "yesterday_price": 12390.0,
+    "volume": 26952884.0,
+    "value": 343776617070.0,
+    "trades": 1143.0
+  },
+  "rahavard_prices": {
+    "close_price": 12750.0,
+    "last_price": 12760.0,
+    "close_change_percent": 2.91,
+    "last_change_percent": 2.99,
+    "end_date_time": "2026-09-06T12:29:55.731+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 12750.0,
+    "rahavard_close": 12750.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

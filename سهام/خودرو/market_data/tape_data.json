@@ -1,0 +1,31 @@
+{
+  "symbol": "خودرو",
+  "date": "20260906",
+  "close_price": 722.0,
+  "last_price": 727.0,
+  "yesterday_price": 706.0,
+  "close_change_percent": 2.27,
+  "last_change_percent": 2.97,
+  "volume": 8868320487.0,
+  "value": 6401106573441.0,
+  "client_type": {
+    "buy_real_count": 4336,
+    "buy_legal_count": 35,
+    "sell_real_count": 5378,
+    "sell_legal_count": 37,
+    "buy_real_vol": 8811272342.0,
+    "buy_legal_vol": 1346842513.0,
+    "sell_real_vol": 9082379850.0,
+    "sell_legal_vol": 1075735005.0,
+    "buy_real_capita": 2032120.0050738007,
+    "sell_real_capita": 1688802.5009297137,
+    "buyer_power": 1.2032904996025793
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 722.0,
+    "rahavard_close": 722.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "symbol": "تابان",
+  "inscode": "30714151942396396",
+  "asset_id": "30930",
+  "live_info": {
+    "date": "20260906",
+    "close_price": 14380.0,
+    "last_price": 14380.0,
+    "yesterday_price": 13970.0,
+    "volume": 39077343.0,
+    "value": 561932192340.0,
+    "trades": 8913.0
+  },
+  "rahavard_prices": {
+    "close_price": 14380.0,
+    "last_price": 14380.0,
+    "close_change_percent": 2.93,
+    "last_change_percent": 2.93,
+    "end_date_time": "2026-09-06T12:30:00.243+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 14380.0,
+    "rahavard_close": 14380.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

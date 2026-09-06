@@ -1,0 +1,28 @@
+{
+  "symbol": "خودرو",
+  "inscode": "65883838195688438",
+  "asset_id": "167",
+  "live_info": {
+    "date": "20260906",
+    "close_price": 722.0,
+    "last_price": 727.0,
+    "yesterday_price": 706.0,
+    "volume": 8868320487.0,
+    "value": 6401106573441.0,
+    "trades": 16454.0
+  },
+  "rahavard_prices": {
+    "close_price": 722.0,
+    "last_price": 727.0,
+    "close_change_percent": 2.27,
+    "last_change_percent": 2.97,
+    "end_date_time": "2026-09-06T12:29:59.357+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 722.0,
+    "rahavard_close": 722.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

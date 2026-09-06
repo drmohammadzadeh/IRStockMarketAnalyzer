@@ -1,0 +1,31 @@
+{
+  "symbol": "بانیان",
+  "date": "20260906",
+  "close_price": 16860.0,
+  "last_price": 16910.0,
+  "yesterday_price": 17240.0,
+  "close_change_percent": -2.2,
+  "last_change_percent": -1.91,
+  "volume": 10405652.0,
+  "value": 175444666730.0,
+  "client_type": {
+    "buy_real_count": 363,
+    "buy_legal_count": 2,
+    "sell_real_count": 268,
+    "sell_legal_count": 0,
+    "buy_real_vol": 3488772.0,
+    "buy_legal_vol": 814056.0,
+    "sell_real_vol": 4302828.0,
+    "sell_legal_vol": 0.0,
+    "buy_real_capita": 9610.94214876033,
+    "sell_real_capita": 16055.328358208955,
+    "buyer_power": 0.598613864153475
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 16860.0,
+    "rahavard_close": 16860.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

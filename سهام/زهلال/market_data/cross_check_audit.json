@@ -1,0 +1,28 @@
+{
+  "symbol": "زهلال",
+  "inscode": "48636523343139021",
+  "asset_id": "24484",
+  "live_info": {
+    "date": "20260906",
+    "close_price": 51940.0,
+    "last_price": 52060.0,
+    "yesterday_price": 50550.0,
+    "volume": 2870663.0,
+    "value": 149112728000.0,
+    "trades": 4750.0
+  },
+  "rahavard_prices": {
+    "close_price": 51940.0,
+    "last_price": 52060.0,
+    "close_change_percent": 2.75,
+    "last_change_percent": 2.99,
+    "end_date_time": "2026-09-06T12:29:58.748+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 51940.0,
+    "rahavard_close": 51940.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

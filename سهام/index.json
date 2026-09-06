@@ -3,15 +3,11 @@
     "symbol": "بانیان",
     "name": "نيان باتري خاوران",
     "logo": "",
-    "current_price": 17240.0,
-    "change_percent": -2.16,
-    "volume": "4.3M",
-    "market_cap": "17,240 B",
+    "current_price": 16860.0,
+    "change_percent": -2.2,
+    "volume": "10.4M",
+    "market_cap": "16,860 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 15360.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 15820.0
@@ -63,6 +59,10 @@
       {
         "date": "۱۴ شهریور",
         "price": 17240.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 16860.0
       }
     ],
     "links": {
@@ -74,18 +74,18 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 2,
+    "score": -1,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 4.1,
+      "score": 3.7,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.9,
+        "weighted": 3.6,
         "rules": 4.0,
-        "horizon": 4.5
+        "horizon": 3.4
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -94,10 +94,10 @@
     "symbol": "تابان",
     "name": "گروه پتروشیمی تابان فردا",
     "logo": "",
-    "current_price": 13970.0,
-    "change_percent": 2.95,
-    "volume": "26.7M",
-    "market_cap": "13,970 B",
+    "current_price": 14380.0,
+    "change_percent": 2.93,
+    "volume": "39.1M",
+    "market_cap": "14,380 B",
     "chart_14d": [
       {
         "date": "۹ شهریور",
@@ -114,10 +114,14 @@
       {
         "date": "۱۴ شهریور",
         "price": 13970.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 14380.0
       }
     ],
     "links": {
-      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=تابان",
+      "tsetmc": "https://www.tsetmc.com/instInfo/30714151942396396",
       "rahavard": "https://rahavard365.com/",
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D8%A7%D8%A8%D8%A7%D9%86",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/technical_report.md",
@@ -125,18 +129,18 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 5,
+    "score": 7,
     "recommendation": {
       "signal": "STRONG_BUY",
       "signal_label": "خرید قاطع",
-      "score": 4.8,
+      "score": 4.9,
       "score_max": 5.0,
       "stars": "★★★★★",
       "badge": "🚀 خرید قاطع (Strong Buy)",
       "scores": {
         "weighted": 4.6,
         "rules": 5.0,
-        "horizon": 4.7
+        "horizon": 5.0
       },
       "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
     }
@@ -145,15 +149,11 @@
     "symbol": "تلیسه",
     "name": "دامداری تلیسه نمونه",
     "logo": "",
-    "current_price": 9670.0,
-    "change_percent": 0.42,
-    "volume": "29.3M",
-    "market_cap": "9,670 B",
+    "current_price": 9470.0,
+    "change_percent": -2.07,
+    "volume": "31.5M",
+    "market_cap": "9,470 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 9050.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 9320.0
@@ -205,29 +205,33 @@
       {
         "date": "۱۴ شهریور",
         "price": 9670.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 9470.0
       }
     ],
     "links": {
       "tsetmc": "http://www.tsetmc.com/Loader.aspx?ParTree=151311&i=41781090739318251",
-      "rahavard": "https://rahavard365.com/asset/13444/%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
+      "rahavard": "https://rahavard365.com/asset/1543",
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/fundamental_report.md",
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2,
+    "score": 0,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.8,
+      "score": 3.9,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.8,
+        "weighted": 3.9,
         "rules": 4.0,
-        "horizon": 3.6
+        "horizon": 3.7
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -236,15 +240,11 @@
     "symbol": "خودرو",
     "name": "ایران خودرو",
     "logo": "",
-    "current_price": 706.0,
-    "change_percent": 1.73,
-    "volume": "10.2B",
-    "market_cap": "212,969 B",
+    "current_price": 722.0,
+    "change_percent": 2.27,
+    "volume": "8.9B",
+    "market_cap": "217,795 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 597.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 614.0
@@ -296,6 +296,10 @@
       {
         "date": "۱۴ شهریور",
         "price": 706.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 722.0
       }
     ],
     "links": {
@@ -311,14 +315,14 @@
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 4.1,
+      "score": 4.0,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 4.3,
+        "weighted": 4.2,
         "rules": 4.0,
-        "horizon": 3.9
+        "horizon": 3.8
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -327,15 +331,11 @@
     "symbol": "زهلال",
     "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
     "logo": "",
-    "current_price": 50550.0,
-    "change_percent": 3.0,
-    "volume": "3.4M",
-    "market_cap": "50,550 B",
+    "current_price": 51940.0,
+    "change_percent": 2.75,
+    "volume": "2.9M",
+    "market_cap": "51,940 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 48240.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 48900.0
@@ -387,11 +387,15 @@
       {
         "date": "۱۴ شهریور",
         "price": 50550.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 51940.0
       }
     ],
     "links": {
-      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=زهلال",
-      "rahavard": "https://rahavard365.com/asset/search?q=زهلال",
+      "tsetmc": "https://www.tsetmc.com/instInfo/48636523343139021",
+      "rahavard": "https://rahavard365.com/asset/24484",
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%B2%D9%87%D9%84%D8%A7%D9%84&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=1&ReportingType=-1&name=%DA%A9%D8%B4%D8%AA%20%D9%88%20%D8%B5%D9%86%D8%B9%D8%AA%20%D9%87%D9%84%D8%A7%D9%84&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/fundamental_report.md",
@@ -418,15 +422,11 @@
     "symbol": "غمهرا",
     "name": "گروه تولیدی مهرام",
     "logo": "",
-    "current_price": 17460.0,
-    "change_percent": 0.92,
-    "volume": "2.5M",
-    "market_cap": "17,460 B",
+    "current_price": 17710.0,
+    "change_percent": 1.43,
+    "volume": "5.5M",
+    "market_cap": "17,710 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 17660.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 18180.0
@@ -478,6 +478,10 @@
       {
         "date": "۱۴ شهریور",
         "price": 17460.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 17710.0
       }
     ],
     "links": {
@@ -489,18 +493,18 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 3,
+    "score": 1,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.8,
+      "score": 4.0,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.8,
+        "weighted": 4.1,
         "rules": 4.0,
-        "horizon": 3.5
+        "horizon": 3.8
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -509,15 +513,11 @@
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",
-    "current_price": 12390.0,
-    "change_percent": 2.48,
-    "volume": "31.8M",
-    "market_cap": "12,390 B",
+    "current_price": 12750.0,
+    "change_percent": 2.91,
+    "volume": "27.0M",
+    "market_cap": "12,750 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 10450.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 10740.0
@@ -569,6 +569,10 @@
       {
         "date": "۱۴ شهریور",
         "price": 12390.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 12750.0
       }
     ],
     "links": {
@@ -580,18 +584,18 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2,
+    "score": -4,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.7,
+      "score": 3.6,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.7,
+        "weighted": 3.6,
         "rules": 4.0,
-        "horizon": 3.5
+        "horizon": 3.3
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -600,15 +604,11 @@
     "symbol": "وتجارت",
     "name": "بانک تجارت",
     "logo": "",
-    "current_price": 983.0,
-    "change_percent": 0.1,
-    "volume": "22.9B",
-    "market_cap": "220,119 B",
+    "current_price": 958.0,
+    "change_percent": -2.54,
+    "volume": "20.5B",
+    "market_cap": "214,521 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 758.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 780.0
@@ -660,10 +660,14 @@
       {
         "date": "۱۴ شهریور",
         "price": 983.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 958.0
       }
     ],
     "links": {
-      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=وتجارت",
+      "tsetmc": "https://www.tsetmc.com/instInfo/63917421733088077",
       "rahavard": "https://rahavard365.com/asset/461",
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=وتجارت",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/technical_report.md",
@@ -691,15 +695,11 @@
     "symbol": "کلید",
     "name": "صندوق املاک و مستغلات کلید",
     "logo": "",
-    "current_price": 17151.0,
-    "change_percent": 0.46,
-    "volume": "88.9M",
-    "market_cap": "17,151 B",
+    "current_price": 17494.0,
+    "change_percent": 2.0,
+    "volume": "80.9M",
+    "market_cap": "12,980,294 B",
     "chart_14d": [
-      {
-        "date": "۲۵ مرداد",
-        "price": 16009.0
-      },
       {
         "date": "۲۶ مرداد",
         "price": 16257.0
@@ -751,6 +751,10 @@
       {
         "date": "۱۴ شهریور",
         "price": 17151.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 17494.0
       }
     ],
     "links": {
@@ -766,14 +770,14 @@
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.9,
+      "score": 3.8,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 4.0,
+        "weighted": 3.8,
         "rules": 4.0,
-        "horizon": 3.7
+        "horizon": 3.5
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
