@@ -1,622 +1,93 @@
 [
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1593686,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "شفاف سازی در خصوص شایعه، خبر یا گزارش منتشر شده",
-    "LetterCode": "ن-۲۱",
-    "SentDateTime": "۱۴۰۵/۰۶/۱۱ ۰۸:۴۰:۳۰",
-    "PublishDateTime": "۱۴۰۵/۰۶/۱۱ ۰۸:۴۰:۳۰",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=BJCQpZlHdYOuATRArdxgrQ%3d%3d&rt=0&let=128&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=BJCQpZlHdYOuATRArdxgrQ%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=BJCQpZlHdYOuATRArdxgrQ%3d%3d&ft=1005&let=128",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "شفاف سازی در خصوص شایعه، خبر یا گزارش منتشر شده",
+    "publish_date": "۱۴۰۵/۰۶/۱۱ ۰۸:۴۰:۳۰",
+    "sent_date": "۱۴۰۵/۰۶/۱۱ ۰۸:۴۰:۳۰",
+    "tracing_no": 1593686,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=BJCQpZlHdYOuATRArdxgrQ%3d%3d&rt=0&let=128&ct=0&ft=-1",
     "local_files": [
-      "1_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
-    ],
-    "local_file": "1_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
+      "1_۱۴۰۵-۰۶-۱۱_پيوست.pdf",
+      "2_۱۴۰۵-۰۶-۱۱_نامه.pdf",
+      "3_۱۴۰۵-۰۶-۱۱_پيوست_1.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1592998,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۴۲",
-    "SentDateTime": "۱۴۰۵/۰۶/۱۰ ۰۷:۵۹:۵۷",
-    "PublishDateTime": "۱۴۰۵/۰۶/۱۰ ۰۷:۵۹:۵۷",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=yKSinFmytlDBqNuWELdnZQ%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=yKSinFmytlDBqNuWELdnZQ%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
+    "publish_date": "۱۴۰۵/۰۶/۱۰ ۰۷:۵۹:۵۷",
+    "sent_date": "۱۴۰۵/۰۶/۱۰ ۰۷:۵۹:۵۷",
+    "tracing_no": 1592998,
+    "letter_serial": null,
+    "url": "/Reports/Attachment.aspx?LetterSerial=yKSinFmytlDBqNuWELdnZQ%3d%3d",
     "local_files": [
-      "2_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
-    ],
-    "local_file": "2_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
+      "4_۱۴۰۵-۰۶-۱۰_آگهي_ثبت_تصميمات_مجمع.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1592996,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۵/۱۲/۲۹",
-    "LetterCode": "ن-۴۲",
-    "SentDateTime": "۱۴۰۵/۰۶/۱۰ ۰۷:۴۵:۱۳",
-    "PublishDateTime": "۱۴۰۵/۰۶/۱۰ ۰۷:۴۵:۱۳",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=UTMggKBUGxikrJlL4UUZYg%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=UTMggKBUGxikrJlL4UUZYg%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۵/۱۲/۲۹",
+    "publish_date": "۱۴۰۵/۰۶/۱۰ ۰۷:۴۵:۱۳",
+    "sent_date": "۱۴۰۵/۰۶/۱۰ ۰۷:۴۵:۱۳",
+    "tracing_no": 1592996,
+    "letter_serial": null,
+    "url": "/Reports/Attachment.aspx?LetterSerial=UTMggKBUGxikrJlL4UUZYg%3d%3d",
     "local_files": [
-      "3_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
-    ],
-    "local_file": "3_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
+      "5_۱۴۰۵-۰۶-۱۰_آگهي_ثبت.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1590583,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۵/۳۱",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۶/۰۵ ۰۹:۱۴:۴۷",
-    "PublishDateTime": "۱۴۰۵/۰۶/۰۵ ۰۹:۱۴:۴۷",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=6yE6Xe6waHzrNFQFoo4jIA%3d%3d&rt=0&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=6yE6Xe6waHzrNFQFoo4jIA%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/6yE6Xe6waHzrNFQFoo4jIA%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "افشای اطلاعات بااهمیت - (سایر اطلاعات بااهمیت - ابطال مصوبه ۴۷۳ شورای رقابت- گروه ب) منتهی به سال مالی ۱۴۰۶/۱۲/۲۹",
+    "publish_date": "۱۴۰۵/۰۵/۳۱ ۰۸:۱۴:۰۲",
+    "sent_date": "۱۴۰۵/۰۵/۳۱ ۰۸:۱۴:۰۲",
+    "tracing_no": 1587551,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=do3fKgz8xfbakQQQaQQQXp7QenPw%3d%3d&rt=0&let=11&ct=0&ft=-1",
     "local_files": [
-      "4_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "4_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+      "6_۱۴۰۵-۰۵-۳۱_مدارک_مثبته_در_خصوص_رويداد_مورد_نظر.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1589109,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "معرفی /تغییر در ترکیب اعضای هیئت مدیره/مدیر عامل",
-    "LetterCode": "ن-۴۵",
-    "SentDateTime": "۱۴۰۵/۰۶/۰۲ ۱۰:۱۱:۴۲",
-    "PublishDateTime": "۱۴۰۵/۰۶/۰۲ ۱۰:۱۱:۴۲",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=6LaOOObOOOdHUAud9IQQQaQQQV30HPrcbA%3d%3d&rt=0&let=19&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=6LaOOObOOOdHUAud9IQQQaQQQV30HPrcbA%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=6LaOOObOOOdHUAud9IQQQaQQQV30HPrcbA%3d%3d&ft=1005&let=19",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "شفاف سازی در خصوص شایعه، خبر یا گزارش منتشر شده",
+    "publish_date": "۱۴۰۵/۰۵/۲۷ ۰۷:۴۲:۰۰",
+    "sent_date": "۱۴۰۵/۰۵/۲۷ ۰۷:۴۲:۰۰",
+    "tracing_no": 1585821,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=N5TYTtAJDNbXZUJ0D0RU1Q%3d%3d&rt=0&let=128&ct=0&ft=-1",
     "local_files": [
-      "5_معرفی_تغییر_در_ترکیب_اعضای_هیئت_مدی.html"
-    ],
-    "local_file": "5_معرفی_تغییر_در_ترکیب_اعضای_هیئت_مدی.html"
+      "7_۱۴۰۵-۰۵-۲۷_پيوست_1.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1587551,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "افشای اطلاعات بااهمیت - (سایر اطلاعات بااهمیت - ابطال مصوبه ۴۷۳ شورای رقابت- گروه ب) منتهی به سال مالی ۱۴۰۶/۱۲/۲۹",
-    "LetterCode": "ن-۲۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۳۱ ۰۸:۱۴:۰۲",
-    "PublishDateTime": "۱۴۰۵/۰۵/۳۱ ۰۸:۱۴:۰۲",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=do3fKgz8xfbakQQQaQQQXp7QenPw%3d%3d&rt=0&let=11&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=do3fKgz8xfbakQQQaQQQXp7QenPw%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=do3fKgz8xfbakQQQaQQQXp7QenPw%3d%3d&ft=1005&let=11",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "توضیحات در خصوص اطلاعات و صورت های مالی منتشر شده",
+    "publish_date": "۱۴۰۵/۰۵/۱۱ ۱۲:۰۷:۵۰",
+    "sent_date": "۱۴۰۵/۰۵/۱۱ ۱۲:۰۷:۵۰",
+    "tracing_no": 1580241,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=mHoQQQaQQQvyekG72LxOOObOOOHazSOEAw%3d%3d&rt=0&let=174&ct=0&ft=-1",
     "local_files": [
-      "6_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
-    ],
-    "local_file": "6_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
+      "8_۱۴۰۵-۰۵-۱۱_نامه.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1585821,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "شفاف سازی در خصوص شایعه، خبر یا گزارش منتشر شده",
-    "LetterCode": "ن-۲۱",
-    "SentDateTime": "۱۴۰۵/۰۵/۲۷ ۰۷:۴۲:۰۰",
-    "PublishDateTime": "۱۴۰۵/۰۵/۲۷ ۰۷:۴۲:۰۰",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=N5TYTtAJDNbXZUJ0D0RU1Q%3d%3d&rt=0&let=128&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=N5TYTtAJDNbXZUJ0D0RU1Q%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=N5TYTtAJDNbXZUJ0D0RU1Q%3d%3d&ft=1005&let=128",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده) (شرکت گسترش صنعت رانه)",
+    "publish_date": "۱۴۰۵/۰۵/۰۳ ۱۹:۵۹:۱۵",
+    "sent_date": "۱۴۰۵/۰۵/۰۳ ۱۹:۵۹:۱۵",
+    "tracing_no": 1570325,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=r6sdlFG8VQQQaQQQXS8vkDKe4XTA%3d%3d&rt=0&let=6&ct=0&ft=-1",
     "local_files": [
-      "7_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
-    ],
-    "local_file": "7_شفاف_سازی_در_خصوص_شایعه،_خبر_یا_گزا.html"
+      "9_۱۴۰۵-۰۵-۰۳_يادداشت‌هاي_همراه_صورت‌هاي_مالي.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1580241,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "توضیحات در خصوص اطلاعات و صورت های مالی منتشر شده",
-    "LetterCode": "ن-۲۶",
-    "SentDateTime": "۱۴۰۵/۰۵/۱۱ ۱۲:۰۷:۵۰",
-    "PublishDateTime": "۱۴۰۵/۰۵/۱۱ ۱۲:۰۷:۵۰",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=mHoQQQaQQQvyekG72LxOOObOOOHazSOEAw%3d%3d&rt=0&let=174&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=mHoQQQaQQQvyekG72LxOOObOOOHazSOEAw%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=mHoQQQaQQQvyekG72LxOOObOOOHazSOEAw%3d%3d&ft=1005&let=174",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "تصمیمات مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
+    "publish_date": "۱۴۰۵/۰۵/۰۳ ۰۸:۴۰:۴۱",
+    "sent_date": "۱۴۰۵/۰۵/۰۳ ۰۸:۴۰:۴۱",
+    "tracing_no": 1574464,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=QhIB7ab1y83DCF3sIulmzQ%3d%3d&rt=0&let=20&ct=0&ft=-1",
     "local_files": [
-      "8_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
-    ],
-    "local_file": "8_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1577485,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۴/۳۱",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۰۶ ۱۶:۲۹:۳۶",
-    "PublishDateTime": "۱۴۰۵/۰۵/۰۶ ۱۶:۲۹:۳۶",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=q2RGkopzAHD3WUoXCzyW7w%3d%3d&rt=0&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=q2RGkopzAHD3WUoXCzyW7w%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/q2RGkopzAHD3WUoXCzyW7w%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "9_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "9_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1570325,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده) (شرکت گسترش صنعت رانه)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۰۳ ۱۹:۵۹:۱۵",
-    "PublishDateTime": "۱۴۰۵/۰۵/۰۳ ۱۹:۵۹:۱۵",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=r6sdlFG8VQQQaQQQXS8vkDKe4XTA%3d%3d&rt=0&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=r6sdlFG8VQQQaQQQXS8vkDKe4XTA%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=r6sdlFG8VQQQaQQQXS8vkDKe4XTA%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/r6sdlFG8VQQQaQQQXS8vkDKe4XTA%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "10_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-    ],
-    "local_file": "10_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1574464,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "تصمیمات مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۵۲",
-    "SentDateTime": "۱۴۰۵/۰۵/۰۳ ۰۸:۴۰:۴۱",
-    "PublishDateTime": "۱۴۰۵/۰۵/۰۳ ۰۸:۴۰:۴۱",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=QhIB7ab1y83DCF3sIulmzQ%3d%3d&rt=0&let=20&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=QhIB7ab1y83DCF3sIulmzQ%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=QhIB7ab1y83DCF3sIulmzQ%3d%3d&ft=1005&let=20",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "11_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-    ],
-    "local_file": "11_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1564940,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۳ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱ (حسابرسی نشده)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۱۸:۲۹:۳۷",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۱۸:۲۹:۳۷",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=8gRdvyoHWMqyg9D7RmOtzw%3d%3d&rt=0&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=8gRdvyoHWMqyg9D7RmOtzw%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=8gRdvyoHWMqyg9D7RmOtzw%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/8gRdvyoHWMqyg9D7RmOtzw%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
-    ],
-    "local_file": "12_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1574073,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "تصمیمات مجمع عمومی فوق العاده دوره ۱۲ ماهه منتهی به  ۱۴۰۵/۱۲/۲۹",
-    "LetterCode": "ن-۵۷",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۱۷:۴۸:۴۱",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۱۷:۴۸:۴۱",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=Zaf6uaO1kPAQR2XNGpo8Uw%3d%3d&rt=0&let=22&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=Zaf6uaO1kPAQR2XNGpo8Uw%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=Zaf6uaO1kPAQR2XNGpo8Uw%3d%3d&ft=1005&let=22",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "13_تصمیمات_مجمع_عمومی_فوق_العاده_دوره_.html"
-    ],
-    "local_file": "13_تصمیمات_مجمع_عمومی_فوق_العاده_دوره_.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1569061,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "تصمیمات مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۵۲",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۱۷:۴۷:۵۸",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۱۷:۴۷:۵۸",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=lqZlkzYKe2QgBIcTXKzb7Q%3d%3d&rt=0&let=20&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=lqZlkzYKe2QgBIcTXKzb7Q%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=lqZlkzYKe2QgBIcTXKzb7Q%3d%3d&ft=1005&let=20",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "14_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-    ],
-    "local_file": "14_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1573705,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱(اصلاحیه)",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۱۴:۵۶:۱۴",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۱۴:۵۶:۱۴",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=bN94QQQaQQQv2OOObOOOkQ7IZqtyBQQQaQQQueWQ%3d%3d&rt=0&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=bN94QQQaQQQv2OOObOOOkQ7IZqtyBQQQaQQQueWQ%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/bN94QQQaQQQv2OOObOOOkQ7IZqtyBQQQaQQQueWQ%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "15_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "15_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1563998,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی تلفیقی سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۰۷:۴۰:۴۲",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۰۷:۴۰:۴۲",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=ULBGQGa0e0t8YMM0tYtxdg%3d%3d&rt=0&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=ULBGQGa0e0t8YMM0tYtxdg%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=ULBGQGa0e0t8YMM0tYtxdg%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/ULBGQGa0e0t8YMM0tYtxdg%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "16_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.html"
-    ],
-    "local_file": "16_صورت‌های_مالی_تلفیقی_سال_مالی_منتهی.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1573022,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت هیئت مدیره دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۱۱",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۰۵:۵۹:۰۵",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۰۵:۵۹:۰۵",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=HuJldWYU6bC4YAxgWhJwLA%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=HuJldWYU6bC4YAxgWhJwLA%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "17_گزارش_فعالیت_هیئت_مدیره_دوره_۱۲_ماه.html"
-    ],
-    "local_file": "17_گزارش_فعالیت_هیئت_مدیره_دوره_۱۲_ماه.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1570861,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده) (شرکت شرکت طراحی مهندسی قطعات ایران خودرو (سهامی خاص))",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۰ ۱۸:۳۲:۳۷",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۰ ۱۸:۳۲:۳۷",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=A9DMQRwt2sXwMATOOObOOO69iFQQ%3d%3d&rt=5&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=A9DMQRwt2sXwMATOOObOOO69iFQQ%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=A9DMQRwt2sXwMATOOObOOO69iFQQ%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/A9DMQRwt2sXwMATOOObOOO69iFQQ%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "18_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-    ],
-    "local_file": "18_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1571039,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده) (شرکت سازه و ساختمان ایرانیان-در حال تصفیه)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۲۹ ۱۸:۳۰:۲۰",
-    "PublishDateTime": "۱۴۰۵/۰۴/۲۹ ۱۸:۳۰:۲۰",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=NALU9zgiTAdKf6vYt0Mnrw%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=NALU9zgiTAdKf6vYt0Mnrw%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "19_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-    ],
-    "local_file": "19_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1571131,
-    "Symbol": "خودرو",
-    "CompanyName": "ایران خودرو",
-    "UnderSupervision": 0,
-    "Title": "توضیحات در خصوص اطلاعات و صورت های مالی منتشر شده",
-    "LetterCode": "ن-۲۶",
-    "SentDateTime": "۱۴۰۵/۰۴/۲۹ ۰۹:۲۵:۳۳",
-    "PublishDateTime": "۱۴۰۵/۰۴/۲۹ ۰۹:۲۵:۳۳",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=fmxDOOObOOOzF4u626aDFNVQnyIA%3d%3d&rt=0&let=174&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=fmxDOOObOOOzF4u626aDFNVQnyIA%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=fmxDOOObOOOzF4u626aDFNVQnyIA%3d%3d&ft=1005&let=174",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "20_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
-    ],
-    "local_file": "20_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
+      "10_۱۴۰۵-۰۵-۰۳_صورتجلسه_مجمع.pdf",
+      "11_۱۴۰۵-۰۵-۰۳_صورت_خلاصه_مذاکرات_مجمع.pdf"
+    ]
   }
 ]

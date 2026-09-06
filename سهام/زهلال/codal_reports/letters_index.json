@@ -1,627 +1,82 @@
 [
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1591549,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۵/۳۱",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۶/۰۵ ۱۲:۰۰:۳۶",
-    "PublishDateTime": "۱۴۰۵/۰۶/۰۵ ۱۲:۰۰:۳۶",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=8v0YZqZOOObOOOeNL1HZQxR4mnlQ%3d%3d&rt=8&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=8v0YZqZOOObOOOeNL1HZQxR4mnlQ%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/8v0YZqZOOObOOOeNL1HZQxR4mnlQ%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "افشای اطلاعات بااهمیت - (سایر اطلاعات بااهمیت - فروش پسته تولیدی- گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹",
+    "publish_date": "۱۴۰۵/۰۶/۰۲ ۱۴:۱۴:۰۲",
+    "sent_date": "۱۴۰۵/۰۶/۰۲ ۱۴:۱۴:۰۲",
+    "tracing_no": 1589396,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=67oPhKOOObOOOOOObOOOL6ZFh3pjI95GFA%3d%3d&rt=8&let=11&ct=0&ft=-1",
     "local_files": [
-      "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
-      "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "1_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf"
+      "1_۱۴۰۵-۰۶-۰۲_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاعات.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1591491,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۴/۳۱(اصلاحیه)",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۶/۰۵ ۱۱:۱۹:۳۱",
-    "PublishDateTime": "۱۴۰۵/۰۶/۰۵ ۱۱:۱۹:۳۱",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=aMJ2OOObOOO0h1pqRow8d6bkPeWw%3d%3d&rt=8&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=aMJ2OOObOOO0h1pqRow8d6bkPeWw%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/aMJ2OOObOOO0h1pqRow8d6bkPeWw%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹(اصلاحیه)",
+    "publish_date": "۱۴۰۵/۰۵/۳۱ ۱۳:۴۵:۱۱",
+    "sent_date": "۱۴۰۵/۰۵/۳۱ ۱۳:۴۵:۱۱",
+    "tracing_no": 1587869,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=2ivNJnbBwUaVtp3UFeFHug%3d%3d&rt=8&let=11&ct=0&ft=-1",
     "local_files": [
-      "2_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
-      "2_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "2_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf"
+      "2_۱۴۰۵-۰۵-۳۱_فراخوان_مرتبط_با_آن_شامل_آگهي_روزنامه.pdf",
+      "3_۱۴۰۵-۰۵-۳۱_مصوبات_برگزاري.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1589396,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "افشای اطلاعات بااهمیت - (سایر اطلاعات بااهمیت - فروش پسته تولیدی- گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹",
-    "LetterCode": "ن-۲۰",
-    "SentDateTime": "۱۴۰۵/۰۶/۰۲ ۱۴:۱۴:۰۲",
-    "PublishDateTime": "۱۴۰۵/۰۶/۰۲ ۱۴:۱۴:۰۲",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=67oPhKOOObOOOOOObOOOL6ZFh3pjI95GFA%3d%3d&rt=8&let=11&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=67oPhKOOObOOOOOObOOOL6ZFh3pjI95GFA%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=67oPhKOOObOOOOOObOOOL6ZFh3pjI95GFA%3d%3d&ft=1005&let=11",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹(اصلاحیه)",
+    "publish_date": "۱۴۰۵/۰۵/۳۱ ۱۲:۳۸:۱۰",
+    "sent_date": "۱۴۰۵/۰۵/۳۱ ۱۲:۳۸:۱۰",
+    "tracing_no": 1587763,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=8iBEY1ah0SeRaMzmWVlw2Q%3d%3d&rt=8&let=11&ct=0&ft=-1",
     "local_files": [
-      "3_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
-    ],
-    "local_file": "3_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
+      "4_۱۴۰۵-۰۵-۳۱_فراخوان_مرتبط_با_آن_شامل_آگهي_روزنامه.pdf",
+      "5_۱۴۰۵-۰۵-۳۱_مصوبات_برگزاري.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1587869,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۲۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۳۱ ۱۳:۴۵:۱۱",
-    "PublishDateTime": "۱۴۰۵/۰۵/۳۱ ۱۳:۴۵:۱۱",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=2ivNJnbBwUaVtp3UFeFHug%3d%3d&rt=8&let=11&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=2ivNJnbBwUaVtp3UFeFHug%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=2ivNJnbBwUaVtp3UFeFHug%3d%3d&ft=1005&let=11",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹",
+    "publish_date": "۱۴۰۵/۰۵/۳۱ ۱۱:۰۲:۰۸",
+    "sent_date": "۱۴۰۵/۰۵/۳۱ ۱۱:۰۲:۰۸",
+    "tracing_no": 1587572,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=Sta5sZnwZV3kVSC9DbQkQg%3d%3d&rt=8&let=11&ct=0&ft=-1",
     "local_files": [
-      "4_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
-    ],
-    "local_file": "4_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
+      "6_۱۴۰۵-۰۵-۳۱_مصوبات_برگزاري.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1587763,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۲۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۳۱ ۱۲:۳۸:۱۰",
-    "PublishDateTime": "۱۴۰۵/۰۵/۳۱ ۱۲:۳۸:۱۰",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=8iBEY1ah0SeRaMzmWVlw2Q%3d%3d&rt=8&let=11&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=8iBEY1ah0SeRaMzmWVlw2Q%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=8iBEY1ah0SeRaMzmWVlw2Q%3d%3d&ft=1005&let=11",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
+    "publish_date": "۱۴۰۵/۰۵/۲۶ ۰۹:۵۸:۳۶",
+    "sent_date": "۱۴۰۵/۰۵/۲۶ ۰۹:۵۸:۳۶",
+    "tracing_no": 1585367,
+    "letter_serial": null,
+    "url": "/Reports/Attachment.aspx?LetterSerial=DQQQaQQQGDSUQuOOObOOO5wEotP11t6CiA%3d%3d",
     "local_files": [
-      "5_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
-    ],
-    "local_file": "5_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
+      "7_۱۴۰۵-۰۵-۲۶_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_دو.pdf",
+      "8_۱۴۰۵-۰۵-۲۶_آگهي_ثبت_تصميمات_مجمع_عادي_ساليانه.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1587572,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "افشای اطلاعات بااهمیت - (برگزاری مزایده - گروه ب) منتهی به سال مالی ۱۴۰۵/۱۲/۲۹",
-    "LetterCode": "ن-۲۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۳۱ ۱۱:۰۲:۰۸",
-    "PublishDateTime": "۱۴۰۵/۰۵/۳۱ ۱۱:۰۲:۰۸",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=Sta5sZnwZV3kVSC9DbQkQg%3d%3d&rt=8&let=11&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=Sta5sZnwZV3kVSC9DbQkQg%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=Sta5sZnwZV3kVSC9DbQkQg%3d%3d&ft=1005&let=11",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "زمانبندی پرداخت سود دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
+    "publish_date": "۱۴۰۵/۰۵/۱۴ ۱۲:۵۶:۰۰",
+    "sent_date": "۱۴۰۵/۰۵/۱۴ ۱۲:۵۶:۰۰",
+    "tracing_no": 1581444,
+    "letter_serial": null,
+    "url": "/Reports/Attachment.aspx?LetterSerial=HV5z49ltzG9jPMHBSSA14A%3d%3d",
     "local_files": [
-      "6_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
-    ],
-    "local_file": "6_افشای_اطلاعات_بااهمیت_-_(برگزاری_مز.html"
+      "9_۱۴۰۵-۰۵-۱۴_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_منته.pdf"
+    ]
   },
   {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1585367,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "آگهی ثبت تصمیمات مجمع عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۴۲",
-    "SentDateTime": "۱۴۰۵/۰۵/۲۶ ۰۹:۵۸:۳۶",
-    "PublishDateTime": "۱۴۰۵/۰۵/۲۶ ۰۹:۵۸:۳۶",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=DQQQaQQQGDSUQuOOObOOO5wEotP11t6CiA%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=DQQQaQQQGDSUQuOOObOOO5wEotP11t6CiA%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
+    "title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۳ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱ (حسابرسی نشده)",
+    "publish_date": "۱۴۰۵/۰۴/۳۱ ۱۳:۰۹:۵۹",
+    "sent_date": "۱۴۰۵/۰۴/۳۱ ۱۳:۰۹:۵۹",
+    "tracing_no": 1570268,
+    "letter_serial": null,
+    "url": "/Reports/Decision.aspx?LetterSerial=YcFFr1C0Tajd5fZkOOObOOOQQQaQQQlyxQ%3d%3d&rt=8&let=6&ct=0&ft=-1",
     "local_files": [
-      "7_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
-    ],
-    "local_file": "7_آگهی_ثبت_تصمیمات_مجمع_عادی_سالیانه_.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1581444,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "زمانبندی پرداخت سود دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۱۳",
-    "SentDateTime": "۱۴۰۵/۰۵/۱۴ ۱۲:۵۶:۰۰",
-    "PublishDateTime": "۱۴۰۵/۰۵/۱۴ ۱۲:۵۶:۰۰",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=HV5z49ltzG9jPMHBSSA14A%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=HV5z49ltzG9jPMHBSSA14A%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "8_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-    ],
-    "local_file": "8_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1577714,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۴/۳۱",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۵/۰۶ ۱۱:۵۳:۱۵",
-    "PublishDateTime": "۱۴۰۵/۰۵/۰۶ ۱۱:۵۳:۱۵",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=qNd6aaMWLywgSVHLE9t3Dg%3d%3d&rt=8&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=qNd6aaMWLywgSVHLE9t3Dg%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/qNd6aaMWLywgSVHLE9t3Dg%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "9_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "9_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1575932,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "زمانبندی پرداخت سود دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹(اصلاحیه)",
-    "LetterCode": "ن-۱۳",
-    "SentDateTime": "۱۴۰۵/۰۵/۰۴ ۱۲:۲۴:۴۵",
-    "PublishDateTime": "۱۴۰۵/۰۵/۰۴ ۱۲:۲۴:۴۵",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=ZDBuWOOObOOOftx1OOObOOOyblHqCHFUrg%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=ZDBuWOOObOOOftx1OOObOOOyblHqCHFUrg%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "10_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-    ],
-    "local_file": "10_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1570268,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۳ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱ (حسابرسی نشده)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۳۱ ۱۳:۰۹:۵۹",
-    "PublishDateTime": "۱۴۰۵/۰۴/۳۱ ۱۳:۰۹:۵۹",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=YcFFr1C0Tajd5fZkOOObOOOQQQaQQQlyxQ%3d%3d&rt=8&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=YcFFr1C0Tajd5fZkOOObOOOQQQaQQQlyxQ%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=YcFFr1C0Tajd5fZkOOObOOOQQQaQQQlyxQ%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/YcFFr1C0Tajd5fZkOOObOOOQQQaQQQlyxQ%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
-    ],
-    "local_file": "11_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1568461,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "تصمیمات مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۵۲",
-    "SentDateTime": "۱۴۰۵/۰۴/۲۴ ۱۳:۳۲:۴۲",
-    "PublishDateTime": "۱۴۰۵/۰۴/۲۴ ۱۳:۳۲:۴۲",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=bctY5foWvwoSQ1zr2EIL8Q%3d%3d&rt=8&let=20&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=bctY5foWvwoSQ1zr2EIL8Q%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=bctY5foWvwoSQ1zr2EIL8Q%3d%3d&ft=1005&let=20",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "12_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-    ],
-    "local_file": "12_تصمیمات_مجمع_عمومی_عادی_سالیانه_دور.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1565977,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "خلاصه تصمیمات مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۵۱",
-    "SentDateTime": "۱۴۰۵/۰۴/۲۱ ۱۴:۱۵:۳۵",
-    "PublishDateTime": "۱۴۰۵/۰۴/۲۱ ۱۴:۱۵:۳۵",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=YxjaucIkWo7pLwEAOvhBmA%3d%3d&rt=8&let=2020&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=YxjaucIkWo7pLwEAOvhBmA%3d%3d&ft=1005&let=2020",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "13_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
-    ],
-    "local_file": "13_خلاصه_تصمیمات_مجمع_عمومی_عادی_سالیا.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1561596,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "زمانبندی پرداخت سود دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۱۳",
-    "SentDateTime": "۱۴۰۵/۰۴/۱۱ ۰۸:۲۷:۱۵",
-    "PublishDateTime": "۱۴۰۵/۰۴/۱۱ ۰۸:۲۷:۱۵",
-    "HasHtml": false,
-    "IsEstimate": false,
-    "Url": "/Reports/Attachment.aspx?LetterSerial=GTlGOOObOOOx7FOhWMcS9ROOObOOOsuIgg%3d%3d",
-    "HasExcel": false,
-    "HasPdf": false,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=GTlGOOObOOOx7FOhWMcS9ROOObOOOsuIgg%3d%3d",
-    "PdfUrl": "",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "14_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-    ],
-    "local_file": "14_زمانبندی_پرداخت_سود_دوره_۱۲_ماهه_من.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1561589,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "آگهی دعوت به مجمع عمومی عادی سالیانه دوره ۱۲ ماهه منتهی به  ۱۴۰۴/۱۲/۲۹",
-    "LetterCode": "ن-۵۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۱۱ ۰۸:۲۰:۱۹",
-    "PublishDateTime": "۱۴۰۵/۰۴/۱۱ ۰۸:۲۰:۱۹",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=Z2hP5QQQaQQQh9sxq9PuWoxziqCQ%3d%3d&rt=8&let=16&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=Z2hP5QQQaQQQh9sxq9PuWoxziqCQ%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=Z2hP5QQQaQQQh9sxq9PuWoxziqCQ%3d%3d&ft=1005&let=16",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "15_آگهی_دعوت_به_مجمع_عمومی_عادی_سالیان.html"
-    ],
-    "local_file": "15_آگهی_دعوت_به_مجمع_عمومی_عادی_سالیان.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1559307,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "گزارش فعالیت ماهانه دوره ۱ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱",
-    "LetterCode": "ن-۳۰",
-    "SentDateTime": "۱۴۰۵/۰۴/۰۸ ۱۷:۵۳:۵۰",
-    "PublishDateTime": "۱۴۰۵/۰۴/۰۸ ۱۷:۵۳:۵۰",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=gT7JGBa5ql2nzbAGSPYwhw%3d%3d&rt=8&let=58&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": false,
-    "AttachmentUrl": "",
-    "PdfUrl": "DownloadFile.aspx?hs=gT7JGBa5ql2nzbAGSPYwhw%3d%3d&ft=1005&let=58",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/gT7JGBa5ql2nzbAGSPYwhw%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "16_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
-      "16_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
-    ],
-    "local_file": "16_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1550742,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "اطلاعات حاصل از برگزاری کنفرانس اطلاع رسانی",
-    "LetterCode": "ن-۲۳",
-    "SentDateTime": "۱۴۰۵/۰۳/۲۵ ۱۳:۴۲:۰۷",
-    "PublishDateTime": "۱۴۰۵/۰۳/۲۵ ۱۳:۴۲:۰۷",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=PlNQVQ4njAahB2Cft41rig%3d%3d&rt=8&let=148&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=PlNQVQ4njAahB2Cft41rig%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=PlNQVQ4njAahB2Cft41rig%3d%3d&ft=1005&let=148",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "17_اطلاعات_حاصل_از_برگزاری_کنفرانس_اطل.html"
-    ],
-    "local_file": "17_اطلاعات_حاصل_از_برگزاری_کنفرانس_اطل.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1550314,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده)(اصلاحیه)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۳/۲۵ ۱۱:۳۳:۳۸",
-    "PublishDateTime": "۱۴۰۵/۰۳/۲۵ ۱۱:۳۳:۳۸",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=R2c85yOOObOOOrNnCw8jNiBUa2UA%3d%3d&rt=8&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=R2c85yOOObOOOrNnCw8jNiBUa2UA%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=R2c85yOOObOOOrNnCw8jNiBUa2UA%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/R2c85yOOObOOOrNnCw8jNiBUa2UA%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "18_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf",
-      "18_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-    ],
-    "local_file": "18_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1550122,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "توضیحات در خصوص اطلاعات و صورت های مالی منتشر شده",
-    "LetterCode": "ن-۲۶",
-    "SentDateTime": "۱۴۰۵/۰۳/۲۴ ۱۵:۱۵:۴۵",
-    "PublishDateTime": "۱۴۰۵/۰۳/۲۴ ۱۵:۱۵:۴۵",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=OSqloMJlG8Q5D3OOObOOOQQQaQQQlMyenw%3d%3d&rt=8&let=174&ct=0&ft=-1",
-    "HasExcel": false,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=OSqloMJlG8Q5D3OOObOOOQQQaQQQlMyenw%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=OSqloMJlG8Q5D3OOObOOOQQQaQQQlMyenw%3d%3d&ft=1005&let=174",
-    "ExcelUrl": "",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "19_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
-    ],
-    "local_file": "19_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
-  },
-  {
-    "SuperVision": {
-      "UnderSupervision": 0,
-      "AdditionalInfo": "",
-      "Reasons": []
-    },
-    "TracingNo": 1548403,
-    "Symbol": "زهلال",
-    "CompanyName": "کشت و صنعت هلال",
-    "UnderSupervision": 0,
-    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۴/۱۲/۲۹ (حسابرسی شده)(اصلاحیه)",
-    "LetterCode": "ن-۱۰",
-    "SentDateTime": "۱۴۰۵/۰۳/۲۴ ۱۰:۵۵:۲۶",
-    "PublishDateTime": "۱۴۰۵/۰۳/۲۴ ۱۰:۵۵:۲۶",
-    "HasHtml": true,
-    "IsEstimate": false,
-    "Url": "/Reports/Decision.aspx?LetterSerial=5nw0rcUVqoZYzVN2opJn6g%3d%3d&rt=8&let=6&ct=0&ft=-1",
-    "HasExcel": true,
-    "HasPdf": true,
-    "HasXbrl": false,
-    "HasAttachment": true,
-    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=5nw0rcUVqoZYzVN2opJn6g%3d%3d",
-    "PdfUrl": "DownloadFile.aspx?hs=5nw0rcUVqoZYzVN2opJn6g%3d%3d&ft=1005&let=6",
-    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/5nw0rcUVqoZYzVN2opJn6g%3d%3d/0",
-    "XbrlUrl": "",
-    "TedanUrl": "http://www.tedan.ir",
-    "local_files": [
-      "20_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf",
-      "20_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
-    ],
-    "local_file": "20_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf"
+      "10_۱۴۰۵-۰۴-۳۱_گزارش_تفسيري_مديريت.pdf"
+    ]
   }
 ]
