@@ -3,15 +3,11 @@
     "symbol": "بانیان",
     "name": "نيان باتري خاوران",
     "logo": "",
-    "current_price": 17620.0,
-    "change_percent": -2.97,
-    "volume": "1.0M",
-    "market_cap": "17,620 B",
+    "current_price": 17240.0,
+    "change_percent": -2.16,
+    "volume": "4.3M",
+    "market_cap": "17,240 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 14920.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 15360.0
@@ -63,6 +59,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 17620.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17240.0
       }
     ],
     "links": {
@@ -78,14 +78,14 @@
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 4.0,
+      "score": 4.1,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.8,
+        "weighted": 3.9,
         "rules": 4.0,
-        "horizon": 4.3
+        "horizon": 4.5
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -94,10 +94,10 @@
     "symbol": "تابان",
     "name": "گروه پتروشیمی تابان فردا",
     "logo": "",
-    "current_price": 13570.0,
-    "change_percent": 2.96,
-    "volume": "16.7M",
-    "market_cap": "13,570 B",
+    "current_price": 13970.0,
+    "change_percent": 2.95,
+    "volume": "26.7M",
+    "market_cap": "13,970 B",
     "chart_14d": [
       {
         "date": "۹ شهریور",
@@ -110,6 +110,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 13570.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 13970.0
       }
     ],
     "links": {
@@ -130,7 +134,7 @@
       "stars": "★★★★★",
       "badge": "🚀 خرید قاطع (Strong Buy)",
       "scores": {
-        "weighted": 4.7,
+        "weighted": 4.6,
         "rules": 5.0,
         "horizon": 4.7
       },
@@ -141,15 +145,11 @@
     "symbol": "تلیسه",
     "name": "دامداری تلیسه نمونه",
     "logo": "",
-    "current_price": 9630.0,
-    "change_percent": -2.92,
-    "volume": "12.9M",
-    "market_cap": "9,630 B",
+    "current_price": 9670.0,
+    "change_percent": 0.42,
+    "volume": "29.3M",
+    "market_cap": "9,670 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 8810.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 9050.0
@@ -201,6 +201,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 9630.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 9670.0
       }
     ],
     "links": {
@@ -232,15 +236,11 @@
     "symbol": "خودرو",
     "name": "ایران خودرو",
     "logo": "",
-    "current_price": 694.0,
-    "change_percent": -2.53,
-    "volume": "12.8B",
-    "market_cap": "209,349 B",
+    "current_price": 706.0,
+    "change_percent": 1.73,
+    "volume": "10.2B",
+    "market_cap": "212,969 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 581.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 597.0
@@ -292,6 +292,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 694.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 706.0
       }
     ],
     "links": {
@@ -307,14 +311,14 @@
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.8,
+      "score": 4.1,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.8,
+        "weighted": 4.3,
         "rules": 4.0,
-        "horizon": 3.6
+        "horizon": 3.9
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -323,15 +327,11 @@
     "symbol": "زهلال",
     "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
     "logo": "",
-    "current_price": 49080.0,
-    "change_percent": 0.0,
-    "volume": "3.8M",
-    "market_cap": "49,080 B",
+    "current_price": 50550.0,
+    "change_percent": 3.0,
+    "volume": "3.4M",
+    "market_cap": "50,550 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 47450.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 48240.0
@@ -383,6 +383,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 49080.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 50550.0
       }
     ],
     "links": {
@@ -403,7 +407,7 @@
       "stars": "★★★★★",
       "badge": "🚀 خرید قاطع (Strong Buy)",
       "scores": {
-        "weighted": 4.6,
+        "weighted": 4.5,
         "rules": 5.0,
         "horizon": 4.0
       },
@@ -414,15 +418,11 @@
     "symbol": "غمهرا",
     "name": "گروه تولیدی مهرام",
     "logo": "",
-    "current_price": 17300.0,
-    "change_percent": -2.75,
-    "volume": "3.9M",
-    "market_cap": "17,300 B",
+    "current_price": 17460.0,
+    "change_percent": 0.92,
+    "volume": "2.5M",
+    "market_cap": "17,460 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 17150.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 17660.0
@@ -474,6 +474,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 17300.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17460.0
       }
     ],
     "links": {
@@ -485,18 +489,18 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 1,
+    "score": 3,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.7,
+      "score": 3.8,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.6,
+        "weighted": 3.8,
         "rules": 4.0,
-        "horizon": 3.4
+        "horizon": 3.5
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
     }
@@ -505,15 +509,11 @@
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",
-    "current_price": 12090.0,
-    "change_percent": -2.58,
-    "volume": "41.0M",
-    "market_cap": "12,090 B",
+    "current_price": 12390.0,
+    "change_percent": 2.48,
+    "volume": "31.8M",
+    "market_cap": "12,390 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 10560.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 10450.0
@@ -565,6 +565,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 12090.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 12390.0
       }
     ],
     "links": {
@@ -580,12 +584,12 @@
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.8,
+      "score": 3.7,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.8,
+        "weighted": 3.7,
         "rules": 4.0,
         "horizon": 3.5
       },
@@ -596,15 +600,11 @@
     "symbol": "وتجارت",
     "name": "بانک تجارت",
     "logo": "",
-    "current_price": 982.0,
-    "change_percent": -2.87,
-    "volume": "33.6B",
-    "market_cap": "219,895 B",
+    "current_price": 983.0,
+    "change_percent": 0.1,
+    "volume": "22.9B",
+    "market_cap": "220,119 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 752.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 758.0
@@ -656,6 +656,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 982.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 983.0
       }
     ],
     "links": {
@@ -676,7 +680,7 @@
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.6,
+        "weighted": 3.5,
         "rules": 4.0,
         "horizon": 3.3
       },

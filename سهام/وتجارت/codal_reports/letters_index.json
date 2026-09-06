@@ -5,6 +5,37 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1593981,
+    "Symbol": "وتجارت",
+    "CompanyName": "بانک تجارت",
+    "UnderSupervision": 0,
+    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای تلفیقی دوره ۶ ماهه منتهی به  ۱۴۰۵/۰۳/۳۱ (حسابرسی شده) (شرکت مولدسازی و مدیریت دارایی تجارت)",
+    "LetterCode": "ن-۱۰",
+    "SentDateTime": "۱۴۰۵/۰۶/۱۴ ۱۴:۳۶:۰۰",
+    "PublishDateTime": "۱۴۰۵/۰۶/۱۴ ۱۴:۳۶:۰۰",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=LEyBGmhoHQvJ5njqq8GNOA%3d%3d&rt=0&let=6&ct=0&ft=-1",
+    "HasExcel": true,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=LEyBGmhoHQvJ5njqq8GNOA%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=LEyBGmhoHQvJ5njqq8GNOA%3d%3d&ft=1005&let=6",
+    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/LEyBGmhoHQvJ5njqq8GNOA%3d%3d/0",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "21_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "21_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1592439,
     "Symbol": "وتجارت",
     "CompanyName": "بانک تجارت",
@@ -215,7 +246,7 @@
       "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "7_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
@@ -371,7 +402,7 @@
       "12_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.pdf",
       "12_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
     ],
-    "local_file": "12_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.html"
+    "local_file": "12_افشای_اطلاعات_بااهمیت_-_(سایر_اطلاع.pdf"
   },
   {
     "SuperVision": {
@@ -558,7 +589,7 @@
       "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "18_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
@@ -590,7 +621,7 @@
       "19_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "19_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "19_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "19_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
@@ -622,6 +653,6 @@
       "20_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "20_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "20_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "20_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   }
 ]
