@@ -5,6 +5,69 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1595197,
+    "Symbol": "کلید",
+    "CompanyName": "املاک و مستغلات خانه آگاه",
+    "UnderSupervision": 0,
+    "Title": "آگهی دعوت به مجمع صندوق سرمایه گذاری در تاریخ ۱۴۰۵/۰۶/۲۵",
+    "LetterCode": "",
+    "SentDateTime": "۱۴۰۵/۰۶/۱۵ ۱۴:۳۰:۲۹",
+    "PublishDateTime": "۱۴۰۵/۰۶/۱۵ ۱۴:۳۰:۲۹",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=o6OOObOOOeKlBRQQQaQQQeFGZD3ioAJIoQ%3d%3d&rt=1&let=121&ct=5&ft=1",
+    "HasExcel": false,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=o6OOObOOOeKlBRQQQaQQQeFGZD3ioAJIoQ%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=o6OOObOOOeKlBRQQQaQQQeFGZD3ioAJIoQ%3d%3d&ft=1005&let=121",
+    "ExcelUrl": "",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "21_آگهی_دعوت_به_مجمع_صندوق_سرمایه_گذار.html"
+    ],
+    "local_file": "21_آگهی_دعوت_به_مجمع_صندوق_سرمایه_گذار.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
+    "TracingNo": 1594667,
+    "Symbol": "کلید",
+    "CompanyName": "املاک و مستغلات خانه آگاه",
+    "UnderSupervision": 0,
+    "Title": "صورت‌های مالی  سال مالی منتهی به ۱۴۰۵/۰۳/۳۱ (حسابرسی شده)",
+    "LetterCode": "ن-۱۰",
+    "SentDateTime": "۱۴۰۵/۰۶/۱۴ ۱۵:۵۸:۰۷",
+    "PublishDateTime": "۱۴۰۵/۰۶/۱۴ ۱۵:۵۸:۰۷",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=QQQaQQQWb43AOoX0L7g4DOLG2ReA%3d%3d&rt=1&let=6&ct=5&ft=1",
+    "HasExcel": true,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=QQQaQQQWb43AOoX0L7g4DOLG2ReA%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=QQQaQQQWb43AOoX0L7g4DOLG2ReA%3d%3d&ft=1005&let=6",
+    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/QQQaQQQWb43AOoX0L7g4DOLG2ReA%3d%3d/0",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "22_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.xlsx",
+      "22_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
+    ],
+    "local_file": "22_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1592383,
     "Symbol": "کلید",
     "CompanyName": "املاک و مستغلات خانه آگاه",
@@ -246,7 +309,7 @@
       "8_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.xlsx",
       "8_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
     ],
-    "local_file": "8_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
+    "local_file": "8_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.xlsx"
   },
   {
     "SuperVision": {

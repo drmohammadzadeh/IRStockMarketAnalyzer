@@ -74,7 +74,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 2
+    "score": 2,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 4.0,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 4.3
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "تابان",
@@ -107,7 +121,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 5
+    "score": 5,
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.8,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.7,
+        "rules": 5.0,
+        "horizon": 4.7
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    }
   },
   {
     "symbol": "تلیسه",
@@ -184,7 +212,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2
+    "score": -2,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.8,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 3.6
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "خودرو",
@@ -261,7 +303,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 0
+    "score": 0,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.8,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 3.6
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "زهلال",
@@ -338,7 +394,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/README.md"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 2
+    "score": 2,
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.5,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.6,
+        "rules": 5.0,
+        "horizon": 4.0
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    }
   },
   {
     "symbol": "غمهرا",
@@ -415,7 +485,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 1
+    "score": 1,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.7,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.6,
+        "rules": 4.0,
+        "horizon": 3.4
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "فسازان",
@@ -492,7 +576,21 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2
+    "score": -2,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.8,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 3.5
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "وتجارت",
@@ -569,21 +667,31 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -4
+    "score": -4,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.6,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.6,
+        "rules": 4.0,
+        "horizon": 3.3
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   },
   {
     "symbol": "کلید",
     "name": "صندوق املاک و مستغلات کلید",
     "logo": "",
-    "current_price": 17072.0,
-    "change_percent": 0.03,
-    "volume": "62.9M",
-    "market_cap": "17,072 B",
+    "current_price": 17151.0,
+    "change_percent": 0.46,
+    "volume": "88.9M",
+    "market_cap": "17,151 B",
     "chart_14d": [
-      {
-        "date": "۲۴ مرداد",
-        "price": 15713.0
-      },
       {
         "date": "۲۵ مرداد",
         "price": 16009.0
@@ -635,6 +743,10 @@
       {
         "date": "۱۱ شهریور",
         "price": 17072.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17151.0
       }
     ],
     "links": {
@@ -646,6 +758,20 @@
       "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/README.md"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2
+    "score": 0,
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.9,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 4.0,
+        "rules": 4.0,
+        "horizon": 3.7
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    }
   }
 ]
