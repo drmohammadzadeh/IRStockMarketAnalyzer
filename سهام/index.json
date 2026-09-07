@@ -96,7 +96,8 @@
       "target_1": 16922.6,
       "stop_loss": 15174.0,
       "risk_reward_ratio": 0.04
-    }
+    },
+    "last_update": "1405/06/16 - 09:17"
   },
   {
     "symbol": "تابان",
@@ -163,7 +164,8 @@
       "target_1": 16105.6,
       "stop_loss": 14007.12,
       "risk_reward_ratio": 4.63
-    }
+    },
+    "last_update": "1405/06/16 - 09:02"
   },
   {
     "symbol": "تلیسه",
@@ -262,7 +264,8 @@
       "target_1": 10360.0,
       "stop_loss": 8714.36,
       "risk_reward_ratio": 0.76
-    }
+    },
+    "last_update": "1405/06/16 - 09:08"
   },
   {
     "symbol": "خودرو",
@@ -361,7 +364,8 @@
       "target_1": 832.16,
       "stop_loss": 668.7,
       "risk_reward_ratio": 1.2
-    }
+    },
+    "last_update": "1405/06/16 - 09:11"
   },
   {
     "symbol": "زهلال",
@@ -460,7 +464,8 @@
       "target_1": 59908.8,
       "stop_loss": 48179.33,
       "risk_reward_ratio": 1.21
-    }
+    },
+    "last_update": "1405/06/16 - 09:12"
   },
   {
     "symbol": "غمهرا",
@@ -559,7 +564,8 @@
       "target_1": 19180.0,
       "stop_loss": 16407.0,
       "risk_reward_ratio": 0.52
-    }
+    },
+    "last_update": "1405/06/16 - 09:19"
   },
   {
     "symbol": "فسازان",
@@ -658,7 +664,8 @@
       "target_1": 14705.6,
       "stop_loss": 11817.0,
       "risk_reward_ratio": 1.2
-    }
+    },
+    "last_update": "1405/06/16 - 09:14"
   },
   {
     "symbol": "وتجارت",
@@ -757,7 +764,8 @@
       "target_1": 1042.0,
       "stop_loss": 887.4,
       "risk_reward_ratio": 0.57
-    }
+    },
+    "last_update": "1405/06/16 - 09:06"
   },
   {
     "symbol": "کلید",
@@ -856,6 +864,7 @@
       "target_1": 17820.0,
       "stop_loss": 15989.4,
       "risk_reward_ratio": 0.03
-    }
+    },
+    "last_update": "1405/06/16 - 09:04"
   }
 ]
