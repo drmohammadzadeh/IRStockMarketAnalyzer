@@ -1,0 +1,655 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	تصمیمات مجمع عمومی صندوق سرمایه گذاری
+</title>
+
+    <script type="text/javascript" src="../js/Common.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="../js/PKI2.js?v=4"></script>
+    <script type="text/javascript" src="../js/PersianDatePicker.js"></script>
+    <link rel="shortcut icon" href="../assets/favicon/favicon.ico?v=RyQ5xz7ege"><link href="../css/Main.css" type="text/css" rel="stylesheet"><link href="../css/Assembly.css" type="text/css" rel="stylesheet"><link href="../css/PersianDatePicker.min.css" rel="stylesheet">
+
+    <style type="text/css">
+        input[type="text"] {
+            height: 20px;
+        }
+
+        .GridItem {
+            font-size: 1.1em;
+        }
+
+        .no-check > input[type=checkbox] {
+            display: none;
+        }
+
+        .indent-group {
+            margin: 15px 0px 30px 10px;
+        }
+
+        /*.indent-group img {
+               vertical-align: middle;
+                float: right;
+            }*/
+
+        .indent-title {
+            display: inline-block;
+            width: 400px;
+            font: bold 1em 'B Mitra';
+            color: white;
+            /*background-color: #007ec8;*/
+            background-color: #333;
+            padding: 0px 10px 2px 10px;
+            cursor: pointer;
+        }
+
+        .indent-part-header {
+            margin: 0 20px 0 0;
+            /*width:98%;*/
+            /*border-bottom: 3px #007ec8 solid;*/
+            border-bottom: 3px #333 solid;
+        }
+
+        .decision-part {
+            padding: 5px;
+            /*border: 1px solid #7e97b5;*/
+            border: 1px solid #333;
+            margin: 0px 20px 0px 0px;
+        }
+
+            .decision-part .section-desc {
+                font-weight: normal;
+            }
+
+        .description-text {
+            width: 99%;
+            min-height: 60px;
+            resize: none;
+        }
+
+        span.national-code-error {
+            color: white;
+            font-size: .9em !important;
+            background-color: orangered;
+            margin: -18px 5px;
+            display: inline-block;
+            position: absolute;
+            padding: 0 5px 0 5px;
+        }
+
+        .GridFooter {
+            background-color: #fee2a0;
+            font-weight: bold;
+            font-size: .9em !important;
+        }
+
+        .ul-hz {
+            width: 95%;
+        }
+
+            .ul-hz li {
+                display: inline-block;
+            }
+
+                .ul-hz li:before {
+                    content: '\00a0\2022\00a0\00a0';
+                    margin-right: 25px;
+                }
+    </style>
+
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            //#region Collapse/Expand Click Event
+            $(document).on('click', '#divCollapse', function () {
+                if ($(this).attr('status') == 'to-open') {
+                    $('.accar-body').show();
+                    $('.accar-body').attr('visible', 'true');
+                    SetDivCollapseStatus('to-close');
+                }
+                else {
+                    $('.accar-body').hide();
+                    $('.accar-body').attr('visible', 'false');
+                    SetDivCollapseStatus('to-open');
+                }
+
+                return false;
+            });
+            //#endregion
+
+            //#region Header Title Click Event
+            $(document).on('click', '.accar-header', function () {
+                var itemBody = $(this).next('.accar-body');
+                var itemId = itemBody.attr('id');
+
+                if (itemBody.attr('visible') == 'true') {
+                    itemBody.attr('visible', 'false');
+                    itemBody.hide();
+                }
+                else {
+                    itemBody.attr('visible', 'true');
+                    itemBody.show();
+                }
+
+                var tabCount = 6;
+                var openedTabCount = 0;
+                var closedTabCount = 0;
+
+                $('.accar-body').each(function () {
+                    if ($(this).attr('visible') == 'true')
+                        openedTabCount++;
+                    else
+                        closedTabCount++;
+                });
+
+                if (openedTabCount == tabCount && $('#divCollapse').attr('status') == 'to-open')
+                    SetDivCollapseStatus('to-close');
+                else
+                    if (closedTabCount == tabCount && $('#divCollapse').attr('status') == 'to-close')
+                        SetDivCollapseStatus('to-open');
+
+                if (openedTabCount < tabCount && closedTabCount < tabCount)
+                    SetDivCollapseStatus('to-open');
+            });
+            //#endregion
+
+            //#region SetDivCollapseStatus
+            function SetDivCollapseStatus(status, type) {
+
+                var divId = "#divCollapse";
+                var spanId = "#spanCollapse";
+                var imgId = "#imgCollapse";
+
+                if (type == 'decision') {
+                    divId = "#divCollapseDecisions";
+                    spanId = "#spanCollapseDecisions";
+                    imgId = "#imgCollapseDecisions";
+                }
+
+                $(divId).attr('status', status);
+
+                if (status == 'to-close') {
+                    $(spanId).text('بستن همه');
+                    $(imgId).attr('src', '../Images/FlatIcons/Collapse-16.png');
+                }
+                else if (status == 'to-open') {
+                    $(spanId).text('بازکردن همه');
+                    $(imgId).attr('src', '../Images/FlatIcons/Expand-16.png');
+                }
+            }
+            //#endregion
+
+            //#region indent-part-header click enevent
+            $(document).on('click', '.indent-part-header', function () {
+                $(this).next('div').toggle();
+            });
+            //#endregion
+
+            //#region Collapse/Expand inner-decision-part Click Event
+            $(document).on('click', '#divCollapseDecisions', function () {
+                if ($(this).attr('status') == 'to-open') {
+                    $('.decision-part').show();
+                    $('.decision-part').attr('visible', 'true');
+                    SetDivCollapseStatus('to-close', 'decision');
+                }
+                else {
+                    $('.decision-part').hide();
+                    $('.decision-part').attr('visible', 'false');
+                    SetDivCollapseStatus('to-open', 'decision');
+                }
+
+                return false;
+            });
+            //#endregion
+        });
+
+        //#region PageLoad function to handle javascript re-load in updatepanel
+        function pageLoad() {
+            //$('html,body').animate({ scrollTop: $("#aInfo").offset().top }, 'slow');
+        }
+        //#endregion
+
+    </script>
+
+
+<meta http-equiv="Cache - Control" content="no - cache, no - store, must - revalidate">
+<meta http-equiv="Pragma" content="no - cache">
+<meta http-equiv="Expires" content="0"></head>
+<body>
+    <form name="form1" method="post" action="" id="form1">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+
+
+
+<script src="/Control/js/ucAssemblyProspectusCosts.js" type="text/javascript"></script>
+
+
+
+
+<div>
+
+	
+	
+</div>
+        
+
+
+        <div id="UpdateProgress1" style="display:none;">
+	
+                <div class="modal">
+                    <div class="loadingIcon">
+                    </div>
+                </div>
+            
+</div>
+        <div id="upMain">
+	                
+                <div style="position: absolute; top: 15px; margin-right: 140px;">
+                    <b style="vertical-align: middle; padding-right: 5px; color: white; font-family: 'B Mitra'; font-size: 1.7em;">
+                        <span id="spanTitle">تصمیمات مجمع صندوق سرمایه گذاری <span>(املاک و مستغلات خانه آگاه)</span></span> 
+                    </b>
+                </div>
+
+                <table style="width: 100%; font-family: 'B Mitra'; margin-bottom: 20px; border-collapse: collapse;">
+                    <tr>
+                        <td class="dashboard_main_menu_holder">
+                            <div class="dashboard_menu_active">
+                                <span>مشخصات</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100%; height: 23px; vertical-align: middle; text-align: center;">
+                            
+<style type="text/css">
+    .label
+    {
+        font-size: 8pt;
+        font-family: tahoma;
+    }
+</style>
+<div id="ucSignature1_pnlMain" class="main_note" style="background-color:#C1E2B4;">
+    <div class="verify">
+       
+    
+    </div>
+    <div class="noteholder">
+        <img alt="information" src='../imgs/inforation.png'>
+        <span id="ucSignature1_lblSignature" class="signature" style="color:DarkGreen;">اطلاعات نمایش داده شده با اطلاعات امضا شده مطابقت دارد</span>
+        <div class="clear"></div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a id="aInfo" href="#"></a>
+                            
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 100%; padding: 3px;" id="tdAccar">
+                            <div style="padding: 10px 5px 10px 0px; vertical-align: middle; font: bold 1.6em 'B Mitra'">
+                                <img src="../Images/FlatIcons/Target-32.png" style="vertical-align: middle; padding-left: 4px;">
+                                <span id="spanSubject" class='span-in-text'>موضوع: تصمیمات مجمع صندوق سرمایه گذاری</span>
+                            </div>
+                            <div class="div-warning-new-version">
+                                
+
+<br>
+
+
+                            </div>
+
+                            <div id="divCollapse" status="to-close" style="width: 80%; margin: 0 auto; direction: ltr; cursor: pointer" class="font12">
+                                <img id="imgCollapse" src="../Images/FlatIcons/Expand-16.png" alt="باز/بسته کردن همه" style="vertical-align: middle; padding: 2px">
+                                <span id="spanCollapse" style="font-weight: bold; display: inline-block; width: 60px;">بستن همه</span>
+                            </div>
+                            
+
+                            <div style="width: 80%; margin: 0 auto; border: 1px solid #ccc;">
+                                <div class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/Calendar-Date-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>زمان و محل برگزاری مجمع صندوق سرمایه‌گذاری
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="accar-body" id="acc-time">
+                                        <div class="accar-inner-body">
+                                            <div id="divLocationStr"><p style='text-align:justify;'><span>پیرو آگهی منتشر شده در سامانه کدال در تاریخ 
+                                <span class='span-in-text'>1405/05/19</span> در خصوص دعوت به مجمع صندوق سرمایه گذاری راس ساعت <span class='span-in-text'>12:00</span>
+                                مورخ <span class='span-in-text'>1405/06/01</span> در محل صندوق با حضور <span class='span-in-text'><b>100</b></span> &nbsp; درصد از دارندگان واحدهای سرمایه گذاری دارای حق رأی,نماینده متولی<span class='span-in-text'> برگزار گردید و  درخصوص دستور جلسات زیر تصمیم گیری نمود</span></span>.</p></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/Agenda-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>دستور جلسه
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="accar-body" id="acc-agenda">
+                                        <div class="accar-inner-body">ش
+                                            <div id="divAgendaStr"><ul><li>تصمیم گیری در خصوص تصویب تغییرات در امیدنامه صندوق - هزینه های صندوق</li><li>سایر موارد</li></ul></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/Meeting-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>حاضرین در جلسه مجمع صندوق
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="accar-body" style="margin: auto 0;" id="acc-attendees">
+                                        <div class="accar-inner-body">
+                                            <div>
+		<table class="Grid" cellspacing="0" rules="cols" border="1" id="grvAttendees" style="width:100%;border-collapse:collapse;border-collapse: collapse;">
+			<tr class="GridHeader">
+				<th class="Hidden" scope="col">&nbsp;</th><th scope="col" style="width:40%;">اسامی دارندگان واحدهای سرمایه گذاری دارای حق راًی</th><th scope="col" style="width:30%;">تعداد واحدهای سرمایه گذاری دارای حق راًی</th><th scope="col" style="width:28%;">درصد مالکیت</th><th class="Hidden" scope="col">&nbsp;</th>
+			</tr><tr>
+				<td class="Hidden">72358</td><td style="width:40%;">
+                                                            <span itemprop='1976'>شرکت کارگزاری آگاه</span>
+                                                        </td><td align="center" style="width:30%;">
+                                                            9,800,000
+                                                        </td><td align="center" style="width:28%;">98</td><td class="Hidden">MIIJZgYJKoZIhvcNAQcCoIIJVzCCCVMCAQExCzAJBgUrDgMCGgUAMIIBIwYJKoZIhvcNAQcBoIIBFASCARBQRUZ6YzJWdFlteDVYMFoxYm1SR2IzSjFiVUYwZEdWdVpHVmxjejQ4VEdWMGRHVnlTVVErTVRVeE5URTFORHd2VEdWMGRHVnlTVVErUEZCeWFYWnBiR1ZuWldSVGFHRnlaV2h2YkdSbGNrbEVQakU1TnpZOEwxQnlhWFpwYkdWblpXUlRhR0Z5WldodmJHUmxja2xFUGp4VGFHRnlaVU52ZFc1MFBqazRNREF3TURBOEwxTm9ZWEpsUTI5MWJuUStQRTkzYm1WeVVHVnlZMlZ1ZEQ0d1BDOVBkMjVsY2xCbGNtTmxiblErUEM5QmMzTmxiV0pzZVY5R2RXNWtSbTl5ZFcxQmRIUmxibVJsWlhNK6CCBa8wggWrMIIEk6ADAgECAgtqcgtLgAAAAAA5IjANBgkqhkiG9w0BAQsFADCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczMB4XDTI2MDcwMTA5MDMyOFoXDTI4MDYzMDA5MDMyOFowggE8MQswCQYDVQQGEwJJUjETMBEGA1UECAwK2KrZh9ix2KfZhjETMBEGA1UEBwwK2KrZh9ix2KfZhjEZMBcGA1UECgwQTm9uLUdvdmVybm1lbnRhbDEcMBoGA1UECwwTQWdhaCBIb21lIFJlaXQgRnVuZDEgMB4GA1UEAwwXR29oYXIgU2FkZWdoIE5pYSBbU2lnbl0xITAfBgkqhkiG9w0BCQEWEnNhZGVnaG5pYUBhZ2FoLmNvbTETMBEGA1UEBRMKMDAyMTMyODYwOTERMA8GA1UEKgwI2q/ZiNmH2LExGDAWBgNVBAQMD9i12KfYr9mCINmG24zYpzEtMCsGA1UEDAwk2YXYr9uM2LHYudin2YXZhCDZ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</td>
+			</tr><tr style="background-color:#E4EBF8;">
+				<td class="Hidden">72359</td><td style="width:40%;">
+                                                            <span itemprop='1977'>شرکت سبدگردان آگاه</span>
+                                                        </td><td align="center" style="width:30%;">
+                                                            100,000
+                                                        </td><td align="center" style="width:28%;">1</td><td class="Hidden">MIIJZgYJKoZIhvcNAQcCoIIJVzCCCVMCAQExCzAJBgUrDgMCGgUAMIIBIwYJKoZIhvcNAQcBoIIBFASCARBQRUZ6YzJWdFlteDVYMFoxYm1SR2IzSjFiVUYwZEdWdVpHVmxjejQ4VEdWMGRHVnlTVVErTVRVeE5URTFORHd2VEdWMGRHVnlTVVErUEZCeWFYWnBiR1ZuWldSVGFHRnlaV2h2YkdSbGNrbEVQakU1TnpjOEwxQnlhWFpwYkdWblpXUlRhR0Z5WldodmJHUmxja2xFUGp4VGFHRnlaVU52ZFc1MFBqRXdNREF3TUR3dlUyaGhjbVZEYjNWdWRENDhUM2R1WlhKUVpYSmpaVzUwUGpBOEwwOTNibVZ5VUdWeVkyVnVkRDQ4TDBGemMyVnRZbXg1WDBaMWJtUkdiM0oxYlVGMGRHVnVaR1ZsY3o0PaCCBa8wggWrMIIEk6ADAgECAgtqcgtLgAAAAAA5IjANBgkqhkiG9w0BAQsFADCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczMB4XDTI2MDcwMTA5MDMyOFoXDTI4MDYzMDA5MDMyOFowggE8MQswCQYDVQQGEwJJUjETMBEGA1UECAwK2KrZh9ix2KfZhjETMBEGA1UEBwwK2KrZh9ix2KfZhjEZMBcGA1UECgwQTm9uLUdvdmVybm1lbnRhbDEcMBoGA1UECwwTQWdhaCBIb21lIFJlaXQgRnVuZDEgMB4GA1UEAwwXR29oYXIgU2FkZWdoIE5pYSBbU2lnbl0xITAfBgkqhkiG9w0BCQEWEnNhZGVnaG5pYUBhZ2FoLmNvbTETMBEGA1UEBRMKMDAyMTMyODYwOTERMA8GA1UEKgwI2q/ZiNmH2LExGDAWBgNVBAQMD9i12KfYr9mCINmG24zYpzEtMCsGA1UEDAwk2YXYr9uM2LHYudin2YXZhCDZhdiv24zYsSDYtdmG2K/ZiNmCMRQwEgYDVQQMDAsxNDAxMzIzNDIwMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMo8Yr98dWOEHXv64KiEZdTLmvfsEnfv7o3eSClvDBnP8W41oIWCUmT8usHl4e8zrN9ez1LDjyxWvZLvuTbRpwfVdUBEu2hk40h9fLvZLJrrXisTxl71nkJhdqUcVB/LJ/7ZcWXuCZKy9Kt9zOFOu7tgmoVMDpnPiDl2X3ZQunjiyVc4bCLnxcHxTHvRJ2NU5csATYs3s7I6CViMLw9DDUkjU11Zj/RhswSbENCkIKdNN6xJI3Zk+3MTowA0UUKfzi5YocKficYcQjvSCL6erWCqyK7q9PU0tJyS4+DSQVs2Z1vmpx/FYj7ZZJEbVs2APIhpiYEd+Qs+a9aP6ykWwdUCAwEAAaOCARcwggETMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jcmwyLmljbWdjYS5pci9pY21nY2EtbDJnMy5jcmwwNQYIKwYBBQUHAQEEKTAnMCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcGwyZzMuaWNtZ2NhLmlyMB8GA1UdIwQYMBaAFNoTaxGlndxIWgfquLd8I+q1gwb+MA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEFBQcDAjA9BgNVHSAENjA0MDIGB2CCbGUBAQIwJzAlBggrBgEFBQcCARYZaHR0cHM6Ly93d3cuaWNtZ2NhLmlyL2NwczAdBgNVHQ4EFgQUiUazegXacBKWlI5yfPYd274uN/gwDQYJKoZIhvcNAQELBQADggEBAMFSkfDAZuwMHWXzoxGVHBiwSJbMsO3cn8l6QNAEaUMmRRdP5F03RIJMpCWWt+EaRCcXjT2ONnTHrd+7bW11jhYeMxGz5SwX13/pxqSn67GcJOQFW4J+feGCNNDeu4lMrTPdsCXLIWD1BbLVz7KygyNxklalj8vlGpv3DLrSWrS1UeeeiBg5m6/mmaL+QkfMRIVR+ch8Lk+2pZYaIrtVjw58YpzEcBdPnzTWWda5UWmEcdHjHBAJ6pmwZnBpTP9xhE269//XwDyRaePIOJRK47uzSTf4NE4GUXA7i3KoAp5Oth3v39qpU0MibsyYmbvZH0RUMZOZRxtP+4SWkhdf/lcxggJlMIICYQIBATCB3jCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczAgtqcgtLgAAAAAA5IjAJBgUrDgMCGgUAoF0wGAYJKoZIhvcNAQkDMQsGCSqGSIb3DQEHATAcBgkqhkiG9w0BCQUxDxcNMjYwODIzMTEzNTE5WjAjBgkqhkiG9w0BCQQxFgQUDPOV+PzO7qkp4Q1Oraca2ydg35QwDQYJKoZIhvcNAQEBBQAEggEArd3k1qeBOtB4s/O1WdugDvLXak93rYvy+6PmHmV4R7PBGl8T0ws4C38346Lw6cwgXYmrHuAiPPUPXgAacacsSLn6JveSkUXmSWqBQHiK5Q6AmuYv0o38/U5hpFFWTEFvuhiufJ4KlxnvmcVU0mgifZK7M2R6gXnhlxNyYxG5xBwCbWD+1tuHLURSQ0hNrL+7kqHHfXiaGw9JppQQbAPjPAwqu34TOjBn547YvekkexBdrD3vOi4Em+TLP0rMCcixT5VDlugH89Muq5Lo2OaB749Y+0tHt4b9E1Jmk6xZv8WgXwP1asajueV/u5CzigVObNrtiOE/zUqycnMPFU+G/A==</td>
+			</tr><tr>
+				<td class="Hidden">72360</td><td style="width:40%;">
+                                                            <span itemprop='1978'>شرکت مشاور سرمایه گذاری آوای آگاه</span>
+                                                        </td><td align="center" style="width:30%;">
+                                                            100,000
+                                                        </td><td align="center" style="width:28%;">1</td><td class="Hidden">MIIJZgYJKoZIhvcNAQcCoIIJVzCCCVMCAQExCzAJBgUrDgMCGgUAMIIBIwYJKoZIhvcNAQcBoIIBFASCARBQRUZ6YzJWdFlteDVYMFoxYm1SR2IzSjFiVUYwZEdWdVpHVmxjejQ4VEdWMGRHVnlTVVErTVRVeE5URTFORHd2VEdWMGRHVnlTVVErUEZCeWFYWnBiR1ZuWldSVGFHRnlaV2h2YkdSbGNrbEVQakU1TnpnOEwxQnlhWFpwYkdWblpXUlRhR0Z5WldodmJHUmxja2xFUGp4VGFHRnlaVU52ZFc1MFBqRXdNREF3TUR3dlUyaGhjbVZEYjNWdWRENDhUM2R1WlhKUVpYSmpaVzUwUGpBOEwwOTNibVZ5VUdWeVkyVnVkRDQ4TDBGemMyVnRZbXg1WDBaMWJtUkdiM0oxYlVGMGRHVnVaR1ZsY3o0PaCCBa8wggWrMIIEk6ADAgECAgtqcgtLgAAAAAA5IjANBgkqhkiG9w0BAQsFADCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczMB4XDTI2MDcwMTA5MDMyOFoXDTI4MDYzMDA5MDMyOFowggE8MQswCQYDVQQGEwJJUjETMBEGA1UECAwK2KrZh9ix2KfZhjETMBEGA1UEBwwK2KrZh9ix2KfZhjEZMBcGA1UECgwQTm9uLUdvdmVybm1lbnRhbDEcMBoGA1UECwwTQWdhaCBIb21lIFJlaXQgRnVuZDEgMB4GA1UEAwwXR29oYXIgU2FkZWdoIE5pYSBbU2lnbl0xITAfBgkqhkiG9w0BCQEWEnNhZGVnaG5pYUBhZ2FoLmNvbTETMBEGA1UEBRMKMDAyMTMyODYwOTERMA8GA1UEKgwI2q/ZiNmH2LExGDAWBgNVBAQMD9i12KfYr9mCINmG24zYpzEtMCsGA1UEDAwk2YXYr9uM2LHYudin2YXZhCDZ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</td>
+			</tr><tr class="GridFooter">
+				<td align="right">جمع</td><td align="center">10,000,000</td><td class="total-attenees-percent" align="center">100.00</td>
+			</tr>
+		</table>
+	</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/User-Group-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>اعضای هیئت رئیسه
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="accar-body" id="acc-board">
+                                        <div class="accar-inner-body">
+                                            <div class="section-desc">بر اساس رای گیری به عمل آمده در جلسه مجمع، اعضای هیئت رئیسه به شرح ذیل انتخاب گردیدند:</div>
+                                            <div id="divChief">آقای/خانم <span class='span-in-text'>بنت الهدا نورپناه</span> (نماینده دارندگان واحدهای سرمایه گذاری دارای حق رای) به عنوان رئیس مجمع</div>
+                                            <div id="divSupervisor1">آقای/خانم <span class='span-in-text'>محمد مهدی رادپور</span> (نماینده متولی صندوق) به عنوان ناظر مجمع</div>
+                                            <div id="divSupervisor2">آقای/خانم <span class='span-in-text'>الناز اخته پادی</span> (نماینده دارندگان واحدهای سرمایه گذاری دارای حق رای) به عنوان ناظر مجمع</div>
+                                            <div id="divSecretary">آقای/خانم <span class='span-in-text'>رقیه روانبخش سعدی</span> (سایر) به عنوان منشی مجمع</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divPrevFundPillars" class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/Hive-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>ارکان صندوق
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="accar-body" id="acc-pillar">
+                                        <div class="accar-inner-body">
+                                            <div class="section-desc">آخرین ارکان صندوق در سال مالی مورد گزارش به شرح ذیل بوده است:</div>
+                                            <div>
+		<table class="Grid grid-pillars" cellspacing="0" rules="cols" border="1" id="ucAssemblyFundPillar_grvFundPillars" style="width:100%;border-collapse:collapse;border-collapse: collapse;">
+			<tr class="GridHeader">
+				<th class="Hidden" scope="col">&nbsp;</th><th class="Hidden" scope="col">&nbsp;</th><th class="Hidden" scope="col">&nbsp;</th><th scope="col" style="width:45%;">سمت رکن</th><th scope="col" style="width:29%;">نام رکن</th><th scope="col" style="width:24%;">شناسه ملی</th>
+			</tr><tr>
+				<td class="Hidden">95730</td><td class="Hidden">1515154</td><td class="Hidden">MIIOWgYJKoZIhvcNAQcCoIIOSzCCDkcCAQExCzAJBgUrDgMCGgUAMIIBcwYJKoZIhvcNAQcBoIIBZASCAWBQRUZ6YzJWdFlteDVYMFoxYm1SUWFXeHNZWEkrUEV4bGRIUmxja2xFUGpFMU1UVXhOVFE4TDB4bGRIUmxja2xFUGp4R2RXNWtVR2xzYkdGeVNVUStOREV5TWp3dlJuVnVaRkJwYkd4aGNrbEVQanhTWlhCeVpYTmxiblJoZEdsMlpVNWhiV1UrMktmWmhkdU0ySzhnMllMWXNkaW8yS2ZaaHR1TUlOaXgyTEk4TDFKbGNISmxjMlZ1ZEdGMGFYWmxUbUZ0WlQ0OFVtVndjbVZ6Wlc1MFlYUnBkbVZPWVhScGIyNWhiRWxFUGpBd056a3pORGM1TmpjOEwxSmxjSEpsYzJWdWRHRjBhWFpsVG1GMGFXOXVZV3hKUkQ0OFNYTkVaV3hsZEdWa1BrWmhiSE5sUEM5SmMwUmxiR1YwWldRK1BDOUJjM05sYldKc2VWOUdkVzVrVUdsc2JHRnlQZz09oIIKsjCCBQ0wggP1oAMCAQICC2pyC0uAAAAAADRWMA0GCSqGSIb3DQEBCwUAMIHOMQswCQYDVQQGEwJJUjEVMBMGA1UEChMMR292ZXJubWVudGFsMS0wKwYDVQQLEyRTZWN1cml0aWVzIGFuZCBFeGNoYW5nZSBPcmdhbml6YXRpb24xPzA9BgNVBAsTNklyYW4gQ2FwaXRhbCBNYXJrZXQgR292ZXJubWVudGFsIENlcnRpZmljYXRlIEF1dGhvcml0eTE4MDYGA1UEAxMvSUNNR0NBIEdvdmVybm1lbnRhbCBJbnRlcm1lZGlhdGUgU2lsdmVyIENBIC0gRzMwHhcNMjUxMTI1MTE1MTMxWhcNMjcxMTI1MTE1MTMxWjCBwjEcMBoGA1UEAwwTU0VPIENPREFMIFtMb2dTaWduXTEUMBIGA1UEBRMLMTQwMDAyNTkwNTAxLTArBgNVBAsMJFNlY3VyaXRpZXMgYW5kIEV4Y2hhbmdlIE9yZ2FuaXphdGlvbjE1MDMGA1UECwwsSW5mb3JtYXRpb24gVGVjaG5vbG9neSBNYW5hZ2VtZW50IERlcGFydG1lbnQxGTAXBgNVBAoMEE5vbi1Hb3Zlcm5tZW50YWwxCzAJBgNVBAYTAklSMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwVaKm+S5AZYn8vAV2jWARzken8IwuM7TENoZu+kEAbwGNgpVCz6rSpNdhJq1PS2TP4HKN6CwSyhuCXYH+ZV88xPCs2gUWqRxykrOUcq6A5pOzlyEoNZx3Z6VyKwrqo+aVUql5NAZ6nGiiXJZzXSgZ66z+EVNSgzcvpB0BBvDVI53cJsa4aGaOTaCUCwoTBukgruj6r5s7/t1XpdyPy2sMuzoFGxqh3dSxlklOmMDUj6NLRrOXjcNWGOokAFpXQMX0HsU1KRU9WIjIfZ1JvzpyOR7WGtdn8dS8fTGpaUdA1C6f6q5nXNzCepuxCTdpQtiIK9Dj/urQGgEp0sbSbw2TQIDAQABo4H1MIHyMDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9jcmwyLmljbWdjYS5pci9pY21nY2EtbDJnMy5jcmwwNQYIKwYBBQUHAQEEKTAnMCUGCCsGAQUFBzABhhlodHRwOi8vb2NzcGwyZzMuaWNtZ2NhLmlyMA4GA1UdDwEB/wQEAwIGwDATBgNVHSUEDDAKBggrBgEFBQcDAjA9BgNVHSAENjA0MDIGB2CCbGUBAQIwJzAlBggrBgEFBQcCARYZaHR0cHM6Ly93d3cuaWNtZ2NhLmlyL2NwczAdBgNVHQ4EFgQIQN91ucQOUB7//3N1YmplY3RBbHQwDQYJKoZIhvcNAQELBQADggEBAAO9pqi7O0eKI67IAyMYFiWOy+5EPmNA+yuwnCvIhmoZOBgCHA5TSPHjRxDnVzMvpfdH7npFBjuZ3YojFSMNIoGhVINNF6wKRelNhhpIGZsJswDS6WhM6UjaBNaRiCauWXMYJvZng8lq9P5EU4+7dA/zTPWYxoX9S6A5chSoDayohEUBpDZ/sW9E9hVmeIdwLQPqNhItyPriAXXG7r+OlXdLrdfUNSqxnphpoY1F0MMuJ6WbrCbB0KNobla3nJolfgmr2fx9XqerCosxjtEbq68eSFbSbfPjr8jqMr9TMFVpDW6iGV0OoNXK3K7IiGQiwg94u75bTn07sR5Hl/rQ1okwggWdMIIDhaADAgECAhMeAAAAJjh32PaLexGxAAAAAAAmMA0GCSqGSIb3DQEBCwUAMGYxCzAJBgNVBAYTAklSMRcwFQYDVQQKEw5JLlIuR292ZXJubWVudDEQMA4GA1UECxMHUm9vdCBDQTEsMCoGA1UEAxMjSXNsYW1pYyBSZXB1YmxpYyBvZiBJcmFuIFJvb3QgQ0EtRzMwHhcNMjMxMDMwMTA1NTEzWhcNMjgxMDMwMTEwNTEzWjCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx95HTd46jt3oOMRqYVuI7uO0XTx0RgCH6yXte1ZeBF3Ic6YM/bS0udk9c9tzbyNd4bqEiOSA6A1HnuZdj9/7wXZ4sy1OW4niVaMNdbt+N0EgNvmFNjxKKnfBmP2XlIpZwnYfsnbS1O9sh+VRDxL2jUFy00g/g04fpXlRN70W9VbKtlpQYxjMqu559JGeEr7eMRhItXifwJOD3/pRCoP+weiLpgV8NlzRSYa/Maft/PLSJW3QxCMO6F/RsZIDs+eA9/vqDW+uzfVZS1VKtIq8/kv7ZNFAPlQoAV9JKUrU8TQl5AQPWNA7V37EcARR26eOHu0fUw4qT8fmTClbtfhHiwIDAQABo4HaMIHXMBIGA1UdEwEB/wQIMAYBAf8CAQEwDgYDVR0PAQH/BAQDAgGGMDIGA1UdHwQrMCkwJ6AloCOGIWh0dHA6Ly9jcmwucmNhLmdvdi5pci9pcmljYUczLmNybDAdBgNVHQ4EFgQU2hNrEaWd3EhaB+q4t3wj6rWDBv4wPQYDVR0gBDYwNDAyBgdggmxlAQECMCcwJQYIKwYBBQUHAgEWGWh0dHBzOi8vd3d3LmljbWdjYS5pci9jcHMwHwYDVR0jBBgwFoAUdxHZl1QovHr3etnTgo7AcUREJBgwDQYJKoZIhvcNAQELBQADggIBAHWYlYhpsuWS5UiIfRtFkU2bUy9Lhi/CyVSLe1iu+kC9tiSZPeu2w6N2L2LYFGccGatFS9dtF3Jk/6eSC6ZzLJpG8zZHc2AuLpsOqAd6T6480ox/98XHKXSQxuA5CRJH9Hwhi999LtjY4oMqxau/PO+WpJ0N8m9JGe95I6yrBFOtC+7xLrNGEjgy5y0I7j5IM4J9gG4Veg0p9B1H0yZ6Wt+gjRjJo5OHlrA/SsrQmRGKno+ATp9PGhGFJ9243V8MNCrRPwoXfIEGoZ3Y5JErlrZFDIitCEGxKFzuPUxBliGyyQxLOcEbO0UF/mUdrp8Kd+rDopzQl3589R8SUZjXsLh1Dm1QhdFU+TXcz7QT0wuFgC1kfMCYAZ2hlNOTugXXPpA0UGLrJS9N3pGl1MthkvK8zj1ne+BtuqpObRP4TpZzC4mrNA3vRLmIFaoYE7OYr1eqOvlPegm6CgEREwhBjGUK9rON1NLNIZ/+LuhwFPBo7V0pEI3AOaUSU0/VO/073WGwmpStOtixcQi765yjbB5bPc/M9he0VCB8kLf3cOpT932UQlquSO0q6FKnNeLw1RY78jrwF8Huoi4UNBDIsWQI9WnnGXeZAHGH6LXMkq3+Gsz2UEV4vVNrKfZF90RS/I291JhFaNrOM+MWY5vQexHUAdoaKmGvzf4hj5I6xxvOMYICBjCCAgICAQEwgd4wgc4xCzAJBgNVBAYTAklSMRUwEwYDVQQKEwxHb3Zlcm5tZW50YWwxLTArBgNVBAsTJFNlY3VyaXRpZXMgYW5kIEV4Y2hhbmdlIE9yZ2FuaXphdGlvbjE/MD0GA1UECxM2SXJhbiBDYXBpdGFsIE1hcmtldCBHb3Zlcm5tZW50YWwgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MTgwNgYDVQQDEy9JQ01HQ0EgR292ZXJubWVudGFsIEludGVybWVkaWF0ZSBTaWx2ZXIgQ0EgLSBHMwILanILS4AAAAAANFYwCQYFKw4DAhoFADANBgkqhkiG9w0BAQEFAASCAQAuAIUJWo5GD6zEaexYmuQh0ocaMEbjKtIL2EJhRpbc+1xg0u/uDxdVqUM3V6Y8mzTaKiG8Twf9+eIZ2JimkM+ewihT4aEpJI9SdsjA0crl1UENNux5hymIEXg+5vnFkVFfYCdRchcjPNUcMoWpkWvlqfLXaGnU615TBGhFx5fwHmRvo8xE+9I0NsFFOcsONYNhyHp5pqaTGJx78H343qH/NIRQv+rB7LS5+2fHSM0firduS/nf2msZ4VQw9qtMfbbR/y9UoiiqHI3b/+176HeWf2DKH+s1VUHMsUR/sZ3280ymnfXtAzvZzeTkKdz8YThLC5ygZzN/loqgNNL7FPnY</td><td class="GridCell" style="width:45%;">
+                <span itemprop='41001'>
+                    مدیر صندوق
+                </span>
+            </td><td style="width:29%;">
+                <span itemprop='4122'>سبدگردان آگاه</span>
+            </td><td align="center" style="width:24%;">
+                <span>14007821167 </span>
+            </td>
+			</tr><tr style="background-color:#E4EBF8;">
+				<td class="Hidden">95731</td><td class="Hidden">1515154</td><td class="Hidden">MIIOXgYJKoZIhvcNAQcCoIIOTzCCDksCAQExCzAJBgUrDgMCGgUAMIIBdwYJKoZIhvcNAQcBoIIBaASCAWRQRUZ6YzJWdFlteDVYMFoxYm1SUWFXeHNZWEkrUEV4bGRIUmxja2xFUGpFMU1UVXhOVFE4TDB4bGRIUmxja2xFUGp4R2RXNWtVR2xzYkdGeVNVUStOREV5TlR3dlJuVnVaRkJwYkd4aGNrbEVQanhTWlhCeVpYTmxiblJoZEdsMlpVNWhiV1UrMktmWXFObUkyS2ZaaE5tQjJMYlpoQ0RZcU5pejJMZllwOW1GMjR3OEwxSmxjSEpsYzJWdWRHRjBhWFpsVG1GdFpUNDhVbVZ3Y21WelpXNTBZWFJwZG1WT1lYUnBiMjVoYkVsRVBqTTVNekF5TURZME5UVThMMUpsY0hKbGMyVnVkR0YwYVhabFRtRjBhVzl1WVd4SlJENDhTWE5FWld4bGRHVmtQa1poYkhObFBDOUpjMFJsYkdWMFpXUStQQzlCYzNObGJXSnNlVjlHZFc1a1VHbHNiR0Z5UGc9PaCCCrIwggUNMIID9aADAgECAgtqcgtLgAAAAAA0VjANBgkqhkiG9w0BAQsFADCBzjELMAkGA1UEBhMCSVIxFTATBgNVBAoTDEdvdmVybm1lbnRhbDEtMCsGA1UECxMkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMT8wPQYDVQQLEzZJcmFuIENhcGl0YWwgTWFya2V0IEdvdmVybm1lbnRhbCBDZXJ0aWZpY2F0ZSBBdXRob3JpdHkxODA2BgNVBAMTL0lDTUdDQSBHb3Zlcm5tZW50YWwgSW50ZXJtZWRpYXRlIFNpbHZlciBDQSAtIEczMB4XDTI1MTEyNTExNTEzMVoXDTI3MTEyNTExNTEzMVowgcIxHDAaBgNVBAMME1NFTyBDT0RBTCBbTG9nU2lnbl0xFDASBgNVBAUTCzE0MDAwMjU5MDUwMS0wKwYDVQQLDCRTZWN1cml0aWVzIGFuZCBFeGNoYW5nZSBPcmdhbml6YXRpb24xNTAzBgNVBAsMLEluZm9ybWF0aW9uIFRlY2hub2xvZ3kgTWFuYWdlbWVudCBEZXBhcnRtZW50MRkwFwYDVQQKDBBOb24tR292ZXJubWVudGFsMQswCQYDVQQGEwJJ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</td><td class="GridCell" style="width:45%;">
+                <span itemprop='41002'>
+                    متولی صندوق
+                </span>
+            </td><td style="width:29%;">
+                <span itemprop='4125'>حسابرسي و بهبود سيستمهاي مديريت حسابرسين</span>
+            </td><td align="center" style="width:24%;">
+                <span>10100316991 </span>
+            </td>
+			</tr><tr>
+				<td class="Hidden">95732</td><td class="Hidden">1515154</td><td class="Hidden">MIIOVgYJKoZIhvcNAQcCoIIORzCCDkMCAQExCzAJBgUrDgMCGgUAMIIBbwYJKoZIhvcNAQcBoIIBYASCAVxQRUZ6YzJWdFlteDVYMFoxYm1SUWFXeHNZWEkrUEV4bGRIUmxja2xFUGpFMU1UVXhOVFE4TDB4bGRIUmxja2xFUGp4R2RXNWtVR2xzYkdGeVNVUStOREV5TkR3dlJuVnVaRkJwYkd4aGNrbEVQanhTWlhCeVpYTmxiblJoZEdsMlpVNWhiV1UrMkxuWmhOdU0yTEhZdHRpbklOaTUyTGZaaU5tQjI0dzhMMUpsY0hKbGMyVnVkR0YwYVhabFRtRnRaVDQ4VW1Wd2NtVnpaVzUwWVhScGRtVk9ZWFJwYjI1aGJFbEVQalF4TXpJd09EQTNORGs4TDFKbGNISmxjMlZ1ZEdGMGFYWmxUbUYwYVc5dVlXeEpSRDQ4U1hORVpXeGxkR1ZrUGtaaGJITmxQQzlKYzBSbGJHVjBaV1ErUEM5QmMzTmxiV0pzZVY5R2RXNWtVR2xzYkdGeVBnPT2gggqyMIIFDTCCA/WgAwIBAgILanILS4AAAAAANFYwDQYJKoZIhvcNAQELBQAwgc4xCzAJBgNVBAYTAklSMRUwEwYDVQQKEwxHb3Zlcm5tZW50YWwxLTArBgNVBAsTJFNlY3VyaXRpZXMgYW5kIEV4Y2hhbmdlIE9yZ2FuaXphdGlvbjE/MD0GA1UECxM2SXJhbiBDYXBpdGFsIE1hcmtldCBHb3Zlcm5tZW50YWwgQ2VydGlmaWNhdGUgQXV0aG9yaXR5MTgwNgYDVQQDEy9JQ01HQ0EgR292ZXJubWVudGFsIEludGVybWVkaWF0ZSBTaWx2ZXIgQ0EgLSBHMzAeFw0yNTExMjUxMTUxMzFaFw0yNzExMjUxMTUxMzFaMIHCMRwwGgYDVQQDDBNTRU8gQ09EQUwgW0xvZ1NpZ25dMRQwEgYDVQQFEwsxNDAwMDI1OTA1MDEtMCsGA1UECwwkU2VjdXJpdGllcyBhbmQgRXhjaGFuZ2UgT3JnYW5pemF0aW9uMTUwMwYDVQQLDCxJbmZvcm1hdGlvbiBUZWNobm9sb2d5IE1hbmFnZW1lbnQgRGVwYXJ0bWVudDEZMBcGA1UECgwQTm9uLUdvdmVybm1lbnRhbDELMAkGA1UEBhMCSVIwggEiMA0G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</td><td class="GridCell" style="width:45%;">
+                <span itemprop='41003'>
+                    حسابرس صندوق
+                </span>
+            </td><td style="width:29%;">
+                <span itemprop='4124'>حسابرسي و خدمات مالي و مديريت ايران مشهود</span>
+            </td><td align="center" style="width:24%;">
+                <span>10100322973 </span>
+            </td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accar-container">
+                                    <div class="accar-header">
+                                        <table class="tbl-pillar-title">
+                                            <tr>
+                                                <td>
+                                                    <img src="../Images/FlatIcons/Decision-W-24.png">
+                                                </td>
+                                                <td>
+                                                    <div class="l-arrow"></div>
+                                                </td>
+                                                <td>تصمیمات مجمع
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"> </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    
+                                    <div class="accar-body" id="acc-decision">
+                                        <div class="accar-inner-body">
+                                            <div id="divCollapseDecisions" status="to-close" style="margin: 0 auto; direction: ltr; cursor: pointer" class="font10">
+                                                <img id="imgCollapseDecisions" src="../Images/FlatIcons/Expand-16.png" alt="باز/بسته کردن همه" style="vertical-align: middle; padding: 2px">
+                                                <span id="spanCollapseDecisions" style="display: inline-block; width: 60px;">بستن همه</span>
+                                            </div>
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            <div id="div_ApprovalChangesInFundProspectusCosts" agendacode="256" class="indent-group">
+                                                <div class="indent-part-header">
+                                                    <span class="indent-title">تصویب تغییرات لازم در امیدنامه صندوق - هزینه های صندوق</span><span class="l-arrow-24"></span>
+                                                </div>
+                                                <div class="decision-part">
+                                                    <div class="section-desc">بخش هزینه های صندوق به شرح ذیل تصویب گردید:</div>                                                    
+                                                    <div>
+		<table class="Grid" cellspacing="0" rules="cols" border="1" id="ucAssemblyProspectusCosts1_grvProspectusCosts" style="width:100%;border-collapse:collapse;border-collapse: collapse;">
+			<tr class="GridHeader">
+				<th class="Hidden" scope="col">&nbsp;</th><th scope="col">نوع هزینه</th><th scope="col">محل هزینه</th><th scope="col">کارمزد متغییر</th><th scope="col" style="width:7%;">کارمزد سالانه ثابت (میلیون ريال)</th><th scope="col" style="width:7%;">حداقل مبلغ کارمزد (میلیون ريال)</th><th scope="col" style="width:7%;">حداکثر مبلغ کارمزد (میلیون ريال)</th><th scope="col">توضیحات (متن مصوبه عیناً اعلام شود)</th>
+			</tr><tr>
+				<td class="Hidden">14768</td><td>
+                <span itemprop='2000'>هزینه های دسترسی به نرم افزار، تارنما و خدمات پشتیبانی آن ها</span>
+                <input type="hidden" name="ucAssemblyProspectusCosts1$grvProspectusCosts$ctl02$hdfRowCostType" id="ucAssemblyProspectusCosts1_grvProspectusCosts_ctl02_hdfRowCostType" value="2000">
+            </td><td>
+                <span itemprop='0'></span>
+                <input type="hidden" name="ucAssemblyProspectusCosts1$grvProspectusCosts$ctl02$hdfRowCostIn" id="ucAssemblyProspectusCosts1_grvProspectusCosts_ctl02_hdfRowCostIn" value="0">
+            </td><td align="right">                
+                <div><ul><li>متوسط خالص ارزش دارایی ها تا سقف 30 هزار میلیارد ریال خالص ارزش دارایی ها یا نرخ سالانه: <span style='color:#007ec8;'>0.0004000000</span></li><li>متوسط خالص ارزش دارایی ها نسبت به مازاد 30 هزار میلیارد ریال تا 50 هزار میلیارد ریال یا نرخ سالانه: <span style='color:#007ec8;'>0.0002400000</span></li><li>متوسط ارزش خالص دارایی ها نسبت به مازاد 50 هزار ریال یا نرخ سالانه: <span style='color:#007ec8;'>0.0000500000</span></li></ul></div>
+            </td><td align="center" style="width:7%;">13,600.00</td><td align="center" style="width:7%;">0</td><td align="center" style="width:7%;">50000</td><td align="justify">4-1- در جدول امیدنامه صندوق، هزینه‌های دسترسی به نرم‌افزار، تارنما و خدمات پشتیبانی آن‌ها به شرح ذیل می‌باشد:  الف) هزینه ثابت  ردیف	نوع صندوق	مبلغ در سال 1405 (بابت یک سال کامل) 1	هزینه ثابت 	13.600.000.000 ریال 2	تخفیف در هزینه ثابت 	در طول سال 1405 از 50% تخفیف در هزینه ثابت بهره‌مند می‌شوند      ب)هزینه متغییر  ردیف	پلکان	ضریب در سال 1405	روش محاسبه پلکانی 1	مبلغ خالص ارزش دارایی تا 30 هزار میلیارد ریال	0.0004	این سه پلکان با شرح زیر در محاسبه هزینه متغیر لحاظ می‌شوند: 1-	مبلغ خالص ارزش دارایی صندوق در هر پلکانی که قرار گیرد، تا 30 هزار میلیارد ریال آن در نرخ پلکان اول ضرب می‌شود، 2-	مازاد بر آن تا 50 هزار میلیارد ریال، در نرخ پلکان دوم ضرب می‌شود، 3-	و آن بخش از خالص ارزش دارایی که بالای 50 هزار میلیارد ریال است نیز در نرخ پلکان سوم ضرب می‌شود، سپس اعداد حاصله در هرپلکان با هم جمع می‌شوند. 2	مبلغ خالص ارزش دارایی بیش از 30 تا مبلغ 50 هزار میلیارد ریال	0.00024	 3	مبلغ خالص ارزش دارایی بیش از 50 هزار میلیارد ریال	0.00005	 4	*سقف هزینه متغیر قابل دریافت از محل خالص ارزش دارایی برابر با 50.000.000.000 ریال  است.</td>
+			</tr>
+		</table>
+	</div>
+
+<br>
+
+
+<input name="ucAssemblyProspectusCosts1$hdf_ID" type="hidden" id="ucAssemblyProspectusCosts1_hdf_ID" class="CostId" value="-1">
+<input name="ucAssemblyProspectusCosts1$hdf_SelectedCostID" type="hidden" id="ucAssemblyProspectusCosts1_hdf_SelectedCostID" class="SelectedCostId" value="-1">
+<input name="ucAssemblyProspectusCosts1$hdfLetterId" type="hidden" id="ucAssemblyProspectusCosts1_hdfLetterId" class="letterId" value="1515154">
+<input name="ucAssemblyProspectusCosts1$hdfProspectusCostLocationJSON" type="hidden" id="ucAssemblyProspectusCosts1_hdfProspectusCostLocationJSON" class="prospectusCostLocationJSON">
+
+<input name="ucAssemblyProspectusCosts1$hdfAssm_ProspectusCosts_ID" type="hidden" id="ucAssemblyProspectusCosts1_hdfAssm_ProspectusCosts_ID" value="-1">
+<input name="ucAssemblyProspectusCosts1$hdfAssm_ProspectusCostDetail_ID" type="hidden" id="ucAssemblyProspectusCosts1_hdfAssm_ProspectusCostDetail_ID" value="-1" class="hdf-detail-id">
+<input name="ucAssemblyProspectusCosts1$hdfThumbPrint_pcost" type="hidden" id="ucAssemblyProspectusCosts1_hdfThumbPrint_pcost">
+
+                                                </div>
+                                            </div> 
+
+                                                                                        
+
+                                                                                        
+                                            
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            
+
+                                            <div id="div_OtherCases" agendacode="32768" class="indent-group">
+                                                <div class="indent-part-header">
+                                                    <span class="indent-title">سایر موارد</span><span class="l-arrow-24"></span>
+                                                </div>
+                                                <div class="decision-part">
+                                                    <div class="section-desc">سایر موارد:</div>
+                                                    <span id="lblOtherCasesDesc" class="description-text"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div id="divAssignedPerson" style="width: 98%;margin: 20px 30px 20px 0;font: 1.6em 'B Mitra';">
+                                    مجمع به آقا/خانم <span id="lblAssignedPerson" class="paper-text" style="font: 1.2em 'B Mitra'; text-align:center;">    قاسم دارابی    </span>با حق توکیل به غیر وکالت داد تا نسبت به ثبت این صورتجلسه
+                                    نزد اداره ثبت شرکتها و موسسات غیرتجاری اقدام نماید.
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="height: 40px;"></td>                        
+                    </tr>
+                </table>
+            
+</div>
+    
+
+
+</form>
+</body>
+
+</html>

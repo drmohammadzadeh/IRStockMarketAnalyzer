@@ -3,13 +3,13 @@
   "inscode": "30714151942396396",
   "asset_id": "30930",
   "live_info": {
-    "date": "20260906",
+    "date": "20260907",
     "close_price": 14380.0,
     "last_price": 14380.0,
-    "yesterday_price": 13970.0,
-    "volume": 39077343.0,
-    "value": 561932192340.0,
-    "trades": 8913.0
+    "yesterday_price": 14380.0,
+    "volume": 0.0,
+    "value": 0.0,
+    "trades": 0.0
   },
   "rahavard_prices": {
     "close_price": 14380.0,

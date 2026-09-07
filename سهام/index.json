@@ -71,23 +71,31 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -1,
+    "score": 3,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.7,
+      "score": 4.0,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.6,
+        "weighted": 4.3,
         "rules": 4.0,
-        "horizon": 3.4
+        "horizon": 3.8
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «بانیان» (نیان الکترونیک) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان -2.2٪ به 16,860 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 3.34 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 16,523 تا 17,197 ریال، تارگت اولیه 16,923 ریال، حد ضرر حمایتی 15,174 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "16,523 تا 17,197 ریال",
+      "target_1": 16922.6,
+      "stop_loss": 15174.0,
+      "risk_reward_ratio": 0.04
     }
   },
   {
@@ -95,8 +103,8 @@
     "name": "گروه پتروشیمی تابان فردا",
     "logo": "",
     "current_price": 14380.0,
-    "change_percent": 2.93,
-    "volume": "39.1M",
+    "change_percent": 0.0,
+    "volume": "—",
     "market_cap": "14,380 B",
     "chart_14d": [
       {
@@ -118,6 +126,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 14380.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 14380.0
       }
     ],
     "links": {
@@ -126,7 +138,8 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D8%A7%D8%A8%D8%A7%D9%86",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D8%A7%D8%A8%D8%A7%D9%86"
     },
     "verdict": "خرید قوی (Strong Buy)",
     "score": 7,
@@ -143,21 +156,24 @@
         "horizon": 5.0
       },
       "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    },
+    "executive_summary": "نماد «تابان» (گروه پتروشیمی تابان فردا) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های سرمایه‌گذاری و هلدینگ، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان 0.0٪ به 14,380 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 35.77 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تخفیف قیمتی قابل توجه نسبت به ارزش خالص دارایی‌ها (NAV) و تنوع سبد سرمایه‌گذاری، پشتوانه ارزندگی بنیادی بوده و ساختار تکنیکال از پتانسیل رشد میان‌مدت حمایت می‌کند. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 14,092 تا 14,668 ریال، تارگت اولیه 16,106 ریال، حد ضرر حمایتی 14,007 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "14,092 تا 14,668 ریال",
+      "target_1": 16105.6,
+      "stop_loss": 14007.12,
+      "risk_reward_ratio": 4.63
     }
   },
   {
     "symbol": "تلیسه",
     "name": "دامداری تلیسه نمونه",
     "logo": "",
-    "current_price": 9470.0,
-    "change_percent": -2.07,
-    "volume": "31.5M",
-    "market_cap": "9,470 B",
+    "current_price": 9650.0,
+    "change_percent": 1.9,
+    "volume": "2.5M",
+    "market_cap": "9,650 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 9320.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 9250.0
@@ -209,6 +225,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 9470.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 9650.0
       }
     ],
     "links": {
@@ -217,38 +237,42 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D9%84%DB%8C%D8%B3%D9%87"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 0,
+    "score": -2,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 3.9,
+      "score": 3.8,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.9,
+        "weighted": 3.8,
         "rules": 4.0,
-        "horizon": 3.7
+        "horizon": 3.6
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «تلیسه» (دامداری تلیسه نمونه) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های زراعت و دامپروری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +1.9٪ به 9,650 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.56 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. بررسی تراز عملیاتی، تنوع محصولات کشاورزی و دامی و ثبات در درآمدهای فصلی، چشم‌انداز بنیادی مطلوبی ترسیم کرده و ساختار نموداری نیز در سطوح حمایتی تثبیت شده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 9,457 تا 9,843 ریال، تارگت اولیه 10,360 ریال، حد ضرر حمایتی 8,714 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "9,457 تا 9,843 ریال",
+      "target_1": 10360.0,
+      "stop_loss": 8714.36,
+      "risk_reward_ratio": 0.76
     }
   },
   {
     "symbol": "خودرو",
     "name": "ایران خودرو",
     "logo": "",
-    "current_price": 722.0,
-    "change_percent": 2.27,
-    "volume": "8.9B",
-    "market_cap": "217,795 B",
+    "current_price": 743.0,
+    "change_percent": 2.91,
+    "volume": "1.4B",
+    "market_cap": "224,130 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 614.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 620.0
@@ -300,6 +324,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 722.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 743.0
       }
     ],
     "links": {
@@ -308,38 +336,42 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AE%D9%88%D8%AF%D8%B1%D9%88",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%D8%B1%D9%88"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 0,
+    "score": 2,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 4.0,
+      "score": 3.9,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 4.2,
+        "weighted": 4.0,
         "rules": 4.0,
-        "horizon": 3.8
+        "horizon": 3.7
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «خودرو» (ایران خودرو) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.9٪ به 743 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 1.08 ثبت شد که نشان‌دهنده تقاضای مطلوب و برتری خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 728 تا 758 ریال، تارگت اولیه 832 ریال، حد ضرر حمایتی 669 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "728 تا 758 ریال",
+      "target_1": 832.16,
+      "stop_loss": 668.7,
+      "risk_reward_ratio": 1.2
     }
   },
   {
     "symbol": "زهلال",
     "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
     "logo": "",
-    "current_price": 51940.0,
-    "change_percent": 2.75,
-    "volume": "2.9M",
-    "market_cap": "51,940 B",
+    "current_price": 53490.0,
+    "change_percent": 2.98,
+    "volume": "278.3K",
+    "market_cap": "53,490 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 48900.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 48420.0
@@ -391,6 +423,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 51940.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 53490.0
       }
     ],
     "links": {
@@ -399,10 +435,11 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%B2%D9%87%D9%84%D8%A7%D9%84&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=1&ReportingType=-1&name=%DA%A9%D8%B4%D8%AA%20%D9%88%20%D8%B5%D9%86%D8%B9%D8%AA%20%D9%87%D9%84%D8%A7%D9%84&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%B2%D9%87%D9%84%D8%A7%D9%84"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 2,
+    "score": 4,
     "recommendation": {
       "signal": "STRONG_BUY",
       "signal_label": "خرید قاطع",
@@ -416,21 +453,24 @@
         "horizon": 4.0
       },
       "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    },
+    "executive_summary": "نماد «زهلال» (زراعت و دامداری زاگرس پیام اصفهان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های زراعت و دامپروری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 53,490 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 14.51 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. بررسی تراز عملیاتی، تنوع محصولات کشاورزی و دامی و ثبات در درآمدهای فصلی، چشم‌انداز بنیادی مطلوبی ترسیم کرده و ساختار نموداری نیز در سطوح حمایتی تثبیت شده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 52,420 تا 54,560 ریال، تارگت اولیه 59,909 ریال، حد ضرر حمایتی 48,179 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "52,420 تا 54,560 ریال",
+      "target_1": 59908.8,
+      "stop_loss": 48179.33,
+      "risk_reward_ratio": 1.21
     }
   },
   {
     "symbol": "غمهرا",
     "name": "گروه تولیدی مهرام",
     "logo": "",
-    "current_price": 17710.0,
-    "change_percent": 1.43,
-    "volume": "5.5M",
-    "market_cap": "17,710 B",
+    "current_price": 18230.0,
+    "change_percent": 2.94,
+    "volume": "696.8K",
+    "market_cap": "18,230 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 18180.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 18020.0
@@ -482,6 +522,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 17710.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 18230.0
       }
     ],
     "links": {
@@ -490,38 +534,42 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%BA%D9%85%D9%87%D8%B1%D8%A7",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%BA%D9%85%D9%87%D8%B1%D8%A7"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 1,
+    "score": -2,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
-      "score": 4.0,
+      "score": 3.9,
       "score_max": 5.0,
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 4.1,
+        "weighted": 3.9,
         "rules": 4.0,
-        "horizon": 3.8
+        "horizon": 3.7
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «غمهرا» (گروه تولیدی مهرام) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.9٪ به 18,230 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.59 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 17,865 تا 18,595 ریال، تارگت اولیه 19,180 ریال، حد ضرر حمایتی 16,407 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "17,865 تا 18,595 ریال",
+      "target_1": 19180.0,
+      "stop_loss": 16407.0,
+      "risk_reward_ratio": 0.52
     }
   },
   {
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",
-    "current_price": 12750.0,
-    "change_percent": 2.91,
-    "volume": "27.0M",
-    "market_cap": "12,750 B",
+    "current_price": 13130.0,
+    "change_percent": 2.98,
+    "volume": "6.7M",
+    "market_cap": "13,130 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 10740.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 10530.0
@@ -573,6 +621,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 12750.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 13130.0
       }
     ],
     "links": {
@@ -581,10 +633,11 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=0&ReportingType=1000000&name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable&Name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&IndustryGroup=27",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -4,
+    "score": -2,
     "recommendation": {
       "signal": "BUY",
       "signal_label": "خرید / ورود پله‌ای",
@@ -593,26 +646,29 @@
       "stars": "★★★★☆",
       "badge": "🟢 خرید / ورود پله‌ای (Buy)",
       "scores": {
-        "weighted": 3.6,
+        "weighted": 3.5,
         "rules": 4.0,
         "horizon": 3.3
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «فسازان» (غلتک‌سازان سپاهان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 13,130 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.61 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 12,867 تا 13,393 ریال، تارگت اولیه 14,706 ریال، حد ضرر حمایتی 11,817 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "12,867 تا 13,393 ریال",
+      "target_1": 14705.6,
+      "stop_loss": 11817.0,
+      "risk_reward_ratio": 1.2
     }
   },
   {
     "symbol": "وتجارت",
     "name": "بانک تجارت",
     "logo": "",
-    "current_price": 958.0,
-    "change_percent": -2.54,
-    "volume": "20.5B",
-    "market_cap": "214,521 B",
+    "current_price": 986.0,
+    "change_percent": 2.92,
+    "volume": "2.1B",
+    "market_cap": "220,791 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 780.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 803.0
@@ -664,6 +720,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 958.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 986.0
       }
     ],
     "links": {
@@ -672,7 +732,8 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=وتجارت",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%88%D8%AA%D8%AC%D8%A7%D8%B1%D8%AA"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
     "score": -4,
@@ -689,21 +750,24 @@
         "horizon": 3.3
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «وتجارت» (بانک تجارت) به عنوان یکی از مجموعه‌های فعال در گروه بانک و مؤسسات اعتباری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.9٪ به 986 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.41 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. بررسی ساختار ترازنامه، حاشیه سود سپرده‌گذاری و تسهیلات و نسبت قیمت به ارزش دفتری (P/B) ارزندگی بانکی مناسبی را نشان می‌دهد و مومنتوم قیمتی نیز در محدوده تثبیت قرار دارد. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 966 تا 1,006 ریال، تارگت اولیه 1,042 ریال، حد ضرر حمایتی 887 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "966 تا 1,006 ریال",
+      "target_1": 1042.0,
+      "stop_loss": 887.4,
+      "risk_reward_ratio": 0.57
     }
   },
   {
     "symbol": "کلید",
     "name": "صندوق املاک و مستغلات کلید",
     "logo": "",
-    "current_price": 17494.0,
-    "change_percent": 2.0,
-    "volume": "80.9M",
-    "market_cap": "12,980,294 B",
+    "current_price": 17766.0,
+    "change_percent": 1.55,
+    "volume": "4.0M",
+    "market_cap": "13,182,114 B",
     "chart_14d": [
-      {
-        "date": "۲۶ مرداد",
-        "price": 16257.0
-      },
       {
         "date": "۲۷ مرداد",
         "price": 15896.0
@@ -755,6 +819,10 @@
       {
         "date": "۱۵ شهریور",
         "price": 17494.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 17766.0
       }
     ],
     "links": {
@@ -763,7 +831,8 @@
       "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%DA%A9%D9%84%DB%8C%D8%AF",
       "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/technical_report.md",
       "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/fundamental_report.md",
-      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/README.md"
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%DA%A9%D9%84%DB%8C%D8%AF"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
     "score": 0,
@@ -780,6 +849,13 @@
         "horizon": 3.5
       },
       "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود."
+    },
+    "executive_summary": "نماد «کلید» (صندوق سرمایه‌گذاری املاک و مستغلات مدیریت ارزش مسکن) به عنوان یکی از مجموعه‌های فعال در گروه صندوق سرمایه‌گذاری املاک و مستغلات، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +1.6٪ به 17,766 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.96 ثبت شد که نشان‌دهنده تعادل نسبی در تقاضا و عرضه است. ارزیابی بنیادین دارایی‌ها بر پایه خالص ارزش دارایی‌ها (NAV) و جریان درآمدی پایدار اجاره‌داری، در کنار ساختار حمایتی تکنیکال، حاکی از ثبات ریسک و ارزندگی دارایی ملکی است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 17,411 تا 18,121 ریال، تارگت اولیه 17,820 ریال، حد ضرر حمایتی 15,989 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "17,411 تا 18,121 ریال",
+      "target_1": 17820.0,
+      "stop_loss": 15989.4,
+      "risk_reward_ratio": 0.03
     }
   }
 ]

@@ -2,27 +2,19 @@
   "symbol": "بانیان",
   "inscode": "64899658576570461",
   "asset_id": "42310",
-  "live_info": {
-    "date": "20260906",
-    "close_price": 16860.0,
-    "last_price": 16910.0,
-    "yesterday_price": 17240.0,
-    "volume": 10405652.0,
-    "value": 175444666730.0,
-    "trades": 3350.0
-  },
+  "live_info": {},
   "rahavard_prices": {
-    "close_price": 16860.0,
-    "last_price": 16910.0,
-    "close_change_percent": -2.2,
-    "last_change_percent": -1.91,
-    "end_date_time": "2026-09-06T12:29:56.909+03:30"
+    "close_price": 17350.0,
+    "last_price": 17360.0,
+    "close_change_percent": 2.91,
+    "last_change_percent": 2.97,
+    "end_date_time": "2026-09-07T09:16:49.708+03:30"
   },
   "cross_check": {
-    "status": "VERIFIED",
+    "status": "DISCREPANCY_WARNING",
     "tsetmc_close": 16860.0,
-    "rahavard_close": 16860.0,
-    "discrepancy_pct": 0.0,
-    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+    "rahavard_close": 17350.0,
+    "discrepancy_pct": 2.906,
+    "message": "هشدار مغایرت قیمتی بین TSETMC و ره‌آورد ۳۶۵ (انحراف: 2.906٪ > آستانه 0.5٪)."
   }
 }
