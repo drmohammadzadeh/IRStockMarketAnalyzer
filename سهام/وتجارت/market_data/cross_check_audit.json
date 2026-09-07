@@ -7,16 +7,16 @@
     "close_price": 986.0,
     "last_price": 986.0,
     "yesterday_price": 958.0,
-    "volume": 2143816389.0,
-    "value": 2113802959554.0,
-    "trades": 2042.0
+    "volume": 3730131885.0,
+    "value": 3677910038610.0,
+    "trades": 4037.0
   },
   "rahavard_prices": {
     "close_price": 986.0,
     "last_price": 986.0,
     "close_change_percent": 2.92,
     "last_change_percent": 2.92,
-    "end_date_time": "2026-09-07T09:05:35.292+03:30"
+    "end_date_time": "2026-09-07T11:39:26.435+03:30"
   },
   "cross_check": {
     "status": "VERIFIED",

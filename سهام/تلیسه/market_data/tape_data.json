@@ -1,13 +1,13 @@
 {
   "symbol": "تلیسه",
   "date": "20260907",
-  "close_price": 9650.0,
-  "last_price": 9540.0,
+  "close_price": 9680.0,
+  "last_price": 9750.0,
   "yesterday_price": 9470.0,
-  "close_change_percent": 1.9,
-  "last_change_percent": 0.74,
-  "volume": 2520605.0,
-  "value": 24317500010.0,
+  "close_change_percent": 2.22,
+  "last_change_percent": 2.96,
+  "volume": 37805282.0,
+  "value": 365823634970.0,
   "client_type": {
     "buy_real_count": 815,
     "buy_legal_count": 5,
@@ -23,8 +23,8 @@
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 9650.0,
-    "rahavard_close": 9650.0,
+    "tsetmc_close": 9680.0,
+    "rahavard_close": 9680.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }

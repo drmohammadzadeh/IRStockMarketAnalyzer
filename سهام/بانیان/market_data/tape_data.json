@@ -1,13 +1,13 @@
 {
   "symbol": "بانیان",
-  "date": "",
-  "close_price": 16860.0,
-  "last_price": 16860.0,
-  "yesterday_price": 17240.0,
-  "close_change_percent": -2.2,
-  "last_change_percent": -2.2,
-  "volume": 0,
-  "value": 0,
+  "date": "20260907",
+  "close_price": 17360.0,
+  "last_price": 17360.0,
+  "yesterday_price": 16860.0,
+  "close_change_percent": 2.97,
+  "last_change_percent": 2.97,
+  "volume": 7615178.0,
+  "value": 132167251670.0,
   "client_type": {
     "buy_real_count": 595,
     "buy_legal_count": 3,
@@ -22,10 +22,10 @@
     "buyer_power": 3.338541582909103
   },
   "cross_check": {
-    "status": "DISCREPANCY_WARNING",
-    "tsetmc_close": 16860.0,
-    "rahavard_close": 17350.0,
-    "discrepancy_pct": 2.906,
-    "message": "هشدار مغایرت قیمتی بین TSETMC و ره‌آورد ۳۶۵ (انحراف: 2.906٪ > آستانه 0.5٪)."
+    "status": "VERIFIED",
+    "tsetmc_close": 17360.0,
+    "rahavard_close": 17360.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }
 }

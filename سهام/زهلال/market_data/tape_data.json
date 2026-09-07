@@ -1,13 +1,13 @@
 {
   "symbol": "زهلال",
   "date": "20260907",
-  "close_price": 53490.0,
+  "close_price": 53480.0,
   "last_price": 53490.0,
   "yesterday_price": 51940.0,
-  "close_change_percent": 2.98,
+  "close_change_percent": 2.96,
   "last_change_percent": 2.98,
-  "volume": 278298.0,
-  "value": 14886160020.0,
+  "volume": 2119726.0,
+  "value": 113367603010.0,
   "client_type": {
     "buy_real_count": 371,
     "buy_legal_count": 1,
@@ -23,8 +23,8 @@
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 53490.0,
-    "rahavard_close": 53490.0,
+    "tsetmc_close": 53480.0,
+    "rahavard_close": 53480.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }

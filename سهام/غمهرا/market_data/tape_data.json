@@ -1,13 +1,13 @@
 {
   "symbol": "غمهرا",
   "date": "20260907",
-  "close_price": 18230.0,
+  "close_price": 18240.0,
   "last_price": 18240.0,
   "yesterday_price": 17710.0,
-  "close_change_percent": 2.94,
+  "close_change_percent": 2.99,
   "last_change_percent": 2.99,
-  "volume": 697391.0,
-  "value": 12713868280.0,
+  "volume": 1496029.0,
+  "value": 27281025400.0,
   "client_type": {
     "buy_real_count": 232,
     "buy_legal_count": 1,
@@ -23,8 +23,8 @@
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 18230.0,
-    "rahavard_close": 18230.0,
+    "tsetmc_close": 18240.0,
+    "rahavard_close": 18240.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }

@@ -4,24 +4,24 @@
   "asset_id": "24484",
   "live_info": {
     "date": "20260907",
-    "close_price": 53490.0,
+    "close_price": 53480.0,
     "last_price": 53490.0,
     "yesterday_price": 51940.0,
-    "volume": 278298.0,
-    "value": 14886160020.0,
-    "trades": 355.0
+    "volume": 2119726.0,
+    "value": 113367603010.0,
+    "trades": 3274.0
   },
   "rahavard_prices": {
-    "close_price": 53490.0,
+    "close_price": 53480.0,
     "last_price": 53490.0,
-    "close_change_percent": 2.98,
+    "close_change_percent": 2.96,
     "last_change_percent": 2.98,
-    "end_date_time": "2026-09-07T09:12:49.874+03:30"
+    "end_date_time": "2026-09-07T11:42:02.988+03:30"
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 53490.0,
-    "rahavard_close": 53490.0,
+    "tsetmc_close": 53480.0,
+    "rahavard_close": 53480.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }

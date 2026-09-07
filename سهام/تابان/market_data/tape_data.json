@@ -1,13 +1,13 @@
 {
   "symbol": "تابان",
   "date": "20260907",
-  "close_price": 14380.0,
-  "last_price": 14380.0,
+  "close_price": 14810.0,
+  "last_price": 14810.0,
   "yesterday_price": 14380.0,
-  "close_change_percent": 0.0,
-  "last_change_percent": 0.0,
-  "volume": 0.0,
-  "value": 0.0,
+  "close_change_percent": 2.99,
+  "last_change_percent": 2.99,
+  "volume": 27822152.0,
+  "value": 412046071120.0,
   "client_type": {
     "buy_real_count": 446,
     "buy_legal_count": 14,
@@ -23,8 +23,8 @@
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 14380.0,
-    "rahavard_close": 14380.0,
+    "tsetmc_close": 14810.0,
+    "rahavard_close": 14810.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }
