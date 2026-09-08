@@ -368,6 +368,106 @@
     "last_update": "1405/06/16 - 11:41"
   },
   {
+    "symbol": "خودکفا",
+    "name": "شرکت اقتصادی و خودکفائی آزادگان (گروه مینو)",
+    "logo": "",
+    "current_price": 15670.0,
+    "change_percent": 2.75,
+    "volume": "13.5M",
+    "market_cap": "15,670 B",
+    "chart_14d": [
+      {
+        "date": "۲۸ مرداد",
+        "price": 13900.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 14040.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 13770.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 13820.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 14200.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 14330.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 14750.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 15010.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 14940.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 14500.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 14660.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 14820.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 15250.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 15670.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/22956708386610464",
+      "rahavard": "https://rahavard365.com/asset/508/%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=2&ReportingType=1000002&name=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C%20%D9%88%20%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7%D8%A6%DB%8C%20%D8%A2%D8%B2%D8%A7%D8%AF%DA%AF%D8%A7%D9%86&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable&Name=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C%20%D9%88%20%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7%D8%A6%DB%8C%20%D8%A2%D8%B2%D8%A7%D8%AF%DA%AF%D8%A7%D9%86&IndustryGroup=42",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 2,
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.5,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.5,
+        "rules": 5.0,
+        "horizon": 4.0
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    },
+    "executive_summary": "نماد «خودکفا» (اقتصادی و خودکفائی آزادگان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های سرمایه‌گذاری و هلدینگ، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.8٪ به 15,670 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 2.56 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تخفیف قیمتی قابل توجه نسبت به ارزش خالص دارایی‌ها (NAV) و تنوع سبد سرمایه‌گذاری، پشتوانه ارزندگی بنیادی بوده و ساختار تکنیکال از پتانسیل رشد میان‌مدت حمایت می‌کند. در بعد رویدادهای موثق، انتشار خبر «رشد ۱,۶۴۴ میلیارد تومانی ارزش پرتفوی بورسی «خودکفا» در مرداد؛ سهم ۹۹ درص...» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 15,357 تا 15,983 ریال، تارگت اولیه 15,700 ریال، حد ضرر حمایتی 14,103 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "15,357 تا 15,983 ریال",
+      "target_1": 15700.0,
+      "stop_loss": 14103.0,
+      "risk_reward_ratio": 0.02
+    },
+    "last_update": "1405/06/17 - 12:24"
+  },
+  {
     "symbol": "زهلال",
     "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
     "logo": "",

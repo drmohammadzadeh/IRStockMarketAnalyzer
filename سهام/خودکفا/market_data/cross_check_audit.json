@@ -1,0 +1,28 @@
+{
+  "symbol": "خودکفا",
+  "inscode": "22956708386610464",
+  "asset_id": "508",
+  "live_info": {
+    "date": "20260908",
+    "close_price": 15670.0,
+    "last_price": 15700.0,
+    "yesterday_price": 15250.0,
+    "volume": 13469249.0,
+    "value": 211000543580.0,
+    "trades": 556.0
+  },
+  "rahavard_prices": {
+    "close_price": 15670.0,
+    "last_price": 15700.0,
+    "close_change_percent": 2.75,
+    "last_change_percent": 2.95,
+    "end_date_time": "2026-09-08T12:23:27.856+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 15670.0,
+    "rahavard_close": 15670.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

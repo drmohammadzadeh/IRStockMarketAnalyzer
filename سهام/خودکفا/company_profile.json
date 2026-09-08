@@ -1,0 +1,25 @@
+{
+  "symbol": "خودکفا",
+  "name": "اقتصادی و خودکفائی آزادگان",
+  "archetype": "INVESTMENT_HOLDING",
+  "inscode": "22956708386610464",
+  "sector_name": "سرمایه‌گذاری‌ها",
+  "subsector_name": "هلدینگ‌های چندرشته‌ای و صنایع غذایی دارویی",
+  "core_business": "سرمایه‌گذاری و راهبری هلدینگ گروه صنعتی مینو، صنعتی پارس مینو، شوکوپارس، قاسم ایران، دارویی مینو و بازده پورتفوی سهام",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "P/E",
+    "DPS Cover",
+    "Portfolio Value"
+  ],
+  "forbidden_terms": [
+    "خط تولید مستقیم",
+    "مواد اولیه صنعتی",
+    "انبار کالای ساخته‌شده",
+    "مواد اولیه",
+    "خط تولید"
+  ]
+}
