@@ -811,6 +811,106 @@
     "last_update": ""
   },
   {
+    "symbol": "هانیکو",
+    "name": "هانیکو",
+    "logo": "",
+    "current_price": 8310.0,
+    "change_percent": 2.59,
+    "volume": "44.8M",
+    "market_cap": "8,310 B",
+    "chart_14d": [
+      {
+        "date": "۱ شهریور",
+        "price": 7740.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 7730.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 7920.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 8070.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 8100.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 7870.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 7920.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 7750.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 7870.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 7900.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 8090.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 8190.0
+      },
+      {
+        "date": "۱۸ شهریور",
+        "price": 8100.0
+      },
+      {
+        "date": "۲۱ شهریور",
+        "price": 8310.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/41529644566373651",
+      "rahavard": "https://rahavard365.com/asset/search?q=هانیکو",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%87%D8%A7%D9%86%DB%8C%DA%A9%D9%88&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=-1&Category=-1&CompanyType=-1&Consolidatable&NotConsolidatable",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%87%D8%A7%D9%86%DB%8C%DA%A9%D9%88"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 6,
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.8,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.5,
+        "rules": 5.0,
+        "horizon": 4.9
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود."
+    },
+    "executive_summary": "نماد «هانیکو» در زمره شرکت‌های تولیدی و صنعتی طبقه‌بندی شده و مورد رصد فعال بازار سرمایه است. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.6٪ به 8,310 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 4.60 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «فروش داخلی «هانیکو» در ۵ ماه به ۹۸۹ میلیارد تومان رسید | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 8,144 تا 8,476 ریال، تارگت اولیه 8,735 ریال، حد ضرر حمایتی 8,131 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "8,144 تا 8,476 ریال",
+      "target_1": 8735.0,
+      "stop_loss": 8131.45,
+      "risk_reward_ratio": 2.38
+    },
+    "last_update": "1405/06/21 - 13:24"
+  },
+  {
     "symbol": "وتجارت",
     "name": "بانک تجارت",
     "logo": "",

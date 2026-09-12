@@ -1,0 +1,24 @@
+{
+  "symbol": "هانیکو",
+  "name": "هانیکو",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "",
+  "sector_name": "",
+  "subsector_name": "",
+  "core_business": "تولید و فروش محصولات صنعتی، قطعات، تجهیزات یا کالای مصرفی در بازارهای داخلی و صادراتی",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

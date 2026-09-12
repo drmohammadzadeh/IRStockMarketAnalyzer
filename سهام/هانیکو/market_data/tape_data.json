@@ -1,0 +1,31 @@
+{
+  "symbol": "هانیکو",
+  "date": "20260912",
+  "close_price": 8310.0,
+  "last_price": 8340.0,
+  "yesterday_price": 8100.0,
+  "close_change_percent": 2.59,
+  "last_change_percent": 2.96,
+  "volume": 44759170.0,
+  "value": 371922479990.0,
+  "client_type": {
+    "buy_real_count": 386,
+    "buy_legal_count": 2,
+    "sell_real_count": 1934,
+    "sell_legal_count": 2,
+    "buy_real_vol": 12681152.0,
+    "buy_legal_vol": 1513579.0,
+    "sell_real_vol": 13803639.0,
+    "sell_legal_vol": 391092.0,
+    "buy_real_capita": 32852.72538860104,
+    "sell_real_capita": 7137.352119958635,
+    "buyer_power": 4.602929046576371
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 8310.0,
+    "rahavard_close": 8310.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

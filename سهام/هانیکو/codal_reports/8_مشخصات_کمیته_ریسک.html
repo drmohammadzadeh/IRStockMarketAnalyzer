@@ -1,0 +1,565 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	
+</title><link href="../css/Main.css" rel="stylesheet" type="text/css" /><link href="../css/fepsProductV1.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="../assets/favicon/favicon.ico?v=RyQ5xz7ege" />
+    <!--[if lt IE 7]>
+	<link href="../css/IE6_new_style.css" type="text/css" rel="stylesheet" />
+	<![endif]-->
+
+    <script language="javascript" type="text/javascript" src="../js/PKI.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/Common.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var priceNote = document.getElementById("ctl00_pPriceNote");
+            var divPriceNote = document.getElementById("ctl00_divPriceNote");
+            if (priceNote.style.display === "none") {
+                divPriceNote.style.display = "none";
+            }
+        });
+        function btnCancelClick() {
+            window.close();
+        }
+
+        function btnNextClick() {
+            if (document.getElementById("ctl00_ddlTable").selectedIndex < document.getElementById("ctl00_ddlTable").length - 1)
+                document.getElementById("ctl00_ddlTable").selectedIndex += 1;
+            else
+                document.getElementById("ctl00_ddlTable").selectedIndex = 0;
+        }
+
+        function btnPrevClick() {
+            if (document.getElementById("ctl00_ddlTable").selectedIndex > 0)
+                document.getElementById("ctl00_ddlTable").selectedIndex -= 1;
+            else
+                document.getElementById("ctl00_ddlTable").selectedIndex = document.getElementById("ctl00_ddlTable").length - 1;
+        }
+
+        //function CalcPer(txbNewValue, txbOldValue, txbChangePer) {
+        //    Change = '--';
+        //    a = parseInt(DeformatCurrency(document.getElementById(txbNewValue).value));
+        //    b = parseInt(DeformatCurrency(document.getElementById(txbOldValue).value));
+        //    if (a * b > 0) {
+        //        Change = (a - b) * 100.0 / b;
+        //        Change = Math.round(Change);
+        //    }
+        //    formatPosNeg(txbChangePer, Change);
+        //}
+
+
+        function getDocWidth() {
+            var D = document;
+            return Math.max(
+                D.body.scrollWidth, D.documentElement.scrollWidth,
+                D.body.offsetWidth, D.documentElement.offsetWidth,
+                D.body.clientWidth, D.documentElement.clientWidth
+            );
+        }
+
+        function getDocHeight() {
+            var D = document;
+            return Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+        }
+
+
+    </script>
+
+    
+    <style type="text/css">
+        .textBold {
+            font-weight: bold;
+        }
+
+        table, span, input, textarea, td, th {
+            font-family: "B Mitra" !important;
+            font-size: 16px !important;
+        }
+
+        th {
+            font-weight: bold !important;
+            font-size: 14px !important;
+        }
+    </style>
+
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./ProfileOfRiskCommittee.aspx?LetterSerial=zWhXde2fbkxcsygnTUhAhg%3d%3d" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=N25n0PTVGUEk6ePQY2LvSQBQYc9dEc01TajxZawOwrYsTu4xObHhp-vgWBOVls0UMSXz-gMheUg-TaTFBZ7dcnmphzU1&amp;t=638901662248157332" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=2O8AN7R4EbusQPrI5VpPsH05eNlCbU9M6NSDd2E6AKSFVnbjX3dKzeU-lvNnbhS-__3dukbPK9b_1bSJvXb6O8A2OhBHhHW3SfpInD7ABhMwHPyf0&amp;t=638901662248157332" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DB316CF3" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="ddQGWDEd3l3hm6bUHlPrZdVR2HTI/VqoryezRFAxD+zfiioUr1ZMmEPRCs1p0Z9VNTWt2PvnEbP7NPCzfrfh9u2Ufqan4eHV5XPtqirrAya6TE+sOzys32mWgjiv48Y075LSUXd9fO+cy7oJTZwRXQw1O1sf7XXGQEXsKyhkGfBPFqr+DHg3DBnY/RO82crMJYiRSxzbKX/qOZo+ORrtjI3F+IAjVhmLK8w2O+J6x60XZr6ofr6h3X+v70E2hZxtSPbGhDSDqGNE4Gdfb0BeumvvR5pHzxQaz3eCfJrnWkRlAOwifWSEUmQrErjE70LOFAQrxqCvz2wFc+W7Z27AveeDW0SwlpWBmk1kHEYolsFXJaheZmjAZSImWoLLvhg65Bd74yZX7zC2BpXxmCL43k0HmbHE09jpA7DRY3/V80vuqGQWlXjzbg3+seLhyh/Zs+A5wpb0g3xWuYowGwNyCUxRvfLXCls6NCfCIy5uho92QlVai+p+JqOQg8ejJGfgiA78gezgg/9gvVebfJHB3FhxmhoESrnV9SsQCU5bkKL9Rbyf" />
+</div>
+    <div id="divLoadingBg" style="display: none; z-index: 1000000; position: fixed; width: 100%;
+        top: 0px; bottom: 0px; height: expression(getDocHeight()); background-image: url('../Images/progressbg.png');">
+        <div id="divLoading" style="position: fixed; width: 140px; top: 300px; left: 45%;
+            padding: 5px; background-color: White; font-size: 9px;">
+            <img src="../Images/InProgress1.gif" border="0" alt="" />
+            &nbsp;
+            <span id="ctl00_lblLoadingMessage" style="font-size:X-Small;">لطفاً چند لحظه صبر کنید...</span>
+        </div>
+    </div>
+    <div class="html_format_header">
+        <div class="clear" style="height: 12px;">
+        </div>
+        <div class="html_format_header_icon">
+            <img src='../imgs/header_icon.png' alt="icon" />
+        </div>
+        <h1 id="ctl00_h1MasterTitle">مشخصات کمیته ریسک</h1>
+        <div class="ddlReportWrapper">
+            <select name="ctl00$ddlTable" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlTable\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlTable" class="label" style="color:Red;width:50%;">
+	<option selected="selected" value="1">کمیته ریسک </option>
+
+</select>
+            <input type="submit" name="ctl00$btnPervPage" value="" onclick="btnPrevClick();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPervPage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_btnPervPage" title="صفحه قبلی" class="prev_report" />
+            <input type="submit" name="ctl00$btnNextPage" value="" onclick="btnNextClick();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnNextPage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_btnNextPage" title="صفحه بعدی" class="next_report" />
+        </div>
+        <a id="ctl00_hlChangeLanguage" class="eng" href="../ChangeCulture.aspx?lng=en-US&amp;selectedValue=1" style="font-family:Tahoma;">EN</a>
+        <div class="clear" style="height: 10px;">
+        </div>
+    </div>
+    <input name="ctl00$hdfThumbPrint" type="hidden" id="ctl00_hdfThumbPrint" />
+    <div class="clear" style="height: 15px;">
+    </div>
+    <div class="symbol_and_name">
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divCompanyCaption" class="lable">شرکت:</div>
+                <div class="varios">
+                    <span id="ctl00_txbCompanyName" class="label" style="color:#C04000;">هامون نايزه</span>
+                    
+                    <span id="ctl00_CustomValidator1" style="color:Red;font-weight:bold;display:none;visibility:hidden;">تاریخ نامعتبر</span>
+                    
+                    
+                </div>
+            </div>
+            <div class="text_holder">
+                <div id="ctl00_divListedCapitalCaption" class="lable">سرمایه ثبت شده:</div>
+                <div class="varios">
+                    <span id="ctl00_lblListedCapital" class="label" style="color:#C04000;">6,550,000</span>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divSymbolCaption" class="lable">نماد:</div>
+                <div class="varios">
+                    <span id="ctl00_lblDisplaySymbol" class="label" style="color:#C04000;"></span>
+                    <span id="ctl00_txbSymbol" class="label" style="color:#C04000;">هانيکو</span>
+                    
+                </div>
+            </div>
+            <div class="text_holder">
+                <div id="ctl00_divUnauthorizedCapital" class="lable">سرمایه ثبت نشده:</div>
+                <div class="varios">
+                    <span id="ctl00_txbUnauthorizedCapital" class="label" style="color:#C04000;">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divIsicCaption" class="lable">کد صنعت (ISIC):</div>
+                <div class="varios">
+                    <span id="ctl00_lblISIC" class="label" style="color:#C04000;">289910</span>
+                </div>
+            </div>
+            <div class="text_holder">
+                <div style="margin: 5px 4px; display:inline-flex">
+                    <span id="ctl00_lblReportName" class="label">مشخصات کمیته ریسک</span>&nbsp
+                    <span id="ctl00_lblPeriod" class="label" style="color:#C04000;display:none;">12 ماهه</span>  
+                    <span id="ctl00_lblEndTo" class="label" style="display:none;">منتهی به</span>
+                    <span id="ctl00_lblInDate" class="label" style="display:none;">در تاریخ </span>  
+                    <span id="ctl00_lblPeriodEndToDate" class="label" style="color:#C04000;display:none;"><bdo dir=ltr>1405/12/29</bdo></span>
+                    <span id="ctl00_lblIsAudited" class="label" style="display:none;">(حسابرسی نشده)</span>
+                </div>
+            </div>
+        </div>  
+         <div class="text_holder">
+            <div id="ctl00_divYearEndToDateCaption" class="lable">سال مالی منتهی به:</div>
+            <div class="varios">
+                <span id="ctl00_lblYearEndToDate" class="label" style="color:#C04000;"><bdo dir=ltr>1405/12/29</bdo></span>
+            </div>
+        </div>      
+        <div class="text_holder">
+            <div id="ctl00_divCompanyStateCaption" class="lable">وضعیت ناشر:</div>
+            <div class="varios">
+                <span id="ctl00_lblCompanyState" class="label" style="color:#C04000;">پذيرفته شده در فرابورس ايران</span>
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+    
+<style type="text/css">
+    .label
+    {
+        font-size: 8pt;
+        font-family: tahoma;
+    }
+</style>
+<div id="ctl00_ucSignature1_pnlMain" class="main_note" style="background-color:#C1E2B4;">
+    <div class="verify">
+       
+    
+    </div>
+    <div class="noteholder">
+        <img alt="information" src='../imgs/inforation.png' />
+        <span id="ctl00_ucSignature1_lblSignature" class="signature" style="color:DarkGreen;">اطلاعات نمایش داده شده با اطلاعات امضا شده مطابقت دارد</span>
+        <div class="clear"></div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+    <div class="clear" style="height: 5px;">
+    </div>
+   <div class="errorHolder">
+        <span id="ctl00_lblError" class="Error" style="color:DarkRed;font-weight:bold;"></span>
+    </div>
+   <input type="hidden" name="ctl00$hdfVersion" id="ctl00_hdfVersion" value="0" />
+   <div id="ctl00_divPriceNote" class="note_price">
+        <p id="ctl00_pPriceNote" style="display:none;">کلیه مبالغ درج شده به میلیون ریال می باشد</p>
+    </div>
+   <div class="note_price_Excel">
+    <input type="image" name="ctl00$ibtnExport" id="ctl00_ibtnExport" class="Hidden" src="../Images/ExportToExcel.jpg" alt="Export To Excel" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ibtnExport&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:20px;border-width:0px;" />
+    </div>
+    <div class="clear">
+    </div>
+    
+
+    <input name="ctl00$cphBody$hideAppointmentsLegalPerson" type="text" id="hideAppointmentsLegalPerson" class="Hidden hideAppointmentsLegalPerson" />
+
+    <table id="ctl00_cphBody_Table1" width="100%" style="text-align: center" align="center" dir="rtl">
+	<tr>
+		<td>
+                <span id="ctl00_cphBody_lblCurrencyMsg" class="notify error" style="display:none;"></span>
+
+            </td>
+	</tr>
+</table>
+
+    <div style="width: 90%; margin: 0 auto;">
+        <table style="width: 100%; font-family: Tahoma; border-collapse: collapse;">
+            
+            <tr style="background-color: #eee;">
+                <td style="height: 30px; text-align: center;">
+                    <table width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <span id="ctl00_cphBody_lblSubject" style="font-weight: bold;">موضوع : مشخصات کمیته ریسک در تاریخ:</span>
+                                <span id="txbDate">1405/5/15</span>
+                                
+                                <span id="ctl00_cphBody_RequiredFieldValidatorDate" title="مقدار وارد کنید" style="color:Red;visibility:hidden;">*</span>
+                                <span id="ctl00_cphBody_CustomValidatorDate" style="color:Red;font-weight:normal;display:none;">*</span>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="ctl00_cphBody_lblAppointment" style="font-weight: bold;">الف - مشخصات کلی کمیته ریسک</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="50%" style="margin-right: 40px;">
+                        <tr>
+                            <td width="20%">
+                                <span id="ctl00_cphBody_lblDate">تاریخ تشکیل :</span>
+                            </td>
+                            <td width="80%">
+                                <span id="txbAppointmentsDate">1405/5/15</span>
+                                
+                                <span id="ctl00_cphBody_RequiredFieldValidator1" title="مقدار وارد کنید" style="color:Red;visibility:hidden;">*</span>
+                                <span id="ctl00_cphBody_CustomValidator1" style="color:Red;font-weight:normal;display:none;">*</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="50%" style="margin-right: 40px;">
+                        <tr>
+                            <td width="20%">
+                                <span id="ctl00_cphBody_lblAppointmentMemberCount">تعداد اعضا :</span>
+                            </td>
+                            <td width="80%">
+                                <span id="txtAppointmentsMemberCount">3</span>
+                                <span id="ctl00_cphBody_CustomValidator4" style="color:Red;display:none;"></span>
+                                <span id="ctl00_cphBody_valcount" style="color:Red;font-size:Smaller;display:none;">تعداد اعضا  باید یا 3 یا 5 نفر باشد</span>
+                                <span id="ctl00_cphBody_ctl00" style="color:Red;visibility:hidden;">تعداد اعضا  باید یا 3 یا 5 نفر باشد</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+
+    <div style="width: 90%; margin: 0 auto;">
+
+        <table id="ctl00_cphBody_tblAppointments" width="100%" dir="rtl" style="padding: 0; margin: 0; border-collapse: collapse;">
+	<tr>
+		<td>
+                    <table id="tblAppointmentMember" style="width: 100%; font-family: Tahoma; border-collapse: collapse;">
+                        <tr>
+                            <td rowspan="1">
+                                <span id="ctl00_cphBody_secretaryTitle" style="font-weight: bold"> اعضای کمیته ریسک  </span>
+
+                                <div>
+			<table tabindex="6" cellspacing="0" cellpadding="3" rules="all" border="1" id="ctl00_cphBody_gvAppointments" style="width:100%;border-collapse:collapse;cursor: pointer">
+				<tr class="GridHeader">
+					<th scope="col" style="font-weight:normal;width:12%;">نام و نام خانوادگی</th><th scope="col" style="font-weight:normal;width:7%;">کدملی</th><th scope="col" style="font-weight:normal;width:9%;">سمت </th><th scope="col" style="font-weight:normal;width:5%;">عضو غیرموظف هیئت مدیره</th><th scope="col" style="font-weight:normal;width:8%;">شخص حقوقی</th><th scope="col" style="font-weight:normal;width:5%;">عضو مستقل</th><th scope="col" style="font-weight:normal;width:9%;">آخرین مقطع تحصیلی</th><th scope="col" style="font-weight:normal;width:9%;">رشته تحصیلی</th><th scope="col" style="font-weight:normal;width:13%;">آیا دارای تخصص، دانش و تجربه کافی در زمینه ریسک می باشد؟</th><th scope="col" style="font-weight:normal;width:13%;">آیا اقرار نامه موضوع تبصره 6 ماده 14 حاکمیت شرکتی ارائه گردیده است؟</th><th scope="col" style="font-weight:normal;width:8%;">تاریخ عضویت در کمیته ریسک</th>
+				</tr><tr class="GridItem" align="center">
+					<td style="width:12%;">منصور شاکريان</td><td style="width:7%;">1229949720</td><td style="width:9%;">عضو کمیته</td><td style="width:5%;">بله</td><td style="width:8%;">&nbsp;</td><td style="width:5%;">بله</td><td style="width:9%;">کارشناسي ارشد</td><td style="width:9%;">علوم اقتصادي</td><td style="width:13%;">بله</td><td style="width:13%;">بله</td><td style="width:8%;">1405/5/15</td>
+				</tr><tr class="GridAlternating" align="center">
+					<td style="width:12%;">حميد تقي زاده</td><td style="width:7%;">1376077361</td><td style="width:9%;">رییس کمیته</td><td style="width:5%;">خیر</td><td style="width:8%;">توسعه و تامين شريف </td><td style="width:5%;">خیر</td><td style="width:9%;">دکترا</td><td style="width:9%;">علوم اقتصادي</td><td style="width:13%;">بله</td><td style="width:13%;">بله</td><td style="width:8%;">1405/5/15</td>
+				</tr><tr class="GridItem" align="center">
+					<td style="width:12%;">رحمت اله عباس پورمرزبالي</td><td style="width:7%;">2064895213</td><td style="width:9%;">عضو کمیته</td><td style="width:5%;">خیر</td><td style="width:8%;">&nbsp;</td><td style="width:5%;">بله</td><td style="width:9%;">کارشناسي ارشد</td><td style="width:9%;">مديريت مالي</td><td style="width:13%;">بله</td><td style="width:13%;">بله</td><td style="width:8%;">1405/5/15</td>
+				</tr>
+			</table>
+		</div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+	</tr>
+	<tr>
+		<td colspan="2" style="height: 30px; border-bottom: 1px dashed;"></td>
+	</tr>
+	<tr>
+		<td colspan="2">
+                    <span id="ctl00_cphBody_lblTitle27" class="textBold" style="font-weight: bold">ب - مشخصات دبیر کمیته ریسک </span>
+
+                </td>
+	</tr>
+	<tr id="ctl00_cphBody_trSecretaryAuditCommittee" style="display:;">
+		<td colspan="2">
+                    <table id="ctl00_cphBody_ucSecretaryAuditCommittee_Table2" width="100%" dir="rtl">
+			<tr>
+				<td>
+            <span id="ctl00_cphBody_ucSecretaryAuditCommittee_lblCurrencyMsg" class="notify error" style="display:none;"></span>
+        </td>
+			</tr>
+		</table>
+		
+
+<div class="clear"></div>
+<table id="ctl00_cphBody_ucSecretaryAuditCommittee_tblInternal" width="100%" dir="rtl">
+			<tr>
+				<td>
+            <div>
+					<table class="Grid table_wrapper" cellspacing="0" cellpadding="3" rules="all" border="1" id="ctl00_cphBody_ucSecretaryAuditCommittee_gvInternal" style="border-style:Solid;width:100%;border-collapse:collapse;">
+						<tr class="GridHeader">
+							<th scope="col" style="width:17%;">نام و نام خانوادگی</th><th scope="col" style="width:8%;">کدملی</th><th scope="col" style="width:11%;">رشته تحصیلی</th><th scope="col" style="width:11%;">آخرین مقطع تحصیلی</th><th scope="col" style="width:11%;">تاریخ انتصاب</th><th scope="col" style="width:8%;">اهم سوابق - مدت زمان/محل و موضوع سابقه فعالیت</th><th scope="col" style="width:23%;">&nbsp;</th>
+						</tr><tr class="SimpleRow">
+							<td style="width:17%;">سهيل آئينه وند</td><td style="width:8%;">0480975701</td><td style="width:11%;">&nbsp;</td><td style="width:11%;">حسابداري</td><td style="width:11%;">کارشناسي</td><td style="width:8%;">1405/5/15</td><td style="width:23%;">کارمند هامون نايزه با سمت کارشناس اقتصادي </td>
+						</tr>
+					</table>
+				</div>
+        </td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+		</table>
+		
+<div class="clear"></div>
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfAuditSerial" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfAuditSerial" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfInternalSerial" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfInternalSerial" value="-1" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfAuditRawSignData" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfAuditRawSignData" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfAuditSignData" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfAuditSignData" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfInternalRawSignData" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfInternalRawSignData" value="&lt;AuditCommitteeMember>&lt;FullName>&lt;/FullName>&lt;NationalNo>&lt;/NationalNo>&lt;Post>&lt;/Post>&lt;NonBoardMember>False&lt;/NonBoardMember>&lt;LegalPerson>&lt;/LegalPerson>&lt;IndependentMember>False&lt;/IndependentMember>&lt;FinancialMember>False&lt;/FinancialMember>&lt;DegreeRef>-1&lt;/DegreeRef>&lt;EducationFieldRef>-1&lt;/EducationFieldRef>&lt;JoinDate>&lt;/JoinDate>&lt;HasAffidavitNote6Article14>False&lt;/HasAffidavitNote6Article14>&lt;Duration>&lt;/Duration>&lt;Type>SecretaryAuditCommittee&lt;/Type>&lt;/AuditCommitteeMember>" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfInternalSignData" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfInternalSignData" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfThumbPrint" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfThumbPrint" />
+<input name="ctl00$cphBody$ucSecretaryAuditCommittee$hdfSecretaryAuditCommittee" type="hidden" id="ctl00_cphBody_ucSecretaryAuditCommittee_hdfSecretaryAuditCommittee" />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var table = document.getElementById("ctl00_cphBody_ucSecretaryAuditCommittee_gvInternal");
+        var rows = table.getElementsByClassName("SimpleRow");
+        if (rows.length == 0) {
+            rows = table.getElementsByClassName("InvalidGridRow");
+            if (rows.length == 0)
+                return;
+        }
+        var cells = rows[0].getElementsByTagName("td");
+        if (cells.length > 0) { cells[2].style.display = "none"; }
+        var rows = table.getElementsByClassName("GridHeader");
+        cells = rows[0].getElementsByTagName("th");
+        if (cells.length > 0) { cells[6].style.display = "none" }
+
+        var isEmpty = true;
+        for (var i = 0; i < rows.length; i++) {
+            if (rows[i].innerText.trim() !== "") {
+                isEmpty = false; break;
+            }
+        } if (isEmpty) {
+            document.getElementById("ctl00_cphBody_lblTitle27").style.display = "none";
+        }
+
+
+        var fullUrl = window.location.href;
+        if (fullUrl.includes('ProfileOfRiskCommittee.aspx') || fullUrl.includes('&let=260&')) {
+            var table = document.getElementById("ctl00_cphBody_ucAuditMember_gvAudit");
+            var rows = table.getElementsByTagName("tr");
+            var cells = rows[i].getElementsByTagName("th");
+            cells[10].style.display = "none";
+            debugger
+            $('ctl00_cphBody_ucAuditMember_gvAudit').removeClass('Grid')
+            $('ctl00_cphBody_ucAuditMember_gvAudit').removeClass('table_wrapper')
+        }
+    });
+</script>
+
+                </td>
+	</tr>
+</table>
+
+
+    </div>
+
+    <input type="hidden" name="ctl00$cphBody$hdfSerial" id="ctl00_cphBody_hdfSerial" value="-1" />
+    <input name="ctl00$cphBody$hdfAppointmentsRawSignData" type="hidden" id="ctl00_cphBody_hdfAppointmentsRawSignData" />
+    <input name="ctl00$cphBody$hdfAppointmentsSignData" type="hidden" id="ctl00_cphBody_hdfAppointmentsSignData" />
+    <input name="ctl00$cphBody$hdfThumbPrint" type="hidden" id="ctl00_cphBody_hdfThumbPrint" />
+    <input name="ctl00$cphBody$hdfSignData" type="hidden" id="ctl00_cphBody_hdfSignData" />
+
+
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_CustomValidator1"), document.getElementById("ctl00_cphBody_RequiredFieldValidatorDate"), document.getElementById("ctl00_cphBody_CustomValidatorDate"), document.getElementById("ctl00_cphBody_RequiredFieldValidator1"), document.getElementById("ctl00_cphBody_CustomValidator1"), document.getElementById("ctl00_cphBody_CustomValidator4"), document.getElementById("ctl00_cphBody_valcount"), document.getElementById("ctl00_cphBody_ctl00"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_CustomValidator1 = document.all ? document.all["ctl00_CustomValidator1"] : document.getElementById("ctl00_CustomValidator1");
+ctl00_CustomValidator1.controltovalidate = "ctl00_txbPeriodEndToDate";
+ctl00_CustomValidator1.errormessage = "تاریخ نامعتبر";
+ctl00_CustomValidator1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_CustomValidator1.clientvalidationfunction = "DateValidator";
+var ctl00_cphBody_RequiredFieldValidatorDate = document.all ? document.all["ctl00_cphBody_RequiredFieldValidatorDate"] : document.getElementById("ctl00_cphBody_RequiredFieldValidatorDate");
+ctl00_cphBody_RequiredFieldValidatorDate.controltovalidate = "ctl00_cphBody_txbDate";
+ctl00_cphBody_RequiredFieldValidatorDate.errormessage = "تاریخ";
+ctl00_cphBody_RequiredFieldValidatorDate.validationGroup = "Appointments";
+ctl00_cphBody_RequiredFieldValidatorDate.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_cphBody_RequiredFieldValidatorDate.initialvalue = "";
+var ctl00_cphBody_CustomValidatorDate = document.all ? document.all["ctl00_cphBody_CustomValidatorDate"] : document.getElementById("ctl00_cphBody_CustomValidatorDate");
+ctl00_cphBody_CustomValidatorDate.controltovalidate = "ctl00_cphBody_txbDate";
+ctl00_cphBody_CustomValidatorDate.errormessage = "تاریخ نامعتبر";
+ctl00_cphBody_CustomValidatorDate.display = "Dynamic";
+ctl00_cphBody_CustomValidatorDate.validationGroup = "Appointments";
+ctl00_cphBody_CustomValidatorDate.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_cphBody_CustomValidatorDate.clientvalidationfunction = "DateValidator";
+var ctl00_cphBody_RequiredFieldValidator1 = document.all ? document.all["ctl00_cphBody_RequiredFieldValidator1"] : document.getElementById("ctl00_cphBody_RequiredFieldValidator1");
+ctl00_cphBody_RequiredFieldValidator1.controltovalidate = "ctl00_cphBody_txbAppointmentsDate";
+ctl00_cphBody_RequiredFieldValidator1.errormessage = "تاریخ";
+ctl00_cphBody_RequiredFieldValidator1.validationGroup = "Appointments";
+ctl00_cphBody_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_cphBody_RequiredFieldValidator1.initialvalue = "";
+var ctl00_cphBody_CustomValidator1 = document.all ? document.all["ctl00_cphBody_CustomValidator1"] : document.getElementById("ctl00_cphBody_CustomValidator1");
+ctl00_cphBody_CustomValidator1.controltovalidate = "ctl00_cphBody_txbAppointmentsDate";
+ctl00_cphBody_CustomValidator1.errormessage = "تاریخ نامعتبر";
+ctl00_cphBody_CustomValidator1.display = "Dynamic";
+ctl00_cphBody_CustomValidator1.validationGroup = "Appointments";
+ctl00_cphBody_CustomValidator1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_cphBody_CustomValidator1.clientvalidationfunction = "DateValidator";
+var ctl00_cphBody_CustomValidator4 = document.all ? document.all["ctl00_cphBody_CustomValidator4"] : document.getElementById("ctl00_cphBody_CustomValidator4");
+ctl00_cphBody_CustomValidator4.controltovalidate = "ctl00_cphBody_txtAppointmentsMemberCount";
+ctl00_cphBody_CustomValidator4.display = "Dynamic";
+ctl00_cphBody_CustomValidator4.validationGroup = "Appointments";
+ctl00_cphBody_CustomValidator4.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_cphBody_CustomValidator4.clientvalidationfunction = "PositiveMarkValidation";
+var ctl00_cphBody_valcount = document.all ? document.all["ctl00_cphBody_valcount"] : document.getElementById("ctl00_cphBody_valcount");
+ctl00_cphBody_valcount.controltovalidate = "ctl00_cphBody_txtAppointmentsMemberCount";
+ctl00_cphBody_valcount.display = "Dynamic";
+ctl00_cphBody_valcount.validationGroup = "Appointments";
+ctl00_cphBody_valcount.type = "Integer";
+ctl00_cphBody_valcount.evaluationfunction = "RangeValidatorEvaluateIsValid";
+ctl00_cphBody_valcount.maximumvalue = "5";
+ctl00_cphBody_valcount.minimumvalue = "3";
+var ctl00_cphBody_ctl00 = document.all ? document.all["ctl00_cphBody_ctl00"] : document.getElementById("ctl00_cphBody_ctl00");
+ctl00_cphBody_ctl00.controltovalidate = "ctl00_cphBody_txtAppointmentsMemberCount";
+ctl00_cphBody_ctl00.errormessage = "تعداد اعضا  باید یا 3 یا 5 نفر باشد";
+ctl00_cphBody_ctl00.validationGroup = "Appointments";
+ctl00_cphBody_ctl00.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_cphBody_ctl00.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>

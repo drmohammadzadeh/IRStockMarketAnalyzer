@@ -1,0 +1,443 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1"><title>
+	
+</title><link href="../css/Main.css" rel="stylesheet" type="text/css" /><link href="../css/fepsProductV1.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="../assets/favicon/favicon.ico?v=RyQ5xz7ege" />
+    <!--[if lt IE 7]>
+	<link href="../css/IE6_new_style.css" type="text/css" rel="stylesheet" />
+	<![endif]-->
+
+    <script language="javascript" type="text/javascript" src="../js/PKI.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/Common.js"></script>
+
+    <script language="javascript" type="text/javascript" src="../js/jquery-1.8.3.min.js"></script>
+
+    <script language="javascript" type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var priceNote = document.getElementById("ctl00_pPriceNote");
+            var divPriceNote = document.getElementById("ctl00_divPriceNote");
+            if (priceNote.style.display === "none") {
+                divPriceNote.style.display = "none";
+            }
+        });
+        function btnCancelClick() {
+            window.close();
+        }
+
+        function btnNextClick() {
+            if (document.getElementById("ctl00_ddlTable").selectedIndex < document.getElementById("ctl00_ddlTable").length - 1)
+                document.getElementById("ctl00_ddlTable").selectedIndex += 1;
+            else
+                document.getElementById("ctl00_ddlTable").selectedIndex = 0;
+        }
+
+        function btnPrevClick() {
+            if (document.getElementById("ctl00_ddlTable").selectedIndex > 0)
+                document.getElementById("ctl00_ddlTable").selectedIndex -= 1;
+            else
+                document.getElementById("ctl00_ddlTable").selectedIndex = document.getElementById("ctl00_ddlTable").length - 1;
+        }
+
+        //function CalcPer(txbNewValue, txbOldValue, txbChangePer) {
+        //    Change = '--';
+        //    a = parseInt(DeformatCurrency(document.getElementById(txbNewValue).value));
+        //    b = parseInt(DeformatCurrency(document.getElementById(txbOldValue).value));
+        //    if (a * b > 0) {
+        //        Change = (a - b) * 100.0 / b;
+        //        Change = Math.round(Change);
+        //    }
+        //    formatPosNeg(txbChangePer, Change);
+        //}
+
+
+        function getDocWidth() {
+            var D = document;
+            return Math.max(
+                D.body.scrollWidth, D.documentElement.scrollWidth,
+                D.body.offsetWidth, D.documentElement.offsetWidth,
+                D.body.clientWidth, D.documentElement.clientWidth
+            );
+        }
+
+        function getDocHeight() {
+            var D = document;
+            return Math.max(
+                D.body.scrollHeight, D.documentElement.scrollHeight,
+                D.body.offsetHeight, D.documentElement.offsetHeight,
+                D.body.clientHeight, D.documentElement.clientHeight
+            );
+        }
+
+
+    </script>
+
+    
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="./Appointments.aspx?LetterSerial=I5oFxSnrDysPxKVdStQmGA%3d%3d" onsubmit="javascript:return WebForm_OnSubmit();" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=N25n0PTVGUEk6ePQY2LvSQBQYc9dEc01TajxZawOwrYsTu4xObHhp-vgWBOVls0UMSXz-gMheUg-TaTFBZ7dcnmphzU1&amp;t=638901662248157332" type="text/javascript"></script>
+
+
+<script src="/WebResource.axd?d=2O8AN7R4EbusQPrI5VpPsH05eNlCbU9M6NSDd2E6AKSFVnbjX3dKzeU-lvNnbhS-__3dukbPK9b_1bSJvXb6O8A2OhBHhHW3SfpInD7ABhMwHPyf0&amp;t=638901662248157332" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="61AF5586" />
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="+dPjNKH31LrfBVDRL6BM5QVs1SXBXEkSTGfoyBbIR25+S3VI5raOwYzZ8lsAD5knDfonQ590hnR4/md4OtNxiPOdwxpPwmrgfBmL1klx2y5uRbzn/Ojz3uTCbkAcC6yhEBmpi+HW9OdxtxctUEb69oAogn4wcxJjL/fVi+Rk/FOsZiOSB2d9hcc7qljt9PImpOhlBTJFQaKJAw2o2GmmsihHz9Z7hQGNxZychqL7pGnWVYLBFKZqZnWuSLVXpX9iM/+h0sXJno0Lp4TR0Lz5l3qgMwA=" />
+</div>
+    <div id="divLoadingBg" style="display: none; z-index: 1000000; position: fixed; width: 100%;
+        top: 0px; bottom: 0px; height: expression(getDocHeight()); background-image: url('../Images/progressbg.png');">
+        <div id="divLoading" style="position: fixed; width: 140px; top: 300px; left: 45%;
+            padding: 5px; background-color: White; font-size: 9px;">
+            <img src="../Images/InProgress1.gif" border="0" alt="" />
+            &nbsp;
+            <span id="ctl00_lblLoadingMessage" style="font-size:X-Small;">لطفاً چند لحظه صبر کنید...</span>
+        </div>
+    </div>
+    <div class="html_format_header">
+        <div class="clear" style="height: 12px;">
+        </div>
+        <div class="html_format_header_icon">
+            <img src='../imgs/header_icon.png' alt="icon" />
+        </div>
+        <h1 id="ctl00_h1MasterTitle">مشخصات کمیته انتصابات</h1>
+        <div class="ddlReportWrapper">
+            <select name="ctl00$ddlTable" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlTable\&#39;,\&#39;\&#39;)&#39;, 0)" id="ctl00_ddlTable" class="label" style="color:Red;width:50%;">
+	<option selected="selected" value="248">مشخصات کمیته انتصابات</option>
+
+</select>
+            <input type="submit" name="ctl00$btnPervPage" value="" onclick="btnPrevClick();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnPervPage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_btnPervPage" title="صفحه قبلی" class="prev_report" />
+            <input type="submit" name="ctl00$btnNextPage" value="" onclick="btnNextClick();WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$btnNextPage&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="ctl00_btnNextPage" title="صفحه بعدی" class="next_report" />
+        </div>
+        <a id="ctl00_hlChangeLanguage" class="eng" href="../ChangeCulture.aspx?lng=en-US&amp;selectedValue=248" style="font-family:Tahoma;">EN</a>
+        <div class="clear" style="height: 10px;">
+        </div>
+    </div>
+    <input name="ctl00$hdfThumbPrint" type="hidden" id="ctl00_hdfThumbPrint" />
+    <div class="clear" style="height: 15px;">
+    </div>
+    <div class="symbol_and_name">
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divCompanyCaption" class="lable">شرکت:</div>
+                <div class="varios">
+                    <span id="ctl00_txbCompanyName" class="label" style="color:#C04000;">هامون نايزه</span>
+                    
+                    <span id="ctl00_CustomValidator1" style="color:Red;font-weight:bold;display:none;visibility:hidden;">تاریخ نامعتبر</span>
+                    
+                    
+                </div>
+            </div>
+            <div class="text_holder">
+                <div id="ctl00_divListedCapitalCaption" class="lable">سرمایه ثبت شده:</div>
+                <div class="varios">
+                    <span id="ctl00_lblListedCapital" class="label" style="color:#C04000;">6,550,000</span>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divSymbolCaption" class="lable">نماد:</div>
+                <div class="varios">
+                    <span id="ctl00_lblDisplaySymbol" class="label" style="color:#C04000;"></span>
+                    <span id="ctl00_txbSymbol" class="label" style="color:#C04000;">هانيکو</span>
+                    
+                </div>
+            </div>
+            <div class="text_holder">
+                <div id="ctl00_divUnauthorizedCapital" class="lable">سرمایه ثبت نشده:</div>
+                <div class="varios">
+                    <span id="ctl00_txbUnauthorizedCapital" class="label" style="color:#C04000;">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="rows">
+            <div class="text_holder">
+                <div id="ctl00_divIsicCaption" class="lable">کد صنعت (ISIC):</div>
+                <div class="varios">
+                    <span id="ctl00_lblISIC" class="label" style="color:#C04000;">289910</span>
+                </div>
+            </div>
+            <div class="text_holder">
+                <div style="margin: 5px 4px; display:inline-flex">
+                    <span id="ctl00_lblReportName" class="label">مشخصات کمیته انتصابات</span>&nbsp
+                    <span id="ctl00_lblPeriod" class="label" style="color:#C04000;display:none;">12 ماهه</span>  
+                    <span id="ctl00_lblEndTo" class="label" style="display:none;">منتهی به</span>
+                    <span id="ctl00_lblInDate" class="label" style="display:none;">در تاریخ </span>  
+                    <span id="ctl00_lblPeriodEndToDate" class="label" style="color:#C04000;display:none;"><bdo dir=ltr>1405/12/29</bdo></span>
+                    <span id="ctl00_lblIsAudited" class="label" style="display:none;">(حسابرسی نشده)</span>
+                </div>
+            </div>
+        </div>  
+         <div class="text_holder">
+            <div id="ctl00_divYearEndToDateCaption" class="lable">سال مالی منتهی به:</div>
+            <div class="varios">
+                <span id="ctl00_lblYearEndToDate" class="label" style="color:#C04000;"><bdo dir=ltr>1405/12/29</bdo></span>
+            </div>
+        </div>      
+        <div class="text_holder">
+            <div id="ctl00_divCompanyStateCaption" class="lable">وضعیت ناشر:</div>
+            <div class="varios">
+                <span id="ctl00_lblCompanyState" class="label" style="color:#C04000;">پذيرفته شده در فرابورس ايران</span>
+            </div>
+        </div>
+        <div style="clear: both;">
+        </div>
+    </div>
+    
+<style type="text/css">
+    .label
+    {
+        font-size: 8pt;
+        font-family: tahoma;
+    }
+</style>
+<div id="ctl00_ucSignature1_pnlMain" class="main_note" style="background-color:#C1E2B4;">
+    <div class="verify">
+       
+    
+    </div>
+    <div class="noteholder">
+        <img alt="information" src='../imgs/inforation.png' />
+        <span id="ctl00_ucSignature1_lblSignature" class="signature" style="color:DarkGreen;">اطلاعات نمایش داده شده با اطلاعات امضا شده مطابقت دارد</span>
+        <div class="clear"></div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+    <div class="clear" style="height: 5px;">
+    </div>
+   <div class="errorHolder">
+        <span id="ctl00_lblError" class="Error" style="color:DarkRed;font-weight:bold;"></span>
+    </div>
+   <input type="hidden" name="ctl00$hdfVersion" id="ctl00_hdfVersion" value="0" />
+   <div id="ctl00_divPriceNote" class="note_price">
+        <p id="ctl00_pPriceNote" style="display:none;">کلیه مبالغ درج شده به میلیون ریال می باشد</p>
+    </div>
+   <div class="note_price_Excel">
+    <input type="image" name="ctl00$ibtnExport" id="ctl00_ibtnExport" class="Hidden" src="../Images/ExportToExcel.jpg" alt="Export To Excel" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ibtnExport&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:20px;border-width:0px;" />
+    </div>
+    <div class="clear">
+    </div>
+    
+     <style type="text/css">
+     .textBold {
+         font-weight: bold;
+     }
+
+     .style1 {
+         width: 9px;
+         height: 30px;
+     }
+
+     .v-mid-align {
+         vertical-align: middle;
+     }
+
+     .r-pad-10 {
+         padding-right: 10px;
+     }
+
+     td img:first-child {
+         padding-right: 3px !important;
+         vertical-align: middle !important;
+     }
+
+     table, span, input, textarea, td, th {
+         font-family: "B Mitra";
+         font-size: 16px;
+     }
+
+     th {
+         font-weight: bold !important;
+         font-size: 14px !important;
+     }
+ </style>
+    <table id="ctl00_cphBody_Table1" width="100%" style="text-align: center" align="center" dir="rtl">
+	<tr>
+		<td>
+                <span id="ctl00_cphBody_lblCurrencyMsg" class="notify error" style="display:none;"></span>
+            </td>
+	</tr>
+</table>
+
+    <div style="width: 90%; margin: 0 auto;">
+        <table style="width: 100%; font-family: Tahoma; border-collapse: collapse;">
+            <tr style="background-color: #eee;">
+                <td style="height: 30px; text-align: center;">
+                    <table width="100%">
+                        <tr>
+                            <td colspan="2">
+                                <span id="ctl00_cphBody_lblSubject" style="font-weight: bold;">موضوع : مشخصات کمیته انتصابات در تاریخ:</span>
+                                <span id="txbDate">1405/05/10</span>
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="ctl00_cphBody_lblAppointment" style="font-weight: bold;">الف- مشخصات کلی کمیته انتصابات</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="50%" style="margin-right: 40px;">
+                        <tr>
+                            <td width="20%">
+                                <span id="ctl00_cphBody_lblDate">تاریخ تشکیل :</span>
+                            </td>
+                            <td width="80%">
+                                <span id="txbAppointmentsDate">1405/05/10</span>
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table width="50%" style="margin-right: 40px;">
+                        <tr>
+                            <td width="20%">
+                                <span id="ctl00_cphBody_lblAppointmentMemberCount">تعداد اعضا :</span>
+                            </td>
+                            <td width="80%">
+                                <span id="txbAppointmentsMemberCount">3</span>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <br />
+
+    <div align="center">
+
+        <table id="ctl00_cphBody_tblAppointments" width="90%" dir="rtl" style="padding: 0; margin: 0; border-collapse: collapse;">
+	<tr>
+		<td>
+                    <table id="tblAppointmentMember" style="padding: 0px; margin: 0px; width: 100%;">
+                        <tr>
+                            <td rowspan="1"><span style="font-weight: bold"  > اعضای کمیته انتصابات</span></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1">
+
+                                <div>
+			<table tabindex="6" cellspacing="0" cellpadding="3" rules="all" border="1" id="ctl00_cphBody_gvAppointments" style="width:100%;border-collapse:collapse;cursor: pointer">
+				<tr class="GridHeader">
+					<th scope="col" style="font-weight:normal;width:12%;">نام و نام خانوادگی</th><th scope="col" style="font-weight:normal;width:7%;">کدملی</th><th scope="col" style="font-weight:normal;width:9%;">سمت </th><th scope="col" style="font-weight:normal;width:5%;">عضو غیرموظف هیئت‌ مدیره</th><th scope="col" style="font-weight:normal;width:8%;">شخص حقوقی</th><th scope="col" style="font-weight:normal;width:5%;">عضو مستقل</th><th scope="col" style="font-weight:normal;width:9%;">آخرین مقطع تحصیلی</th><th scope="col" style="font-weight:normal;width:9%;">رشته تحصیلی</th><th scope="col" style="font-weight:normal;width:8%;">تاریخ عضویت در کمیته انتصابات</th><th scope="col" style="font-weight:normal;width:21%;">آیا اقرارنامه موضوع تبصره 6 ماده 14 حاکمیت شرکتی ارائه گردیده است؟</th>
+				</tr><tr class="GridItem" align="center">
+					<td style="width:12%;">محمود شريعتي نياسر</td><td style="width:7%;">0532104315</td><td style="width:9%;">رییس کمیته</td><td style="width:5%;">بله</td><td style="width:8%;">توسعه صنعتي مشفق</td><td style="width:5%;">خیر</td><td style="width:9%;">کارشناسي</td><td style="width:9%;">متالورژي</td><td style="width:8%;">1405/05/10</td><td style="width:21%;">بله</td>
+				</tr><tr class="GridAlternating" align="center">
+					<td style="width:12%;">ابراهيم شيخ</td><td style="width:7%;">0059895152</td><td style="width:9%;">عضو کمیته</td><td style="width:5%;">بله</td><td style="width:8%;">&nbsp;</td><td style="width:5%;">بله</td><td style="width:9%;">دکترا</td><td style="width:9%;">مديريت دولتي</td><td style="width:8%;">1405/05/10</td><td style="width:21%;">بله</td>
+				</tr><tr class="GridItem" align="center">
+					<td style="width:12%;">حسين عبائي کاشان</td><td style="width:7%;">1262337992</td><td style="width:9%;">عضو کمیته</td><td style="width:5%;">بله</td><td style="width:8%;">&nbsp;</td><td style="width:5%;">بله</td><td style="width:9%;">کارشناسي ارشد</td><td style="width:9%;">مديريت دولتي</td><td style="width:8%;">1405/05/10</td><td style="width:21%;">بله</td>
+				</tr>
+			</table>
+		</div>
+                                <br />
+                                <div style="height: 10px; border-bottom: 1px dashed; width: 100%"></div>
+                                <br />
+                                <span id="ctl00_cphBody_secretaryTitle" style="font-weight: bold">ب - مشخصات دبیر کمیته انتصابات </span>
+                                <div>
+			<table tabindex="6" cellspacing="0" cellpadding="3" rules="all" border="1" id="ctl00_cphBody_gvSecretary" style="width:100%;border-collapse:collapse;cursor: pointer">
+				<tr class="GridHeader">
+					<th scope="col" style="font-weight:normal;width:12%;">نام و نام خانوادگی</th><th scope="col" style="font-weight:normal;width:7%;">کدملی</th><th scope="col" style="font-weight:normal;width:9%;">رشته تحصیلی</th><th scope="col" style="font-weight:normal;width:9%;">آخرین مقطع تحصیلی</th><th scope="col" style="font-weight:normal;width:8%;">تاریخ عضویت در کمیته انتصابات</th><th scope="col" style="font-weight:normal;width:21%;">اهم سوابق - مدت زمان/محل و موضوع سابقه فعالیت</th>
+				</tr><tr class="GridItem" align="center">
+					<td style="width:12%;">مرتضي جوشقاني زاده</td><td style="width:7%;">1261852974</td><td style="width:9%;">مهندسي صنايع</td><td style="width:9%;">دکترا</td><td style="width:8%;">1405/05/10</td><td style="width:21%;">مدير منابع انساني </td>
+				</tr>
+			</table>
+		</div>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+	</tr>
+</table>
+
+
+    </div>
+    <input type="hidden" name="ctl00$cphBody$hdfSerial" id="ctl00_cphBody_hdfSerial" value="-1" />
+
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_CustomValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var ctl00_CustomValidator1 = document.all ? document.all["ctl00_CustomValidator1"] : document.getElementById("ctl00_CustomValidator1");
+ctl00_CustomValidator1.controltovalidate = "ctl00_txbPeriodEndToDate";
+ctl00_CustomValidator1.errormessage = "تاریخ نامعتبر";
+ctl00_CustomValidator1.evaluationfunction = "CustomValidatorEvaluateIsValid";
+ctl00_CustomValidator1.clientvalidationfunction = "DateValidator";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body>
+</html>
