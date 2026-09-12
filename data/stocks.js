@@ -1167,6 +1167,130 @@ window.STOCKS_DATA = [
     "last_update": "1405/06/21 - 13:24"
   },
   {
+    "symbol": "وبملت",
+    "name": "بانک ملت",
+    "logo": "",
+    "current_price": 1515.0,
+    "change_percent": 0.87,
+    "volume": "11.2B",
+    "market_cap": "1,515 B",
+    "chart_14d": [
+      {
+        "date": "۱ شهریور",
+        "price": 1390.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 1424.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 1446.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 1488.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 1532.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 1554.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 1565.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 1519.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 1486.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 1471.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 1514.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 1537.0
+      },
+      {
+        "date": "۱۸ شهریور",
+        "price": 1502.0
+      },
+      {
+        "date": "۲۱ شهریور",
+        "price": 1515.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/778253364357513",
+      "rahavard": "https://rahavard365.com/asset/462",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%88%D8%A8%D9%85%D9%84%D8%AA",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وبملت/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وبملت/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وبملت/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%88%D8%A8%D9%85%D9%84%D8%AA"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 0,
+    "ai_score_details": {
+      "ai_score": 7.0,
+      "ai_score_int": 7,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.0,
+      "technical": 8.0,
+      "sentiment": 3.3,
+      "low_risk": 6.1
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.9,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.7,
+        "rules": 4.0,
+        "horizon": 3.9
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 7.0,
+        "ai_score_int": 7,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.0,
+        "technical": 8.0,
+        "sentiment": 3.3,
+        "low_risk": 6.1
+      }
+    },
+    "executive_summary": "نماد «وبملت» در زمره شرکت‌های تولیدی و صنعتی طبقه‌بندی شده و مورد رصد فعال بازار سرمایه است. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +0.9٪ به 1,515 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.51 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «جست‌وجو - وبملت - سنا» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 1,485 تا 1,545 ریال، تارگت اولیه 1,652 ریال، حد ضرر حمایتی 1,444 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "1,485 تا 1,545 ریال",
+      "target_1": 1652.0,
+      "stop_loss": 1444.0,
+      "risk_reward_ratio": 1.93
+    },
+    "last_update": "1405/06/21 - 17:18"
+  },
+  {
     "symbol": "وتجارت",
     "name": "بانک تجارت",
     "logo": "",

@@ -1,0 +1,31 @@
+{
+  "symbol": "وبملت",
+  "date": "20260912",
+  "close_price": 1515.0,
+  "last_price": 1538.0,
+  "yesterday_price": 1502.0,
+  "close_change_percent": 0.87,
+  "last_change_percent": 2.4,
+  "volume": 11238617306.0,
+  "value": 17027226991730.0,
+  "client_type": {
+    "buy_real_count": 12823,
+    "buy_legal_count": 39,
+    "sell_real_count": 5425,
+    "sell_legal_count": 51,
+    "buy_real_vol": 8706993263.0,
+    "buy_legal_vol": 3080600688.0,
+    "sell_real_vol": 7198057775.0,
+    "sell_legal_vol": 4589536176.0,
+    "buy_real_capita": 679013.7458473056,
+    "sell_real_capita": 1326830.9262672812,
+    "buyer_power": 0.511756043972797
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 1515.0,
+    "rahavard_close": 1515.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

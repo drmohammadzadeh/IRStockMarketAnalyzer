@@ -1,0 +1,28 @@
+{
+  "symbol": "وبملت",
+  "inscode": "778253364357513",
+  "asset_id": "462",
+  "live_info": {
+    "date": "20260912",
+    "close_price": 1515.0,
+    "last_price": 1538.0,
+    "yesterday_price": 1502.0,
+    "volume": 11238617306.0,
+    "value": 17027226991730.0,
+    "trades": 56667.0
+  },
+  "rahavard_prices": {
+    "close_price": 1515.0,
+    "last_price": 1538.0,
+    "close_change_percent": 0.87,
+    "last_change_percent": 2.4,
+    "end_date_time": "2026-09-12T12:29:59+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 1515.0,
+    "rahavard_close": 1515.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

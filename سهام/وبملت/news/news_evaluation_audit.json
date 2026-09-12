@@ -1,0 +1,1337 @@
+{
+  "symbol": "وبملت",
+  "audit_timestamp": "1405/06/21 - 17:18",
+  "total_candidates": 66,
+  "approved_count": 1,
+  "rejected_count": 65,
+  "approved_news": [
+    {
+      "id": "news_1",
+      "title": "جست‌وجو - وبملت - سنا",
+      "source": "آرشیو محلی",
+      "source_url": "file:///ref_جست‌وجو_-_وبملت_-_سنا.html",
+      "url": "file:///ref_جست‌وجو_-_وبملت_-_سنا.html",
+      "date": "1405/06/21",
+      "raw_date": "نامشخص",
+      "body": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد بر اساس گزارش آماری اداره تحلیل‌های اقتصادی و ریسک سازمان بورس مجموع ارزش بازار سهام ۴۹ صنعت بورس و فرابورس با رشد ۴۶ درصدی از ۱۰.۸۵۰ همت در پایان دی ۱۴۰۳ به ۱۵.۸۵۸ همت در پایان دی ۱۴۰۴ رسید. ... تهران ۲۳۱,۷۶۸ ۳۶۱,۸۰۰ ۵۶.۱% وبملت بانک ملت بانکداری بورس تهران... درآمد ۱۴۱ همتی و رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌داری در شهریور ۱۴۰۴ معاونت نظارت بر بورس‌ها و ناشران سازمان بورس و اوراق بهادار در گزارشی، ضمن اعلام رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌ها و مؤسسات اعتباری در یک‌ماهه گذشته، عمده دلایل این تغییرات را بررسی کرد. ... این گزارش، در میان بانک‌های فعال: نماد «وبملت» نسبت به ماه گذشته ۶۳ درصد افزایش در درآمد عملیاتی داشته است و مبلغ درآمد... تغییر درآمد ۵۰ شرکت بزرگ بازار سرمایه در شهریور امسال/ درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته است اداره میزهای صنعت و رتبه‌بندی ناشران سازمان بورس و اوراق بهادار در گزارشی تفصیلی آمار تغییرات فروش ۵۰ شرکت بزرگ بازار سرمایه را اعلام کرد. طبق این گزارش درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته و درآمد ۵ شرکت نیز در شهریور امسال نسبت به شهریور پارسال ثابت بوده است. در این بین فقط ۳ شرکت بورسی و فرابورسی در یک سال اخیر با کاهش درآمد حاصل از فروش مواجه شده‌اند.",
+      "summary": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد بر اساس گزارش آماری اداره تحلیل‌های ",
+      "sentiment": "مثبت / دارای اثر حمایتی",
+      "sentiment_label": "POSITIVE",
+      "impact_type": "OPERATIONAL_GROWTH",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_جست‌وجو_-_وبملت_-_سنا.html"
+    }
+  ],
+  "rejected_news": [
+    {
+      "title": "اخبار بورس | بورس 24، آخرین اخبار و تحلیل های بورس تهران | Bourse24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_1_اخبار_بورس_بورس_24،_آخرین_اخبار_و_ت.html"
+    },
+    {
+      "title": "بررسی استراتژیک فرصت‌های خرید در گروه‌های بانکی، ساختمانی، معدنی و هلدینگ | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/366067",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_2_بررسی_استراتژیک_فرصت‌های_خرید_در_گر.html"
+    },
+    {
+      "title": "بانک ملت در مساحت بین‌المللی تقویت یافت؛ گزارش «فی بانک مالزی» منتشر شد | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/366031",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_3_بانک_ملت_در_مساحت_بین‌المللی_تقویت_.html"
+    },
+    {
+      "title": ".:TSETMC:. :: مدیریت فناوری بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html"
+    },
+    {
+      "title": "ره‌آورد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_ره‌آورد.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_ره‌آورد.html"
+    },
+    {
+      "title": "سامانه اطلاع رسانی ناشران کدال|Codal",
+      "rejection_reason": "REJECTED_CAPTCHA",
+      "reason": "REJECTED_CAPTCHA",
+      "details": "صفحه خطای محدودیت دسترسی یا اعتبارسنجی امنیتی (کپچا)",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html",
+      "raw_date": "1400/05/02",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
+    },
+    {
+      "title": "تمدید فرصت ثبت‌نام در دوره‌های آموزشی ویژه آزمون‌ معامله‌گری بازار سرمایه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95972/%D8%AA%D9%85%D8%AF%DB%8C%D8%AF-%D9%81%D8%B1%D8%B5%D8%AA-%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D9%88%DB%8C%DA%98%D9%87-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D9%87-%DA%AF%D8%B1%DB%8C",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "چراغ سبز چینی‌ها به مس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95966/%D9%BE%D8%B0%DB%8C%D8%B1%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DB%B2%DB%B0%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AA%D9%88%D9%85%D8%A7%D9%86%DB%8C-%D9%BE%D8%A7%D9%86%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%86%D9%82%D8%B1%D9%87-%D8%AF%D8%B1-%DA%86%D9%86%D8%AF-%D8%AB%D8%A7%D9%86%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره تحلیل‌های اقتصادی و ریسک سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره میز صنعت و رتبه‌بندی ناشران سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "درآمد ۱۴۱ همتی و  رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌داری در شهریور ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۲ مهر ۰۴ - ۱۲:۴۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش اداره میزهای صنعت و رتبه‌بندی ناشران سازمان بورس و اوراق بهادار را بررسی کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تغییر درآمد ۵۰ شرکت بزرگ بازار سرمایه در شهریور امسال/ درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته است",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ مهر ۰۴ - ۱۱:۲۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مهم‌ترین اخبار کدال در ۱۱شهریور ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91249/مهم-ترین-اخبار-کدال-در-۱۱شهریور-۱۴۰۴",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۱ شهریور ۰۴ - ۲۰:۱۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91249/مهم-ترین-اخبار-کدال-در-۱۱شهریور-۱۴۰۴",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "موتور بازار آپشن روشن شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ تیر ۰۴ - ۱۳:۴۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اداره تحلیل‌های اقتصادی و ریسک سازمان بورس و اوراق بهادار اعلام کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش بازار سهام ایران با ۴۱ درصد رشد به ۱۲ هزار همت رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ اردیبهشت ۰۴ - ۱۰:۱۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تغییرات مبلغ فروش ۵۰ شرکت بزرگ بورس در یک سال گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89215/تغییرات-مبلغ-فروش-۵۰-شرکت-بزرگ-بورس-در-یک-سال-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۳ اردیبهشت ۰۴ - ۰۸:۰۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89215/تغییرات-مبلغ-فروش-۵۰-شرکت-بزرگ-بورس-در-یک-سال-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار از روند هفتگی بازار اختیار معامله را بررسی می‌کند:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ثبت رکورد در بازار آپشن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۳۰ فروردین ۰۴ - ۰۹:۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش مدیریت ناشران بورس تهران را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مبلغ فروش ۱۰ صنعت برتر بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۴ فروردین ۰۴ - ۱۴:۲۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش معاونت نظات بر بورس ها و ناشران سازمان بورس را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رشد ۵ تا ۱۱۰ درصدی درآمد حاصل از فروش بزرگان بورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۴ اسفند ۰۳ - ۰۹:۵۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار از بازار اختیار معاملات را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سهم بازار آپشن از مبادلات هفتگی بازار سرمایه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ بهمن ۰۳ - ۱۲:۱۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، داده‌های آماری شرکت پردازش اطلاعات مالی آرتا (انیگما) را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازده ۴۱.۵ درصدی بانک‌ها در ۳ ماه گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ بهمن ۰۳ - ۱۰:۳۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیر معاملات مشتقه شرکت سبدگردان دیبا در گفت‌وگو با سنا مطرح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پیش‌بینی گرم‌تر شدن بازار آپشن/ میانگین ارزش معاملات روزانه آپشن‌ها در آذرماه به ۵۰۰ میلیارد تومان افزایش پیدا کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت‌های میلیارد دلاری بورس و فرابورس/ ارزش بازار ۳۱ شرکت فعال در بازار سهام ایران از یک میلیارد دلار فراتر رفت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ آذر ۰۳ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، بررسی کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند ارزش بازار ۱۰ شرکت بزرگ بورس و فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آذر ۰۳ - ۰۹:۳۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در پایان معاملات روز سه‌شنبه بازار سهام محقق شد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "عبور ارزش روز سهام عدالت از ۲۰ میلیون تومان",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ آذر ۰۳ - ۱۶:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تازه‌ترین گزارش بورس تهران نشان می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند عملکرد مالی ۲۱۰ شرکت تولیدی بورسی در بهار امسال/ اثر قیمت‌گذاری دستوری و ناترازی انرژی بر حاشیه سود/ حاشیه سود خالص شرکت‌های بورسی به ۱۱ درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ مرداد ۰۳ - ۰۸:۲۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "افزایش ۵۷۴ واحدی شاخص کل هم‌وزن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۷ فروردین ۰۳ - ۱۴:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "صعود ۴۱۲۶۸ واحدی شاخص بورس در نخستین روز معاملاتی سال ۱۴۰۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ فروردین ۰۳ - ۱۳:۵۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رشد دسته جمعی نماگر تالار شیشه‌ای",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ اسفند ۰۲ - ۱۳:۱۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
+      "raw_date": "اخیر",
+      "file_path": null
+    }
+  ],
+  "rejection_log": [
+    {
+      "title": "اخبار بورس | بورس 24، آخرین اخبار و تحلیل های بورس تهران | Bourse24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_1_اخبار_بورس_بورس_24،_آخرین_اخبار_و_ت.html"
+    },
+    {
+      "title": "بررسی استراتژیک فرصت‌های خرید در گروه‌های بانکی، ساختمانی، معدنی و هلدینگ | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/366067",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_2_بررسی_استراتژیک_فرصت‌های_خرید_در_گر.html"
+    },
+    {
+      "title": "بانک ملت در مساحت بین‌المللی تقویت یافت؛ گزارش «فی بانک مالزی» منتشر شد | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/366031",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\news_3_بانک_ملت_در_مساحت_بین‌المللی_تقویت_.html"
+    },
+    {
+      "title": ".:TSETMC:. :: مدیریت فناوری بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html"
+    },
+    {
+      "title": "ره‌آورد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_ره‌آورد.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_ره‌آورد.html"
+    },
+    {
+      "title": "سامانه اطلاع رسانی ناشران کدال|Codal",
+      "rejection_reason": "REJECTED_CAPTCHA",
+      "reason": "REJECTED_CAPTCHA",
+      "details": "صفحه خطای محدودیت دسترسی یا اعتبارسنجی امنیتی (کپچا)",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html",
+      "raw_date": "1400/05/02",
+      "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
+    },
+    {
+      "title": "تمدید فرصت ثبت‌نام در دوره‌های آموزشی ویژه آزمون‌ معامله‌گری بازار سرمایه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95972/%D8%AA%D9%85%D8%AF%DB%8C%D8%AF-%D9%81%D8%B1%D8%B5%D8%AA-%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D9%88%DB%8C%DA%98%D9%87-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D9%87-%DA%AF%D8%B1%DB%8C",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "چراغ سبز چینی‌ها به مس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95966/%D9%BE%D8%B0%DB%8C%D8%B1%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DB%B2%DB%B0%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AA%D9%88%D9%85%D8%A7%D9%86%DB%8C-%D9%BE%D8%A7%D9%86%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%86%D9%82%D8%B1%D9%87-%D8%AF%D8%B1-%DA%86%D9%86%D8%AF-%D8%AB%D8%A7%D9%86%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره تحلیل‌های اقتصادی و ریسک سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره میز صنعت و رتبه‌بندی ناشران سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "درآمد ۱۴۱ همتی و  رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌داری در شهریور ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۲ مهر ۰۴ - ۱۲:۴۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91912/درآمد-۱۴۱-همتی-و-رشد-۳۰-درصدی-درآمد-عملیاتی-صنعت-بانک-داری-در",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش اداره میزهای صنعت و رتبه‌بندی ناشران سازمان بورس و اوراق بهادار را بررسی کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تغییر درآمد ۵۰ شرکت بزرگ بازار سرمایه در شهریور امسال/ درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته است",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ مهر ۰۴ - ۱۱:۲۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91810/تغییر-درآمد-۵۰-شرکت-بزرگ-بازار-سرمایه-در-شهریور-امسال-درآمد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مهم‌ترین اخبار کدال در ۱۱شهریور ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91249/مهم-ترین-اخبار-کدال-در-۱۱شهریور-۱۴۰۴",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۱ شهریور ۰۴ - ۲۰:۱۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/91249/مهم-ترین-اخبار-کدال-در-۱۱شهریور-۱۴۰۴",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "موتور بازار آپشن روشن شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ تیر ۰۴ - ۱۳:۴۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90470/موتور-بازار-آپشن-روشن-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اداره تحلیل‌های اقتصادی و ریسک سازمان بورس و اوراق بهادار اعلام کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش بازار سهام ایران با ۴۱ درصد رشد به ۱۲ هزار همت رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ اردیبهشت ۰۴ - ۱۰:۱۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89375/ارزش-بازار-سهام-ایران-با-۴۱-درصد-رشد-به-۱۲-هزار-همت-رسید",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تغییرات مبلغ فروش ۵۰ شرکت بزرگ بورس در یک سال گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89215/تغییرات-مبلغ-فروش-۵۰-شرکت-بزرگ-بورس-در-یک-سال-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۳ اردیبهشت ۰۴ - ۰۸:۰۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89215/تغییرات-مبلغ-فروش-۵۰-شرکت-بزرگ-بورس-در-یک-سال-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار از روند هفتگی بازار اختیار معامله را بررسی می‌کند:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ثبت رکورد در بازار آپشن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۳۰ فروردین ۰۴ - ۰۹:۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89181/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش مدیریت ناشران بورس تهران را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مبلغ فروش ۱۰ صنعت برتر بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۴ فروردین ۰۴ - ۱۴:۲۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89096/مبلغ-فروش-۱۰-صنعت-برتر-بورس-تهران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش معاونت نظات بر بورس ها و ناشران سازمان بورس را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رشد ۵ تا ۱۱۰ درصدی درآمد حاصل از فروش بزرگان بورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۴ اسفند ۰۳ - ۰۹:۵۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88431/رشد-۵-تا-۱۱۰-درصدی-درآمد-حاصل-از-فروش-بزرگان-بورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، گزارش گروه مالی اقتصاد بیدار از بازار اختیار معاملات را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سهم بازار آپشن از مبادلات هفتگی بازار سرمایه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ بهمن ۰۳ - ۱۲:۱۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88331/سهم-بازار-آپشن-از-مبادلات-هفتگی-بازار-سرمایه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، داده‌های آماری شرکت پردازش اطلاعات مالی آرتا (انیگما) را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازده ۴۱.۵ درصدی بانک‌ها در ۳ ماه گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ بهمن ۰۳ - ۱۰:۳۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88024/بازده-۴۱-۵-درصدی-بانک-ها-در-۳-ماه-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیر معاملات مشتقه شرکت سبدگردان دیبا در گفت‌وگو با سنا مطرح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پیش‌بینی گرم‌تر شدن بازار آپشن/ میانگین ارزش معاملات روزانه آپشن‌ها در آذرماه به ۵۰۰ میلیارد تومان افزایش پیدا کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت‌های میلیارد دلاری بورس و فرابورس/ ارزش بازار ۳۱ شرکت فعال در بازار سهام ایران از یک میلیارد دلار فراتر رفت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ آذر ۰۳ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، بررسی کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند ارزش بازار ۱۰ شرکت بزرگ بورس و فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آذر ۰۳ - ۰۹:۳۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در پایان معاملات روز سه‌شنبه بازار سهام محقق شد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "عبور ارزش روز سهام عدالت از ۲۰ میلیون تومان",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ آذر ۰۳ - ۱۶:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87235/عبور-ارزش-روز-سهام-عدالت-از-۲۰-میلیون-تومان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تازه‌ترین گزارش بورس تهران نشان می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند عملکرد مالی ۲۱۰ شرکت تولیدی بورسی در بهار امسال/ اثر قیمت‌گذاری دستوری و ناترازی انرژی بر حاشیه سود/ حاشیه سود خالص شرکت‌های بورسی به ۱۱ درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ مرداد ۰۳ - ۰۸:۲۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/86216/روند-عملکرد-مالی-۲۱۰-شرکت-تولیدی-بورسی-در-بهار-امسال-اثر-قیمت-گذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "افزایش ۵۷۴ واحدی شاخص کل هم‌وزن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۷ فروردین ۰۳ - ۱۴:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "صعود ۴۱۲۶۸ واحدی شاخص بورس در نخستین روز معاملاتی سال ۱۴۰۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ فروردین ۰۳ - ۱۳:۵۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رشد دسته جمعی نماگر تالار شیشه‌ای",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ اسفند ۰۲ - ۱۳:۱۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
+      "raw_date": "اخیر",
+      "file_path": null
+    }
+  ],
+  "sentiment_summary": {
+    "overall_sentiment": "POSITIVE",
+    "positive_count": 1,
+    "negative_count": 0,
+    "neutral_count": 0,
+    "average_sentiment_score": 1.0
+  }
+}
