@@ -1288,7 +1288,7 @@ window.STOCKS_DATA = [
       "stop_loss": 873.9,
       "risk_reward_ratio": 0.73
     },
-    "last_update": "1405/06/21 - 15:43"
+    "last_update": "1405/06/21 - 16:01"
   },
   {
     "symbol": "کلید",

@@ -1,9 +1,9 @@
 {
   "symbol": "وتجارت",
-  "audit_timestamp": "1405/06/21 - 15:42",
-  "total_candidates": 77,
+  "audit_timestamp": "1405/06/21 - 16:00",
+  "total_candidates": 78,
   "approved_count": 13,
-  "rejected_count": 64,
+  "rejected_count": 65,
   "approved_news": [
     {
       "id": "news_1",
@@ -309,6 +309,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وتجارت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "چراغ سبز چینی‌ها به مس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -325,26 +355,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/95965/%D8%A8%D8%A7%D9%86%DA%A9-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C-%D8%A7%D8%B1%D9%88%D9%BE%D8%A7-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87-%D8%B1%D8%A7-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D8%AF%D8%A7%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "دماسنج تامین مالی جمعی در روز ‌شنبه ۲۱ شهریور ۱۴۰۵ + جدول",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95956/%D8%AF%D9%85%D8%A7%D8%B3%D9%86%D8%AC-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2-%D8%B4%D9%86%D8%A8%D9%87-%DB%B2%DB%B1-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5-%D8%AC%D8%AF%D9%88%D9%84",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "شاخص ۴۰ صنعت بورس صعودی شد/ ۲۴ صنعت قله تاریخی شاخص خود را جابه‌جا کردند",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95963/%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B4%DB%B0-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B5%D8%B9%D9%88%D8%AF%DB%8C-%D8%B4%D8%AF-%DB%B2%DB%B4-%D8%B5%D9%86%D8%B9%D8%AA-%D9%82%D9%84%D9%87-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%D8%AE%D9%88%D8%AF-%D8%B1%D8%A7-%D8%AC%D8%A7%D8%A8%D9%87-%D8%AC%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -951,6 +961,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وتجارت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "چراغ سبز چینی‌ها به مس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -967,26 +1007,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/95965/%D8%A8%D8%A7%D9%86%DA%A9-%D9%85%D8%B1%DA%A9%D8%B2%DB%8C-%D8%A7%D8%B1%D9%88%D9%BE%D8%A7-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87-%D8%B1%D8%A7-%D8%A7%D9%81%D8%B2%D8%A7%DB%8C%D8%B4-%D8%AF%D8%A7%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "دماسنج تامین مالی جمعی در روز ‌شنبه ۲۱ شهریور ۱۴۰۵ + جدول",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95956/%D8%AF%D9%85%D8%A7%D8%B3%D9%86%D8%AC-%D8%AA%D8%A7%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2-%D8%B4%D9%86%D8%A8%D9%87-%DB%B2%DB%B1-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5-%D8%AC%D8%AF%D9%88%D9%84",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "شاخص ۴۰ صنعت بورس صعودی شد/ ۲۴ صنعت قله تاریخی شاخص خود را جابه‌جا کردند",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95963/%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B4%DB%B0-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B5%D8%B9%D9%88%D8%AF%DB%8C-%D8%B4%D8%AF-%DB%B2%DB%B4-%D8%B5%D9%86%D8%B9%D8%AA-%D9%82%D9%84%D9%87-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%D8%AE%D9%88%D8%AF-%D8%B1%D8%A7-%D8%AC%D8%A7%D8%A8%D9%87-%D8%AC%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
