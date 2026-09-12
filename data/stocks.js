@@ -1,0 +1,1405 @@
+/**
+ * Iranian Stock Market Watchlist Data Store
+ * Platform: tjb24.ir
+ */
+window.STOCKS_DATA = [
+  {
+    "symbol": "بانیان",
+    "name": "نيان باتري خاوران",
+    "logo": "",
+    "current_price": 16860.0,
+    "change_percent": -2.2,
+    "volume": "10.4M",
+    "market_cap": "16,860 B",
+    "chart_14d": [
+      {
+        "date": "۲۶ مرداد",
+        "price": 15820.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 16290.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 16770.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 17270.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 17780.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 18290.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 18740.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 19190.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 19160.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 18590.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 18160.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17620.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17240.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 16860.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/64899658576570461",
+      "rahavard": "https://rahavard365.com/asset/42310",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/بانیان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 5,
+    "ai_score_details": {
+      "ai_score": 8.6,
+      "ai_score_int": 9,
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قوی",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 9.0,
+      "sentiment": 8.7,
+      "low_risk": 6.3
+    },
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.8,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.6,
+        "rules": 5.0,
+        "horizon": 4.7
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 8.6,
+        "ai_score_int": 9,
+        "signal": "STRONG_BUY",
+        "signal_label": "خرید قوی",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 9.0,
+        "sentiment": 8.7,
+        "low_risk": 6.3
+      }
+    },
+    "executive_summary": "نماد «بانیان» (نیان الکترونیک) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 17,360 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 3.34 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «رشد چشمگیر سود «بانیان» در نخستین فصل | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 16,523 تا 17,197 ریال، تارگت اولیه 16,923 ریال، حد ضرر حمایتی 15,174 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "16,523 تا 17,197 ریال",
+      "target_1": 19389.0,
+      "stop_loss": 15397.3,
+      "risk_reward_ratio": 1.73
+    },
+    "last_update": "1405/06/16 - 11:43"
+  },
+  {
+    "symbol": "تابان",
+    "name": "گروه پتروشیمی تابان فردا",
+    "logo": "",
+    "current_price": 14810.0,
+    "change_percent": 2.99,
+    "volume": "27.8M",
+    "market_cap": "14,810 B",
+    "chart_14d": [
+      {
+        "date": "۹ شهریور",
+        "price": 12800.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 13180.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 13570.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 13970.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 14380.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 14810.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/30714151942396396",
+      "rahavard": "https://rahavard365.com/",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D8%A7%D8%A8%D8%A7%D9%86",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تابان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D8%A7%D8%A8%D8%A7%D9%86"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 7,
+    "ai_score_details": {
+      "ai_score": 8.7,
+      "ai_score_int": 9,
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قوی",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 9.0,
+      "sentiment": 8.7,
+      "low_risk": 7.2
+    },
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.9,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.6,
+        "rules": 5.0,
+        "horizon": 5.0
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 8.7,
+        "ai_score_int": 9,
+        "signal": "STRONG_BUY",
+        "signal_label": "خرید قوی",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 9.0,
+        "sentiment": 8.7,
+        "low_risk": 7.2
+      }
+    },
+    "executive_summary": "نماد «تابان» (گروه پتروشیمی تابان فردا) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های سرمایه‌گذاری و هلدینگ، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 14,810 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 35.77 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تخفیف قیمتی قابل توجه نسبت به ارزش خالص دارایی‌ها (NAV) و تنوع سبد سرمایه‌گذاری، پشتوانه ارزندگی بنیادی بوده و ساختار تکنیکال از پتانسیل رشد میان‌مدت حمایت می‌کند. در بعد رویدادهای موثق، انتشار خبر ««تابان فردا» صورت وضعیت پرتفوی نفت صبا را منتشر کرد | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 14,514 تا 15,106 ریال، تارگت اولیه 16,587 ریال، حد ضرر حمایتی 14,336 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "14,514 تا 15,106 ریال",
+      "target_1": 17031.5,
+      "stop_loss": 13773.3,
+      "risk_reward_ratio": 2.14
+    },
+    "last_update": "1405/06/16 - 11:39"
+  },
+  {
+    "symbol": "تلیسه",
+    "name": "دامداری تلیسه نمونه",
+    "logo": "",
+    "current_price": 9680.0,
+    "change_percent": 2.22,
+    "volume": "37.8M",
+    "market_cap": "9,680 B",
+    "chart_14d": [
+      {
+        "date": "۲۷ مرداد",
+        "price": 9250.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 9360.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 9600.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 9430.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 9160.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 9250.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 9520.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 9800.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 10060.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 9920.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 9630.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 9670.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 9470.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 9680.0
+      }
+    ],
+    "links": {
+      "tsetmc": "http://www.tsetmc.com/Loader.aspx?ParTree=151311&i=41781090739318251",
+      "rahavard": "https://rahavard365.com/asset/1543",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AA%D9%84%DB%8C%D8%B3%D9%87",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/تلیسه/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D9%84%DB%8C%D8%B3%D9%87"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 0,
+    "ai_score_details": {
+      "ai_score": 7.1,
+      "ai_score_int": 7,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 8.0,
+      "sentiment": 3.5,
+      "low_risk": 5.6
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.9,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 4.0
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 7.1,
+        "ai_score_int": 7,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 8.0,
+        "sentiment": 3.5,
+        "low_risk": 5.6
+      }
+    },
+    "executive_summary": "نماد «تلیسه» (دامداری تلیسه نمونه) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های زراعت و دامپروری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.2٪ به 9,680 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.56 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. بررسی تراز عملیاتی، تنوع محصولات کشاورزی و دامی و ثبات در درآمدهای فصلی، چشم‌انداز بنیادی مطلوبی ترسیم کرده و ساختار نموداری نیز در سطوح حمایتی تثبیت شده است. در بعد رویدادهای شرکتی، خبر «عملکرد یک ساله «تلیسه» بررسی شد | بورس 24» به عنوان آخرین تحول اطلاعاتی موثق سهم رصد شده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 9,486 تا 9,874 ریال، تارگت اولیه 10,360 ریال، حد ضرر حمایتی 8,713 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "9,486 تا 9,874 ریال",
+      "target_1": 11132.0,
+      "stop_loss": 8798.83,
+      "risk_reward_ratio": 1.65
+    },
+    "last_update": "1405/06/16 - 11:41"
+  },
+  {
+    "symbol": "خودرو",
+    "name": "ایران خودرو",
+    "logo": "",
+    "current_price": 722.0,
+    "change_percent": 2.27,
+    "volume": "8.9B",
+    "market_cap": "217,795 B",
+    "chart_14d": [
+      {
+        "date": "۲۶ مرداد",
+        "price": 614.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 620.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 629.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 647.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 665.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 682.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 696.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 715.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 730.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 713.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 712.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 694.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 706.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 722.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/65883838195688438",
+      "rahavard": "https://rahavard365.com/asset/167",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AE%D9%88%D8%AF%D8%B1%D9%88",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودرو/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%D8%B1%D9%88"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 2,
+    "ai_score_details": {
+      "ai_score": 7.5,
+      "ai_score_int": 8,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 7.5,
+      "sentiment": 5.9,
+      "low_risk": 6.1
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 4.1,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 4.1,
+        "rules": 4.0,
+        "horizon": 4.2
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 7.5,
+        "ai_score_int": 8,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 7.5,
+        "sentiment": 5.9,
+        "low_risk": 6.1
+      }
+    },
+    "executive_summary": "نماد «خودرو» (ایران خودرو) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.3٪ به 722 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 1.08 ثبت شد که نشان‌دهنده تقاضای مطلوب و برتری خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «سیگنال قوی برای سایپایی‌ها؛ افشای واگذاری در راه است ... | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 708 تا 736 ریال، تارگت اولیه 736 ریال، حد ضرر حمایتی 654 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "708 تا 736 ریال",
+      "target_1": 830.3,
+      "stop_loss": 658.39,
+      "risk_reward_ratio": 1.7
+    },
+    "last_update": "1405/06/16 - 11:41"
+  },
+  {
+    "symbol": "خودکفا",
+    "name": "شرکت اقتصادی و خودکفائی آزادگان (گروه مینو)",
+    "logo": "",
+    "current_price": 15670.0,
+    "change_percent": 2.75,
+    "volume": "13.5M",
+    "market_cap": "15,670 B",
+    "chart_14d": [
+      {
+        "date": "۲۸ مرداد",
+        "price": 13900.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 14040.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 13770.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 13820.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 14200.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 14330.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 14750.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 15010.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 14940.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 14500.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 14660.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 14820.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 15250.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 15670.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/22956708386610464",
+      "rahavard": "https://rahavard365.com/asset/508/%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=2&ReportingType=1000002&name=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C%20%D9%88%20%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7%D8%A6%DB%8C%20%D8%A2%D8%B2%D8%A7%D8%AF%DA%AF%D8%A7%D9%86&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable&Name=%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%DB%8C%20%D9%88%20%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7%D8%A6%DB%8C%20%D8%A2%D8%B2%D8%A7%D8%AF%DA%AF%D8%A7%D9%86&IndustryGroup=42",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/خودکفا/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 4,
+    "ai_score_details": {
+      "ai_score": 8.1,
+      "ai_score_int": 8,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 7.5,
+      "sentiment": 9.0,
+      "low_risk": 6.0
+    },
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.7,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.5,
+        "rules": 5.0,
+        "horizon": 4.5
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 8.1,
+        "ai_score_int": 8,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 7.5,
+        "sentiment": 9.0,
+        "low_risk": 6.0
+      }
+    },
+    "executive_summary": "نماد «خودکفا» (اقتصادی و خودکفائی آزادگان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های سرمایه‌گذاری و هلدینگ، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.8٪ به 15,670 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 2.56 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تخفیف قیمتی قابل توجه نسبت به ارزش خالص دارایی‌ها (NAV) و تنوع سبد سرمایه‌گذاری، پشتوانه ارزندگی بنیادی بوده و ساختار تکنیکال از پتانسیل رشد میان‌مدت حمایت می‌کند. در بعد رویدادهای موثق، انتشار خبر «رشد ۱,۶۴۴ میلیارد تومانی ارزش پرتفوی بورسی «خودکفا» در مرداد؛ سهم ۹۹ درص...» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 15,357 تا 15,983 ریال، تارگت اولیه 15,700 ریال، حد ضرر حمایتی 14,103 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "15,357 تا 15,983 ریال",
+      "target_1": 18020.5,
+      "stop_loss": 14277.74,
+      "risk_reward_ratio": 1.69
+    },
+    "last_update": "1405/06/17 - 12:24"
+  },
+  {
+    "symbol": "زهلال",
+    "name": "کشت و صنعت و دامپروری صنایع غذایی هلال (کشت و صنعت هلال)",
+    "logo": "",
+    "current_price": 51940.0,
+    "change_percent": 2.75,
+    "volume": "2.9M",
+    "market_cap": "51,940 B",
+    "chart_14d": [
+      {
+        "date": "۲۶ مرداد",
+        "price": 48900.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 48420.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 48500.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 48880.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 47530.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 46950.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 48310.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 49030.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 49310.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 48430.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 49080.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 49080.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 50550.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 51940.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/48636523343139021",
+      "rahavard": "https://rahavard365.com/asset/24484",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%B2%D9%87%D9%84%D8%A7%D9%84&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=1&ReportingType=-1&name=%DA%A9%D8%B4%D8%AA%20%D9%88%20%D8%B5%D9%86%D8%B9%D8%AA%20%D9%87%D9%84%D8%A7%D9%84&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/زهلال/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%B2%D9%87%D9%84%D8%A7%D9%84"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 4,
+    "ai_score_details": {
+      "ai_score": 8.1,
+      "ai_score_int": 8,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 7.5,
+      "sentiment": 8.9,
+      "low_risk": 6.0
+    },
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.7,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.5,
+        "rules": 5.0,
+        "horizon": 4.5
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 8.1,
+        "ai_score_int": 8,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 7.5,
+        "sentiment": 8.9,
+        "low_risk": 6.0
+      }
+    },
+    "executive_summary": "نماد «زهلال» (زراعت و دامداری زاگرس پیام اصفهان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های زراعت و دامپروری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 53,480 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 14.51 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. بررسی تراز عملیاتی، تنوع محصولات کشاورزی و دامی و ثبات در درآمدهای فصلی، چشم‌انداز بنیادی مطلوبی ترسیم کرده و ساختار نموداری نیز در سطوح حمایتی تثبیت شده است. در بعد رویدادهای موثق، انتشار خبر ««زهلال» در مرداد ماه ۱۴۳ میلیارد تومان فروش کرد؛ رشد ۲۰۱ درصدی نسبت به س...» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 50,901 تا 52,979 ریال، تارگت اولیه 52,060 ریال، حد ضرر حمایتی 47,077 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "50,901 تا 52,979 ریال",
+      "target_1": 59731.0,
+      "stop_loss": 47346.7,
+      "risk_reward_ratio": 1.7
+    },
+    "last_update": "1405/06/16 - 11:42"
+  },
+  {
+    "symbol": "غمهرا",
+    "name": "گروه تولیدی مهرام",
+    "logo": "",
+    "current_price": 17710.0,
+    "change_percent": 1.43,
+    "volume": "5.5M",
+    "market_cap": "17,710 B",
+    "chart_14d": [
+      {
+        "date": "۲۶ مرداد",
+        "price": 18180.0
+      },
+      {
+        "date": "۲۷ مرداد",
+        "price": 18020.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 17920.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 18390.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 18060.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 17730.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 17750.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 18230.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 18390.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 17850.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 17790.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17300.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17460.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 17710.0
+      }
+    ],
+    "links": {
+      "tsetmc": "http://www.tsetmc.com/Loader.aspx?ParTree=151311&i=6131290133202745",
+      "rahavard": "https://rahavard365.com/asset/search?q=%D8%BA%D9%85%D9%87%D8%B1%D8%A7",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D8%BA%D9%85%D9%87%D8%B1%D8%A7",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/غمهرا/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%BA%D9%85%D9%87%D8%B1%D8%A7"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 1,
+    "ai_score_details": {
+      "ai_score": 7.4,
+      "ai_score_int": 7,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 9.0,
+      "sentiment": 3.5,
+      "low_risk": 5.7
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 4.0,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.9,
+        "rules": 4.0,
+        "horizon": 4.2
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 7.4,
+        "ai_score_int": 7,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 9.0,
+        "sentiment": 3.5,
+        "low_risk": 5.7
+      }
+    },
+    "executive_summary": "نماد «غمهرا» (گروه تولیدی مهرام) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 18,240 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.59 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «پیشنهاد افزایش سرمایه «غمهرا» | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 17,356 تا 18,064 ریال، تارگت اولیه 19,180 ریال، حد ضرر حمایتی 16,027 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "17,356 تا 18,064 ریال",
+      "target_1": 20366.5,
+      "stop_loss": 16101.73,
+      "risk_reward_ratio": 1.65
+    },
+    "last_update": "1405/06/16 - 11:43"
+  },
+  {
+    "symbol": "فسازان",
+    "name": "غلتک‌سازان سپاهان",
+    "logo": "",
+    "current_price": 13130.0,
+    "change_percent": 2.98,
+    "volume": "19.5M",
+    "market_cap": "13,130 B",
+    "chart_14d": [
+      {
+        "date": "۲۷ مرداد",
+        "price": 10530.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 10520.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 10800.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 11110.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 11120.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 11430.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 11770.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 12040.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 12340.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 12410.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 12090.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 12390.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 12750.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 13130.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/History/12874072841236826/20260823",
+      "rahavard": "https://rahavard365.com/asset/5522/%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=0&ReportingType=1000000&name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&Category=-1&CompanyType=1&Consolidatable&NotConsolidatable&Name=%D8%BA%D9%84%D8%AA%DA%A9%20%D8%B3%D8%A7%D8%B2%D8%A7%D9%86%20%D8%B3%D9%BE%D8%A7%D9%87%D8%A7%D9%86&IndustryGroup=27",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فسازان/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -2,
+    "ai_score_details": {
+      "ai_score": 6.6,
+      "ai_score_int": 7,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 9.5,
+      "technical": 6.0,
+      "sentiment": 3.5,
+      "low_risk": 6.2
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.7,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.5,
+        "rules": 4.0,
+        "horizon": 3.7
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 6.6,
+        "ai_score_int": 7,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 9.5,
+        "technical": 6.0,
+        "sentiment": 3.5,
+        "low_risk": 6.2
+      }
+    },
+    "executive_summary": "نماد «فسازان» (غلتک‌سازان سپاهان) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های تولیدی و صنعتی، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +3.0٪ به 13,130 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.61 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «دلایل افزایش ۵۶۴ درصدی سود عملیاتی «فسازان» در دوره ۳ ماهه نخست ۱۴۰۵ | ب...» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 12,867 تا 13,393 ریال، تارگت اولیه 14,706 ریال، حد ضرر حمایتی 11,817 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "12,867 تا 13,393 ریال",
+      "target_1": 15099.5,
+      "stop_loss": 11983.4,
+      "risk_reward_ratio": 1.72
+    },
+    "last_update": "1405/06/16 - 11:42"
+  },
+  {
+    "symbol": "فولاد",
+    "name": "فولاد",
+    "logo": "",
+    "current_price": 0.0,
+    "change_percent": 0.0,
+    "volume": "—",
+    "market_cap": "—",
+    "chart_14d": [],
+    "links": {
+      "tsetmc": "https://old.tsetmc.com/tsev2/data/search.aspx?skey=فولاد",
+      "rahavard": "https://rahavard365.com/asset/search?q=فولاد",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=فولاد",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فولاد/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فولاد/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فولاد/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D9%88%D9%84%D8%A7%D8%AF"
+    },
+    "verdict": "—",
+    "score": 3.0,
+    "ai_score_details": {
+      "ai_score": 6.0,
+      "ai_score_int": 6,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 6.0,
+      "technical": 6.0,
+      "sentiment": 6.0,
+      "low_risk": 6.0
+    },
+    "recommendation": {
+      "signal": "HOLD",
+      "signal_label": "در انتظار تحلیل",
+      "score": 3.0,
+      "score_max": 5.0,
+      "stars": "★★★☆☆",
+      "badge": "⏳ در انتظار تحلیل",
+      "scores": {
+        "weighted": 3.0,
+        "rules": 3.0,
+        "horizon": 3.0
+      },
+      "action_desc": "در انتظار تحلیل...",
+      "ai_score_details": {
+        "ai_score": 6.0,
+        "ai_score_int": 6,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 6.0,
+        "technical": 6.0,
+        "sentiment": 6.0,
+        "low_risk": 6.0
+      }
+    },
+    "executive_summary": "",
+    "plan": {
+      "entry_zone": "",
+      "target_1": null,
+      "stop_loss": null,
+      "risk_reward_ratio": null
+    },
+    "last_update": ""
+  },
+  {
+    "symbol": "هانیکو",
+    "name": "هانیکو",
+    "logo": "",
+    "current_price": 8310.0,
+    "change_percent": 2.59,
+    "volume": "44.8M",
+    "market_cap": "8,310 B",
+    "chart_14d": [
+      {
+        "date": "۱ شهریور",
+        "price": 7740.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 7730.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 7920.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 8070.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 8100.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 7870.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 7920.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 7750.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 7870.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 7900.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 8090.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 8190.0
+      },
+      {
+        "date": "۱۸ شهریور",
+        "price": 8100.0
+      },
+      {
+        "date": "۲۱ شهریور",
+        "price": 8310.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/41529644566373651",
+      "rahavard": "https://rahavard365.com/asset/search?q=هانیکو",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%87%D8%A7%D9%86%DB%8C%DA%A9%D9%88&LetterType=-1&AuditorRef=-1&PageNumber=1&Audited&NotAudited&IsNotAudited=false&Childs&Mains&Publisher=false&CompanyState=-1&Category=-1&CompanyType=-1&Consolidatable&NotConsolidatable",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/هانیکو/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%87%D8%A7%D9%86%DB%8C%DA%A9%D9%88"
+    },
+    "verdict": "خرید قوی (Strong Buy)",
+    "score": 4,
+    "ai_score_details": {
+      "ai_score": 8.3,
+      "ai_score_int": 8,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 8.0,
+      "sentiment": 8.8,
+      "low_risk": 6.6
+    },
+    "recommendation": {
+      "signal": "STRONG_BUY",
+      "signal_label": "خرید قاطع",
+      "score": 4.7,
+      "score_max": 5.0,
+      "stars": "★★★★★",
+      "badge": "🚀 خرید قاطع (Strong Buy)",
+      "scores": {
+        "weighted": 4.5,
+        "rules": 5.0,
+        "horizon": 4.5
+      },
+      "action_desc": "سهم در موقعیت بسیار جذاب تکنیکال و ارزندگی بالای بنیادی قرار دارد. ورود در محدوده فعلی با رعایت حد ضرر پویا اکیداً توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 8.3,
+        "ai_score_int": 8,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 8.0,
+        "sentiment": 8.8,
+        "low_risk": 6.6
+      }
+    },
+    "executive_summary": "نماد «هانیکو» در زمره شرکت‌های تولیدی و صنعتی طبقه‌بندی شده و مورد رصد فعال بازار سرمایه است. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.6٪ به 8,310 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 4.60 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «فروش داخلی «هانیکو» در ۵ ماه به ۹۸۹ میلیارد تومان رسید | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید قوی (Strong Buy)» ترسیم می‌کند با محدوده ورود بهینه 8,144 تا 8,476 ریال، تارگت اولیه 8,735 ریال، حد ضرر حمایتی 8,131 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "8,144 تا 8,476 ریال",
+      "target_1": 9556.5,
+      "stop_loss": 7609.73,
+      "risk_reward_ratio": 1.78
+    },
+    "last_update": "1405/06/21 - 13:24"
+  },
+  {
+    "symbol": "وتجارت",
+    "name": "بانک تجارت",
+    "logo": "",
+    "current_price": 986.0,
+    "change_percent": 2.92,
+    "volume": "3.7B",
+    "market_cap": "220,791 B",
+    "chart_14d": [
+      {
+        "date": "۲۷ مرداد",
+        "price": 803.0
+      },
+      {
+        "date": "۲۸ مرداد",
+        "price": 826.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 850.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 875.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 901.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 928.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 955.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 983.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 1012.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 1011.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 982.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 983.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 958.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 986.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/63917421733088077",
+      "rahavard": "https://rahavard365.com/asset/461",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=وتجارت",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/وتجارت/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%88%D8%AA%D8%AC%D8%A7%D8%B1%D8%AA"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": -2,
+    "ai_score_details": {
+      "ai_score": 6.6,
+      "ai_score_int": 7,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 9.5,
+      "technical": 6.0,
+      "sentiment": 3.5,
+      "low_risk": 6.3
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.7,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.5,
+        "rules": 4.0,
+        "horizon": 3.7
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 6.6,
+        "ai_score_int": 7,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 9.5,
+        "technical": 6.0,
+        "sentiment": 3.5,
+        "low_risk": 6.3
+      }
+    },
+    "executive_summary": "نماد «وتجارت» (بانک تجارت) به عنوان یکی از مجموعه‌های فعال در گروه بانک و مؤسسات اعتباری، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.9٪ به 986 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.41 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. بررسی ساختار ترازنامه، حاشیه سود سپرده‌گذاری و تسهیلات و نسبت قیمت به ارزش دفتری (P/B) ارزندگی بانکی مناسبی را نشان می‌دهد و مومنتوم قیمتی نیز در محدوده تثبیت قرار دارد. در بعد رویدادهای موثق، انتشار خبر «بازار چه در «وتجارت» می بیند؟ | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 966 تا 1,006 ریال، تارگت اولیه 1,042 ریال، حد ضرر حمایتی 887 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "966 تا 1,006 ریال",
+      "target_1": 1133.9,
+      "stop_loss": 900.98,
+      "risk_reward_ratio": 1.74
+    },
+    "last_update": "1405/06/16 - 11:40"
+  },
+  {
+    "symbol": "کلید",
+    "name": "صندوق املاک و مستغلات کلید",
+    "logo": "",
+    "current_price": 18118.0,
+    "change_percent": 1.04,
+    "volume": "121.1M",
+    "market_cap": "13,443,293 B",
+    "chart_14d": [
+      {
+        "date": "۲۸ مرداد",
+        "price": 15877.0
+      },
+      {
+        "date": "۳۱ مرداد",
+        "price": 16075.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 16347.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 16760.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 17147.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 17554.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 17416.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 17142.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 17067.0
+      },
+      {
+        "date": "۱۱ شهریور",
+        "price": 17072.0
+      },
+      {
+        "date": "۱۴ شهریور",
+        "price": 17151.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 17494.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 17931.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 18118.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/45292762906823004",
+      "rahavard": "https://rahavard365.com/asset/34513",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%DA%A9%D9%84%DB%8C%D8%AF",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/کلید/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%DA%A9%D9%84%DB%8C%D8%AF"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 0,
+    "ai_score_details": {
+      "ai_score": 6.6,
+      "ai_score_int": 7,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 8.0,
+      "technical": 7.5,
+      "sentiment": 3.2,
+      "low_risk": 6.5
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.7,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.5,
+        "rules": 4.0,
+        "horizon": 3.7
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 6.6,
+        "ai_score_int": 7,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 8.0,
+        "technical": 7.5,
+        "sentiment": 3.2,
+        "low_risk": 6.5
+      }
+    },
+    "executive_summary": "نماد «کلید» (صندوق سرمایه‌گذاری املاک و مستغلات مدیریت ارزش مسکن) به عنوان یکی از مجموعه‌های فعال در گروه صندوق سرمایه‌گذاری املاک و مستغلات، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +1.0٪ به 18,118 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.77 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. ارزیابی بنیادین دارایی‌ها بر پایه خالص ارزش دارایی‌ها (NAV) و جریان درآمدی پایدار اجاره‌داری، در کنار ساختار حمایتی تکنیکال، حاکی از ثبات ریسک و ارزندگی دارایی ملکی است. در بعد رویدادهای شرکتی، خبر «بازده دوبرابری صندوق «کلید» در مقایسه با بازار سنتی ملک | بورس 24» به عنوان آخرین تحول اطلاعاتی موثق سهم رصد شده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 17,756 تا 18,480 ریال، تارگت اولیه 18,296 ریال، حد ضرر حمایتی 16,306 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "17,756 تا 18,480 ریال",
+      "target_1": 20835.7,
+      "stop_loss": 16579.2,
+      "risk_reward_ratio": 1.77
+    },
+    "last_update": "1405/06/17 - 17:27"
+  }
+];
