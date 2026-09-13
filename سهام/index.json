@@ -848,6 +848,130 @@
     "last_update": "1405/06/16 - 11:43"
   },
   {
+    "symbol": "فارس",
+    "name": "صنايع پتروشيمي خليج فارس",
+    "logo": "",
+    "current_price": 13140.0,
+    "change_percent": 2.82,
+    "volume": "431.4M",
+    "market_cap": "13,140 B",
+    "chart_14d": [
+      {
+        "date": "۳۱ مرداد",
+        "price": 9590.0
+      },
+      {
+        "date": "۱ شهریور",
+        "price": 9870.0
+      },
+      {
+        "date": "۲ شهریور",
+        "price": 10150.0
+      },
+      {
+        "date": "۳ شهریور",
+        "price": 10430.0
+      },
+      {
+        "date": "۴ شهریور",
+        "price": 10740.0
+      },
+      {
+        "date": "۷ شهریور",
+        "price": 11060.0
+      },
+      {
+        "date": "۹ شهریور",
+        "price": 11380.0
+      },
+      {
+        "date": "۱۰ شهریور",
+        "price": 11620.0
+      },
+      {
+        "date": "۱۵ شهریور",
+        "price": 11960.0
+      },
+      {
+        "date": "۱۶ شهریور",
+        "price": 12310.0
+      },
+      {
+        "date": "۱۷ شهریور",
+        "price": 12670.0
+      },
+      {
+        "date": "۱۸ شهریور",
+        "price": 12430.0
+      },
+      {
+        "date": "۲۱ شهریور",
+        "price": 12780.0
+      },
+      {
+        "date": "۲۲ شهریور",
+        "price": 13140.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/25244329144808274",
+      "rahavard": "https://rahavard365.com/asset/703",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%81%D8%A7%D8%B1%D8%B3",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فارس/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فارس/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فارس/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%A7%D8%B1%D8%B3"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 2,
+    "ai_score_details": {
+      "ai_score": 7.9,
+      "ai_score_int": 8,
+      "signal": "BUY",
+      "signal_label": "خرید",
+      "color_grade": "green",
+      "color_hex": "#10b981",
+      "fundamental": 9.5,
+      "technical": 8.0,
+      "sentiment": 7.7,
+      "low_risk": 5.5
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 4.4,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 4.4,
+        "rules": 5.0,
+        "horizon": 3.9
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 7.9,
+        "ai_score_int": 8,
+        "signal": "BUY",
+        "signal_label": "خرید",
+        "color_grade": "green",
+        "color_hex": "#10b981",
+        "fundamental": 9.5,
+        "technical": 8.0,
+        "sentiment": 7.7,
+        "low_risk": 5.5
+      }
+    },
+    "executive_summary": "نماد «فارس» در زمره شرکت‌های تولیدی و صنعتی طبقه‌بندی شده و مورد رصد فعال بازار سرمایه است. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان +2.8٪ به 13,140 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 1.51 ثبت شد که نشان‌دهنده ورود نقدینگی فعال و برتری معنادار خریداران حقیقی است. تحلیل حاشیه سود ناخالص عملیاتی، نرخ‌های فروش در بورس کالا و تراز تولید، نشانگر استحکام بنیادی شرکت بوده و شاخص‌های تکنیکال نیز در آستانه بازگشت صعودی قرار گرفته‌اند. در بعد رویدادهای موثق، انتشار خبر «جهش سود خالص «فارس» و رشد ۴۸ درصدی درآمدهای عملیاتی | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 12,877 تا 13,403 ریال، تارگت اولیه 13,730 ریال، حد ضرر حمایتی 12,316 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "12,877 تا 13,403 ریال",
+      "target_1": 13730.0,
+      "stop_loss": 12315.94,
+      "risk_reward_ratio": 0.72
+    },
+    "last_update": "1405/06/22 - 12:50"
+  },
+  {
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",

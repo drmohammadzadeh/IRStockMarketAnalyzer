@@ -1,0 +1,28 @@
+{
+  "symbol": "فارس",
+  "inscode": "25244329144808274",
+  "asset_id": "703",
+  "live_info": {
+    "date": "20260913",
+    "close_price": 13140.0,
+    "last_price": 13130.0,
+    "yesterday_price": 12780.0,
+    "volume": 431366949.0,
+    "value": 5667597076140.0,
+    "trades": 14864.0
+  },
+  "rahavard_prices": {
+    "close_price": 13140.0,
+    "last_price": 13130.0,
+    "close_change_percent": 2.82,
+    "last_change_percent": 2.74,
+    "end_date_time": "2026-09-13T12:30:00.203+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 13140.0,
+    "rahavard_close": 13140.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

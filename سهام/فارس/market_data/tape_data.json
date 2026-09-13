@@ -1,0 +1,31 @@
+{
+  "symbol": "فارس",
+  "date": "20260913",
+  "close_price": 13140.0,
+  "last_price": 13130.0,
+  "yesterday_price": 12780.0,
+  "close_change_percent": 2.82,
+  "last_change_percent": 2.74,
+  "volume": 431366949.0,
+  "value": 5667597076140.0,
+  "client_type": {
+    "buy_real_count": 1189,
+    "buy_legal_count": 19,
+    "sell_real_count": 1737,
+    "sell_legal_count": 20,
+    "buy_real_vol": 163859096.0,
+    "buy_legal_vol": 64743531.0,
+    "sell_real_vol": 158184127.0,
+    "sell_legal_vol": 70418500.0,
+    "buy_real_capita": 137812.52817493692,
+    "sell_real_capita": 91067.43062751871,
+    "buyer_power": 1.5133020359233984
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 13140.0,
+    "rahavard_close": 13140.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}
