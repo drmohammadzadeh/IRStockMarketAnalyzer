@@ -2,19 +2,27 @@
   "symbol": "خودرو",
   "inscode": "65883838195688438",
   "asset_id": "167",
-  "live_info": {},
+  "live_info": {
+    "date": "20261011",
+    "close_price": 730.0,
+    "last_price": 725.0,
+    "yesterday_price": 747.0,
+    "volume": 12733682665.0,
+    "value": 9292159673406.0,
+    "trades": 22097.0
+  },
   "rahavard_prices": {
-    "close_price": 743.0,
-    "last_price": 743.0,
-    "close_change_percent": 2.91,
-    "last_change_percent": 2.91,
-    "end_date_time": "2026-09-07T11:41:44.768+03:30"
+    "close_price": 730.0,
+    "last_price": 725.0,
+    "close_change_percent": -2.28,
+    "last_change_percent": -2.95,
+    "end_date_time": "2026-10-11T12:30:00.353+03:30"
   },
   "cross_check": {
-    "status": "DISCREPANCY_WARNING",
-    "tsetmc_close": 722.0,
-    "rahavard_close": 743.0,
-    "discrepancy_pct": 2.909,
-    "message": "هشدار مغایرت قیمتی بین TSETMC و ره‌آورد ۳۶۵ (انحراف: 2.909٪ > آستانه 0.5٪)."
+    "status": "VERIFIED",
+    "tsetmc_close": 730.0,
+    "rahavard_close": 730.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }
 }
