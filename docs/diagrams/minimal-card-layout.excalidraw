@@ -1,0 +1,337 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "title_text",
+      "type": "text",
+      "x": 100,
+      "y": 50,
+      "width": 600,
+      "height": 40,
+      "text": "TJB24 Minimal Responsive Stock Card Architecture",
+      "fontSize": 24,
+      "fontFamily": 3,
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "strokeColor": "#1e40af",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "subtitle_text",
+      "type": "text",
+      "x": 100,
+      "y": 95,
+      "width": 700,
+      "height": 25,
+      "text": "De-cluttering from 15 simultaneous widgets to an elegant, high-density 4-zone card",
+      "fontSize": 16,
+      "fontFamily": 3,
+      "textAlign": "left",
+      "verticalAlign": "middle",
+      "strokeColor": "#64748b",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "card_bg",
+      "type": "rectangle",
+      "x": 100,
+      "y": 150,
+      "width": 580,
+      "height": 240,
+      "strokeColor": "#334155",
+      "backgroundColor": "#0f172a",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "z1_header_bg",
+      "type": "rectangle",
+      "x": 115,
+      "y": 165,
+      "width": 550,
+      "height": 45,
+      "strokeColor": "#1e293b",
+      "backgroundColor": "#1e293b",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z1_text_left",
+      "type": "text",
+      "x": 130,
+      "y": 175,
+      "width": 250,
+      "height": 25,
+      "text": "[Avatar] تلیسه • دامداری تلیسه نمونه",
+      "fontSize": 14,
+      "fontFamily": 3,
+      "strokeColor": "#f8fafc",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z1_text_right",
+      "type": "text",
+      "x": 440,
+      "y": 175,
+      "width": 210,
+      "height": 25,
+      "text": "۵,۳۰۰ ریال  [▲ +۲.۱٪]  ★",
+      "fontSize": 14,
+      "fontFamily": 3,
+      "strokeColor": "#22c55e",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z2_ai_pill",
+      "type": "rectangle",
+      "x": 115,
+      "y": 225,
+      "width": 260,
+      "height": 60,
+      "strokeColor": "#6d28d9",
+      "backgroundColor": "#ddd6fe",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z2_ai_pill_text",
+      "type": "text",
+      "x": 130,
+      "y": 235,
+      "width": 230,
+      "height": 40,
+      "text": "TJB24 AI Score: 8.5/10\n[خرید قوی] • ارکان ۴ گانه (کلیک)",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "strokeColor": "#4c1d95",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z2_sparkline_bg",
+      "type": "rectangle",
+      "x": 395,
+      "y": 225,
+      "width": 270,
+      "height": 60,
+      "strokeColor": "#334155",
+      "backgroundColor": "#0b0f19",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z2_sparkline_text",
+      "type": "text",
+      "x": 420,
+      "y": 245,
+      "width": 220,
+      "height": 20,
+      "text": "📈 روند ۱۴ روزه (اسپارک‌لاین مینیمال)",
+      "fontSize": 12,
+      "fontFamily": 3,
+      "strokeColor": "#38bdf8",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z3_stats_bg",
+      "type": "rectangle",
+      "x": 115,
+      "y": 295,
+      "width": 550,
+      "height": 35,
+      "strokeColor": "#1e293b",
+      "backgroundColor": "#0b0f19",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z3_stats_text",
+      "type": "text",
+      "x": 130,
+      "y": 303,
+      "width": 520,
+      "height": 20,
+      "text": "ارزش بازار: ۲.۱ ه.م.ت  |  حجم: ۴.۵M  |  P/E: ۶.۸  |  جریان: ورود پول هوشمند",
+      "fontSize": 12,
+      "fontFamily": 3,
+      "strokeColor": "#94a3b8",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z4_btn1",
+      "type": "rectangle",
+      "x": 115,
+      "y": 340,
+      "width": 160,
+      "height": 38,
+      "strokeColor": "#c2410c",
+      "backgroundColor": "#fed7aa",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z4_btn1_text",
+      "type": "text",
+      "x": 135,
+      "y": 350,
+      "width": 120,
+      "height": 20,
+      "text": "🎙️ گزارشگر زنده",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "strokeColor": "#9a3412",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z4_btn2",
+      "type": "rectangle",
+      "x": 290,
+      "y": 340,
+      "width": 180,
+      "height": 38,
+      "strokeColor": "#047857",
+      "backgroundColor": "#a7f3d0",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z4_btn2_text",
+      "type": "text",
+      "x": 305,
+      "y": 350,
+      "width": 150,
+      "height": 20,
+      "text": "✨ تحلیل هوش مصنوعی",
+      "fontSize": 13,
+      "fontFamily": 3,
+      "strokeColor": "#065f46",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "z4_btn_more",
+      "type": "rectangle",
+      "x": 485,
+      "y": 340,
+      "width": 180,
+      "height": 38,
+      "strokeColor": "#334155",
+      "backgroundColor": "#1e293b",
+      "fillStyle": "solid",
+      "strokeWidth": 1,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 2
+      }
+    },
+    {
+      "id": "z4_btn_more_text",
+      "type": "text",
+      "x": 500,
+      "y": 350,
+      "width": 150,
+      "height": 20,
+      "text": "⋯ پیوندها (کدال، رهاورد...)",
+      "fontSize": 12,
+      "fontFamily": 3,
+      "strokeColor": "#f8fafc",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "mobile_label",
+      "type": "text",
+      "x": 750,
+      "y": 150,
+      "width": 320,
+      "height": 25,
+      "text": "📱 نمای فشرده موبایل (ارتفاع < ۱۹۰px)",
+      "fontSize": 16,
+      "fontFamily": 3,
+      "strokeColor": "#3b82f6",
+      "roughness": 0,
+      "opacity": 100
+    },
+    {
+      "id": "mobile_card_bg",
+      "type": "rectangle",
+      "x": 750,
+      "y": 185,
+      "width": 340,
+      "height": 200,
+      "strokeColor": "#334155",
+      "backgroundColor": "#0f172a",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roughness": 0,
+      "opacity": 100,
+      "roundness": {
+        "type": 3
+      }
+    },
+    {
+      "id": "mobile_card_content",
+      "type": "text",
+      "x": 765,
+      "y": 200,
+      "width": 310,
+      "height": 170,
+      "text": "تلیسه  •  ۵,۳۰۰ ریال [▲ +۲.۱٪] ★\n─────────────────────────────\n[ 8.5/10 خرید قوی ]  [📈 روند ۱۴ روزه]\n─────────────────────────────\nارزش: ۲.۱ ه.م.ت • حجم: ۴.۵M • P/E: ۶.۸\n─────────────────────────────\n[🎙️ زنده]  [✨ تحلیل]  [⋯ پیوندها]",
+      "fontSize": 12,
+      "fontFamily": 3,
+      "strokeColor": "#f8fafc",
+      "roughness": 0,
+      "opacity": 100
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#020617",
+    "gridSize": 20
+  },
+  "files": {}
+}
