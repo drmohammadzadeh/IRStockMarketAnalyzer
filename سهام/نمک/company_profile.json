@@ -1,0 +1,26 @@
+{
+  "symbol": "نمک",
+  "name": "صندوق س.بخشي گستره فيروزه3",
+  "archetype": "INVESTMENT_HOLDING",
+  "inscode": "59345957997866018",
+  "sector_name": "صندوق سرمایه‌گذاری قابل معامله",
+  "subsector_name": "صندوق بخشی محصولات شیمیایی",
+  "core_business": "سرمایه‌گذاری تخصصی در سهام و حق تقدم سهام شرکت‌های فعال در صنعت محصولات شیمیایی و پتروشیمی بازار سرمایه",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "NAV Per Unit",
+    "Portfolio Beta",
+    "Sharpe Ratio",
+    "Market Return"
+  ],
+  "forbidden_terms": [
+    "خط تولید مستقیم",
+    "مواد اولیه صنعتی",
+    "انبار کالای ساخته‌شده",
+    "مواد اولیه",
+    "خط تولید"
+  ]
+}

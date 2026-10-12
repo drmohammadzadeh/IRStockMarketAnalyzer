@@ -79,7 +79,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%A8%D8%A7%D9%86%DB%8C%D8%A7%D9%86"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 7,
+    "score": 4.9,
     "ai_score_details": {
       "ai_score": 8.8,
       "ai_score_int": 9,
@@ -473,7 +473,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D8%A7%D8%A8%D8%A7%D9%86"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 2,
+    "score": 4.3,
     "ai_score_details": {
       "ai_score": 7.4,
       "ai_score_int": 7,
@@ -867,7 +867,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AA%D9%84%DB%8C%D8%B3%D9%87"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2,
+    "score": 3.8,
     "ai_score_details": {
       "ai_score": 6.8,
       "ai_score_int": 7,
@@ -1261,7 +1261,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%D8%B1%D9%88"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 4,
+    "score": 4.1,
     "ai_score_details": {
       "ai_score": 8.0,
       "ai_score_int": 8,
@@ -1655,7 +1655,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%AE%D9%88%D8%AF%DA%A9%D9%81%D8%A7"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 6,
+    "score": 4.8,
     "ai_score_details": {
       "ai_score": 8.3,
       "ai_score_int": 8,
@@ -2049,7 +2049,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%B2%D9%87%D9%84%D8%A7%D9%84"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 6,
+    "score": 4.8,
     "ai_score_details": {
       "ai_score": 8.3,
       "ai_score_int": 8,
@@ -2443,7 +2443,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D8%BA%D9%85%D9%87%D8%B1%D8%A7"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 3,
+    "score": 4.1,
     "ai_score_details": {
       "ai_score": 7.6,
       "ai_score_int": 8,
@@ -2837,7 +2837,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%A7%D8%B1%D8%B3"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 4,
+    "score": 4.4,
     "ai_score_details": {
       "ai_score": 8.0,
       "ai_score_int": 8,
@@ -3231,7 +3231,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%B3%D8%A7%D8%B2%D8%A7%D9%86"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 0,
+    "score": 3.8,
     "ai_score_details": {
       "ai_score": 6.8,
       "ai_score_int": 7,
@@ -3617,6 +3617,400 @@ window.STOCKS_DATA = [
     "last_update": ""
   },
   {
+    "symbol": "نمک",
+    "name": "صندوق س.بخشي گستره فيروزه3",
+    "logo": "",
+    "current_price": 41543.0,
+    "change_percent": -0.63,
+    "volume": "6.6M",
+    "market_cap": "41,543 B",
+    "chart_14d": [
+      {
+        "date": "۱ مهر",
+        "price": 37101.0
+      },
+      {
+        "date": "۴ مهر",
+        "price": 37352.0
+      },
+      {
+        "date": "۵ مهر",
+        "price": 38453.0
+      },
+      {
+        "date": "۶ مهر",
+        "price": 39606.0
+      },
+      {
+        "date": "۷ مهر",
+        "price": 39859.0
+      },
+      {
+        "date": "۸ مهر",
+        "price": 40232.0
+      },
+      {
+        "date": "۱۱ مهر",
+        "price": 40814.0
+      },
+      {
+        "date": "۱۲ مهر",
+        "price": 41113.0
+      },
+      {
+        "date": "۱۳ مهر",
+        "price": 41009.0
+      },
+      {
+        "date": "۱۴ مهر",
+        "price": 42222.0
+      },
+      {
+        "date": "۱۵ مهر",
+        "price": 42973.0
+      },
+      {
+        "date": "۱۸ مهر",
+        "price": 42683.0
+      },
+      {
+        "date": "۱۹ مهر",
+        "price": 41808.0
+      },
+      {
+        "date": "۲۰ مهر",
+        "price": 41543.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/59345957997866018",
+      "rahavard": "https://rahavard365.com/asset/40584/%D9%86%D9%85%DA%A9",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%86%D9%85%DA%A9",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/نمک/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/نمک/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/نمک/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%86%D9%85%DA%A9"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 3.8,
+    "ai_score_details": {
+      "ai_score": 6.9,
+      "ai_score_int": 7,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 9.5,
+      "technical": 8.0,
+      "sentiment": 3.4,
+      "low_risk": 5.0,
+      "explainability": {
+        "overall": {
+          "score": 6.9,
+          "score_int": 7,
+          "grade_label": "نگهداری",
+          "formula": "0.35*Fundamental + 0.30*Technical + 0.10*Sentiment + 0.15*Low_Risk + 0.10*Setup",
+          "rationale": "همگرایی ارزندگی بنیادی (9.5)، وضعیت تکنیکال (8.0)، جریان پول (3.4) و ریسک کنترل‌شده (5.0).",
+          "pillars": [
+            {
+              "key": "fundamental",
+              "title": "ارزندگی بنیادی",
+              "weight_pct": 35,
+              "score": 9.5
+            },
+            {
+              "key": "technical",
+              "title": "روند و تکنیکال",
+              "weight_pct": 30,
+              "score": 8.0
+            },
+            {
+              "key": "low_risk",
+              "title": "کم‌ریسک بودن و ثبات",
+              "weight_pct": 15,
+              "score": 5.0
+            },
+            {
+              "key": "sentiment",
+              "title": "احساس بازار و تابلو",
+              "weight_pct": 10,
+              "score": 3.4
+            },
+            {
+              "key": "setup",
+              "title": "کیفیت ستاپ و R/R",
+              "weight_pct": 10,
+              "score": 3.0
+            }
+          ]
+        },
+        "fundamental": {
+          "score": 9.5,
+          "grade_label": "ارزندگی ممتاز",
+          "formula": "ارزیابی P/E گذشته‌نگر و فوروارد نسبت به هم‌گروهی‌ها + حاشیه سود + بازده سود نقدی مجامع",
+          "raw_inputs": {
+            "pe_ratio": 6.5,
+            "group_pe": 8.125,
+            "dividend_yield_pct": 10.77,
+            "profit_margin_pct": 25.0
+          },
+          "sources": [
+            {
+              "name": "سامانه جامع اطلاعات ناشران (کدال - Codal)",
+              "doc": "صورت‌های مالی و گزارش فعالیت ماهانه",
+              "recency": "آخرین گزارش ثبت‌شده"
+            },
+            {
+              "name": "شرکت مدیریت فناوری بورس تهران (TSETMC)",
+              "doc": "نسبت P/E نماد و صنعت",
+              "recency": "پایان معاملات روزانه"
+            }
+          ],
+          "rationale": "نسبت P/E معادل 6.5 در قیاس با میانگین گروه (8.1) و بازده سود تقسیمی 10.8٪ ارزیابی شده است."
+        },
+        "technical": {
+          "score": 8.0,
+          "grade_label": "صعودی با مومنتوم مساعد",
+          "formula": "آرایش قیمت نسبت به EMA20 و EMA50 + موقعیت RSI در فاز صعودی + دوری از اشباع خرید",
+          "raw_inputs": {
+            "current_price": 41543.0,
+            "ema20": 39720.35703097854,
+            "ema50": 35617.20265945966,
+            "rsi": 67.16946340833475
+          },
+          "sources": [
+            {
+              "name": "TSETMC Data Archive",
+              "doc": "تاریخچه قیمت پایانی و تعدیل‌شده",
+              "recency": "آخرین کندل معاملاتی"
+            }
+          ],
+          "rationale": "قیمت جاری (41,543 ریال) بالاتر از میانگین‌های متحرک EMA20 و EMA50 تثبیت شده و شاخص RSI در سطح 67.2 قرار دارد."
+        },
+        "sentiment": {
+          "score": 3.4,
+          "grade_label": "فشار فروش حقیقی",
+          "formula": "0.70 * سرانه خریدار به فروشنده حقیقی (TSETMC) + 0.30 * نظرات سهام‌یاب، ره‌آورد و اخبار موثق",
+          "raw_inputs": {
+            "buyer_power": 0.27546527036735463,
+            "sahamyab_bullish_ratio_pct": 40.0,
+            "composite_social_score": 6.0
+          },
+          "sources": [
+            {
+              "name": "TSETMC تابلو معاملات",
+              "doc": "حجم و تعداد معاملات حقیقی و حقوقی",
+              "recency": "معاملات برخط بازار"
+            },
+            {
+              "name": "شبکه اجتماعی سهام‌یاب (Sahamyab)",
+              "doc": "استریم گفتگوی سهامداران با هشتگ نماد",
+              "recency": "۲۴ ساعت اخیر"
+            },
+            {
+              "name": "تالار گفتگوی ره‌آورد ۳۶۵",
+              "doc": "دیدگاه‌ها و آرای ثبت‌شده کاربران",
+              "recency": "۲۴ ساعت اخیر"
+            },
+            {
+              "name": "رسانه‌های موثق بازار سرمایه (سنا و بورس ۲۴)",
+              "doc": "اخبار رسمی تاییدشده فیلتر ۳-گیت",
+              "recency": "اخبار منتهی به روز جاری"
+            }
+          ],
+          "rationale": "سرانه خریدار حقیقی برابر 0.28 بوده و احساسات در شبکه‌ها با برآیند دیدگاه مثبت و تمایل به خرید در شبکه‌های اجتماعی (جو صعودی) همراه است."
+        },
+        "low_risk": {
+          "score": 5.0,
+          "grade_label": "ریسک متعادل",
+          "formula": "سنجش درصد دامنه نوسان واقعی روزانه (ATR / Price) و نسبت سود به ریسک استراتژی معاملاتی",
+          "raw_inputs": {
+            "atr_value": 1409.5,
+            "volatility_pct": 3.39,
+            "risk_reward_ratio": 0.57
+          },
+          "sources": [
+            {
+              "name": "TSETMC OHLCV",
+              "doc": "دامنه نوسان روزانه ۱۴ روز معاملاتی اخیر",
+              "recency": "آخرین معاملات رسمی"
+            }
+          ],
+          "rationale": "نوسان‌پذیری روزانه سهم بر اساس اندیکاتور ATR برابر 3.39٪ قیمت جاری و نسبت سود به ریسک 0.57 برآورد شده است."
+        }
+      }
+    },
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.8,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 3.6
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 6.9,
+        "ai_score_int": 7,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 9.5,
+        "technical": 8.0,
+        "sentiment": 3.4,
+        "low_risk": 5.0,
+        "explainability": {
+          "overall": {
+            "score": 6.9,
+            "score_int": 7,
+            "grade_label": "نگهداری",
+            "formula": "0.35*Fundamental + 0.30*Technical + 0.10*Sentiment + 0.15*Low_Risk + 0.10*Setup",
+            "rationale": "همگرایی ارزندگی بنیادی (9.5)، وضعیت تکنیکال (8.0)، جریان پول (3.4) و ریسک کنترل‌شده (5.0).",
+            "pillars": [
+              {
+                "key": "fundamental",
+                "title": "ارزندگی بنیادی",
+                "weight_pct": 35,
+                "score": 9.5
+              },
+              {
+                "key": "technical",
+                "title": "روند و تکنیکال",
+                "weight_pct": 30,
+                "score": 8.0
+              },
+              {
+                "key": "low_risk",
+                "title": "کم‌ریسک بودن و ثبات",
+                "weight_pct": 15,
+                "score": 5.0
+              },
+              {
+                "key": "sentiment",
+                "title": "احساس بازار و تابلو",
+                "weight_pct": 10,
+                "score": 3.4
+              },
+              {
+                "key": "setup",
+                "title": "کیفیت ستاپ و R/R",
+                "weight_pct": 10,
+                "score": 3.0
+              }
+            ]
+          },
+          "fundamental": {
+            "score": 9.5,
+            "grade_label": "ارزندگی ممتاز",
+            "formula": "ارزیابی P/E گذشته‌نگر و فوروارد نسبت به هم‌گروهی‌ها + حاشیه سود + بازده سود نقدی مجامع",
+            "raw_inputs": {
+              "pe_ratio": 6.5,
+              "group_pe": 8.125,
+              "dividend_yield_pct": 10.77,
+              "profit_margin_pct": 25.0
+            },
+            "sources": [
+              {
+                "name": "سامانه جامع اطلاعات ناشران (کدال - Codal)",
+                "doc": "صورت‌های مالی و گزارش فعالیت ماهانه",
+                "recency": "آخرین گزارش ثبت‌شده"
+              },
+              {
+                "name": "شرکت مدیریت فناوری بورس تهران (TSETMC)",
+                "doc": "نسبت P/E نماد و صنعت",
+                "recency": "پایان معاملات روزانه"
+              }
+            ],
+            "rationale": "نسبت P/E معادل 6.5 در قیاس با میانگین گروه (8.1) و بازده سود تقسیمی 10.8٪ ارزیابی شده است."
+          },
+          "technical": {
+            "score": 8.0,
+            "grade_label": "صعودی با مومنتوم مساعد",
+            "formula": "آرایش قیمت نسبت به EMA20 و EMA50 + موقعیت RSI در فاز صعودی + دوری از اشباع خرید",
+            "raw_inputs": {
+              "current_price": 41543.0,
+              "ema20": 39720.35703097854,
+              "ema50": 35617.20265945966,
+              "rsi": 67.16946340833475
+            },
+            "sources": [
+              {
+                "name": "TSETMC Data Archive",
+                "doc": "تاریخچه قیمت پایانی و تعدیل‌شده",
+                "recency": "آخرین کندل معاملاتی"
+              }
+            ],
+            "rationale": "قیمت جاری (41,543 ریال) بالاتر از میانگین‌های متحرک EMA20 و EMA50 تثبیت شده و شاخص RSI در سطح 67.2 قرار دارد."
+          },
+          "sentiment": {
+            "score": 3.4,
+            "grade_label": "فشار فروش حقیقی",
+            "formula": "0.70 * سرانه خریدار به فروشنده حقیقی (TSETMC) + 0.30 * نظرات سهام‌یاب، ره‌آورد و اخبار موثق",
+            "raw_inputs": {
+              "buyer_power": 0.27546527036735463,
+              "sahamyab_bullish_ratio_pct": 40.0,
+              "composite_social_score": 6.0
+            },
+            "sources": [
+              {
+                "name": "TSETMC تابلو معاملات",
+                "doc": "حجم و تعداد معاملات حقیقی و حقوقی",
+                "recency": "معاملات برخط بازار"
+              },
+              {
+                "name": "شبکه اجتماعی سهام‌یاب (Sahamyab)",
+                "doc": "استریم گفتگوی سهامداران با هشتگ نماد",
+                "recency": "۲۴ ساعت اخیر"
+              },
+              {
+                "name": "تالار گفتگوی ره‌آورد ۳۶۵",
+                "doc": "دیدگاه‌ها و آرای ثبت‌شده کاربران",
+                "recency": "۲۴ ساعت اخیر"
+              },
+              {
+                "name": "رسانه‌های موثق بازار سرمایه (سنا و بورس ۲۴)",
+                "doc": "اخبار رسمی تاییدشده فیلتر ۳-گیت",
+                "recency": "اخبار منتهی به روز جاری"
+              }
+            ],
+            "rationale": "سرانه خریدار حقیقی برابر 0.28 بوده و احساسات در شبکه‌ها با برآیند دیدگاه مثبت و تمایل به خرید در شبکه‌های اجتماعی (جو صعودی) همراه است."
+          },
+          "low_risk": {
+            "score": 5.0,
+            "grade_label": "ریسک متعادل",
+            "formula": "سنجش درصد دامنه نوسان واقعی روزانه (ATR / Price) و نسبت سود به ریسک استراتژی معاملاتی",
+            "raw_inputs": {
+              "atr_value": 1409.5,
+              "volatility_pct": 3.39,
+              "risk_reward_ratio": 0.57
+            },
+            "sources": [
+              {
+                "name": "TSETMC OHLCV",
+                "doc": "دامنه نوسان روزانه ۱۴ روز معاملاتی اخیر",
+                "recency": "آخرین معاملات رسمی"
+              }
+            ],
+            "rationale": "نوسان‌پذیری روزانه سهم بر اساس اندیکاتور ATR برابر 3.39٪ قیمت جاری و نسبت سود به ریسک 0.57 برآورد شده است."
+          }
+        }
+      }
+    },
+    "executive_summary": "نماد «نمک» (صندوق س.بخشي گستره فيروزه3) به عنوان یکی از مجموعه‌های فعال در گروه شرکت‌های سرمایه‌گذاری و هلدینگ، جایگاه مشخصی در بازار دارایی‌های مرتبط دارد. در آخرین تابلوی معاملاتی، قیمت پایانی با نوسان -0.6٪ به 41,543 ریال رسید و نسبت قدرت خریداران حقیقی در رقم 0.28 ثبت شد که نشان‌دهنده غلبه فشار عرضه و رفتار محتاطانه خریداران است. تخفیف قیمتی قابل توجه نسبت به ارزش خالص دارایی‌ها (NAV) و تنوع سبد سرمایه‌گذاری، پشتوانه ارزندگی بنیادی بوده و ساختار تکنیکال از پتانسیل رشد میان‌مدت حمایت می‌کند. در بعد رویدادهای موثق، انتشار خبر «پروژه توسعه نمک تصفیه شده تبلور مجدد افتتاح و به بهره برداری رسید | بورس 24» محرک حمایتی مناسبی برای ارزندگی سهم ایجاد کرده است. برآیند ارزیابی‌های تحلیلی، سیگنال راهبردی سهم را در وضعیت «خرید پله‌ای (Accumulate)» ترسیم می‌کند با محدوده ورود بهینه 40,712 تا 42,374 ریال، تارگت اولیه 43,899 ریال، حد ضرر حمایتی 37,389 ریال و پایبندی به اصول انضباط معاملاتی به سهامداران توصیه می‌گردد.",
+    "plan": {
+      "entry_zone": "40,712 تا 42,374 ریال",
+      "target_1": 43899.0,
+      "stop_loss": 37388.7,
+      "risk_reward_ratio": 0.57
+    },
+    "last_update": "1405/07/20 - 11:24"
+  },
+  {
     "symbol": "هانیکو",
     "name": "هانیکو",
     "logo": "",
@@ -3692,7 +4086,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%87%D8%A7%D9%86%DB%8C%DA%A9%D9%88"
     },
     "verdict": "خرید قوی (Strong Buy)",
-    "score": 6,
+    "score": 4.8,
     "ai_score_details": {
       "ai_score": 8.6,
       "ai_score_int": 9,
@@ -4086,7 +4480,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%88%D8%A8%D9%85%D9%84%D8%AA"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 2,
+    "score": 4.0,
     "ai_score_details": {
       "ai_score": 7.1,
       "ai_score_int": 7,
@@ -4480,7 +4874,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%88%D8%AA%D8%AC%D8%A7%D8%B1%D8%AA"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": 5,
+    "score": 4.0,
     "ai_score_details": {
       "ai_score": 7.1,
       "ai_score_int": 7,
@@ -4874,7 +5268,7 @@ window.STOCKS_DATA = [
       "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%DA%A9%D9%84%DB%8C%D8%AF"
     },
     "verdict": "خرید پله‌ای (Accumulate)",
-    "score": -2,
+    "score": 3.7,
     "ai_score_details": {
       "ai_score": 6.5,
       "ai_score_int": 6,

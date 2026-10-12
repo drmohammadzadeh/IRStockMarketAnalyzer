@@ -1,0 +1,31 @@
+{
+  "symbol": "نمک",
+  "date": "20261012",
+  "close_price": 41543.0,
+  "last_price": 41102.0,
+  "yesterday_price": 41808.0,
+  "close_change_percent": -0.63,
+  "last_change_percent": -1.69,
+  "volume": 6591600.0,
+  "value": 273834512001.0,
+  "client_type": {
+    "buy_real_count": 369,
+    "buy_legal_count": 4,
+    "sell_real_count": 210,
+    "sell_legal_count": 5,
+    "buy_real_vol": 1999005.0,
+    "buy_legal_vol": 2297022.0,
+    "sell_real_vol": 4129904.0,
+    "sell_legal_vol": 166123.0,
+    "buy_real_capita": 5417.357723577235,
+    "sell_real_capita": 19666.209523809524,
+    "buyer_power": 0.27546527036735463
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 41543.0,
+    "rahavard_close": 41543.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

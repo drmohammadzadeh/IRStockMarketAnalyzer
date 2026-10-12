@@ -1,0 +1,13 @@
+{
+  "buy_real_count": 369,
+  "buy_legal_count": 4,
+  "sell_real_count": 210,
+  "sell_legal_count": 5,
+  "buy_real_vol": 1999005.0,
+  "buy_legal_vol": 2297022.0,
+  "sell_real_vol": 4129904.0,
+  "sell_legal_vol": 166123.0,
+  "buy_real_capita": 5417.357723577235,
+  "sell_real_capita": 19666.209523809524,
+  "buyer_power": 0.27546527036735463
+}
