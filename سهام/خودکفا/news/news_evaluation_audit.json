@@ -1,9 +1,9 @@
 {
   "symbol": "خودکفا",
-  "audit_timestamp": "1405/06/17 - 12:24",
-  "total_candidates": 11,
+  "audit_timestamp": "1405/07/28 - 14:59",
+  "total_candidates": 68,
   "approved_count": 1,
-  "rejected_count": 10,
+  "rejected_count": 67,
   "approved_news": [
     {
       "id": "news_1",
@@ -11,7 +11,7 @@
       "source": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/364961",
       "url": "https://www.bourse24.ir/news/364961",
-      "date": "1405/06/17",
+      "date": "1405/07/28",
       "raw_date": "نامشخص",
       "body": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! رشد ۱,۶۴۴ میلیارد تومانی ارزش پرتفوی بورسی «خودکفا» در مرداد؛ سهم ۹۹ درصدی مینو به گزارش کدال نگر بورس ۲۴، شرکت اقتصادی و خودکفایی آزادگان با نماد «خودکفا» گزارش تغییرات سبد سهام خود در مرداد ماه سال ۱۴۰۵ را منتشر کرد. به گزارش کدال نگر بورس24 ، شرکت اقتصادی و خودکفایی آزادگان با نماد «خودکفا» گزارش تغییرات سبد سهام خود در مرداد ماه سال ۱۴۰۵ را منتشر کرد.بر اساس آخرین اطلاعات منتشرشده، سرمایه ثبت شده «خودکفا» ۱,۰۰۰ میلیارد تومان است.ارزش پرتفوی بورسی شرکت در ابتدای مرداد ماه ۲۵,۴۷۸ میلیارد تومان بود که با افزایش ۱,۶۴۴ میلیارد تومانی در پایان ماه به ۲۷,۱۲۲ میلیارد تومان رسید.در ترکیب پرتفوی بورسی «خودکفا»، سهام شرکت صنعتی مینو بیشترین وزن را دارد و ۹۹ درصد از ارزش پرتفوی قابل معامله شرکت را به خود اختصاص داده است. منبع خبر: سازمان خبری - تحلیلی بورس 24 شما می توانید اولین نفری باشید که برای این مطلب نظر می دهید. بورس ۲۴ را دنبال کنید آخرین اخبار و تحلیل‌های بازار سرمایه را از دست ندهید",
       "summary": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! رشد ۱,۶۴۴ میلیارد تومانی ارزش پرتفوی بورسی «خودکفا» در مرداد؛ سهم ۹۹ درصدی مینو به گزارش کدال نگر بورس ۲۴، شرکت اقتصادی و خودکفایی آزادگان با نماد «خودکفا» گزارش تغییرا",
@@ -28,7 +28,7 @@
       "title": "بروزرسانی پرونده قضایی «خودکفا»؛ اعلام کان‌لم یکن شدن حکم ابطال مجمع و درخواست بازگشایی نماد | بورس 24",
       "rejection_reason": "REJECTED_EXPIRED",
       "reason": "REJECTED_EXPIRED",
-      "details": "تاریخ انتشار خبر (1402/10/16) قدیمی‌تر از ۱۲ ماه است (تاریخ منقضی‌شده شمسی (1402/10/16 با فاصله 976 روز))",
+      "details": "تاریخ انتشار خبر (1402/10/16) قدیمی‌تر از ۱۲ ماه است (تاریخ منقضی‌شده شمسی (1402/10/16 با فاصله 1018 روز))",
       "source_name": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/363916",
       "raw_date": "1402/10/16",
@@ -75,52 +75,622 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودکفا\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "جزییات و نحوه عرضه اوراق سلف موازی استاندارد تمام سکه بهار آزادی + اینفو",
+      "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95901/%D8%AC%D8%B2%DB%8C%DB%8C%D8%A7%D8%AA-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%B3%D9%84%D9%81-%D9%85%D9%88%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-%D8%AA%D9%85%D8%A7%D9%85-%D8%B3%DA%A9%D9%87-%D8%A8%D9%87%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C",
+      "source_url": "https://www.sena.ir/news/96624/%D8%B1%D8%B4%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B2%DB%B9-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B8-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A7%D8%B1%D8%AA%D9%82%D8%A7-%DB%8C%D8%A7%D9%81%D8%AA",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۷۵۴ هزار تن محصول در تالارهای مختلف روی تابلو می‌رود",
+      "title": "ارزش معاملات خرد «سهام و صندوق‌های سهامی» از ۴۳ همت عبور کرد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95900/%DB%B7%DB%B5%DB%B4-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%B1%D9%88%DB%8C-%D8%AA%D8%A7%D8%A8%D9%84%D9%88-%D9%85%DB%8C-%D8%B1%D9%88%D8%AF",
+      "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "سازمان بورس زمینه عرضه اوراق سلف موازی استاندارد سکه را فراهم کرد/ عرضه اوراق سلف موازی استاندارد سکه منوط به تأیید ضمانت‏‌های لازم توسط سپرده‌گذاری مرکزی است",
+      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95899/%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B2%D9%85%DB%8C%D9%86%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%B3%D9%84%D9%81-%D9%85%D9%88%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-%D8%B3%DA%A9%D9%87-%D8%B1%D8%A7-%D9%81%D8%B1%D8%A7%D9%87%D9%85",
+      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۱۱۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95896/%DB%B1%DB%B1%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۶۳۲ همت منابع مالی از مسیر بازار سرمایه در ۵ ماه نخست امسال تجهیز و تامین شد",
+      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95890/%DB%B6%DB%B3%DB%B2-%D9%87%D9%85%D8%AA-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D9%85%D8%A7%D9%84%DB%8C-%D8%A7%D8%B2-%D9%85%D8%B3%DB%8C%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%D8%AF%D8%B1-%DB%B5-%D9%85%D8%A7%D9%87-%D9%86%D8%AE%D8%B3%D8%AA-%D8%A7%D9%85%D8%B3%D8%A7%D9%84-%D8%AA%D8%AC%D9%87%DB%8C%D8%B2",
+      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "حمایت دولت چین از نیمه‌هادی‌ها مردم را به بازار سرمایه کشاند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش ۳ رقمی سهم چینی در روز عرضه اولیه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ مرداد ۰۵ - ۰۹:۵۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رئیس هیات عامل ایمیدرو",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تولید ورق فولادی به‌زودی افزایش می‌یابد",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت فولاد مبارکه (فولاد)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ خرداد ۰۵ - ۱۱:۱۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در هفته دوم آبان ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ هزار میلیارد تومان سود به حساب ۲ میلیون سهام‌دار واریز شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ آبان ۰۴ - ۱۵:۵۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نائب رئیس اول کمیسیون مشترک بخش دولتی و خصوصی مجلس در گفت‌وگو با «سنا»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "برنامه جامع توسعه بازار سرمایه در لایحه بودجه گنجانده شود",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۱ آبان ۰۴ - ۱۰:۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در رینگ بین‌الملل بورس انرژی رقم خورد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "خریداران خارجی‌، مشتری سوخت هواپیمای عرضه شده در بورس انرژی ایران/ ارزش سوخت معامله شده هواپیما در بورس انرژی به ۹۳ میلیون دلار رسید/ کشورهای آسیای میانه خریداران اصلی سوخت هواپیما در بورس انرژی ایران هستند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۸ مرداد ۰۴ - ۱۲:۴۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا گزارش کارگزاری صنعت و معدن را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار جهانی فلزات در هفته گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ خرداد ۰۴ - ۱۱:۵۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رکود نسبی در بازار پتروشیمی آسیا",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89611/رکود-نسبی-در-بازار-پتروشیمی-آسیا",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۳ اردیبهشت ۰۴ - ۱۵:۰۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89611/رکود-نسبی-در-بازار-پتروشیمی-آسیا",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یاداشتی از نرگس توانایی، مدیریت نظارت و بازرسی کارگزاری بانک‌سامان؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار سرمایه در سایه مذاکرات؛ سناریوهای پیش‌رو و راهبردهای پیشنهادی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۳ فروردین ۰۴ - ۱۴:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "دبیر انجمن صنفی کارفرمایی صنعت پالایش نفت در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۸ پروژه‌ پالایشگاهی در انتظار تامین مالی و تجهیزات/ برای تکمیل پروژه‌های پالایشگاهی به ۱۸.۷ میلیارد یورو سرمایه‌گذاری نیاز داریم",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۳ - ۱۳:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش مرکز پژوهش‌های مجلس را بررسی کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "چشم‌انداز تولید و فروش خودرو در ایران تا سال ۲۰۲۹",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت ایران خودرو (خودرو)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۹ دی ۰۳ - ۱۴:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سود بیش از ۴.۳ میلیون سهامدار واریز شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87012/سود-بیش-از-۴-۳-میلیون-سهامدار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آبان ۰۳ - ۱۳:۱۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87012/سود-بیش-از-۴-۳-میلیون-سهامدار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "فعال حوزه کانی‌های معدنی:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "معدن جایگزینی مناسب برای نفت است",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ اسفند ۰۲ - ۰۹:۳۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "باهدف جبران ناترازی انرژی صورت گرفت:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "امضا نخستین قرارداد درون‌گروهی ساخت «نیروگاه سیکل ترکیبی»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ اسفند ۰۲ - ۱۲:۰۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رئیس انجمن تولیدکنندگان فولاد در پاسخ به سوال«سنا» مطرح کرد:",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت فولاد مبارکه (فولاد)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تامین برق نیروگاه‌ها با انتشار اوراق مشارکت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۵ بهمن ۰۲ - ۱۵:۵۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "وزیر نیرو اعلام کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "احداث ۶۴۰۰ مگاوات نیروگاه توسط صنایع",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴ بهمن ۰۲ - ۱۵:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یک نماینده مجلس شورای اسلامی بیان کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیریت سرمایه و زمان با فراگیری سواد مالی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۹ آبان ۰۲ - ۱۵:۵۷",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "محسن زنگنه در آیین افتتاح معاملات پسته در بازار مالی و مشتقه بورس کالا:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "صندوق کالایی در حوزه پسته راه اندازی شود",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ مهر ۰۲ - ۱۳:۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اتمام پروژه فاز ۱۱ پارس جنوبی با باور ما می‌توانیم عملی شد/ بهره‌برداری از ۶۷ پروژه حوزه نفت و گاز به ارزش ۱۵ میلیارد دلار تا پایان سال",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83016/اتمام-پروژه-فاز-۱۱-پارس-جنوبی-با-باور-ما-می-توانیم-عملی-شد-بهره-برداری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ شهریور ۰۲ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83016/اتمام-پروژه-فاز-۱۱-پارس-جنوبی-با-باور-ما-می-توانیم-عملی-شد-بهره-برداری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در دهمین بازدید خبرنگاران بازار سرمایه از صنایع بورسی مطرح شد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تامین ارز دغدغه جدی خودروسازان",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت ایران خودرو (خودرو)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۸ خرداد ۰۲ - ۱۵:۴۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیرعامل شرکت ملی صنایع پتروشیمی خبر داد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "آمادگی صنعت پتروشیمی ایران برای ورود سرمایه‌گذاران خارجی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ خرداد ۰۲ - ۱۲:۲۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
       "raw_date": "اخیر",
       "file_path": null
     }
@@ -130,7 +700,7 @@
       "title": "بروزرسانی پرونده قضایی «خودکفا»؛ اعلام کان‌لم یکن شدن حکم ابطال مجمع و درخواست بازگشایی نماد | بورس 24",
       "rejection_reason": "REJECTED_EXPIRED",
       "reason": "REJECTED_EXPIRED",
-      "details": "تاریخ انتشار خبر (1402/10/16) قدیمی‌تر از ۱۲ ماه است (تاریخ منقضی‌شده شمسی (1402/10/16 با فاصله 976 روز))",
+      "details": "تاریخ انتشار خبر (1402/10/16) قدیمی‌تر از ۱۲ ماه است (تاریخ منقضی‌شده شمسی (1402/10/16 با فاصله 1018 روز))",
       "source_name": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/363916",
       "raw_date": "1402/10/16",
@@ -177,52 +747,622 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودکفا\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "جزییات و نحوه عرضه اوراق سلف موازی استاندارد تمام سکه بهار آزادی + اینفو",
+      "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95901/%D8%AC%D8%B2%DB%8C%DB%8C%D8%A7%D8%AA-%D9%88-%D9%86%D8%AD%D9%88%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%B3%D9%84%D9%81-%D9%85%D9%88%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-%D8%AA%D9%85%D8%A7%D9%85-%D8%B3%DA%A9%D9%87-%D8%A8%D9%87%D8%A7%D8%B1-%D8%A2%D8%B2%D8%A7%D8%AF%DB%8C",
+      "source_url": "https://www.sena.ir/news/96624/%D8%B1%D8%B4%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B2%DB%B9-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B8-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A7%D8%B1%D8%AA%D9%82%D8%A7-%DB%8C%D8%A7%D9%81%D8%AA",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۷۵۴ هزار تن محصول در تالارهای مختلف روی تابلو می‌رود",
+      "title": "ارزش معاملات خرد «سهام و صندوق‌های سهامی» از ۴۳ همت عبور کرد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95900/%DB%B7%DB%B5%DB%B4-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%B1%D9%88%DB%8C-%D8%AA%D8%A7%D8%A8%D9%84%D9%88-%D9%85%DB%8C-%D8%B1%D9%88%D8%AF",
+      "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "سازمان بورس زمینه عرضه اوراق سلف موازی استاندارد سکه را فراهم کرد/ عرضه اوراق سلف موازی استاندارد سکه منوط به تأیید ضمانت‏‌های لازم توسط سپرده‌گذاری مرکزی است",
+      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95899/%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B2%D9%85%DB%8C%D9%86%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%B3%D9%84%D9%81-%D9%85%D9%88%D8%A7%D8%B2%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%D8%AF-%D8%B3%DA%A9%D9%87-%D8%B1%D8%A7-%D9%81%D8%B1%D8%A7%D9%87%D9%85",
+      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۱۱۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95896/%DB%B1%DB%B1%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۶۳۲ همت منابع مالی از مسیر بازار سرمایه در ۵ ماه نخست امسال تجهیز و تامین شد",
+      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95890/%DB%B6%DB%B3%DB%B2-%D9%87%D9%85%D8%AA-%D9%85%D9%86%D8%A7%D8%A8%D8%B9-%D9%85%D8%A7%D9%84%DB%8C-%D8%A7%D8%B2-%D9%85%D8%B3%DB%8C%D8%B1-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%D8%AF%D8%B1-%DB%B5-%D9%85%D8%A7%D9%87-%D9%86%D8%AE%D8%B3%D8%AA-%D8%A7%D9%85%D8%B3%D8%A7%D9%84-%D8%AA%D8%AC%D9%87%DB%8C%D8%B2",
+      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "حمایت دولت چین از نیمه‌هادی‌ها مردم را به بازار سرمایه کشاند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش ۳ رقمی سهم چینی در روز عرضه اولیه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ مرداد ۰۵ - ۰۹:۵۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/95237/جهش-۳-رقمی-سهم-چینی-در-روز-عرضه-اولیه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رئیس هیات عامل ایمیدرو",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تولید ورق فولادی به‌زودی افزایش می‌یابد",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت فولاد مبارکه (فولاد)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۰ خرداد ۰۵ - ۱۱:۱۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94402/تولید-ورق-فولادی-به-زودی-افزایش-می-یابد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در هفته دوم آبان ۱۴۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ هزار میلیارد تومان سود به حساب ۲ میلیون سهام‌دار واریز شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ آبان ۰۴ - ۱۵:۵۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92373/۶-هزار-میلیارد-تومان-سود-به-حساب-۲-میلیون-سهام-دار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نائب رئیس اول کمیسیون مشترک بخش دولتی و خصوصی مجلس در گفت‌وگو با «سنا»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "برنامه جامع توسعه بازار سرمایه در لایحه بودجه گنجانده شود",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۱ آبان ۰۴ - ۱۰:۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/92261/برنامه-جامع-توسعه-بازار-سرمایه-در-لایحه-بودجه-گنجانده-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در رینگ بین‌الملل بورس انرژی رقم خورد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "خریداران خارجی‌، مشتری سوخت هواپیمای عرضه شده در بورس انرژی ایران/ ارزش سوخت معامله شده هواپیما در بورس انرژی به ۹۳ میلیون دلار رسید/ کشورهای آسیای میانه خریداران اصلی سوخت هواپیما در بورس انرژی ایران هستند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۸ مرداد ۰۴ - ۱۲:۴۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90703/خریداران-خارجی-مشتری-سوخت-هواپیمای-عرضه-شده-در-بورس-انرژی-ایران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا گزارش کارگزاری صنعت و معدن را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار جهانی فلزات در هفته گذشته",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ خرداد ۰۴ - ۱۱:۵۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89864/بازار-جهانی-فلزات-در-هفته-گذشته",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رکود نسبی در بازار پتروشیمی آسیا",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89611/رکود-نسبی-در-بازار-پتروشیمی-آسیا",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۳ اردیبهشت ۰۴ - ۱۵:۰۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89611/رکود-نسبی-در-بازار-پتروشیمی-آسیا",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یاداشتی از نرگس توانایی، مدیریت نظارت و بازرسی کارگزاری بانک‌سامان؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار سرمایه در سایه مذاکرات؛ سناریوهای پیش‌رو و راهبردهای پیشنهادی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۳ فروردین ۰۴ - ۱۴:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89082/بازار-سرمایه-در-سایه-مذاکرات-سناریوهای-پیش-رو-و-راهبردهای-پیشنهادی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "دبیر انجمن صنفی کارفرمایی صنعت پالایش نفت در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۸ پروژه‌ پالایشگاهی در انتظار تامین مالی و تجهیزات/ برای تکمیل پروژه‌های پالایشگاهی به ۱۸.۷ میلیارد یورو سرمایه‌گذاری نیاز داریم",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۳ - ۱۳:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88023/۱۸-پروژه-پالایشگاهی-در-انتظار-تامین-مالی-و-تجهیزات-برای-تکمیل",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش مرکز پژوهش‌های مجلس را بررسی کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "چشم‌انداز تولید و فروش خودرو در ایران تا سال ۲۰۲۹",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت ایران خودرو (خودرو)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۹ دی ۰۳ - ۱۴:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87918/چشم-انداز-تولید-و-فروش-خودرو-در-ایران-تا-سال-۲۰۲۹",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سود بیش از ۴.۳ میلیون سهامدار واریز شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87012/سود-بیش-از-۴-۳-میلیون-سهامدار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آبان ۰۳ - ۱۳:۱۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87012/سود-بیش-از-۴-۳-میلیون-سهامدار-واریز-شد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "فعال حوزه کانی‌های معدنی:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "معدن جایگزینی مناسب برای نفت است",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ اسفند ۰۲ - ۰۹:۳۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85066/معدن-جایگزینی-مناسب-برای-نفت-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "باهدف جبران ناترازی انرژی صورت گرفت:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "امضا نخستین قرارداد درون‌گروهی ساخت «نیروگاه سیکل ترکیبی»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ اسفند ۰۲ - ۱۲:۰۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85372/امضا-نخستین-قرارداد-درون-گروهی-ساخت-نیروگاه-سیکل-ترکیبی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رئیس انجمن تولیدکنندگان فولاد در پاسخ به سوال«سنا» مطرح کرد:",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت فولاد مبارکه (فولاد)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تامین برق نیروگاه‌ها با انتشار اوراق مشارکت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۵ بهمن ۰۲ - ۱۵:۵۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84992/تامین-برق-نیروگاه-ها-با-انتشار-اوراق-مشارکت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "وزیر نیرو اعلام کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "احداث ۶۴۰۰ مگاوات نیروگاه توسط صنایع",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴ بهمن ۰۲ - ۱۵:۴۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/84982/احداث-۶۴۰۰-مگاوات-نیروگاه-توسط-صنایع",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یک نماینده مجلس شورای اسلامی بیان کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیریت سرمایه و زمان با فراگیری سواد مالی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۹ آبان ۰۲ - ۱۵:۵۷",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83761/مدیریت-سرمایه-و-زمان-با-فراگیری-سواد-مالی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "محسن زنگنه در آیین افتتاح معاملات پسته در بازار مالی و مشتقه بورس کالا:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "صندوق کالایی در حوزه پسته راه اندازی شود",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ مهر ۰۲ - ۱۳:۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83367/صندوق-کالایی-در-حوزه-پسته-راه-اندازی-شود",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اتمام پروژه فاز ۱۱ پارس جنوبی با باور ما می‌توانیم عملی شد/ بهره‌برداری از ۶۷ پروژه حوزه نفت و گاز به ارزش ۱۵ میلیارد دلار تا پایان سال",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83016/اتمام-پروژه-فاز-۱۱-پارس-جنوبی-با-باور-ما-می-توانیم-عملی-شد-بهره-برداری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ شهریور ۰۲ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/83016/اتمام-پروژه-فاز-۱۱-پارس-جنوبی-با-باور-ما-می-توانیم-عملی-شد-بهره-برداری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در دهمین بازدید خبرنگاران بازار سرمایه از صنایع بورسی مطرح شد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "تامین ارز دغدغه جدی خودروسازان",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد خودکفا و مربوط به شرکت ایران خودرو (خودرو)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۸ خرداد ۰۲ - ۱۵:۴۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82044/تامین-ارز-دغدغه-جدی-خودروسازان",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیرعامل شرکت ملی صنایع پتروشیمی خبر داد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "آمادگی صنعت پتروشیمی ایران برای ورود سرمایه‌گذاران خارجی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ خرداد ۰۲ - ۱۲:۲۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودکفا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/82005/آمادگی-صنعت-پتروشیمی-ایران-برای-ورود-سرمایه-گذاران-خارجی",
       "raw_date": "اخیر",
       "file_path": null
     }
@@ -232,6 +1372,15 @@
     "positive_count": 1,
     "negative_count": 0,
     "neutral_count": 0,
-    "average_sentiment_score": 1.0
+    "average_sentiment_score": 1.0,
+    "gemini_psychology": {
+      "sentiment_score": 0.6,
+      "market_psychology": "خوش‌بینی محتاطانه",
+      "key_rumors_and_themes": [
+        "رشد قابل توجه ارزش پرتفوی بورسی",
+        "تکیه بر سهم بالای هلدینگ مینو در سودآوری"
+      ],
+      "gemini_rationale": "با توجه به عدم وجود گفتگوی فعال در شبکه‌های اجتماعی، جو پیرامون سهم بیشتر تحت تأثیر خبرنیوز بنیادیِ رشد ۱,۶۴۴ میلیارد تومانی پرتفوی در مردادماه است. این گزارش مثبت، انتظارات صعودی معامله‌گران را تقویت کرده، اما نبود هیاهوی هیجانی نشان‌دهنده انتظاری آرام و مبتنی بر ارزش بنیادی است."
+    }
   }
 }

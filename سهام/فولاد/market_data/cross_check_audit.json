@@ -1,0 +1,28 @@
+{
+  "symbol": "فولاد",
+  "inscode": null,
+  "asset_id": "453",
+  "live_info": {
+    "date": "20261020",
+    "close_price": 4340.0,
+    "last_price": 4310.0,
+    "yesterday_price": 4420.0,
+    "volume": 5564837854.0,
+    "value": 24141829641460.0,
+    "trades": 59685.0
+  },
+  "rahavard_prices": {
+    "close_price": 4340.0,
+    "last_price": 4310.0,
+    "close_change_percent": -1.81,
+    "last_change_percent": -2.49,
+    "end_date_time": "2026-10-20T12:29:59+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 4340.0,
+    "rahavard_close": 4340.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

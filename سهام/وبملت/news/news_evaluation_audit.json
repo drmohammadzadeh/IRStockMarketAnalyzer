@@ -1,9 +1,9 @@
 {
   "symbol": "وبملت",
-  "audit_timestamp": "1405/06/21 - 17:18",
-  "total_candidates": 66,
+  "audit_timestamp": "1405/07/28 - 15:04",
+  "total_candidates": 67,
   "approved_count": 1,
-  "rejected_count": 65,
+  "rejected_count": 66,
   "approved_news": [
     {
       "id": "news_1",
@@ -11,7 +11,7 @@
       "source": "آرشیو محلی",
       "source_url": "file:///ref_جست‌وجو_-_وبملت_-_سنا.html",
       "url": "file:///ref_جست‌وجو_-_وبملت_-_سنا.html",
-      "date": "1405/06/21",
+      "date": "1405/07/28",
       "raw_date": "نامشخص",
       "body": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد بر اساس گزارش آماری اداره تحلیل‌های اقتصادی و ریسک سازمان بورس مجموع ارزش بازار سهام ۴۹ صنعت بورس و فرابورس با رشد ۴۶ درصدی از ۱۰.۸۵۰ همت در پایان دی ۱۴۰۳ به ۱۵.۸۵۸ همت در پایان دی ۱۴۰۴ رسید. ... تهران ۲۳۱,۷۶۸ ۳۶۱,۸۰۰ ۵۶.۱% وبملت بانک ملت بانکداری بورس تهران... درآمد ۱۴۱ همتی و رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌داری در شهریور ۱۴۰۴ معاونت نظارت بر بورس‌ها و ناشران سازمان بورس و اوراق بهادار در گزارشی، ضمن اعلام رشد ۳۰ درصدی درآمد عملیاتی صنعت بانک‌ها و مؤسسات اعتباری در یک‌ماهه گذشته، عمده دلایل این تغییرات را بررسی کرد. ... این گزارش، در میان بانک‌های فعال: نماد «وبملت» نسبت به ماه گذشته ۶۳ درصد افزایش در درآمد عملیاتی داشته است و مبلغ درآمد... تغییر درآمد ۵۰ شرکت بزرگ بازار سرمایه در شهریور امسال/ درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته است اداره میزهای صنعت و رتبه‌بندی ناشران سازمان بورس و اوراق بهادار در گزارشی تفصیلی آمار تغییرات فروش ۵۰ شرکت بزرگ بازار سرمایه را اعلام کرد. طبق این گزارش درآمد حاصل از فروش ۴۲ شرکت از ۵۰ شرکت بزرگ بازار سهام در یک سال اخیر رشد داشته و درآمد ۵ شرکت نیز در شهریور امسال نسبت به شهریور پارسال ثابت بوده است. در این بین فقط ۳ شرکت بورسی و فرابورسی در یک سال اخیر با کاهش درآمد حاصل از فروش مواجه شده‌اند.",
       "summary": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد بر اساس گزارش آماری اداره تحلیل‌های ",
@@ -85,52 +85,82 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "تمدید فرصت ثبت‌نام در دوره‌های آموزشی ویژه آزمون‌ معامله‌گری بازار سرمایه",
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95972/%D8%AA%D9%85%D8%AF%DB%8C%D8%AF-%D9%81%D8%B1%D8%B5%D8%AA-%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D9%88%DB%8C%DA%98%D9%87-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D9%87-%DA%AF%D8%B1%DB%8C",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "چراغ سبز چینی‌ها به مس",
+      "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "source_url": "https://www.sena.ir/news/96624/%D8%B1%D8%B4%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B2%DB%B9-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B8-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A7%D8%B1%D8%AA%D9%82%D8%A7-%DB%8C%D8%A7%D9%81%D8%AA",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "title": "ارزش معاملات خرد «سهام و صندوق‌های سهامی» از ۴۳ همت عبور کرد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
+      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95966/%D9%BE%D8%B0%DB%8C%D8%B1%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DB%B2%DB%B0%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AA%D9%88%D9%85%D8%A7%D9%86%DB%8C-%D9%BE%D8%A7%D9%86%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%86%D9%82%D8%B1%D9%87-%D8%AF%D8%B1-%DA%86%D9%86%D8%AF-%D8%AB%D8%A7%D9%86%DB%8C%D9%87",
+      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "همراه با هجدهمین نمایشگاه بین‌المللی نظام مالی و سرمایه‌گذاری - ۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ادامه حضور فعال بازار سرمایه در افکس ۲۰۲۶/ بیش از ۵۰ مجموعه بورسی برای حضور در نمایشگاه نظام مالی ثبت‌نام کردند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ مهر ۰۵ - ۱۳:۲۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -651,26 +681,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "رشد دسته جمعی نماگر تالار شیشه‌ای",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۲۸ اسفند ۰۲ - ۱۳:۱۶",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
       "raw_date": "اخیر",
       "file_path": null
     }
@@ -737,52 +747,82 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وبملت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "تمدید فرصت ثبت‌نام در دوره‌های آموزشی ویژه آزمون‌ معامله‌گری بازار سرمایه",
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95972/%D8%AA%D9%85%D8%AF%DB%8C%D8%AF-%D9%81%D8%B1%D8%B5%D8%AA-%D8%AB%D8%A8%D8%AA-%D9%86%D8%A7%D9%85-%D8%AF%D8%B1-%D8%AF%D9%88%D8%B1%D9%87-%D9%87%D8%A7%DB%8C-%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C-%D9%88%DB%8C%DA%98%D9%87-%D8%A2%D8%B2%D9%85%D9%88%D9%86-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D9%87-%DA%AF%D8%B1%DB%8C",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "چراغ سبز چینی‌ها به مس",
+      "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95970/%DA%86%D8%B1%D8%A7%D8%BA-%D8%B3%D8%A8%D8%B2-%DA%86%DB%8C%D9%86%DB%8C-%D9%87%D8%A7-%D8%A8%D9%87-%D9%85%D8%B3",
+      "source_url": "https://www.sena.ir/news/96624/%D8%B1%D8%B4%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B2%DB%B9-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D9%88%D8%B1%D8%B3-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B8-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A7%D8%B1%D8%AA%D9%82%D8%A7-%DB%8C%D8%A7%D9%81%D8%AA",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "مشارکت ۱.۶ میلیون سرمایه‌گذار در دوازدهمین عرضه اولیه فرابورس",
+      "title": "ارزش معاملات خرد «سهام و صندوق‌های سهامی» از ۴۳ همت عبور کرد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95971/%D9%85%D8%B4%D8%A7%D8%B1%DA%A9%D8%AA-%DB%B1-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D9%88%D9%86-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1-%D8%AF%D8%B1-%D8%AF%D9%88%D8%A7%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3",
+      "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "کارنامه معاملات فرابورس در هفته منتهی به ۲۰ شهریور ۱۴۰۵",
+      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95968/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B2%DB%B0-%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "پذیره نویسی ۲۰۰ میلیارد تومانی پانزدهمین صندوق نقره در چند ثانیه",
+      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95966/%D9%BE%D8%B0%DB%8C%D8%B1%D9%87-%D9%86%D9%88%DB%8C%D8%B3%DB%8C-%DB%B2%DB%B0%DB%B0-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AA%D9%88%D9%85%D8%A7%D9%86%DB%8C-%D9%BE%D8%A7%D9%86%D8%B2%D8%AF%D9%87%D9%85%DB%8C%D9%86-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%86%D9%82%D8%B1%D9%87-%D8%AF%D8%B1-%DA%86%D9%86%D8%AF-%D8%AB%D8%A7%D9%86%DB%8C%D9%87",
+      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "همراه با هجدهمین نمایشگاه بین‌المللی نظام مالی و سرمایه‌گذاری - ۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ادامه حضور فعال بازار سرمایه در افکس ۲۰۲۶/ بیش از ۵۰ مجموعه بورسی برای حضور در نمایشگاه نظام مالی ثبت‌نام کردند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ مهر ۰۵ - ۱۳:۲۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96604/ادامه-حضور-فعال-بازار-سرمایه-در-افکس-۲۰۲۶-بیش-از-۵۰-مجموعه-بورسی",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -1305,26 +1345,6 @@
       "source_url": "https://www.sena.ir/news/85435/صعود-۴۱۲۶۸-واحدی-شاخص-بورس-در-نخستین-روز-معاملاتی-سال-۱۴۰۳",
       "raw_date": "اخیر",
       "file_path": null
-    },
-    {
-      "title": "رشد دسته جمعی نماگر تالار شیشه‌ای",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۲۸ اسفند ۰۲ - ۱۳:۱۶",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وبملت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/85408/رشد-دسته-جمعی-نماگر-تالار-شیشه-ای",
-      "raw_date": "اخیر",
-      "file_path": null
     }
   ],
   "sentiment_summary": {
@@ -1332,6 +1352,15 @@
     "positive_count": 1,
     "negative_count": 0,
     "neutral_count": 0,
-    "average_sentiment_score": 1.0
+    "average_sentiment_score": 1.0,
+    "gemini_psychology": {
+      "sentiment_score": 0.0,
+      "market_psychology": "خنثی",
+      "key_rumors_and_themes": [
+        "نبود اخبار خاص در سامانه سنا",
+        "سکوت نسبی در شبکه‌های اجتماعی"
+      ],
+      "gemini_rationale": "با توجه به نبود گفتگوهای فعال در شبکه‌های اجتماعی و عدم انتشار اخبار تاثیرگذار جدید در خصوص نماد وبملت، جو روانی حاکم بر سهامداران کاملاً خنثی و در حالت انتظاری قرار دارد. فعالان بازار در حال حاضر محرک تازه‌ای برای جهت‌گیری جدید مشاهده نمی‌کنند."
+    }
   }
 }

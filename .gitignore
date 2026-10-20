@@ -26,3 +26,16 @@ build/
 /requirements.txt
 run_portfolio.py
 main.py
+
+# Local Environment & Secrets
+.env
+.env.*
+*.env
+*.key
+*.secret
+/scratch/
+/project-docs/
+/project-specs/
+/project-tasks/
+/public/
+
