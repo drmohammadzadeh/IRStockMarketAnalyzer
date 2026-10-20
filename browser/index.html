@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سامانه تحلیل جامع و هوشمند بازار سرمایه ایران (tjb24.ir)</title>
+    <meta name="description" content="واچ‌لیست هوشمند، دسترسی سریع به بازار و تحلیل سهم‌ها در بازار بورس اوراق بهادار تهران">
+    <meta name="author" content="tjb24.ir">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    
+    <!-- Vazirmatn Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css?v=20260913_1250">
+    <link rel="stylesheet" href="live_reporter.css?v=20260930_1535">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Top Header Navigation matching reference layout -->
+        <header class="app-header">
+            <div class="header-container">
+                <!-- Right Side: Title, Count Badge, Subtitle (in RTL) -->
+                <div class="header-branding">
+                    <div class="header-title-row">
+                        <h1 class="header-title">سامانه تحلیل جامع و هوشمند بازار سرمایه ایران (tjb24.ir)</h1>
+                        <span id="totalStocksBadge" class="badge-count" title="تعداد کل سهام">۰</span>
+                        <span id="syncStatusBadge" class="badge-sync badge-sync-connecting" title="در حال بررسی اتصال به پایگاه داده..."><i data-lucide="refresh-cw"></i> اتصال...</span>
+                    </div>
+                    <p class="header-subtitle">لیست سهام، دسترسی سریع به بازار و تحلیل سهم‌ها</p>
+                </div>
+
+                <!-- Left Side: Controls cluster (Search, Sort, Filter, Action Button) -->
+                <div class="header-controls">
+                    <!-- Search Input -->
+                                        <!-- Dual Mode Switcher (Simple vs Advanced) -->
+                    <div class="ui-mode-toggle-group" id="uiModeToggleGroup" role="radiogroup" aria-label="حالت نمایش سامانه">
+                        <button type="button" class="btn-mode-toggle active" id="btnModeSimple" data-mode="simple" role="radio" aria-checked="true" title="نمای فوق‌ساده و روان، مناسب برای عموم افراد با هر سطح سواد مالی">
+                            <span class="mode-icon">🌱</span>
+                            <span class="mode-text">نمای ساده</span>
+                        </button>
+                        <button type="button" class="btn-mode-toggle" id="btnModeAdvanced" data-mode="advanced" role="radio" aria-checked="false" title="نمای تحلیلی و تخصصی با جزئیات کامل نسبت‌ها، اسپارک‌لاین و کدال">
+                            <span class="mode-icon">⚡</span>
+                            <span class="mode-text">نمای پیشرفته</span>
+                        </button>
+                    </div>
+
+                    <div class="search-box">
+                        <i data-lucide="search" class="search-icon" aria-hidden="true"></i>
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-input" 
+                            placeholder="جستجوی نماد یا نام سهم..." 
+                            aria-label="جستجوی نماد یا نام سهم" 
+                            autocomplete="off"
+                        />
+                        <button type="button" id="clearSearchBtn" class="clear-search-btn" aria-label="پاک کردن جستجو" style="display: none;">
+                            <i data-lucide="x" aria-hidden="true"></i>
+                        </button>
+                    </div>
+
+                    <!-- Sort Dropdown -->
+                    <div class="dropdown-wrapper" id="sortDropdownWrapper">
+                        <button type="button" id="sortDropdownBtn" class="btn-control" aria-haspopup="true" aria-expanded="false">
+                            <i data-lucide="arrow-up-down" class="btn-icon" aria-hidden="true"></i>
+                            <span id="currentSortLabel">مرتب‌سازی</span>
+                            <i data-lucide="chevron-down" class="chevron-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu" id="sortMenu" role="menu">
+                            <button type="button" class="dropdown-item active" data-sort="growth_desc" role="menuitem">بیشترین رشد (٪)</button>
+                            <button type="button" class="dropdown-item" data-sort="growth_asc" role="menuitem">بیشترین افت (٪)</button>
+                            <button type="button" class="dropdown-item" data-sort="price_desc" role="menuitem">بالاترین قیمت</button>
+                            <button type="button" class="dropdown-item" data-sort="price_asc" role="menuitem">کمترین قیمت</button>
+                            <button type="button" class="dropdown-item" data-sort="volume_desc" role="menuitem">بیشترین حجم معاملات</button>
+                            <button type="button" class="dropdown-item" data-sort="name_asc" role="menuitem">نام شرکت (الفبا)</button>
+                            <button type="button" class="dropdown-item" data-sort="symbol_asc" role="menuitem">نماد بورسی</button>
+                        </div>
+                    </div>
+
+                    <!-- Filter Dropdown -->
+                    <div class="dropdown-wrapper" id="filterDropdownWrapper">
+                        <button type="button" id="filterDropdownBtn" class="btn-control" aria-haspopup="true" aria-expanded="false">
+                            <i data-lucide="filter" class="btn-icon" aria-hidden="true"></i>
+                            <span id="currentFilterLabel">فیلتر</span>
+                            <i data-lucide="chevron-down" class="chevron-icon" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu" id="filterMenu" role="menu">
+                            <button type="button" class="dropdown-item active" data-filter="all" role="menuitem">همه سهام</button>
+                            <button type="button" class="dropdown-item" data-filter="positive" role="menuitem">سهام مثبت (+)</button>
+                            <button type="button" class="dropdown-item" data-filter="negative" role="menuitem">سهام منفی (-)</button>
+                            <button type="button" class="dropdown-item" data-filter="favorites" role="menuitem">نشان‌شده‌ها (علاقه‌مندی‌ها)</button>
+                        </div>
+                    </div>
+
+                    <!-- Advanced Filter Drawer Toggle Button -->
+                    <button type="button" id="openFilterDrawerBtn" class="btn-control btn-filter-drawer" aria-label="فیلترهای پیشرفته و هوشمند">
+                        <i data-lucide="sliders-horizontal" class="btn-icon" aria-hidden="true"></i>
+                        <span>فیلتر پیشرفته</span>
+                        <span id="activeFiltersBadge" class="filter-count-badge" style="display: none;">۰</span>
+                    </button>
+
+                    <!-- About Us Action Button -->
+                    <button type="button" id="openAboutModalBtn" class="btn-about" aria-label="درباره ما و فرآیند هوش مصنوعی">
+                        <i data-lucide="info" class="btn-icon" aria-hidden="true"></i>
+                        <span>درباره ما</span>
+                    </button>
+
+                    <!-- Primary Action Button: Add Stock -->
+                    <button type="button" id="openAddStockBtn" class="btn-primary" aria-label="افزودن سهم جدید">
+                        <i data-lucide="plus" class="btn-icon" aria-hidden="true"></i>
+                        <span>افزودن سهم</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="main-container">
+            <!-- Quick Filter Chips Carousel / Toolbar -->
+            <div class="quick-filters-container">
+                <div class="quick-filters-scroll" id="quickFilterChips" role="toolbar" aria-label="فیلترهای سریع و هوشمند">
+                    <button type="button" class="filter-chip active" data-quick-filter="all">
+                        <span>همه سهام</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="golden">
+                        <span class="chip-icon">🚀</span>
+                        <span>فرصت طلایی (خرید قوی)</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="buy">
+                        <span class="chip-icon">✅</span>
+                        <span>فرصت خرید</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="low_risk">
+                        <span class="chip-icon">🛡️</span>
+                        <span>کم‌ریسک و مطمئن</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="smart_money">
+                        <span class="chip-icon">💰</span>
+                        <span>ورود پول هوشمند</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="entry_zone">
+                        <span class="chip-icon">🎯</span>
+                        <span>در محدوده خرید مجاز</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="rr_high">
+                        <span class="chip-icon">⚖️</span>
+                        <span>R/R عالی (بالای ۲)</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="undervalued">
+                        <span class="chip-icon">💎</span>
+                        <span>P/E زیر میانگین صنعت</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="near_low">
+                        <span class="chip-icon">📉</span>
+                        <span>نزدیک کف ۱۴ روزه</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="updated_today">
+                        <span class="chip-icon">📅</span>
+                        <span>به‌روزشده امروز</span>
+                    </button>
+                    <button type="button" class="filter-chip" data-quick-filter="favorites">
+                        <span class="chip-icon">⭐</span>
+                        <span>نشان‌شده‌ها</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Active Multi-Criteria Filter Tags Bar -->
+            <div id="activeFilterTagsBar" class="active-filter-tags-bar" style="display: none;">
+                <div class="active-tags-header">
+                    <span class="active-tags-title">فیلترهای فعال:</span>
+                    <div id="activeFilterTagsContainer" class="active-tags-list"></div>
+                </div>
+                <button type="button" id="clearAllFiltersBtn" class="btn-clear-all-tags" title="پاکسازی تمام فیلترها">
+                    <i data-lucide="trash-2"></i>
+                    <span>حذف همه فیلترها</span>
+                </button>
+            </div>
+
+            <!-- Active Filter Indicators -->
+            <div id="filterIndicatorBar" class="filter-indicator-bar" style="display: none;">
+                <span id="filterIndicatorText" class="filter-indicator-text"></span>
+                <button type="button" id="resetFiltersBtn" class="btn-reset-filters">حذف فیلترها</button>
+            </div>
+
+            <!-- Stocks Dynamic Cards Container -->
+            <div id="stocksContainer" class="stocks-container" aria-live="polite">
+                <!-- Skeleton / Loading State -->
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>در حال دریافت اطلاعات سهام و تحلیل‌ها...</p>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="empty-state" style="display: none;">
+                <div class="empty-icon-wrap">
+                    <i data-lucide="inbox" class="empty-icon"></i>
+                </div>
+                <h3 class="empty-title">هیچ سهمی با مشخصات مورد نظر یافت نشد</h3>
+                <p class="empty-desc">لطفاً عبارت جستجو یا تنظیمات فیلتر را تغییر دهید.</p>
+            </div>
+
+            <!-- Pagination Bar matching reference layout -->
+            <footer class="pagination-bar" id="paginationBar">
+                <!-- Left: Navigation Page Buttons -->
+                <div class="pagination-controls" id="paginationControls">
+                    <button type="button" class="page-btn page-nav" id="firstPageBtn" title="صفحه اول" disabled>
+                        <i data-lucide="chevrons-right"></i>
+                    </button>
+                    <button type="button" class="page-btn page-nav" id="prevPageBtn" title="صفحه قبلی" disabled>
+                        <i data-lucide="chevron-right"></i>
+                    </button>
+                    <div class="page-numbers" id="pageNumbersContainer">
+                        <!-- Dynamic page buttons -->
+                    </div>
+                    <button type="button" class="page-btn page-nav" id="nextPageBtn" title="صفحه بعدی" disabled>
+                        <i data-lucide="chevron-left"></i>
+                    </button>
+                    <button type="button" class="page-btn page-nav" id="lastPageBtn" title="صفحه آخر" disabled>
+                        <i data-lucide="chevrons-left"></i>
+                    </button>
+                </div>
+
+                <!-- Right: Rows per page and Total count display -->
+                <div class="pagination-info">
+                    <div class="page-size-selector">
+                        <label for="pageSizeSelect">ردیف در صفحه</label>
+                        <select id="pageSizeSelect" class="page-size-select">
+                            <option value="6">۶</option>
+                            <option value="12" selected>۱۲</option>
+                            <option value="24">۲۴</option>
+                            <option value="48">۴۸</option>
+                        </select>
+                    </div>
+                    <div class="pagination-summary" id="paginationSummary">
+                        نمایش ۱ تا ۱۲ از ۱۲۸ مورد
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <!-- Site Footer with Trust Seal & Attribution -->
+        <footer class="app-site-footer">
+            <div class="footer-trust-seals">
+                <div class="enamad-badge-wrap" title="نماد اعتماد الکترونیکی">
+                    <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=7652599&Code=fnO3zndKDLvQyMF5E7RJ8VwIOj3mDAZM'>
+                        <img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=7652599&Code=fnO3zndKDLvQyMF5E7RJ8VwIOj3mDAZM' alt='نماد اعتماد الکترونیکی' style='cursor:pointer' code='fnO3zndKDLvQyMF5E7RJ8VwIOj3mDAZM'>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom-row">
+                <p class="footer-copyright">
+                    سامانه هوشمند تحلیل چندعاملی بازار سرمایه ایران &bull; صاحب‌امتیاز و توسعه‌دهنده: <a href="https://tjb24.ir" target="_blank" rel="noopener noreferrer">tjb24.ir</a>
+                </p>
+            </div>
+        </footer>
+
+        <!-- Modal: Add Stock / Request Analysis -->
+        <div class="modal-backdrop" id="addStockModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display: none;">
+            <div class="modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-group">
+                        <h2 class="modal-title" id="modalTitle">افزودن سهم و درخواست تحلیل</h2>
+                        <p class="modal-subtitle">درخواست تحلیل نماد جدید جهت بررسی و تحلیل هوشمند در واچ‌لیست</p>
+                    </div>
+                    <button type="button" class="modal-close-btn" id="closeAddStockModalBtn" aria-label="بستن پنجره">
+                        <i data-lucide="x" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <form id="addStockForm" class="modal-form" novalidate>
+                    <div class="form-group">
+                        <label for="applicantName" class="form-label">نام و نام خانوادگی <span class="required-star">*</span></label>
+                        <input 
+                            type="text" 
+                            id="applicantName" 
+                            name="name" 
+                            class="form-input" 
+                            placeholder="مثال: رضا احمدی" 
+                            required
+                        />
+                        <span class="field-error" id="nameError">لطفاً نام و نام خانوادگی خود را وارد کنید.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="applicantEmail" class="form-label">ایمیل <span class="required-star">*</span></label>
+                        <input 
+                            type="email" 
+                            id="applicantEmail" 
+                            name="email" 
+                            class="form-input" 
+                            placeholder="name@example.com" 
+                            required 
+                            dir="ltr"
+                        />
+                        <span class="field-error" id="emailError">لطفاً یک آدرس ایمیل معتبر وارد کنید.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requestedSymbol" class="form-label">نام یا نماد سهم درخواستی <span class="required-star">*</span></label>
+                        <input 
+                            type="text" 
+                            id="requestedSymbol" 
+                            name="symbol" 
+                            class="form-input" 
+                            placeholder="مثال: فولاد یا فولاد مبارکه اصفهان" 
+                            required
+                        />
+                        <span class="field-error" id="symbolError">لطفاً نام یا نماد سهم درخواستی را مشخص نمایید.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requestType" class="form-label">نوع درخواست <span class="required-star">*</span></label>
+                        <div class="select-wrapper">
+                            <select id="requestType" name="request_type" class="form-select" required>
+                                <option value="" disabled selected>نوع درخواست را انتخاب کنید...</option>
+                                <option value="1">تحلیل کامل بنیادی و تکنیکال (رایگان -  حداکثر تا دو روز کاری بعد انجام میشود)</option>
+                                <option value="2">تحلیل کامل بنیادی و تکنیکال و بروزرسانی گزارشات فوری (99 هزار تومان - حداکثر تا نیم ساعت بعد انجام میشود)</option>
+                            </select>
+                            <i data-lucide="chevron-down" class="select-chevron" aria-hidden="true"></i>
+                        </div>
+                        <span class="field-error" id="typeError">لطفاً نوع درخواست را انتخاب نمایید.</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="requestNotes" class="form-label">توضیحات تکمیلی (اختیاری)</label>
+                        <textarea 
+                            id="requestNotes" 
+                            name="notes" 
+                            class="form-textarea" 
+                            rows="3" 
+                            placeholder="نکات مد نظر برای تحلیل تکنیکال یا بنیادی سهم..."
+                        ></textarea>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn-secondary" id="cancelAddStockBtn">انصراف</button>
+                        <button type="submit" class="btn-primary" id="submitAddStockBtn">
+                            <i data-lucide="send" class="btn-icon" aria-hidden="true"></i>
+                            <span id="submitBtnText">ارسال درخواست</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal: About Us & Agentic AI Process -->
+        <div class="modal-backdrop" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle" style="display: none;">
+            <div class="modal-dialog about-modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-group">
+                        <div class="modal-title-with-badge">
+                            <h2 class="modal-title" id="aboutModalTitle">درباره ما و معماری هوش مصنوعی عامل‌محور</h2>
+                            <span class="about-agentic-badge">Agentic AI Architecture</span>
+                        </div>
+                        <p class="modal-subtitle">فرآیند خودکارسازی چندعاملی، نظارت چندلایه و تهیه گزارشات تحلیلی بنیادی و تکنیکال سهام</p>
+                    </div>
+                    <button type="button" class="modal-close-btn" id="closeAboutModalBtn" aria-label="بستن پنجره">
+                        <i data-lucide="x" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="about-content">
+                    <!-- Summary lead -->
+                    <div class="about-lead">
+                        <div class="about-lead-header">
+                            <i data-lucide="cpu" class="about-lead-icon" aria-hidden="true"></i>
+                            <strong>سامانه تحلیل جامع و هوشمند بازار سرمایه ایران (tjb24.ir)</strong>
+                        </div>
+                        <p>
+                            این سامانه بر مبنای معماری پیشرفته <strong>هوش مصنوعی عامل‌محور (Agentic AI)</strong> طراحی شده است. در این چارچوب، شبکه‌ای از عامل‌های خودمختار و تخصصی با وظایف معین، داده‌های خام مالی و معاملاتی را گردآوری، پالایش و تحلیل کرده و پس از بازرسی کیفیت چندمرحله‌ای، گزارش‌های جامع بنیادی و تکنیکال را منتشر می‌نمایند.
+                        </p>
+                    </div>
+
+                    <!-- Steps Title -->
+                    <div class="about-steps-header">
+                        <i data-lucide="layers" class="section-icon" aria-hidden="true"></i>
+                        <span>چرخه ۶ مرحله‌ای فرآیند تحلیل مبتنی بر عامل‌های هوشمند:</span>
+                    </div>
+
+                    <!-- Pipeline Steps -->
+                    <div class="about-steps">
+                        <!-- Step 1 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۱</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">عامل خزش و پایش بلادرنگ داده‌ها</span>
+                                    <span class="about-badge-tag">Crawler Agent</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    دریافت لحظه‌ای سابقه معاملات، کندل‌ها و اطلاعات تابلوی نماد از سامانه مدیریت فناوری بورس تهران (TSETMC)، استخراج صورت‌های مالی و اکسل‌های کدال (Codal)، و پایش اخبار رسمی و احساسات سرمایه‌گذاران.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۲</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">عامل تلخیص و پردازش اسناد کدال</span>
+                                    <span class="about-badge-tag">Summarizer Agent</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    خلاصه‌سازی ساختاریافته صورت‌های مالی، گزارش فعالیت‌های ماهانه و افشاهای اطلاعات بااهمیت کدال با بهره‌گیری از مدل‌های پردازش زبان طبیعی فارسی (NLP) و استخراج ارقام کلیدی درآمدی و بهای تمام‌شده.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۳</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">عامل کشف هویت و تیپ‌بندی تخصصی کسب‌وکار</span>
+                                    <span class="about-badge-tag">CompanyProfiler & Archetypes</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    شناسایی دقیق ماهیت و مدل درآمدی شرکت و تفکیک به ۵ تیپ تخصصی: صندوق‌های املاک و مستغلات (REIT)، بانک‌ها و موسسات اعتباری، شرکت‌های سرمایه‌گذاری و هلدینگ، زراعت و دامداری، و شرکت‌های تولیدی/صنعتی؛ همراه با گارد سخت‌گیرانه بهداشت واژگان جهت ریشه‌کنی واژگان نامرتبط و قالبی.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۴</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">عامل‌های تخصصی تحلیل تکنیکال و بنیادی</span>
+                                    <span class="about-badge-tag">Analyst Agents</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    <strong>تحلیل تکنیکال:</strong> بررسی سطوح حمایت و مقاومت، روندهای قیمتی، ایچیموکو، اندیکاتورها (RSI و MACD)، حجم معاملات و رسم نمودارهای استاندارد با امضای موثق.<br>
+                                    <strong>تحلیل بنیادی:</strong> سنجش حاشیه سودها، روند فروش ماهانه، سود هر سهم (EPS/DPS)، ترازنامه و نسبت‌های ارزش‌گذاری (P/E، P/S، P/B و P/NAV) متناسب با تیپ اختصاصی شرکت.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۵</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">عامل تصمیم‌گیری استراتژیک و امتیازدهی سه‌گانه</span>
+                                    <span class="about-badge-tag">Strategy Agent</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    تلفیق داده‌های تکنیکال، بنیادی، تابلوی معاملات و تابلوخوانی بر پایه <em>مدل اجماع سه‌گانه</em> (رویکرد وزنی، فیلترهای وتوی ریسک و همگرایی افق‌های زمانی کوتاه‌مدت، میان‌مدت و مجمعی) برای تعیین وضعیت نهایی سهم.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Step 6 -->
+                        <div class="about-step-card">
+                            <div class="about-step-num">۶</div>
+                            <div class="about-step-body">
+                                <div class="about-step-title-row">
+                                    <span class="about-step-title">داور عالی بازار سرمایه و ممیزی کیفی ۵ رکن</span>
+                                    <span class="about-badge-tag">Supreme Judge Agent</span>
+                                </div>
+                                <p class="about-step-desc">
+                                    ممیزی سخت‌گیرانه گزارش‌ها براساس ۵ رکن اساسی (صحت داده‌ها، کیفیت فایل‌های کدال، اصالت تحلیل احساسات، عمق تحلیلی و عدم وجود واژگان نامرتبط، و منطق توصیه). تنها گزارش‌هایی که موفق به اخذ امتیاز حداقل ۸.۵ از ۱۰ گردند، گواهی رسمی تایید دریافت کرده و منتشر می‌شوند.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer / Attribution & Disclaimer -->
+                    <div class="about-footer-info">
+                        <div class="about-info-row">
+                            <i data-lucide="shield-check" class="info-icon" aria-hidden="true"></i>
+                            <span><strong>نویسنده، توسعه‌دهنده و صاحب‌امتیاز:</strong> <a href="https://tjb24.ir" target="_blank" rel="noopener noreferrer">سامانه تحلیل بازار سرمایه (tjb24.ir)</a></span>
+                        </div>
+                        <div class="about-info-row disclaimer-row">
+                            <i data-lucide="alert-triangle" class="info-icon text-warning" aria-hidden="true"></i>
+                            <span><strong>سلب مسئولیت مالی و حقوقی:</strong> کلیه اطلاعات، محاسبات، نمودارها و نسبت‌های مالی مندرج در گزارش‌ها صرفاً با هدف پژوهش، آموزش و تحلیل داده بر پایه اطلاعات گذشته‌نگر توسط مدل‌های هوش مصنوعی تولید شده و به هیچ عنوان سیگنال خرید، فروش یا توصیه سرمایه‌گذاری تلقی نمی‌شوند. مسئولیت هرگونه تصمیم مالی منحصراً بر عهده شخص سرمایه‌گذار است.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn-primary" id="closeAboutModalFooterBtn" style="min-width: 120px;">
+                        <span>متوجه شدم</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Executive Summary Interactive Modal -->
+        <div class="modal-backdrop" id="summaryModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="summaryModalTitle">
+            <div class="modal-dialog summary-modal-dialog">
+                <div class="modal-header">
+                    <div class="modal-title-with-badge">
+                        <h2 class="modal-title" id="summaryModalTitle">خلاصه اجرایی و سناریوی سهم</h2>
+                        <span class="summary-modal-badge" id="summaryModalBadge">—</span>
+                    </div>
+                    <button type="button" class="modal-close-btn" id="closeSummaryModalBtn" aria-label="بستن پنجره">
+                        <i data-lucide="x" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="modal-body summary-modal-body">
+                    <!-- Highlighted Synthesis Box -->
+                    <div class="summary-modal-lead">
+                        <div class="summary-lead-header">
+                            <i data-lucide="sparkles" class="summary-lead-icon" aria-hidden="true"></i>
+                            <span class="summary-lead-title">چکیده وضعیت و سناریوی معاملاتی سهم</span>
+                        </div>
+                        <p id="summaryModalText" class="summary-text-content">
+                            در حال بارگذاری خلاصه تحلیلی...
+                        </p>
+                    </div>
+
+                    <!-- Trading Key Metrics Grid -->
+                    <div class="summary-metrics-grid">
+                        <div class="summary-metric-card">
+                            <div class="summary-metric-label">آخرین قیمت معامله</div>
+                            <div class="summary-metric-val" id="summaryModalPrice">—</div>
+                        </div>
+                        <div class="summary-metric-card">
+                            <div class="summary-metric-label">محدوده ورود پیشنهادی</div>
+                            <div class="summary-metric-val" id="summaryModalEntry">—</div>
+                        </div>
+                        <div class="summary-metric-card">
+                            <div class="summary-metric-label">حد سود اول (تارگت)</div>
+                            <div class="summary-metric-val text-success" id="summaryModalTarget">—</div>
+                        </div>
+                        <div class="summary-metric-card">
+                            <div class="summary-metric-label">حد ضرر حمایتی</div>
+                            <div class="summary-metric-val text-danger" id="summaryModalStopLoss">—</div>
+                        </div>
+                    </div>
+
+                    <!-- Meta Notice & Attribution -->
+                    <div class="summary-modal-footer-meta">
+                        <div class="summary-meta-item">
+                            <i data-lucide="award" class="meta-icon text-gold" aria-hidden="true"></i>
+                            <span>امتیاز اجماع تحلیلی: <strong id="summaryModalScore">—</strong> از ۵</span>
+                        </div>
+                        <div class="summary-meta-item">
+                            <i data-lucide="clock" class="meta-icon" aria-hidden="true"></i>
+                            <span>آخرین بروزرسانی: <strong id="summaryModalLastUpdate">—</strong></span>
+                        </div>
+                        <div class="summary-meta-item">
+                            <i data-lucide="shield-check" class="meta-icon" aria-hidden="true"></i>
+                            <span>توسعه‌دهنده و سامانه هوشمند: <a href="https://tjb24.ir" target="_blank" rel="noopener noreferrer">tjb24.ir</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer summary-modal-footer">
+                    <button type="button" class="btn-xai-modal" id="summaryModalXaiBtn">
+                        <i data-lucide="calculator" aria-hidden="true"></i>
+                        <span>🔍 شناسنامه شفافیت و فرمول‌ها</span>
+                    </button>
+                    <a id="summaryModalGithubBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-github-modal" title="مشاهده پوشه و گزارش‌های سهم در گیت‌هاب">
+                        <i data-lucide="folder-git-2" aria-hidden="true"></i>
+                        <span>مشاهده پوشه سهم در گیت‌هاب</span>
+                        <i data-lucide="external-link" aria-hidden="true"></i>
+                    </a>
+                    <button type="button" class="btn-secondary" id="closeSummaryModalFooterBtn">
+                        <span>بستن</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Explainable AI (XAI) Modal -->
+        <div class="modal-backdrop" id="explainabilityModal" style="display: none;" role="dialog" aria-modal="true" aria-labelledby="xaiModalTitle">
+            <div class="modal-dialog xai-modal-dialog">
+                <div class="modal-header xai-modal-header">
+                    <div class="modal-title-with-badge">
+                        <div class="xai-header-title-wrap">
+                            <h2 class="modal-title" id="xaiModalTitle">🔍 شناسنامه شفافیت و منطق هوش مصنوعی (Explainable AI & Audit Trail)</h2>
+                            <p class="xai-modal-subtitle">فرمول محاسباتی، مقادیر خام ورودی، منابع موثق داده و استدلال تحلیلی</p>
+                        </div>
+                        <div class="xai-header-badges-wrap">
+                            <span class="xai-modal-badge" id="xaiModalSymbolBadge">—</span>
+                            <span class="xai-modal-update-badge" id="xaiModalLastUpdate" title="زمان آخرین بروزرسانی تحلیلی">
+                                <i data-lucide="clock" aria-hidden="true"></i>
+                                <span class="xai-update-text">—</span>
+                            </span>
+                        </div>
+                    </div>
+                    <button type="button" class="modal-close-btn" id="closeXaiModalBtn" aria-label="بستن پنجره">
+                        <i data-lucide="x" aria-hidden="true"></i>
+                    </button>
+                </div>
+
+                <div class="xai-tab-bar" role="tablist">
+                    <button type="button" class="xai-tab-btn active" data-tab="overview" role="tab" aria-selected="true">
+                        <i data-lucide="bar-chart-3" aria-hidden="true"></i>
+                        <span>📊 نمای کلی مدل و اوزان</span>
+                    </button>
+                    <button type="button" class="xai-tab-btn" data-tab="fundamental" role="tab" aria-selected="false">
+                        <i data-lucide="building-2" aria-hidden="true"></i>
+                        <span>🏢 ارزندگی بنیادی</span>
+                    </button>
+                    <button type="button" class="xai-tab-btn" data-tab="technical" role="tab" aria-selected="false">
+                        <i data-lucide="trending-up" aria-hidden="true"></i>
+                        <span>📈 روند و تکنیکال</span>
+                    </button>
+                    <button type="button" class="xai-tab-btn" data-tab="sentiment" role="tab" aria-selected="false">
+                        <i data-lucide="message-square" aria-hidden="true"></i>
+                        <span>💬 احساس بازار و تابلو</span>
+                    </button>
+                    <button type="button" class="xai-tab-btn" data-tab="low_risk" role="tab" aria-selected="false">
+                        <i data-lucide="shield-check" aria-hidden="true"></i>
+                        <span>🛡️ کم‌ریسک بودن و نوسان</span>
+                    </button>
+                </div>
+
+                <div class="modal-body xai-modal-body" id="xaiModalContent">
+                    <!-- Dynamic Tab Content Rendered by JavaScript -->
+                </div>
+
+                <div class="modal-footer xai-modal-footer">
+                    <a id="xaiModalGithubBtn" href="#" target="_blank" rel="noopener noreferrer" class="btn-github-modal" title="مشاهده پوشه و گزارش‌های سهم در گیت‌هاب">
+                        <i data-lucide="folder-git-2" aria-hidden="true"></i>
+                        <span>مشاهده پوشه سهم در گیت‌هاب</span>
+                        <i data-lucide="external-link" aria-hidden="true"></i>
+                    </a>
+                    <button type="button" class="btn-secondary" id="closeXaiModalFooterBtn">
+                        <span>بستن</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live AI Stock Reporter & Speaking Avatar Modal -->
+        <div id="liveReporterModal" class="live-reporter-modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+            <div class="live-reporter-dialog">
+                <!-- Modal Header -->
+                <div class="live-reporter-header">
+                    <div class="reporter-title-cluster">
+                        <span class="reporter-live-pill">
+                            <span class="reporter-live-dot"></span>
+                            <span>تحلیل زنده</span>
+                        </span>
+                        <h2 class="reporter-title">
+                            <span>تحلیل‌گر هوشمند تابلوی معاملات</span>
+                            <span id="reporterStockSymbol" class="reporter-symbol-tag">خودرو</span>
+                        </h2>
+                    </div>
+                    <button type="button" class="btn-close-reporter" id="closeLiveReporterBtn" aria-label="بستن پنجره گزارشگر">
+                        <i data-lucide="x"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Body Grid -->
+                <div class="live-reporter-body">
+                    <!-- Left Column: Avatar & Stage -->
+                    <div class="avatar-stage-card">
+                        <div class="avatar-canvas-wrapper">
+                            <canvas id="avatarCanvas"></canvas>
+                        </div>
+                        <!-- Status & Audio Bars Overlay -->
+                        <div class="avatar-status-overlay">
+                            <div class="avatar-state-text">
+                                <i data-lucide="activity" style="color: #00f0ff; width: 18px; height: 18px;"></i>
+                                <span id="reporterStatusText">آماده شروع ارتباط...</span>
+                            </div>
+                            <div class="audio-bars-container" id="reporterAudioBars">
+                                <span class="audio-bar" style="height: 6px;"></span>
+                                <span class="audio-bar" style="height: 12px;"></span>
+                                <span class="audio-bar" style="height: 8px;"></span>
+                                <span class="audio-bar" style="height: 16px;"></span>
+                                <span class="audio-bar" style="height: 10px;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Live Ticker & Transcript Subtitles -->
+                    <div class="reporter-sidebar">
+                        <!-- Live Ticker Card -->
+                        <div class="sidebar-box market-mini-card">
+                            <div class="market-stat-row">
+                                <span>نام نماد و شرکت:</span>
+                                <span id="repMiniName" class="market-stat-val">---</span>
+                            </div>
+                            <div class="market-stat-row">
+                                <span>آخرین قیمت معامله:</span>
+                                <span id="repMiniLastPrice" class="market-stat-val">---</span>
+                            </div>
+                            <div class="market-stat-row">
+                                <span>درصد نوسان روز:</span>
+                                <span id="repMiniChange" class="market-stat-val stat-up">---</span>
+                            </div>
+                            <div class="market-stat-row">
+                                <span>قدرت سرانه حقیقی:</span>
+                                <span id="repMiniBuyerPower" class="market-stat-val">---</span>
+                            </div>
+                            <div class="market-stat-row">
+                                <span>حجم معامله به مبنا:</span>
+                                <span id="repMiniVolRatio" class="market-stat-val">---</span>
+                            </div>
+                        </div>
+
+                        <!-- Real-time Transcript -->
+                        <div class="sidebar-box transcript-box">
+                            <div class="transcript-header">
+                                <span>زیرنویس و متن زنده تحلیل</span>
+                                <i data-lucide="sparkles" style="width: 16px; height: 16px; color: #00f0ff;"></i>
+                            </div>
+                            <div class="transcript-content" id="reporterSubtitles">
+                                در حال انتظار برای تحلیل زنده تابلوی معاملات...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Footer -->
+                <div class="live-reporter-footer">
+                    <div class="reporter-controls-left">
+                        <button type="button" class="btn-reporter-action btn-talk-mic" id="toggleLiveMicBtn">
+                            <i data-lucide="mic"></i>
+                            <span id="liveMicLabel">گفتگو با تحلیل‌گر (میکروفون)</span>
+                        </button>
+                        <button type="button" class="btn-reporter-action btn-ask-report" id="reanalyzeLiveBtn">
+                            <i data-lucide="refresh-cw"></i>
+                            <span>تحلیل مجدد تابلو</span>
+                        </button>
+                        <div class="reporter-text-input-wrap">
+                            <input type="text" id="reporterQuestionInput" placeholder="یا سوال خود را تایپ کنید..." class="reporter-text-input" />
+                            <button type="button" id="reporterSendQuestionBtn" class="btn-send-question" title="ارسال سوال">
+                                <i data-lucide="send"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="reporter-footer-meta">
+                        <span style="font-size: 0.8rem; color: #64748b;">سامانه هوشمند تحلیل بازار سرمایه</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Advanced Filter Drawer Backdrop & Aside Panel -->
+        <div id="filterDrawerBackdrop" class="filter-drawer-backdrop" aria-hidden="true"></div>
+        <aside id="filterDrawerPanel" class="filter-drawer-panel" aria-labelledby="filterDrawerTitle" aria-hidden="true" role="dialog">
+            <div class="filter-drawer-header">
+                <div class="drawer-header-info">
+                    <div class="drawer-header-icon-wrap">
+                        <i data-lucide="sliders-horizontal" class="drawer-icon"></i>
+                    </div>
+                    <div>
+                        <h3 id="filterDrawerTitle" class="drawer-title">فیلترهای پیشرفته و هوشمند</h3>
+                        <p class="drawer-subtitle">فیلتر چندمعیاره بر اساس امتیاز AI، ارزندگی، تابلو و تکنیکال</p>
+                    </div>
+                </div>
+                <button type="button" id="closeFilterDrawerBtn" class="btn-drawer-close" aria-label="بستن پنل فیلترها">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <div class="filter-drawer-body">
+                <!-- Section 1: Signal & Verdict -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">
+                        <i data-lucide="zap"></i>
+                        <span>سیگنال و وضعیت فرصت معاملاتی</span>
+                    </h4>
+                    <div class="filter-checkbox-grid">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="signalFilter" value="STRONG_BUY">
+                            <span class="checkbox-box"></span>
+                            <span class="checkbox-label signal-tag tag-strong-buy">🚀 فرصت طلایی (خرید قوی)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="signalFilter" value="BUY">
+                            <span class="checkbox-box"></span>
+                            <span class="checkbox-label signal-tag tag-buy">✅ خرید پله‌ای / فرصت مناسب</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="signalFilter" value="HOLD">
+                            <span class="checkbox-box"></span>
+                            <span class="checkbox-label signal-tag tag-hold">⏸️ نگهداری / نظاره‌گر</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox" name="signalFilter" value="SELL_GROUP">
+                            <span class="checkbox-box"></span>
+                            <span class="checkbox-label signal-tag tag-sell">⚠️ فروش / هشدار خروج</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Section 2: Risk & Horizon -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">
+                        <i data-lucide="shield-check"></i>
+                        <span>اندازه ریسک سرمایه‌گذاری</span>
+                    </h4>
+                    <div class="filter-pill-group" id="riskFilterGroup">
+                        <button type="button" class="filter-toggle-pill active" data-risk="all">همه</button>
+                        <button type="button" class="filter-toggle-pill" data-risk="low">🛡️ کم‌ریسک</button>
+                        <button type="button" class="filter-toggle-pill" data-risk="medium">⚖️ ریسک متوسط</button>
+                        <button type="button" class="filter-toggle-pill" data-risk="high">⚡ پرریسک</button>
+                    </div>
+
+                    <h4 class="filter-section-title" style="margin-top: 1.1rem;">
+                        <i data-lucide="clock"></i>
+                        <span>افق زمانی سرمایه‌گذاری</span>
+                    </h4>
+                    <div class="filter-pill-group" id="horizonFilterGroup">
+                        <button type="button" class="filter-toggle-pill active" data-horizon="all">همه</button>
+                        <button type="button" class="filter-toggle-pill" data-horizon="short">⚡ کوتاه‌مدت</button>
+                        <button type="button" class="filter-toggle-pill" data-horizon="mid">⏳ میان‌مدت</button>
+                        <button type="button" class="filter-toggle-pill" data-horizon="long">💎 بلندمدت</button>
+                    </div>
+                </div>
+
+                <!-- Section 3: Overall AI Score Slider -->
+                <div class="filter-section">
+                    <div class="filter-slider-header">
+                        <h4 class="filter-section-title">
+                            <i data-lucide="award"></i>
+                            <span>حداقل امتیاز کلی هوش مصنوعی (AI Score)</span>
+                        </h4>
+                        <span id="aiScoreSliderValue" class="slider-badge">۱.۰ از ۱۰</span>
+                    </div>
+                    <input type="range" id="filterAiScoreSlider" class="filter-slider" min="1.0" max="10.0" step="0.5" value="1.0">
+                    <div class="slider-ticks">
+                        <span>۱ (همه)</span>
+                        <span>۵</span>
+                        <span>۷.۵ (قوی)</span>
+                        <span>۱۰</span>
+                    </div>
+                </div>
+
+                <!-- Section 4: 4 Pillars Sliders -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">
+                        <i data-lucide="bar-chart-3"></i>
+                        <span>حداقل نمره ستون‌های چهارگانه تحلیلی</span>
+                    </h4>
+                    
+                    <!-- Fundamental Slider -->
+                    <div class="pillar-slider-row">
+                        <div class="pillar-info">
+                            <span class="pillar-label">🏛️ ارزندگی بنیادی:</span>
+                            <span id="sliderValFund" class="pillar-val">۱.۰</span>
+                        </div>
+                        <input type="range" id="filterPillarFund" class="filter-slider" min="1.0" max="10.0" step="0.5" value="1.0">
+                    </div>
+
+                    <!-- Technical Slider -->
+                    <div class="pillar-slider-row">
+                        <div class="pillar-info">
+                            <span class="pillar-label">📈 روند و تکنیکال:</span>
+                            <span id="sliderValTech" class="pillar-val">۱.۰</span>
+                        </div>
+                        <input type="range" id="filterPillarTech" class="filter-slider" min="1.0" max="10.0" step="0.5" value="1.0">
+                    </div>
+
+                    <!-- Sentiment Slider -->
+                    <div class="pillar-slider-row">
+                        <div class="pillar-info">
+                            <span class="pillar-label">🌊 احساس بازار و تابلو:</span>
+                            <span id="sliderValSent" class="pillar-val">۱.۰</span>
+                        </div>
+                        <input type="range" id="filterPillarSent" class="filter-slider" min="1.0" max="10.0" step="0.5" value="1.0">
+                    </div>
+
+                    <!-- Stability / Low Risk Slider -->
+                    <div class="pillar-slider-row">
+                        <div class="pillar-info">
+                            <span class="pillar-label">🛡️ ثبات و مدیریت ریسک:</span>
+                            <span id="sliderValRisk" class="pillar-val">۱.۰</span>
+                        </div>
+                        <input type="range" id="filterPillarRisk" class="filter-slider" min="1.0" max="10.0" step="0.5" value="1.0">
+                    </div>
+                </div>
+
+                <!-- Section 5: Creative & Quantitative Filters (Switches) -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">
+                        <i data-lucide="sparkles"></i>
+                        <span>فیلترهای هوشمند و خلاقانه</span>
+                    </h4>
+                    
+                    <div class="toggle-switch-list">
+                        <!-- Smart Money Inflow -->
+                        <label class="toggle-row">
+                            <div class="toggle-text">
+                                <span class="toggle-title">💰 ورود پول هوشمند (سرانه خریدار بالای ۱.۵)</span>
+                                <span class="toggle-desc">تمرکز بر نمادهایی با برتری چشمگیر قدرت خریدار حقیقی</span>
+                            </div>
+                            <input type="checkbox" id="toggleSmartMoney" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+
+                        <!-- In Entry Zone -->
+                        <label class="toggle-row">
+                            <div class="toggle-text">
+                                <span class="toggle-title">🎯 در محدوده خرید مجاز (Entry Zone)</span>
+                                <span class="toggle-desc">قیمت فعلی داخل بازه خرید اعلام‌شده توسط هوش مصنوعی است</span>
+                            </div>
+                            <input type="checkbox" id="toggleInEntryZone" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+
+                        <!-- Excellent R/R -->
+                        <label class="toggle-row">
+                            <div class="toggle-text">
+                                <span class="toggle-title">⚖️ نسبت سود به ریسک عالی (R/R &ge; 2.0)</span>
+                                <span class="toggle-desc">پتانسیل سود دست‌کم دو برابر ریسک احتمالی معامله</span>
+                            </div>
+                            <input type="checkbox" id="toggleHighRR" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+
+                        <!-- Undervalued PE -->
+                        <label class="toggle-row">
+                            <div class="toggle-text">
+                                <span class="toggle-title">💎 P/E کمتر از میانگین صنعت (ارزندگی بالا)</span>
+                                <span class="toggle-desc">سهامی که نسبت قیمت به درآمد آنها ارزان‌تر از میانگین گروه است</span>
+                            </div>
+                            <input type="checkbox" id="toggleUndervalued" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+
+                        <!-- Near 14-day low -->
+                        <label class="toggle-row">
+                            <div class="toggle-text">
+                                <span class="toggle-title">📉 نزدیک به کف قیمتی ۱۴ روزه (&le; ۵٪)</span>
+                                <span class="toggle-desc">سهم‌هایی که در نزدیکی کف قیمتی دو هفته اخیر معامله می‌شوند</span>
+                            </div>
+                            <input type="checkbox" id="toggleNearLow" class="switch-input">
+                            <span class="switch-slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Section 6: Recency / Update Date -->
+                <div class="filter-section">
+                    <h4 class="filter-section-title">
+                        <i data-lucide="calendar"></i>
+                        <span>تازگی تحلیل و تاریخ به‌روزرسانی</span>
+                    </h4>
+                    <div class="filter-pill-group" id="recencyFilterGroup">
+                        <button type="button" class="filter-toggle-pill active" data-recency="all">همه تاریخ‌ها</button>
+                        <button type="button" class="filter-toggle-pill" data-recency="today">📅 امروز (آخرین تحلیل)</button>
+                        <button type="button" class="filter-toggle-pill" data-recency="3days">🕒 ۳ روز اخیر</button>
+                        <button type="button" class="filter-toggle-pill" data-recency="7days">🗓️ یک هفته اخیر</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter-drawer-footer">
+                <button type="button" id="drawerResetBtn" class="btn-drawer-secondary">
+                    <i data-lucide="rotate-ccw"></i>
+                    <span>بازنشانی فیلترها</span>
+                </button>
+                <button type="button" id="drawerApplyBtn" class="btn-drawer-primary">
+                    <span>مشاهده نتایج</span>
+                    <span id="drawerMatchingCount" class="count-pill">(۱۶ سهم)</span>
+                </button>
+            </div>
+        </aside>
+
+        <!-- Hover Popover Container (Positioned dynamically on mouseenter) -->
+        <div id="summaryHoverPopover" class="summary-hover-popover" style="display: none;" role="tooltip"></div>
+
+        <!-- Toast Notifications Container -->
+        <div id="toastContainer" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+    </div>
+
+    <!-- Scripts (External CDNs and Vanilla ES6 modules) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="data/stocks.js?v=20260930_1900"></script>
+    <script src="config.js?v=20260930_1900"></script>
+    <script src="avatar_renderer.js?v=20260930_1900"></script>
+    <script src="market_context.js?v=20260930_1900"></script>
+    <script src="gemini_live_client.js?v=20260930_1900"></script>
+    <script src="app.js?v=20260930_1900"></script>
+</body>
+</html>

@@ -13,6 +13,23 @@ const state = {
     searchQuery: "",
     currentSort: "growth_desc",
     currentFilter: "all",
+    filters: {
+        quickFilter: "all",
+        signals: new Set(),
+        riskLevel: "all",
+        timeHorizon: "all",
+        minAiScore: 1.0,
+        minFundamental: 1.0,
+        minTechnical: 1.0,
+        minSentiment: 1.0,
+        minRisk: 1.0,
+        smartMoney: false,
+        inEntryZone: false,
+        highRR: false,
+        undervaluedPE: false,
+        near14dLow: false,
+        recency: "all"
+    },
     uiMode: (function() {
         try { return localStorage.getItem("tjb24_ui_mode") || "simple"; } catch(e) { return "simple"; }
     })(),
@@ -1194,11 +1211,73 @@ function renderPagination() {
     }
 }
 
+// Helper Functions for Advanced Filtering
+function isStockInEntryZone(stock) {
+    if (!stock.plan || !stock.plan.entry_zone || !stock.current_price) return false;
+    const rawMatches = stock.plan.entry_zone.match(/[\d,]+/g);
+    if (!rawMatches || rawMatches.length < 2) return false;
+    const n1 = parseFloat(rawMatches[0].replace(/,/g, ""));
+    const n2 = parseFloat(rawMatches[1].replace(/,/g, ""));
+    if (isNaN(n1) || isNaN(n2)) return false;
+    const minZ = Math.min(n1, n2) * 0.98;
+    const maxZ = Math.max(n1, n2) * 1.02;
+    return stock.current_price >= minZ && stock.current_price <= maxZ;
+}
+
+function isStockNear14dLow(stock) {
+    if (!Array.isArray(stock.chart_14d) || stock.chart_14d.length === 0 || !stock.current_price) return false;
+    const prices = stock.chart_14d
+        .map(p => (typeof p === "object" && p !== null ? p.price : Number(p)))
+        .filter(p => !isNaN(p) && p > 0);
+    if (prices.length === 0) return false;
+    const min14d = Math.min(...prices);
+    return stock.current_price <= (min14d * 1.05);
+}
+
+function hasSmartMoneyInflow(stock) {
+    const bp = stock.ai_score_details?.explainability?.sentiment?.raw_inputs?.buyer_power || 0;
+    const sentScore = stock.ai_score_details?.sentiment || 0;
+    return bp >= 1.5 || sentScore >= 8.0;
+}
+
+function isStockUndervaluedPE(stock) {
+    const pe = stock.ai_score_details?.explainability?.fundamental?.raw_inputs?.pe_ratio;
+    const groupPe = stock.ai_score_details?.explainability?.fundamental?.raw_inputs?.group_pe;
+    if (pe && groupPe && pe > 0 && groupPe > 0) {
+        return pe < groupPe;
+    }
+    return false;
+}
+
+function hasHighRiskReward(stock) {
+    const rr = stock.plan?.risk_reward_ratio || 0;
+    return rr >= 2.0;
+}
+
+function isStockRecent(stock, mode) {
+    if (!mode || mode === "all") return true;
+    const lu = String(stock.last_update || "").trim();
+    if (!lu) return false;
+    
+    const allDates = state.allStocks.map(s => String(s.last_update || "").split(" ")[0]).filter(Boolean);
+    const latestDate = allDates.sort().reverse()[0] || "1405/07/28";
+    const stockDate = lu.split(" ")[0];
+    
+    if (mode === "today") {
+        return stockDate === latestDate;
+    } else if (mode === "3days") {
+        return stockDate >= "1405/07/25";
+    } else if (mode === "7days") {
+        return stockDate >= "1405/07/21";
+    }
+    return true;
+}
+
 // Filter and Sort Pipeline
 function applyFilterAndSort() {
     let result = [...state.allStocks];
 
-    // 1. Search Filter
+    // 1. Text Search Filter
     if (state.searchQuery.trim()) {
         const q = state.searchQuery.trim().toLowerCase();
         result = result.filter((s) => {
@@ -1208,7 +1287,7 @@ function applyFilterAndSort() {
         });
     }
 
-    // 2. Category Filter
+    // 2. Legacy Category Filter (from dropdown)
     if (state.currentFilter === "positive") {
         result = result.filter((s) => (s.change_percent || 0) > 0);
     } else if (state.currentFilter === "negative") {
@@ -1217,7 +1296,116 @@ function applyFilterAndSort() {
         result = result.filter((s) => state.favorites.has(s.symbol));
     }
 
-    // 3. Sorting
+    // 3. Quick Filter Chips
+    const qf = state.filters.quickFilter;
+    if (qf === "golden") {
+        result = result.filter((s) => (s.recommendation?.signal || s.ai_score_details?.signal) === "STRONG_BUY");
+    } else if (qf === "buy") {
+        result = result.filter((s) => {
+            const sig = s.recommendation?.signal || s.ai_score_details?.signal;
+            return sig === "STRONG_BUY" || sig === "BUY";
+        });
+    } else if (qf === "low_risk") {
+        result = result.filter((s) => {
+            const rk = s.risk_level || s.recommendation?.risk_level || "";
+            return rk.includes("کم‌ریسک") || rk.includes("کم ریسک");
+        });
+    } else if (qf === "smart_money") {
+        result = result.filter(hasSmartMoneyInflow);
+    } else if (qf === "entry_zone") {
+        result = result.filter(isStockInEntryZone);
+    } else if (qf === "rr_high") {
+        result = result.filter(hasHighRiskReward);
+    } else if (qf === "undervalued") {
+        result = result.filter(isStockUndervaluedPE);
+    } else if (qf === "near_low") {
+        result = result.filter(isStockNear14dLow);
+    } else if (qf === "updated_today") {
+        result = result.filter((s) => isStockRecent(s, "today"));
+    } else if (qf === "favorites") {
+        result = result.filter((s) => state.favorites.has(s.symbol));
+    }
+
+    // 4. Advanced Drawer Filters
+    // 4.1 Signals
+    if (state.filters.signals.size > 0) {
+        result = result.filter((s) => {
+            const sig = s.recommendation?.signal || s.ai_score_details?.signal || "";
+            if (state.filters.signals.has("STRONG_BUY") && sig === "STRONG_BUY") return true;
+            if (state.filters.signals.has("BUY") && sig === "BUY") return true;
+            if (state.filters.signals.has("HOLD") && sig === "HOLD") return true;
+            if (state.filters.signals.has("SELL_GROUP") && (sig.includes("SELL") || sig === "HOLD_WATCH")) return true;
+            return false;
+        });
+    }
+
+    // 4.2 Risk Level
+    if (state.filters.riskLevel !== "all") {
+        result = result.filter((s) => {
+            const rk = s.risk_level || s.recommendation?.risk_level || "";
+            if (state.filters.riskLevel === "low") return rk.includes("کم‌ریسک") || rk.includes("کم ریسک");
+            if (state.filters.riskLevel === "medium") return rk.includes("متوسط");
+            if (state.filters.riskLevel === "high") return rk.includes("پرریسک") || rk.includes("پر ریسک");
+            return true;
+        });
+    }
+
+    // 4.3 Time Horizon
+    if (state.filters.timeHorizon !== "all") {
+        result = result.filter((s) => {
+            const th = s.time_horizon || s.recommendation?.time_horizon || "";
+            if (state.filters.timeHorizon === "short") return th.includes("کوتاه");
+            if (state.filters.timeHorizon === "mid") return th.includes("میان");
+            if (state.filters.timeHorizon === "long") return th.includes("بلند");
+            return true;
+        });
+    }
+
+    // 4.4 AI Score Slider
+    if (state.filters.minAiScore > 1.0) {
+        result = result.filter((s) => {
+            const sc = s.ai_score_details?.ai_score ?? (s.score ? s.score * 2 : 0);
+            return sc >= state.filters.minAiScore;
+        });
+    }
+
+    // 4.5 4-Pillars Sliders
+    if (state.filters.minFundamental > 1.0) {
+        result = result.filter((s) => (s.ai_score_details?.fundamental ?? 0) >= state.filters.minFundamental);
+    }
+    if (state.filters.minTechnical > 1.0) {
+        result = result.filter((s) => (s.ai_score_details?.technical ?? 0) >= state.filters.minTechnical);
+    }
+    if (state.filters.minSentiment > 1.0) {
+        result = result.filter((s) => (s.ai_score_details?.sentiment ?? 0) >= state.filters.minSentiment);
+    }
+    if (state.filters.minRisk > 1.0) {
+        result = result.filter((s) => (s.ai_score_details?.low_risk ?? 0) >= state.filters.minRisk);
+    }
+
+    // 4.6 Creative Switches
+    if (state.filters.smartMoney) {
+        result = result.filter(hasSmartMoneyInflow);
+    }
+    if (state.filters.inEntryZone) {
+        result = result.filter(isStockInEntryZone);
+    }
+    if (state.filters.highRR) {
+        result = result.filter(hasHighRiskReward);
+    }
+    if (state.filters.undervaluedPE) {
+        result = result.filter(isStockUndervaluedPE);
+    }
+    if (state.filters.near14dLow) {
+        result = result.filter(isStockNear14dLow);
+    }
+
+    // 4.7 Recency
+    if (state.filters.recency !== "all") {
+        result = result.filter((s) => isStockRecent(s, state.filters.recency));
+    }
+
+    // 5. Sorting
     result.sort((a, b) => {
         switch (state.currentSort) {
             case "growth_desc":
@@ -1250,11 +1438,354 @@ function applyFilterAndSort() {
 
     state.filteredStocks = result;
     state.currentPage = 1;
-    updateFilterIndicator();
+    updateActiveFilterUI();
     renderStockCards();
 }
 
+function countActiveFilters() {
+    let count = 0;
+    if (state.filters.quickFilter && state.filters.quickFilter !== "all") count++;
+    if (state.filters.signals.size > 0) count += state.filters.signals.size;
+    if (state.filters.riskLevel !== "all") count++;
+    if (state.filters.timeHorizon !== "all") count++;
+    if (state.filters.minAiScore > 1.0) count++;
+    if (state.filters.minFundamental > 1.0) count++;
+    if (state.filters.minTechnical > 1.0) count++;
+    if (state.filters.minSentiment > 1.0) count++;
+    if (state.filters.minRisk > 1.0) count++;
+    if (state.filters.smartMoney) count++;
+    if (state.filters.inEntryZone) count++;
+    if (state.filters.highRR) count++;
+    if (state.filters.undervaluedPE) count++;
+    if (state.filters.near14dLow) count++;
+    if (state.filters.recency !== "all") count++;
+    return count;
+}
+
+function updateActiveFilterUI() {
+    // 1. Update Drawer Matching Count pill
+    const drawerMatchingCount = document.getElementById("drawerMatchingCount");
+    if (drawerMatchingCount) {
+        drawerMatchingCount.textContent = `(${toPersianDigits(state.filteredStocks.length)} سهم)`;
+    }
+
+    // 2. Count active filters and update Header Badge
+    const activeCount = countActiveFilters();
+    const badge = document.getElementById("activeFiltersBadge");
+    const drawerBtn = document.getElementById("openFilterDrawerBtn");
+    if (badge) {
+        if (activeCount > 0) {
+            badge.style.display = "inline-flex";
+            badge.textContent = toPersianDigits(activeCount);
+        } else {
+            badge.style.display = "none";
+        }
+    }
+    if (drawerBtn) {
+        drawerBtn.classList.toggle("has-active-filters", activeCount > 0);
+    }
+
+    // 3. Render Active Filter Tags
+    const tagsBar = document.getElementById("activeFilterTagsBar");
+    const tagsContainer = document.getElementById("activeFilterTagsContainer");
+    if (!tagsBar || !tagsContainer) return;
+
+    const tags = [];
+
+    // Quick Filter tag
+    if (state.filters.quickFilter && state.filters.quickFilter !== "all") {
+        const qfLabels = {
+            golden: "🚀 فرصت طلایی",
+            buy: "✅ فرصت خرید",
+            low_risk: "🛡️ کم‌ریسک",
+            smart_money: "💰 پول هوشمند",
+            entry_zone: "🎯 در محدوده خرید",
+            rr_high: "⚖️ R/R بالای ۲",
+            undervalued: "💎 P/E زیر صنعت",
+            near_low: "📉 نزدیک کف ۱۴ روزه",
+            updated_today: "📅 آپدیت امروز",
+            favorites: "⭐ نشان‌شده‌ها"
+        };
+        const label = qfLabels[state.filters.quickFilter] || state.filters.quickFilter;
+        tags.push({ key: "quickFilter", label: label, onRemove: () => {
+            state.filters.quickFilter = "all";
+            document.querySelectorAll("#quickFilterChips .filter-chip").forEach(c => {
+                c.classList.toggle("active", c.getAttribute("data-quick-filter") === "all");
+            });
+            applyFilterAndSort();
+        }});
+    }
+
+    // Signal tags
+    const sigLabels = {
+        STRONG_BUY: "🚀 خرید قوی / طلایی",
+        BUY: "✅ خرید پله‌ای",
+        HOLD: "⏸️ نگهداری",
+        SELL_GROUP: "⚠️ فروش / خروج"
+    };
+    state.filters.signals.forEach(sig => {
+        tags.push({ key: `sig_${sig}`, label: sigLabels[sig] || sig, onRemove: () => {
+            state.filters.signals.delete(sig);
+            const chk = document.querySelector(`input[name="signalFilter"][value="${sig}"]`);
+            if (chk) chk.checked = false;
+            applyFilterAndSort();
+        }});
+    });
+
+    // Risk Level tag
+    if (state.filters.riskLevel !== "all") {
+        const riskLabels = { low: "🛡️ کم‌ریسک", medium: "⚖️ ریسک متوسط", high: "⚡ پرریسک" };
+        tags.push({ key: "riskLevel", label: riskLabels[state.filters.riskLevel] || state.filters.riskLevel, onRemove: () => {
+            state.filters.riskLevel = "all";
+            document.querySelectorAll("#riskFilterGroup .filter-toggle-pill").forEach(p => {
+                p.classList.toggle("active", p.getAttribute("data-risk") === "all");
+            });
+            applyFilterAndSort();
+        }});
+    }
+
+    // Time Horizon tag
+    if (state.filters.timeHorizon !== "all") {
+        const thLabels = { short: "⚡ کوتاه‌مدت", mid: "⏳ میان‌مدت", long: "💎 بلندمدت" };
+        tags.push({ key: "timeHorizon", label: thLabels[state.filters.timeHorizon] || state.filters.timeHorizon, onRemove: () => {
+            state.filters.timeHorizon = "all";
+            document.querySelectorAll("#horizonFilterGroup .filter-toggle-pill").forEach(p => {
+                p.classList.toggle("active", p.getAttribute("data-horizon") === "all");
+            });
+            applyFilterAndSort();
+        }});
+    }
+
+    // AI Score slider tag
+    if (state.filters.minAiScore > 1.0) {
+        tags.push({ key: "minAiScore", label: `حداقل نمره هوش مصنوعی: ${toPersianDigits(state.filters.minAiScore)}`, onRemove: () => {
+            state.filters.minAiScore = 1.0;
+            const sl = document.getElementById("filterAiScoreSlider");
+            const lbl = document.getElementById("aiScoreSliderValue");
+            if (sl) sl.value = 1.0;
+            if (lbl) lbl.textContent = "۱.۰ از ۱۰";
+            applyFilterAndSort();
+        }});
+    }
+
+    // 4-Pillars tags
+    if (state.filters.minFundamental > 1.0) {
+        tags.push({ key: "fund", label: `بنیادی: ${toPersianDigits(state.filters.minFundamental)}+`, onRemove: () => {
+            state.filters.minFundamental = 1.0;
+            const sl = document.getElementById("filterPillarFund");
+            const lbl = document.getElementById("sliderValFund");
+            if (sl) sl.value = 1.0;
+            if (lbl) lbl.textContent = "۱.۰";
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.minTechnical > 1.0) {
+        tags.push({ key: "tech", label: `تکنیکال: ${toPersianDigits(state.filters.minTechnical)}+`, onRemove: () => {
+            state.filters.minTechnical = 1.0;
+            const sl = document.getElementById("filterPillarTech");
+            const lbl = document.getElementById("sliderValTech");
+            if (sl) sl.value = 1.0;
+            if (lbl) lbl.textContent = "۱.۰";
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.minSentiment > 1.0) {
+        tags.push({ key: "sent", label: `تابلو/احساس: ${toPersianDigits(state.filters.minSentiment)}+`, onRemove: () => {
+            state.filters.minSentiment = 1.0;
+            const sl = document.getElementById("filterPillarSent");
+            const lbl = document.getElementById("sliderValSent");
+            if (sl) sl.value = 1.0;
+            if (lbl) lbl.textContent = "۱.۰";
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.minRisk > 1.0) {
+        tags.push({ key: "risk", label: `ثبات/مدیریت ریسک: ${toPersianDigits(state.filters.minRisk)}+`, onRemove: () => {
+            state.filters.minRisk = 1.0;
+            const sl = document.getElementById("filterPillarRisk");
+            const lbl = document.getElementById("sliderValRisk");
+            if (sl) sl.value = 1.0;
+            if (lbl) lbl.textContent = "۱.۰";
+            applyFilterAndSort();
+        }});
+    }
+
+    // Switches
+    if (state.filters.smartMoney) {
+        tags.push({ key: "smartMoney", label: "💰 پول هوشمند", onRemove: () => {
+            state.filters.smartMoney = false;
+            const sw = document.getElementById("toggleSmartMoney");
+            if (sw) sw.checked = false;
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.inEntryZone) {
+        tags.push({ key: "inEntryZone", label: "🎯 در محدوده ورود", onRemove: () => {
+            state.filters.inEntryZone = false;
+            const sw = document.getElementById("toggleInEntryZone");
+            if (sw) sw.checked = false;
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.highRR) {
+        tags.push({ key: "highRR", label: "⚖️ R/R بالای ۲", onRemove: () => {
+            state.filters.highRR = false;
+            const sw = document.getElementById("toggleHighRR");
+            if (sw) sw.checked = false;
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.undervaluedPE) {
+        tags.push({ key: "undervaluedPE", label: "💎 P/E زیر صنعت", onRemove: () => {
+            state.filters.undervaluedPE = false;
+            const sw = document.getElementById("toggleUndervalued");
+            if (sw) sw.checked = false;
+            applyFilterAndSort();
+        }});
+    }
+    if (state.filters.near14dLow) {
+        tags.push({ key: "near14dLow", label: "📉 نزدیک کف ۱۴ روزه", onRemove: () => {
+            state.filters.near14dLow = false;
+            const sw = document.getElementById("toggleNearLow");
+            if (sw) sw.checked = false;
+            applyFilterAndSort();
+        }});
+    }
+
+    // Recency tag
+    if (state.filters.recency !== "all") {
+        const rcLabels = { today: "📅 آپدیت امروز", "3days": "🕒 ۳ روز اخیر", "7days": "🗓️ یک هفته اخیر" };
+        tags.push({ key: "recency", label: rcLabels[state.filters.recency] || state.filters.recency, onRemove: () => {
+            state.filters.recency = "all";
+            document.querySelectorAll("#recencyFilterGroup .filter-toggle-pill").forEach(p => {
+                p.classList.toggle("active", p.getAttribute("data-recency") === "all");
+            });
+            applyFilterAndSort();
+        }});
+    }
+
+    if (tags.length > 0) {
+        tagsBar.style.display = "flex";
+        tagsContainer.innerHTML = "";
+        tags.forEach(tag => {
+            const chip = document.createElement("span");
+            chip.className = "filter-tag-chip";
+            chip.innerHTML = `
+                <span>${escapeHtml(tag.label)}</span>
+                <button type="button" class="tag-remove-btn" aria-label="حذف فیلتر">×</button>
+            `;
+            const removeBtn = chip.querySelector(".tag-remove-btn");
+            removeBtn.addEventListener("click", (e) => {
+                e.stopPropagation();
+                tag.onRemove();
+            });
+            tagsContainer.appendChild(chip);
+        });
+    } else {
+        tagsBar.style.display = "none";
+        tagsContainer.innerHTML = "";
+    }
+}
+
+function clearAllFilters() {
+    // Reset quick filter
+    state.filters.quickFilter = "all";
+    document.querySelectorAll("#quickFilterChips .filter-chip").forEach(c => {
+        c.classList.toggle("active", c.getAttribute("data-quick-filter") === "all");
+    });
+
+    // Reset signals
+    state.filters.signals.clear();
+    document.querySelectorAll("input[name='signalFilter']").forEach(c => c.checked = false);
+
+    // Reset risk & horizon
+    state.filters.riskLevel = "all";
+    document.querySelectorAll("#riskFilterGroup .filter-toggle-pill").forEach(p => {
+        p.classList.toggle("active", p.getAttribute("data-risk") === "all");
+    });
+
+    state.filters.timeHorizon = "all";
+    document.querySelectorAll("#horizonFilterGroup .filter-toggle-pill").forEach(p => {
+        p.classList.toggle("active", p.getAttribute("data-horizon") === "all");
+    });
+
+    // Reset sliders
+    state.filters.minAiScore = 1.0;
+    const aiSl = document.getElementById("filterAiScoreSlider");
+    const aiLbl = document.getElementById("aiScoreSliderValue");
+    if (aiSl) aiSl.value = 1.0;
+    if (aiLbl) aiLbl.textContent = "۱.۰ از ۱۰";
+
+    state.filters.minFundamental = 1.0;
+    const fSl = document.getElementById("filterPillarFund");
+    const fLbl = document.getElementById("sliderValFund");
+    if (fSl) fSl.value = 1.0;
+    if (fLbl) fLbl.textContent = "۱.۰";
+
+    state.filters.minTechnical = 1.0;
+    const tSl = document.getElementById("filterPillarTech");
+    const tLbl = document.getElementById("sliderValTech");
+    if (tSl) tSl.value = 1.0;
+    if (tLbl) tLbl.textContent = "۱.۰";
+
+    state.filters.minSentiment = 1.0;
+    const sSl = document.getElementById("filterPillarSent");
+    const sLbl = document.getElementById("sliderValSent");
+    if (sSl) sSl.value = 1.0;
+    if (sLbl) sLbl.textContent = "۱.۰";
+
+    state.filters.minRisk = 1.0;
+    const rSl = document.getElementById("filterPillarRisk");
+    const rLbl = document.getElementById("sliderValRisk");
+    if (rSl) rSl.value = 1.0;
+    if (rLbl) rLbl.textContent = "۱.۰";
+
+    // Reset switches
+    state.filters.smartMoney = false;
+    const smSw = document.getElementById("toggleSmartMoney");
+    if (smSw) smSw.checked = false;
+
+    state.filters.inEntryZone = false;
+    const ezSw = document.getElementById("toggleInEntryZone");
+    if (ezSw) ezSw.checked = false;
+
+    state.filters.highRR = false;
+    const rrSw = document.getElementById("toggleHighRR");
+    if (rrSw) rrSw.checked = false;
+
+    state.filters.undervaluedPE = false;
+    const peSw = document.getElementById("toggleUndervalued");
+    if (peSw) peSw.checked = false;
+
+    state.filters.near14dLow = false;
+    const nlSw = document.getElementById("toggleNearLow");
+    if (nlSw) nlSw.checked = false;
+
+    // Reset recency
+    state.filters.recency = "all";
+    document.querySelectorAll("#recencyFilterGroup .filter-toggle-pill").forEach(p => {
+        p.classList.toggle("active", p.getAttribute("data-recency") === "all");
+    });
+
+    // Reset search
+    state.searchQuery = "";
+    const searchInput = document.getElementById("searchInput");
+    const clearBtn = document.getElementById("clearSearchBtn");
+    if (searchInput) searchInput.value = "";
+    if (clearBtn) clearBtn.style.display = "none";
+
+    // Reset dropdown
+    state.currentFilter = "all";
+    document.querySelectorAll("#filterMenu .dropdown-item").forEach(it => {
+        it.classList.toggle("active", it.getAttribute("data-filter") === "all");
+    });
+
+    applyFilterAndSort();
+    showToast("تمام فیلترها به حالت پیش‌فرض بازنشانی شدند.", "info");
+}
+
 function updateFilterIndicator() {
+    // Maintained for backward compatibility
     const bar = document.getElementById("filterIndicatorBar");
     const text = document.getElementById("filterIndicatorText");
     if (!bar || !text) return;
@@ -1327,8 +1858,166 @@ function setupModeToggle() {
     }
 }
 
+
+// Setup Filter Drawer and Quick Chips
+function setupFilterDrawerAndChips() {
+    // 1. Quick Filter Chips
+    const quickChips = document.querySelectorAll("#quickFilterChips .filter-chip");
+    quickChips.forEach(chip => {
+        chip.addEventListener("click", () => {
+            quickChips.forEach(c => c.classList.remove("active"));
+            chip.classList.add("active");
+            state.filters.quickFilter = chip.getAttribute("data-quick-filter") || "all";
+            applyFilterAndSort();
+        });
+    });
+
+    // 2. Open / Close Drawer
+    const openBtn = document.getElementById("openFilterDrawerBtn");
+    const closeBtn = document.getElementById("closeFilterDrawerBtn");
+    const backdrop = document.getElementById("filterDrawerBackdrop");
+    const panel = document.getElementById("filterDrawerPanel");
+
+    const openDrawer = () => {
+        if (backdrop) backdrop.classList.add("show");
+        if (panel) {
+            panel.classList.add("show");
+            if (window.lucide) window.lucide.createIcons({ root: panel });
+        }
+    };
+
+    const closeDrawer = () => {
+        if (backdrop) backdrop.classList.remove("show");
+        if (panel) panel.classList.remove("show");
+    };
+
+    if (openBtn) openBtn.addEventListener("click", openDrawer);
+    if (closeBtn) closeBtn.addEventListener("click", closeDrawer);
+    if (backdrop) backdrop.addEventListener("click", closeDrawer);
+
+    // 3. Signal Checkboxes
+    document.querySelectorAll("input[name='signalFilter']").forEach(chk => {
+        chk.addEventListener("change", (e) => {
+            const val = e.target.value;
+            if (e.target.checked) {
+                state.filters.signals.add(val);
+            } else {
+                state.filters.signals.delete(val);
+            }
+            applyFilterAndSort();
+        });
+    });
+
+    // 4. Risk Level Pills
+    document.querySelectorAll("#riskFilterGroup .filter-toggle-pill").forEach(pill => {
+        pill.addEventListener("click", () => {
+            document.querySelectorAll("#riskFilterGroup .filter-toggle-pill").forEach(p => p.classList.remove("active"));
+            pill.classList.add("active");
+            state.filters.riskLevel = pill.getAttribute("data-risk") || "all";
+            applyFilterAndSort();
+        });
+    });
+
+    // 5. Time Horizon Pills
+    document.querySelectorAll("#horizonFilterGroup .filter-toggle-pill").forEach(pill => {
+        pill.addEventListener("click", () => {
+            document.querySelectorAll("#horizonFilterGroup .filter-toggle-pill").forEach(p => p.classList.remove("active"));
+            pill.classList.add("active");
+            state.filters.timeHorizon = pill.getAttribute("data-horizon") || "all";
+            applyFilterAndSort();
+        });
+    });
+
+    // 6. AI Score Slider
+    const aiSlider = document.getElementById("filterAiScoreSlider");
+    const aiVal = document.getElementById("aiScoreSliderValue");
+    if (aiSlider) {
+        aiSlider.addEventListener("input", (e) => {
+            const val = parseFloat(e.target.value) || 1.0;
+            state.filters.minAiScore = val;
+            if (aiVal) aiVal.textContent = `${toPersianDigits(val.toFixed(1))} از ۱۰`;
+            applyFilterAndSort();
+        });
+    }
+
+    // 7. 4 Pillars Sliders
+    const bindPillar = (id, labelId, filterKey) => {
+        const slider = document.getElementById(id);
+        const label = document.getElementById(labelId);
+        if (slider) {
+            slider.addEventListener("input", (e) => {
+                const val = parseFloat(e.target.value) || 1.0;
+                state.filters[filterKey] = val;
+                if (label) label.textContent = toPersianDigits(val.toFixed(1));
+                applyFilterAndSort();
+            });
+        }
+    };
+    bindPillar("filterPillarFund", "sliderValFund", "minFundamental");
+    bindPillar("filterPillarTech", "sliderValTech", "minTechnical");
+    bindPillar("filterPillarSent", "sliderValSent", "minSentiment");
+    bindPillar("filterPillarRisk", "sliderValRisk", "minRisk");
+
+    // 8. Creative Toggles
+    const bindToggle = (id, filterKey) => {
+        const sw = document.getElementById(id);
+        if (sw) {
+            sw.addEventListener("change", (e) => {
+                state.filters[filterKey] = !!e.target.checked;
+                applyFilterAndSort();
+            });
+        }
+    };
+    bindToggle("toggleSmartMoney", "smartMoney");
+    bindToggle("toggleInEntryZone", "inEntryZone");
+    bindToggle("toggleHighRR", "highRR");
+    bindToggle("toggleUndervalued", "undervaluedPE");
+    bindToggle("toggleNearLow", "near14dLow");
+
+    // 9. Recency Pills
+    document.querySelectorAll("#recencyFilterGroup .filter-toggle-pill").forEach(pill => {
+        pill.addEventListener("click", () => {
+            document.querySelectorAll("#recencyFilterGroup .filter-toggle-pill").forEach(p => p.classList.remove("active"));
+            pill.classList.add("active");
+            state.filters.recency = pill.getAttribute("data-recency") || "all";
+            applyFilterAndSort();
+        });
+    });
+
+    // 10. Drawer Reset & Apply Buttons
+    const drawerResetBtn = document.getElementById("drawerResetBtn");
+    if (drawerResetBtn) {
+        drawerResetBtn.addEventListener("click", () => {
+            clearAllFilters();
+        });
+    }
+
+    const drawerApplyBtn = document.getElementById("drawerApplyBtn");
+    if (drawerApplyBtn) {
+        drawerApplyBtn.addEventListener("click", () => {
+            closeDrawer();
+            showToast(`فیلترها اعمال شدند (${toPersianDigits(state.filteredStocks.length)} سهم یافت شد).`, "success");
+        });
+    }
+
+    // 11. Clear All Filters Buttons
+    const clearAllTagsBtn = document.getElementById("clearAllFiltersBtn");
+    if (clearAllTagsBtn) {
+        clearAllTagsBtn.addEventListener("click", () => {
+            clearAllFilters();
+        });
+    }
+
+    if (window.lucide) {
+        const headerControls = document.querySelector(".header-controls");
+        if (headerControls) window.lucide.createIcons({ root: headerControls });
+        if (panel) window.lucide.createIcons({ root: panel });
+    }
+}
+
 function setupEventListeners() {
     setupModeToggle();
+    setupFilterDrawerAndChips();
     // Search input
     const searchInput = document.getElementById("searchInput");
     const clearBtn = document.getElementById("clearSearchBtn");
@@ -1361,19 +2050,7 @@ function setupEventListeners() {
     const resetBtn = document.getElementById("resetFiltersBtn");
     if (resetBtn) {
         resetBtn.addEventListener("click", () => {
-            if (searchInput) {
-                searchInput.value = "";
-                if (clearBtn) clearBtn.style.display = "none";
-            }
-            state.searchQuery = "";
-            state.currentFilter = "all";
-
-            // Reset filter dropdown items
-            document.querySelectorAll("#filterMenu .dropdown-item").forEach((it) => {
-                it.classList.toggle("active", it.getAttribute("data-filter") === "all");
-            });
-
-            applyFilterAndSort();
+            clearAllFilters();
         });
     }
 
