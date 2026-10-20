@@ -1,0 +1,28 @@
+{
+  "symbol": "سشرق",
+  "inscode": "26997316501080743",
+  "asset_id": "114",
+  "live_info": {
+    "date": "20261020",
+    "close_price": 35120.0,
+    "last_price": 35120.0,
+    "yesterday_price": 34100.0,
+    "volume": 3572689.0,
+    "value": 125472837680.0,
+    "trades": 380.0
+  },
+  "rahavard_prices": {
+    "close_price": 35120.0,
+    "last_price": 35120.0,
+    "close_change_percent": 2.99,
+    "last_change_percent": 2.99,
+    "end_date_time": "2026-10-20T12:29:25+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 35120.0,
+    "rahavard_close": 35120.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "symbol": "سشرق",
+  "date": "20261020",
+  "close_price": 35120.0,
+  "last_price": 35120.0,
+  "yesterday_price": 34100.0,
+  "close_change_percent": 2.99,
+  "last_change_percent": 2.99,
+  "volume": 3572689.0,
+  "value": 125472837680.0,
+  "client_type": {
+    "buy_real_count": 55,
+    "buy_legal_count": 5,
+    "sell_real_count": 122,
+    "sell_legal_count": 2,
+    "buy_real_vol": 2467213.0,
+    "buy_legal_vol": 300000.0,
+    "sell_real_vol": 2257000.0,
+    "sell_legal_vol": 510213.0,
+    "buy_real_capita": 44858.41818181818,
+    "sell_real_capita": 18500.0,
+    "buyer_power": 2.424779361179361
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 35120.0,
+    "rahavard_close": 35120.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}
