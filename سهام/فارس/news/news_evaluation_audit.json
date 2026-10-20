@@ -1,9 +1,9 @@
 {
   "symbol": "فارس",
-  "audit_timestamp": "1405/07/28 - 15:01",
-  "total_candidates": 65,
+  "audit_timestamp": "1405/07/28 - 16:34",
+  "total_candidates": 64,
   "approved_count": 5,
-  "rejected_count": 60,
+  "rejected_count": 59,
   "approved_news": [
     {
       "id": "news_1",
@@ -123,6 +123,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\فارس\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -143,32 +173,22 @@
       "file_path": null
     },
     {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
+      "title": "«سنا» روند بازارهای جهانی کالاهای پایه را بررسی می‌کند",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
+      "source_url": "https://www.sena.ir/news/96629/جهش-قیمت-نفت-به-سقف-۵-ماهه-طلا-و-نقره-زیر-فشار-دلار-و-نرخ-بهره",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "۲۸ مهر ۰۵ - ۱۵:۵۶",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "source_url": "https://www.sena.ir/news/96629/جهش-قیمت-نفت-به-سقف-۵-ماهه-طلا-و-نقره-زیر-فشار-دلار-و-نرخ-بهره",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -659,36 +679,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/95958/معمای-رکود-و-تورم-در-دو-سوی-اقیانوس-اطلس",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "نرخ تورم اژدهای سرخ با جهش قیمت نفت و رونق هوش مصنوعی شتاب گرفت",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "احیای اقتصاد چین با سوخت تنش‌های ژئوپولیتیک",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۲۱ شهریور ۰۵ - ۰۹:۱۳",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
       "raw_date": "اخیر",
       "file_path": null
     }
@@ -725,6 +715,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\فارس\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -745,32 +765,22 @@
       "file_path": null
     },
     {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
+      "title": "«سنا» روند بازارهای جهانی کالاهای پایه را بررسی می‌کند",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
+      "source_url": "https://www.sena.ir/news/96629/جهش-قیمت-نفت-به-سقف-۵-ماهه-طلا-و-نقره-زیر-فشار-دلار-و-نرخ-بهره",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "۲۸ مهر ۰۵ - ۱۵:۵۶",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "source_url": "https://www.sena.ir/news/96629/جهش-قیمت-نفت-به-سقف-۵-ماهه-طلا-و-نقره-زیر-فشار-دلار-و-نرخ-بهره",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -1263,36 +1273,6 @@
       "source_url": "https://www.sena.ir/news/95958/معمای-رکود-و-تورم-در-دو-سوی-اقیانوس-اطلس",
       "raw_date": "اخیر",
       "file_path": null
-    },
-    {
-      "title": "نرخ تورم اژدهای سرخ با جهش قیمت نفت و رونق هوش مصنوعی شتاب گرفت",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "احیای اقتصاد چین با سوخت تنش‌های ژئوپولیتیک",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۲۱ شهریور ۰۵ - ۰۹:۱۳",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فارس در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/95938/احیای-اقتصاد-چین-با-سوخت-تنش-های-ژئوپولیتیک",
-      "raw_date": "اخیر",
-      "file_path": null
     }
   ],
   "sentiment_summary": {
@@ -1302,13 +1282,14 @@
     "neutral_count": 3,
     "average_sentiment_score": 1.0,
     "gemini_psychology": {
-      "sentiment_score": 0.3,
+      "sentiment_score": 0.2,
       "market_psychology": "خوش‌بینی محتاطانه",
       "key_rumors_and_themes": [
         "جهش سود خالص و رشد درآمدهای عملیاتی",
-        "عدم حصول حد نصاب در مجمع و ابهامات دیوان محاسبات"
+        "عدم حصول حد نصاب قانونی در مجمع",
+        "پاسخ به ابهامات دیوان محاسبات"
       ],
-      "gemini_rationale": "انتشار گزارش‌های مالی مثبت و رشد قابل‌توجه درآمدهای عملیاتی «فارس» موجی از امیدواری بنیادین را میان سهامداران ایجاد کرده است. با این حال، به تعویق افتادن مجمع به دلیل به حد نصاب نرسیدن و وجود برخی ابهامات نظارتی، باعث شده تا بازار با احتیاط بیشتری به این نماد نگاه کند و هیجان صعودی کنترل شود."
+      "gemini_rationale": "انتشار گزارش‌های مالی مطلوب و رشد سودآوری شرکت نشان‌دهنده پتانسیل بنیادین قوی است که حس مثبتی ایجاد کرده؛ با این حال، به تعویق افتادن مجمع به دلیل به حد نصاب نرسیدن و وجود برخی ابهامات نظارتی، مانع از شکل‌گیری هیجان خرید کامل شده و سهامداران را در وضعیتی از انتظار و احتیاط نگه داشته است."
     }
   }
 }

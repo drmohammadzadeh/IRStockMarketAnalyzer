@@ -1,6 +1,6 @@
 {
   "symbol": "فسازان",
-  "audit_timestamp": "1405/07/28 - 15:01",
+  "audit_timestamp": "1405/07/28 - 16:35",
   "total_candidates": 30,
   "approved_count": 4,
   "rejected_count": 26,
@@ -146,6 +146,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\فسازان\\news\\ref_سهام_یاب.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -162,36 +192,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -408,6 +408,36 @@
       "file_path": "D:\\projects\\bourse\\سهام\\فسازان\\news\\ref_سهام_یاب.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96625/%DB%B1%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D9%BE%D8%B1%D8%B3%D8%B4-%D9%81%D8%B9%D8%A7%D9%84%D8%A7%D9%86-%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%85%D8%B1%DA%A9%D8%B2-%D8%AA%D9%85%D8%A7%D8%B3-%D8%B0%DB%8C-%D9%86%D9%81%D8%B9%D8%A7%D9%86-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "رشد شاخص ۲۹ صنعت بورس/ سقف تاریخی شاخص ۸ صنعت ارتقا یافت",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -424,36 +454,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "برنامه عرضه‌های بورس انرژی در بیست و هشتمین روز مهر ۱۴۰۵",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد فسازان در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96617/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%A8%DB%8C%D8%B3%D8%AA-%D9%88-%D9%87%D8%B4%D8%AA%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D9%85%D9%87%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -606,12 +606,12 @@
     "average_sentiment_score": 1.0,
     "gemini_psychology": {
       "sentiment_score": 0.8,
-      "market_psychology": "خوش‌بینی بالا و هیجان مثبت",
+      "market_psychology": "خوش‌بینی بالا ناشی از عملكرد بنيادی",
       "key_rumors_and_themes": [
-        "افزایش ۵۶۴ درصدی سود عملیاتی در دوره ۳ ماهه",
-        "عملکرد درخشان مالی و بنیادی شرکت"
+        "افزایش ۵۶۴ درصدی سود عملیاتی در دوره ۳ ماهه نخست ۱۴۰۵",
+        "عملکرد درخشان و بنیادی سهم"
       ],
-      "gemini_rationale": "انتشار گزارش عملکرد با جهش خیره‌کننده ۵۶۴ درصدی سود عملیاتی در دوره ۳ ماهه، موجی از خوش‌بینی و انتظارات صعودی را میان سهامداران ایجاد کرده است. با وجود نبود گفتگوی اجتماعی فعال در شبکه‌های اجتماعی، اخبار بنیادین قدرتمند، انگیزه‌ای قوی برای خریداران و شکل‌گیری تمایلات مثبت توده‌ای فراهم کرده است."
+      "gemini_rationale": "انتشار گزارش فوق‌العاده با رشد ۵۶۴ درصدی سود عملیاتی در دوره ۳ ماهه، موجی از خوش‌بینی و تمایلات صعودی قدرتمند را میان سهامداران ایجاد کرده است. با وجود عدم ثبت گفتگوی خاص در شبکه‌های اجتماعی، اخبار بنیادی بسیار مثبت به عنوان محرک اصلی روانی بازار عمل کرده و انتظارات مثبت را به شدت تقویت نموده است."
     }
   }
 }

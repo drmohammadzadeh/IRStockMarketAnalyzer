@@ -22,10 +22,10 @@
     "buyer_power": 0.6647945247347097
   },
   "cross_check": {
-    "status": "VERIFIED",
+    "status": "DISCREPANCY_WARNING",
     "tsetmc_close": 4340.0,
-    "rahavard_close": 4340.0,
-    "discrepancy_pct": 0.0,
-    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+    "rahavard_close": 6240.0,
+    "discrepancy_pct": 43.779,
+    "message": "هشدار مغایرت قیمتی بین TSETMC و ره‌آورد ۳۶۵ (انحراف: 43.779٪ > آستانه 0.5٪)."
   }
 }

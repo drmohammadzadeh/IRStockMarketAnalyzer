@@ -1,6 +1,6 @@
 {
   "symbol": "وتجارت",
-  "audit_timestamp": "1405/07/28 - 15:04",
+  "audit_timestamp": "1405/07/28 - 16:38",
   "total_candidates": 82,
   "approved_count": 15,
   "rejected_count": 67,
@@ -353,6 +353,26 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وتجارت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -379,26 +399,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -1025,6 +1025,26 @@
       "file_path": "D:\\projects\\bourse\\سهام\\وتجارت\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
+      "title": "نرخ نکول در تأمین مالی جمعی به کم‌تر از یک درصد رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96630/%D9%86%D8%B1%D8%AE-%D9%86%DA%A9%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AC%D9%85%D8%B9%DB%8C-%D8%A8%D9%87-%DA%A9%D9%85-%D8%AA%D8%B1-%D8%A7%D8%B2-%DB%8C%DA%A9-%D8%AF%D8%B1%D8%B5%D8%AF-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "جهش قیمت نفت به سقف ۵ ماهه؛ طلا و نقره زیر فشار دلار و نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96629/%D8%AC%D9%87%D8%B4-%D9%82%DB%8C%D9%85%D8%AA-%D9%86%D9%81%D8%AA-%D8%A8%D9%87-%D8%B3%D9%82%D9%81-%DB%B5-%D9%85%D8%A7%D9%87%D9%87-%D8%B7%D9%84%D8%A7-%D9%88-%D9%86%D9%82%D8%B1%D9%87-%D8%B2%DB%8C%D8%B1-%D9%81%D8%B4%D8%A7%D8%B1-%D8%AF%D9%84%D8%A7%D8%B1-%D9%88-%D9%86%D8%B1%D8%AE-%D8%A8%D9%87%D8%B1%D9%87",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
       "title": "۱۴۷ هزار پرسش فعالان بورس در مرکز تماس ذی‌نفعان بازار سرمایه پاسخ داده شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
@@ -1051,26 +1071,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/96623/%D8%A7%D8%B1%D8%B2%D8%B4-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D8%AE%D8%B1%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D9%88-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D9%87%D8%A7%D9%85%DB%8C-%D8%A7%D8%B2-%DB%B4%DB%B3-%D9%87%D9%85%D8%AA-%D8%B9%D8%A8%D9%88%D8%B1-%DA%A9%D8%B1%D8%AF",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "عرضه ۸۴۷ هزار تن محصول در تالارهای مختلف بورس کالا",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96622/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B8%DB%B4%DB%B7-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد وتجارت در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96621/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -1613,13 +1613,13 @@
     "average_sentiment_score": 1.0,
     "gemini_psychology": {
       "sentiment_score": 0.65,
-      "market_psychology": "خوش‌بینی بنیادین و پتانسیل حرکتی",
+      "market_psychology": "خوش‌بینی بنیادین و انتظار برای تحرکات مثبت",
       "key_rumors_and_themes": [
-        "به بهره‌برداری رسیدن معدن مس انجرد و توسعه درآمدهای غیرمشاع",
-        "تراز عملیاتی مثبت و عبور درآمد تسهیلات از ۵۸ همت",
+        "راه‌اندازی و بهره‌برداری از معدن مس انجرد و پروژه‌های توسعه‌ای",
+        "تراز مثبت عملیاتی و رشد درآمد تسهیلات و اوراق مرابحه",
         "مذاکرات برای دریافت سهام نیروگاه در ازای مطالبات و تسویه دیون"
       ],
-      "gemini_rationale": "اخبار منتشره پیرامون بهبود تراز عملیاتی، رشد درآمد تسهیلات و پروژه‌های ارزش‌آفرینی چون معدن مس انجرد، موجی از امیدواری منطقی را در میان فعالان بازار ایجاد کرده است. سهامداران با رصد جریان پول در گروه بانکی، «وتجارت» را به عنوان یکی از گزینه‌های دارای پتانسیل رشد سریع ارزیابی می‌کنند."
+      "gemini_rationale": "اخبار بنیادین مثبت مربوط به تسویه مطالبات، تراز عملیاتی رو به رشد و افتتاح پروژه‌های معدنی، انتظارات صعودی را در میان سهامداران تقویت کرده است. با وجود عدم ثبت گفتگوی اجتماعی فعال، جریان اخبار رسمی حاکی از پتانسیل بالای حرکت قیمتی و شکل‌گیری رویکردی خوش‌بینانه نسبت به آینده میان‌مدت نماد است."
     }
   }
 }

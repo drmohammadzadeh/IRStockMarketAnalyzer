@@ -1,7 +1,7 @@
 {
   "symbol": "فولاد",
-  "inscode": null,
-  "asset_id": "453",
+  "inscode": "46348559193224090",
+  "asset_id": "124",
   "live_info": {
     "date": "20261020",
     "close_price": 4340.0,
@@ -12,17 +12,17 @@
     "trades": 59685.0
   },
   "rahavard_prices": {
-    "close_price": 4340.0,
-    "last_price": 4310.0,
-    "close_change_percent": -1.81,
-    "last_change_percent": -2.49,
-    "end_date_time": "2026-10-20T12:29:59+03:30"
+    "close_price": 6240.0,
+    "last_price": 6240.0,
+    "close_change_percent": 2.97,
+    "last_change_percent": 2.97,
+    "end_date_time": "2026-10-19T12:29:16+03:30"
   },
   "cross_check": {
-    "status": "VERIFIED",
+    "status": "DISCREPANCY_WARNING",
     "tsetmc_close": 4340.0,
-    "rahavard_close": 4340.0,
-    "discrepancy_pct": 0.0,
-    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+    "rahavard_close": 6240.0,
+    "discrepancy_pct": 43.779,
+    "message": "هشدار مغایرت قیمتی بین TSETMC و ره‌آورد ۳۶۵ (انحراف: 43.779٪ > آستانه 0.5٪)."
   }
 }
