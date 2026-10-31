@@ -1,0 +1,24 @@
+{
+  "symbol": "فزر",
+  "name": "پویا زرکان آق دره",
+  "archetype": "MANUFACTURING_INDUSTRIAL",
+  "inscode": "8175784894140974",
+  "sector_name": "استخراج کانه‌های فلزی",
+  "subsector_name": "استخراج و فرآوری کانسنگ طلا و فلزات گرانبها",
+  "core_business": "استخراج کانسنگ طلا از معدن آق‌دره، استحصال و تولید شمش طلا و نقره و فروش در بورس کالا",
+  "has_physical_inventory": true,
+  "has_production_line": true,
+  "primary_valuation_metric": "P/E",
+  "applicable_metrics": [
+    "P/E",
+    "P/S",
+    "P/B",
+    "Gross Margin",
+    "Operating Margin"
+  ],
+  "forbidden_terms": [
+    "خالص درآمد تسهیلات",
+    "سپرده‌های سرمایه‌گذاری",
+    "ارزش کارشناسی املاک"
+  ]
+}

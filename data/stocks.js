@@ -3658,6 +3658,412 @@ window.STOCKS_DATA = [
     "last_update": "1405/07/28 - 16:35"
   },
   {
+    "symbol": "فزر",
+    "name": "پویا زرکان آق دره",
+    "logo": "",
+    "current_price": 322800.0,
+    "last_price": 322800.0,
+    "close_price": 322800.0,
+    "change_percent": -2.98,
+    "volume": "3.5M",
+    "market_cap": "322,800 B",
+    "chart_14d": [
+      {
+        "date": "۲۰ مهر",
+        "price": 413300.0
+      },
+      {
+        "date": "۲۱ مهر",
+        "price": 414000.0
+      },
+      {
+        "date": "۲۲ مهر",
+        "price": 401800.0
+      },
+      {
+        "date": "۲۵ مهر",
+        "price": 391400.0
+      },
+      {
+        "date": "۲۶ مهر",
+        "price": 379700.0
+      },
+      {
+        "date": "۲۷ مهر",
+        "price": 382100.0
+      },
+      {
+        "date": "۲۸ مهر",
+        "price": 375700.0
+      },
+      {
+        "date": "۲۹ مهر",
+        "price": 364500.0
+      },
+      {
+        "date": "۲ آبان",
+        "price": 353600.0
+      },
+      {
+        "date": "۳ آبان",
+        "price": 343000.0
+      },
+      {
+        "date": "۴ آبان",
+        "price": 332800.0
+      },
+      {
+        "date": "۵ آبان",
+        "price": 324600.0
+      },
+      {
+        "date": "۶ آبان",
+        "price": 332700.0
+      },
+      {
+        "date": "۹ آبان",
+        "price": 322800.0
+      }
+    ],
+    "links": {
+      "tsetmc": "https://www.tsetmc.com/instInfo/8175784894140974",
+      "rahavard": "https://rahavard365.com/asset/16449",
+      "codal": "https://codal.ir/ReportList.aspx?search&Symbol=%D9%81%D8%B2%D8%B1",
+      "technical_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فزر/technical_report.md",
+      "fundamental_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فزر/fundamental_report.md",
+      "readme_github": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/blob/main/سهام/فزر/README.md",
+      "github_folder": "https://github.com/drmohammadzadeh/IRStockMarketAnalyzer/tree/main/سهام/%D9%81%D8%B2%D8%B1"
+    },
+    "verdict": "خرید پله‌ای (Accumulate)",
+    "score": 3.8,
+    "ai_score_details": {
+      "ai_score": 6.6,
+      "ai_score_int": 7,
+      "signal": "HOLD",
+      "signal_label": "نگهداری",
+      "color_grade": "yellow",
+      "color_hex": "#eab308",
+      "fundamental": 9.5,
+      "technical": 6.5,
+      "sentiment": 4.6,
+      "low_risk": 4.4,
+      "explainability": {
+        "overall": {
+          "score": 6.6,
+          "score_int": 7,
+          "grade_label": "نگهداری",
+          "formula": "0.35*Fundamental + 0.30*Technical + 0.10*Sentiment + 0.15*Low_Risk + 0.10*Setup",
+          "rationale": "همگرایی ارزندگی بنیادی (9.5)، وضعیت تکنیکال (6.5)، جریان پول (4.6) و ریسک کنترل‌شده (4.4).",
+          "pillars": [
+            {
+              "key": "fundamental",
+              "title": "ارزندگی بنیادی",
+              "weight_pct": 35,
+              "score": 9.5
+            },
+            {
+              "key": "technical",
+              "title": "روند و تکنیکال",
+              "weight_pct": 30,
+              "score": 6.5
+            },
+            {
+              "key": "low_risk",
+              "title": "کم‌ریسک بودن و ثبات",
+              "weight_pct": 15,
+              "score": 4.4
+            },
+            {
+              "key": "sentiment",
+              "title": "احساس بازار و تابلو",
+              "weight_pct": 10,
+              "score": 4.6
+            },
+            {
+              "key": "setup",
+              "title": "کیفیت ستاپ و R/R",
+              "weight_pct": 10,
+              "score": 3.0
+            }
+          ]
+        },
+        "fundamental": {
+          "score": 9.5,
+          "grade_label": "ارزندگی ممتاز",
+          "formula": "ارزیابی P/E گذشته‌نگر و فوروارد نسبت به هم‌گروهی‌ها + حاشیه سود + بازده سود نقدی مجامع",
+          "raw_inputs": {
+            "pe_ratio": 6.5,
+            "group_pe": 8.125,
+            "dividend_yield_pct": 10.77,
+            "profit_margin_pct": 25.0
+          },
+          "sources": [
+            {
+              "name": "سامانه جامع اطلاعات ناشران (کدال - Codal)",
+              "doc": "صورت‌های مالی و گزارش فعالیت ماهانه",
+              "recency": "آخرین گزارش ثبت‌شده"
+            },
+            {
+              "name": "شرکت مدیریت فناوری بورس تهران (TSETMC)",
+              "doc": "نسبت P/E نماد و صنعت",
+              "recency": "پایان معاملات روزانه"
+            }
+          ],
+          "rationale": "نسبت P/E معادل 6.5 در قیاس با میانگین گروه (8.1) و بازده سود تقسیمی 10.8٪ ارزیابی شده است."
+        },
+        "technical": {
+          "score": 6.5,
+          "grade_label": "خنثی / فاز نوسانی",
+          "formula": "آرایش قیمت نسبت به EMA20 و EMA50 + موقعیت RSI در فاز صعودی + دوری از اشباع خرید",
+          "raw_inputs": {
+            "current_price": 322800.0,
+            "ema20": 348423.7400538564,
+            "ema50": 307693.7968294917,
+            "rsi": 41.78460214363779
+          },
+          "sources": [
+            {
+              "name": "TSETMC Data Archive",
+              "doc": "تاریخچه قیمت پایانی و تعدیل‌شده",
+              "recency": "آخرین کندل معاملاتی"
+            }
+          ],
+          "rationale": "قیمت زیر میانگین متحرک ۲۰ روزه نوسان داشته و شاخص RSI در سطح 41.8 وضعیت مومنتوم را نشان می‌دهد."
+        },
+        "sentiment": {
+          "score": 4.6,
+          "grade_label": "فشار فروش حقیقی",
+          "formula": "0.70 * سرانه خریدار به فروشنده حقیقی (TSETMC) + 0.30 * نظرات سهام‌یاب، ره‌آورد و اخبار موثق",
+          "raw_inputs": {
+            "buyer_power": 0.8520664404741071,
+            "sahamyab_bullish_ratio_pct": 20.0,
+            "composite_social_score": 4.83
+          },
+          "sources": [
+            {
+              "name": "TSETMC تابلو معاملات",
+              "doc": "حجم و تعداد معاملات حقیقی و حقوقی",
+              "recency": "معاملات برخط بازار"
+            },
+            {
+              "name": "شبکه اجتماعی سهام‌یاب (Sahamyab)",
+              "doc": "استریم گفتگوی سهامداران با هشتگ نماد",
+              "recency": "۲۴ ساعت اخیر"
+            },
+            {
+              "name": "تالار گفتگوی ره‌آورد ۳۶۵",
+              "doc": "دیدگاه‌ها و آرای ثبت‌شده کاربران",
+              "recency": "۲۴ ساعت اخیر"
+            },
+            {
+              "name": "رسانه‌های موثق بازار سرمایه (سنا و بورس ۲۴)",
+              "doc": "اخبار رسمی تاییدشده فیلتر ۳-گیت",
+              "recency": "اخبار منتهی به روز جاری"
+            }
+          ],
+          "rationale": "سرانه خریدار حقیقی برابر 0.85 بوده و احساسات در شبکه‌ها با برآیند جو خنثی و بدون جهت‌گیری مشخص در میان فعالان بازار همراه است."
+        },
+        "low_risk": {
+          "score": 4.4,
+          "grade_label": "پرریسک و پرنوسان",
+          "formula": "سنجش درصد دامنه نوسان واقعی روزانه (ATR / Price) و نسبت سود به ریسک استراتژی معاملاتی",
+          "raw_inputs": {
+            "atr_value": 13607.142857142857,
+            "volatility_pct": 4.22,
+            "risk_reward_ratio": 0.97
+          },
+          "sources": [
+            {
+              "name": "TSETMC OHLCV",
+              "doc": "دامنه نوسان روزانه ۱۴ روز معاملاتی اخیر",
+              "recency": "آخرین معاملات رسمی"
+            }
+          ],
+          "rationale": "نوسان‌پذیری روزانه سهم بر اساس اندیکاتور ATR برابر 4.22٪ قیمت جاری و نسبت سود به ریسک 0.97 برآورد شده است."
+        }
+      }
+    },
+    "plain_language_summary": "سهم با قیمت منصفانه و سودآوری مناسب معامله می‌شود؛ گزینه‌ای مناسب و متعادل برای ورود پله‌ای و بهره‌مندی از رشد میان‌مدت است.",
+    "traffic_signal": "green",
+    "traffic_signal_text": "🟢 فرصت مناسب خرید",
+    "risk_level": "🛡️ کم‌ریسک (مطمئن)",
+    "time_horizon": "⏳ میان‌مدت (۳ تا ۶ ماهه)",
+    "recommendation": {
+      "signal": "BUY",
+      "signal_label": "خرید / ورود پله‌ای",
+      "score": 3.8,
+      "score_max": 5.0,
+      "stars": "★★★★☆",
+      "badge": "🟢 خرید / ورود پله‌ای (Buy)",
+      "scores": {
+        "weighted": 3.8,
+        "rules": 4.0,
+        "horizon": 3.5
+      },
+      "action_desc": "سهم دارای ارزندگی مناسب و شرایط معاملاتی مساعد است؛ ورود مرحله‌ای و پله‌ای در محدوده مشخص‌شده با رعایت اصول مدیریت ریسک توصیه می‌شود.",
+      "ai_score_details": {
+        "ai_score": 6.6,
+        "ai_score_int": 7,
+        "signal": "HOLD",
+        "signal_label": "نگهداری",
+        "color_grade": "yellow",
+        "color_hex": "#eab308",
+        "fundamental": 9.5,
+        "technical": 6.5,
+        "sentiment": 4.6,
+        "low_risk": 4.4,
+        "explainability": {
+          "overall": {
+            "score": 6.6,
+            "score_int": 7,
+            "grade_label": "نگهداری",
+            "formula": "0.35*Fundamental + 0.30*Technical + 0.10*Sentiment + 0.15*Low_Risk + 0.10*Setup",
+            "rationale": "همگرایی ارزندگی بنیادی (9.5)، وضعیت تکنیکال (6.5)، جریان پول (4.6) و ریسک کنترل‌شده (4.4).",
+            "pillars": [
+              {
+                "key": "fundamental",
+                "title": "ارزندگی بنیادی",
+                "weight_pct": 35,
+                "score": 9.5
+              },
+              {
+                "key": "technical",
+                "title": "روند و تکنیکال",
+                "weight_pct": 30,
+                "score": 6.5
+              },
+              {
+                "key": "low_risk",
+                "title": "کم‌ریسک بودن و ثبات",
+                "weight_pct": 15,
+                "score": 4.4
+              },
+              {
+                "key": "sentiment",
+                "title": "احساس بازار و تابلو",
+                "weight_pct": 10,
+                "score": 4.6
+              },
+              {
+                "key": "setup",
+                "title": "کیفیت ستاپ و R/R",
+                "weight_pct": 10,
+                "score": 3.0
+              }
+            ]
+          },
+          "fundamental": {
+            "score": 9.5,
+            "grade_label": "ارزندگی ممتاز",
+            "formula": "ارزیابی P/E گذشته‌نگر و فوروارد نسبت به هم‌گروهی‌ها + حاشیه سود + بازده سود نقدی مجامع",
+            "raw_inputs": {
+              "pe_ratio": 6.5,
+              "group_pe": 8.125,
+              "dividend_yield_pct": 10.77,
+              "profit_margin_pct": 25.0
+            },
+            "sources": [
+              {
+                "name": "سامانه جامع اطلاعات ناشران (کدال - Codal)",
+                "doc": "صورت‌های مالی و گزارش فعالیت ماهانه",
+                "recency": "آخرین گزارش ثبت‌شده"
+              },
+              {
+                "name": "شرکت مدیریت فناوری بورس تهران (TSETMC)",
+                "doc": "نسبت P/E نماد و صنعت",
+                "recency": "پایان معاملات روزانه"
+              }
+            ],
+            "rationale": "نسبت P/E معادل 6.5 در قیاس با میانگین گروه (8.1) و بازده سود تقسیمی 10.8٪ ارزیابی شده است."
+          },
+          "technical": {
+            "score": 6.5,
+            "grade_label": "خنثی / فاز نوسانی",
+            "formula": "آرایش قیمت نسبت به EMA20 و EMA50 + موقعیت RSI در فاز صعودی + دوری از اشباع خرید",
+            "raw_inputs": {
+              "current_price": 322800.0,
+              "ema20": 348423.7400538564,
+              "ema50": 307693.7968294917,
+              "rsi": 41.78460214363779
+            },
+            "sources": [
+              {
+                "name": "TSETMC Data Archive",
+                "doc": "تاریخچه قیمت پایانی و تعدیل‌شده",
+                "recency": "آخرین کندل معاملاتی"
+              }
+            ],
+            "rationale": "قیمت زیر میانگین متحرک ۲۰ روزه نوسان داشته و شاخص RSI در سطح 41.8 وضعیت مومنتوم را نشان می‌دهد."
+          },
+          "sentiment": {
+            "score": 4.6,
+            "grade_label": "فشار فروش حقیقی",
+            "formula": "0.70 * سرانه خریدار به فروشنده حقیقی (TSETMC) + 0.30 * نظرات سهام‌یاب، ره‌آورد و اخبار موثق",
+            "raw_inputs": {
+              "buyer_power": 0.8520664404741071,
+              "sahamyab_bullish_ratio_pct": 20.0,
+              "composite_social_score": 4.83
+            },
+            "sources": [
+              {
+                "name": "TSETMC تابلو معاملات",
+                "doc": "حجم و تعداد معاملات حقیقی و حقوقی",
+                "recency": "معاملات برخط بازار"
+              },
+              {
+                "name": "شبکه اجتماعی سهام‌یاب (Sahamyab)",
+                "doc": "استریم گفتگوی سهامداران با هشتگ نماد",
+                "recency": "۲۴ ساعت اخیر"
+              },
+              {
+                "name": "تالار گفتگوی ره‌آورد ۳۶۵",
+                "doc": "دیدگاه‌ها و آرای ثبت‌شده کاربران",
+                "recency": "۲۴ ساعت اخیر"
+              },
+              {
+                "name": "رسانه‌های موثق بازار سرمایه (سنا و بورس ۲۴)",
+                "doc": "اخبار رسمی تاییدشده فیلتر ۳-گیت",
+                "recency": "اخبار منتهی به روز جاری"
+              }
+            ],
+            "rationale": "سرانه خریدار حقیقی برابر 0.85 بوده و احساسات در شبکه‌ها با برآیند جو خنثی و بدون جهت‌گیری مشخص در میان فعالان بازار همراه است."
+          },
+          "low_risk": {
+            "score": 4.4,
+            "grade_label": "پرریسک و پرنوسان",
+            "formula": "سنجش درصد دامنه نوسان واقعی روزانه (ATR / Price) و نسبت سود به ریسک استراتژی معاملاتی",
+            "raw_inputs": {
+              "atr_value": 13607.142857142857,
+              "volatility_pct": 4.22,
+              "risk_reward_ratio": 0.97
+            },
+            "sources": [
+              {
+                "name": "TSETMC OHLCV",
+                "doc": "دامنه نوسان روزانه ۱۴ روز معاملاتی اخیر",
+                "recency": "آخرین معاملات رسمی"
+              }
+            ],
+            "rationale": "نوسان‌پذیری روزانه سهم بر اساس اندیکاتور ATR برابر 4.22٪ قیمت جاری و نسبت سود به ریسک 0.97 برآورد شده است."
+          }
+        }
+      },
+      "plain_language_summary": "سهم با قیمت منصفانه و سودآوری مناسب معامله می‌شود؛ گزینه‌ای مناسب و متعادل برای ورود پله‌ای و بهره‌مندی از رشد میان‌مدت است.",
+      "traffic_signal": "green",
+      "traffic_signal_text": "🟢 فرصت مناسب خرید",
+      "risk_level": "🛡️ کم‌ریسک (مطمئن)",
+      "time_horizon": "⏳ میان‌مدت (۳ تا ۶ ماهه)"
+    },
+    "executive_summary": "به عنوان مدیر ارشد سرمایه‌گذاری سامانه هوشمند tjb24.ir، وضعیت نماد «فزر» (پویا زرکان آق دره) را بر اساس آخرین داده‌های تابلوی معاملات با قیمت ۳۲۲,۸۰۰ ریال و افت ۳ درصدی، همراه با غلبه نسبی فشار عرضه (سرانه خرید ۰.۸۵) بررسی کرده و با عنایت به انتشار گزارش تحلیل ارزش‌گذاری تاصیکو، استراتژی بهینه را بر پایه «خرید پله‌ای» در محدوده حمایتی ۳۱۶,۳۴۴ تا ۳۲۹,۲۵۶ ریال با هدف دستیابی به تارگت اولیه ۳۴۹,۳۲۵ ریال و رعایت حد ضرر اکد در سطح ۲۹۵,۳۳۴ ریال برای سرمایه‌گذاران محترم تایید و ابلاغ می‌نمایم.",
+    "plan": {
+      "entry_zone": "316,344 تا 329,256 ریال",
+      "target_1": 349324.8,
+      "stop_loss": 295334.03,
+      "risk_reward_ratio": 0.97
+    },
+    "last_update": "1405/08/09 - 09:29"
+  },
+  {
     "symbol": "فسازان",
     "name": "غلتک‌سازان سپاهان",
     "logo": "",
