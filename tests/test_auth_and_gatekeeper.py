@@ -25,6 +25,7 @@ def run_auth_and_gatekeeper_tests():
     print("=" * 70, flush=True)
 
     options = Options()
+    options.page_load_strategy = "eager"
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
@@ -41,10 +42,13 @@ def run_auth_and_gatekeeper_tests():
         # TEST 1: Guest View & Freemium Gatekeeper
         # ----------------------------------------------------------------------
         print("\n[STEP 1] Testing Guest Access & Freemium Preview Gatekeeper...", flush=True)
-        # Clear any local storage
         driver.get("http://127.0.0.1:8080/")
-        driver.execute_script("localStorage.clear(); sessionStorage.clear();")
-        driver.get("http://127.0.0.1:8080/")
+        wait.until(EC.presence_of_element_located((By.ID, "stocksContainer")))
+        time.sleep(1.5)
+        try:
+            driver.execute_script("localStorage.clear(); sessionStorage.clear();")
+        except Exception:
+            pass
 
         wait.until(EC.presence_of_element_located((By.ID, "stocksContainer")))
         time.sleep(2)
