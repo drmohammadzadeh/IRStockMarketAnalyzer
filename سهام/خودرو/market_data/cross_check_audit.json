@@ -3,26 +3,20 @@
   "inscode": "65883838195688438",
   "asset_id": "167",
   "live_info": {
-    "date": "20261020",
-    "close_price": 699.0,
-    "last_price": 690.0,
-    "yesterday_price": 693.0,
-    "volume": 3904732234.0,
-    "value": 2731136337400.0,
-    "trades": 11916.0
+    "date": "20261031",
+    "close_price": 635.0,
+    "last_price": 628.0,
+    "yesterday_price": 646.0,
+    "volume": 4830898730.0,
+    "value": 3068531747197.0,
+    "trades": 16067.0
   },
-  "rahavard_prices": {
-    "close_price": 699.0,
-    "last_price": 690.0,
-    "close_change_percent": 0.87,
-    "last_change_percent": -0.43,
-    "end_date_time": "2026-10-20T12:29:59+03:30"
-  },
+  "rahavard_prices": {},
   "cross_check": {
-    "status": "VERIFIED",
-    "tsetmc_close": 699.0,
-    "rahavard_close": 699.0,
+    "status": "UNVERIFIED_SINGLE_SOURCE",
+    "tsetmc_close": 635.0,
+    "rahavard_close": null,
     "discrepancy_pct": 0.0,
-    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+    "message": "اطلاعات یکی از منابع در دسترس نبود؛ تایید تک‌منبعی TSETMC اعمال شد."
   }
 }
