@@ -38,4 +38,6 @@ main.py
 /project-specs/
 /project-tasks/
 /public/
+data/*.db
+*.db
 
