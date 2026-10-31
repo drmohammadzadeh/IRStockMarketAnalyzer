@@ -1,9 +1,9 @@
 {
   "symbol": "خودرو",
-  "audit_timestamp": "1405/08/09 - 11:55",
-  "total_candidates": 84,
-  "approved_count": 6,
-  "rejected_count": 78,
+  "audit_timestamp": "1405/08/09 - 18:58",
+  "total_candidates": 87,
+  "approved_count": 7,
+  "rejected_count": 80,
   "approved_news": [
     {
       "id": "news_1",
@@ -58,6 +58,23 @@
     },
     {
       "id": "news_4",
+      "title": "درآمد ۳۸۹ همتی «خودرو» در ۷ ماهه؛ ثبت رشد ۵۰ درصدی نسبت به سال گذشته | بورس 24",
+      "source": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/370551/درآمد-۳۸۹-همتی-«خودرو»-در-۷-ماهه؛-ثبت-رشد-۵۰-درصدی-نسبت-به-سال-گذشته",
+      "url": "https://www.bourse24.ir/news/370551/درآمد-۳۸۹-همتی-«خودرو»-در-۷-ماهه؛-ثبت-رشد-۵۰-درصدی-نسبت-به-سال-گذشته",
+      "date": "1405/08/09",
+      "raw_date": "نامشخص",
+      "body": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! درآمد ۳۸۹ همتی «خودرو» در ۷ ماهه؛ ثبت رشد ۵۰ درصدی نسبت به سال گذشته به گزارش کدال نگر بورس ۲۴، شرکت ایران‌خودرو با نماد «خودرو» گزارش فعالیت ماهانه و تجمیعی ۷ ماهه منتهی به مهر ۱۴۰۵ را منتشر کرد که بررسی ارقام آن از تداوم روند صعودی درآمدزایی این خودروساز حکایت دارد. به گزارش کدال نگر بورس24 ، شرکت ایران‌خودرو با نماد «خودرو» گزارش فعالیت ماهانه و تجمیعی ۷ ماهه منتهی به مهر ۱۴۰۵ را منتشر کرد که بررسی ارقام آن از تداوم روند صعودی درآمدزایی این خودروساز حکایت دارد. بر اساس داده‌های مندرج در این گزارش، مجموع درآمد عملیاتی ایران‌خودرو از ابتدای سال مالی جاری تا پایان مهر ماه ۱۴۰۵ به ۳۸۸ هزار و ۹۱۶ میلیارد تومان (معادل حدود ۳۸۹ همت) رسید. این رقم در مقایسه با درآمد 260همت در دوره مشابه سال گذشته، رشد چشمگیر ۵۰ درصدی را ثبت کرده است. همچنین بررسی عملکرد ماهانه شرکت نشان می‌دهد که ایران‌خودرو در مهر ماه ۱۴۰۵ موفق به کسب بیش از ۶۰ هزار و ۷۲۵ میلیارد تومان درآمد شده است که این مبلغ نیز رشد ۲۶ درصدی را نسبت به مهر ماه سال ۱۴۰۴ نشان می‌دهد. گروه پژو با ثبت رقم 84 هزار میلیارد تومان بیشترین فروش شرکت در دوره مورد بررسی را به خود اختصاص داد. منبع خبر: سازمان خبری - تحلیلی بورس 24",
+      "summary": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! درآمد ۳۸۹ همتی «خودرو» در ۷ ماهه؛ ثبت رشد ۵۰ درصدی نسبت به سال گذشته به گزارش کدال نگر بورس ۲۴، شرکت ایران‌خودرو با نماد «خودرو» گزارش فعالیت ماهانه و تجمیعی ۷ ماهه منت",
+      "sentiment": "مثبت / دارای اثر حمایتی",
+      "sentiment_label": "POSITIVE",
+      "impact_type": "OPERATIONAL_GROWTH",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_3_درآمد_۳۸۹_همتی_«خودرو»_در_۷_ماهه؛_ث.html"
+    },
+    {
+      "id": "news_5",
       "title": "چرا افزایش نرخ ماشین اجتناب ناپذیر است؟ | بورس 24",
       "source": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/364475",
@@ -74,7 +91,7 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_7_چرا_افزایش_نرخ_ماشین_اجتناب_ناپذیر_.html"
     },
     {
-      "id": "news_5",
+      "id": "news_6",
       "title": "شفاف‌سازی «خودرو» درباره ابطال مصوبه ۴۷۳ شورای رقابت | بورس 24",
       "source": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/364353",
@@ -91,7 +108,7 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_8_شفاف‌سازی_«خودرو»_درباره_ابطال_مصوب.html"
     },
     {
-      "id": "news_6",
+      "id": "news_7",
       "title": "جزئیات هزینه‌ کرد مسئولیت اجتماعی «خودرو» | بورس 24",
       "source": "آرشیو محلی",
       "source_url": "https://www.bourse24.ir/news/364109",
@@ -150,6 +167,16 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_اخبار_بورس_بورس_24،_آخرین_اخبار_و_ت.html"
     },
     {
+      "title": "ثبت‌نام بک X3 پرو از ۹ آبان؛ جزئیات پیش‌پرداخت، سود و موعد تحویل اعلام شد | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/370920/ثبت‌نام-بک-X3-پرو-از-۹-آبان؛-جزئیات-پیش‌پرداخت،-سود-و-موعد-تحویل-اعلام-شد",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_ثبت‌نام_بک_X3_پرو_از_۹_آبان؛_جزئیات.html"
+    },
+    {
       "title": "درباره  ما - سنا",
       "rejection_reason": "REJECTED_STATIC_PAGE",
       "reason": "REJECTED_STATIC_PAGE",
@@ -188,6 +215,16 @@
       "source_url": "https://www.bourse24.ir/news/365917",
       "raw_date": "نامشخص",
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_گزارش_مرکز_پژوهش‌های_مجلس_از_وضعیت_.html"
+    },
+    {
+      "title": "از کوییک تا پژو ۲۰۷؛ قیمت خودروهای داخلی در یک ماه چقدر بالا رفت؟ + جدول | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/370901/از-کوییک-تا-پژو-۲۰۷؛-قیمت-خودروهای-داخلی-در-یک-ماه-چقدر-بالا-رفت؟-+-جدول",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_2_از_کوییک_تا_پژو_۲۰۷؛_قیمت_خودروهای_.html"
     },
     {
       "title": "تأمین مالی جمعی در ایران، از اثبات کارآمدی تا مقیاس‌پذیری - سنا",
@@ -310,52 +347,82 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "گواهی سپرده کالایی، جامه‌ای نو بر تن قبض انبار + ویدئو",
+      "title": "شاخص ۶ صنعت در سقف تاریخی جدید/ شاخص ۱۳ صنعت با رشد همراه شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96793/%DA%AF%D9%88%D8%A7%D9%87%DB%8C-%D8%B3%D9%BE%D8%B1%D8%AF%D9%87-%DA%A9%D8%A7%D9%84%D8%A7%DB%8C%DB%8C-%D8%AC%D8%A7%D9%85%D9%87-%D8%A7%DB%8C-%D9%86%D9%88-%D8%A8%D8%B1-%D8%AA%D9%86-%D9%82%D8%A8%D8%B6-%D8%A7%D9%86%D8%A8%D8%A7%D8%B1-%D9%88%DB%8C%D8%AF%D8%A6%D9%88",
+      "source_url": "https://www.sena.ir/news/96806/%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B6-%D8%B5%D9%86%D8%B9%D8%AA-%D8%AF%D8%B1-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B1%DB%B3-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D8%A7-%D8%B1%D8%B4%D8%AF-%D9%87%D9%85%D8%B1%D8%A7%D9%87-%D8%B4%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "سقوط ۲۹ درصدی قیمت سهام اینتل در یک روز",
+      "title": "عملکرد بازارهای بورس انرژی در هفته کاری منتهی به ۶ آبان‌ ۱۴۰۵ + اینفوگرافیک",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96791/%D8%B3%D9%82%D9%88%D8%B7-%DB%B2%DB%B9-%D8%AF%D8%B1%D8%B5%D8%AF%DB%8C-%D9%82%DB%8C%D9%85%D8%AA-%D8%B3%D9%87%D8%A7%D9%85-%D8%A7%DB%8C%D9%86%D8%AA%D9%84-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2",
+      "source_url": "https://www.sena.ir/news/96805/%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B6-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "معیارهای انتخاب بهینه صندوق طلا/ مولفه‌های سرمایه‌گذاری در صندوق‌های طلا و دستیابی به بازده بهتر چیست؟ + ویدئو",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96787/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "source_url": "https://www.sena.ir/news/96654/%D9%85%D8%B9%DB%8C%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%A8%D9%87%DB%8C%D9%86%D9%87-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%B7%D9%84%D8%A7-%D9%85%D9%88%D9%84%D9%81%D9%87-%D9%87%D8%A7%DB%8C-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "عرضه ۲۰۴ هزار تن محصول در تالارهای مختلف بورس کالا",
+      "title": "شوک سرقت ۶ میلیارد دلاری از بایننس؛ FBI پرونده هکرهای پیونگ‌یانگ را دنبال می‌کند",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96789/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B2%DB%B0%DB%B4-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
+      "source_url": "https://www.sena.ir/news/96803/%D8%B4%D9%88%DA%A9-%D8%B3%D8%B1%D9%82%D8%AA-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AF%D9%84%D8%A7%D8%B1%DB%8C-%D8%A7%D8%B2-%D8%A8%D8%A7%DB%8C%D9%86%D9%86%D8%B3-FBI-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%D9%87%DA%A9%D8%B1%D9%87%D8%A7%DB%8C-%D9%BE%DB%8C%D9%88%D9%86%DA%AF-%DB%8C%D8%A7%D9%86%DA%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "مبانی «عرضه اولیه ترکیبی» به تایید مراجع قانونی رسید/ روش «عرضه اولیه ترکیبی» از دیوان عدالت اداری و شورای نگهبان تایید قضایی و شرعی گرفت",
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به هشتم آبان ۱۴۰۵",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96757/%D9%85%D8%A8%D8%A7%D9%86%DB%8C-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C-%D8%A8%D9%87-%D8%AA%D8%A7%DB%8C%DB%8C%D8%AF-%D9%85%D8%B1%D8%A7%D8%AC%D8%B9-%D9%82%D8%A7%D9%86%D9%88%D9%86%DB%8C-%D8%B1%D8%B3%DB%8C%D8%AF-%D8%B1%D9%88%D8%B4-%D8%B9%D8%B1%D8%B6%D9%87",
+      "source_url": "https://www.sena.ir/news/96802/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%D9%87%D8%B4%D8%AA%D9%85-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در نخستین هفته آبان ۱۴۰۵ عملیاتی شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "واریز ۱۲ همت سود برای ۲.۶ میلیون سهام‌دار",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۹ آبان ۰۵ - ۱۳:۱۷",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -856,36 +923,6 @@
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
       "source_url": "https://www.sena.ir/news/96398/ارزش-مبادلات-بازار-مالی-و-مشتقه-بورس-کالا-به-۲۴-همت-رسید",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "در سامانه کدال منتشر شد",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "اطلاعیه پارس‌خودرو درباره تعیین قیمت خالص فروش کارخانه‌ای چانگان CS۳۵ + اطلاعیه",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۱۴ مهر ۰۵ - ۰۹:۰۴",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
       "raw_date": "اخیر",
       "file_path": null
     }
@@ -932,6 +969,16 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_اخبار_بورس_بورس_24،_آخرین_اخبار_و_ت.html"
     },
     {
+      "title": "ثبت‌نام بک X3 پرو از ۹ آبان؛ جزئیات پیش‌پرداخت، سود و موعد تحویل اعلام شد | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/370920/ثبت‌نام-بک-X3-پرو-از-۹-آبان؛-جزئیات-پیش‌پرداخت،-سود-و-موعد-تحویل-اعلام-شد",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_ثبت‌نام_بک_X3_پرو_از_۹_آبان؛_جزئیات.html"
+    },
+    {
       "title": "درباره  ما - سنا",
       "rejection_reason": "REJECTED_STATIC_PAGE",
       "reason": "REJECTED_STATIC_PAGE",
@@ -970,6 +1017,16 @@
       "source_url": "https://www.bourse24.ir/news/365917",
       "raw_date": "نامشخص",
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_1_گزارش_مرکز_پژوهش‌های_مجلس_از_وضعیت_.html"
+    },
+    {
+      "title": "از کوییک تا پژو ۲۰۷؛ قیمت خودروهای داخلی در یک ماه چقدر بالا رفت؟ + جدول | بورس 24",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/370901/از-کوییک-تا-پژو-۲۰۷؛-قیمت-خودروهای-داخلی-در-یک-ماه-چقدر-بالا-رفت؟-+-جدول",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\news_2_از_کوییک_تا_پژو_۲۰۷؛_قیمت_خودروهای_.html"
     },
     {
       "title": "تأمین مالی جمعی در ایران، از اثبات کارآمدی تا مقیاس‌پذیری - سنا",
@@ -1092,52 +1149,82 @@
       "file_path": "D:\\projects\\bourse\\سهام\\خودرو\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
     },
     {
-      "title": "گواهی سپرده کالایی، جامه‌ای نو بر تن قبض انبار + ویدئو",
+      "title": "شاخص ۶ صنعت در سقف تاریخی جدید/ شاخص ۱۳ صنعت با رشد همراه شد",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96793/%DA%AF%D9%88%D8%A7%D9%87%DB%8C-%D8%B3%D9%BE%D8%B1%D8%AF%D9%87-%DA%A9%D8%A7%D9%84%D8%A7%DB%8C%DB%8C-%D8%AC%D8%A7%D9%85%D9%87-%D8%A7%DB%8C-%D9%86%D9%88-%D8%A8%D8%B1-%D8%AA%D9%86-%D9%82%D8%A8%D8%B6-%D8%A7%D9%86%D8%A8%D8%A7%D8%B1-%D9%88%DB%8C%D8%AF%D8%A6%D9%88",
+      "source_url": "https://www.sena.ir/news/96806/%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B6-%D8%B5%D9%86%D8%B9%D8%AA-%D8%AF%D8%B1-%D8%B3%D9%82%D9%81-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE%DB%8C-%D8%AC%D8%AF%DB%8C%D8%AF-%D8%B4%D8%A7%D8%AE%D8%B5-%DB%B1%DB%B3-%D8%B5%D9%86%D8%B9%D8%AA-%D8%A8%D8%A7-%D8%B1%D8%B4%D8%AF-%D9%87%D9%85%D8%B1%D8%A7%D9%87-%D8%B4%D8%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "سقوط ۲۹ درصدی قیمت سهام اینتل در یک روز",
+      "title": "عملکرد بازارهای بورس انرژی در هفته کاری منتهی به ۶ آبان‌ ۱۴۰۵ + اینفوگرافیک",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96791/%D8%B3%D9%82%D9%88%D8%B7-%DB%B2%DB%B9-%D8%AF%D8%B1%D8%B5%D8%AF%DB%8C-%D9%82%DB%8C%D9%85%D8%AA-%D8%B3%D9%87%D8%A7%D9%85-%D8%A7%DB%8C%D9%86%D8%AA%D9%84-%D8%AF%D8%B1-%DB%8C%DA%A9-%D8%B1%D9%88%D8%B2",
+      "source_url": "https://www.sena.ir/news/96805/%D8%B9%D9%85%D9%84%DA%A9%D8%B1%D8%AF-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%DA%A9%D8%A7%D8%B1%DB%8C-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%DB%B6-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "۸۴ همت مبادله اوراق بهادار و کالا در ۴ بورس ایران",
+      "title": "معیارهای انتخاب بهینه صندوق طلا/ مولفه‌های سرمایه‌گذاری در صندوق‌های طلا و دستیابی به بازده بهتر چیست؟ + ویدئو",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96787/%DB%B8%DB%B4-%D9%87%D9%85%D8%AA-%D9%85%D8%A8%D8%A7%D8%AF%D9%84%D9%87-%D8%A7%D9%88%D8%B1%D8%A7%D9%82-%D8%A8%D9%87%D8%A7%D8%AF%D8%A7%D8%B1-%D9%88-%DA%A9%D8%A7%D9%84%D8%A7-%D8%AF%D8%B1-%DB%B4-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86",
+      "source_url": "https://www.sena.ir/news/96654/%D9%85%D8%B9%DB%8C%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8-%D8%A8%D9%87%DB%8C%D9%86%D9%87-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%B7%D9%84%D8%A7-%D9%85%D9%88%D9%84%D9%81%D9%87-%D9%87%D8%A7%DB%8C-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "عرضه ۲۰۴ هزار تن محصول در تالارهای مختلف بورس کالا",
+      "title": "شوک سرقت ۶ میلیارد دلاری از بایننس؛ FBI پرونده هکرهای پیونگ‌یانگ را دنبال می‌کند",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96789/%D8%B9%D8%B1%D8%B6%D9%87-%DB%B2%DB%B0%DB%B4-%D9%87%D8%B2%D8%A7%D8%B1-%D8%AA%D9%86-%D9%85%D8%AD%D8%B5%D9%88%D9%84-%D8%AF%D8%B1-%D8%AA%D8%A7%D9%84%D8%A7%D8%B1%D9%87%D8%A7%DB%8C-%D9%85%D8%AE%D8%AA%D9%84%D9%81-%D8%A8%D9%88%D8%B1%D8%B3-%DA%A9%D8%A7%D9%84%D8%A7",
+      "source_url": "https://www.sena.ir/news/96803/%D8%B4%D9%88%DA%A9-%D8%B3%D8%B1%D9%82%D8%AA-%DB%B6-%D9%85%DB%8C%D9%84%DB%8C%D8%A7%D8%B1%D8%AF-%D8%AF%D9%84%D8%A7%D8%B1%DB%8C-%D8%A7%D8%B2-%D8%A8%D8%A7%DB%8C%D9%86%D9%86%D8%B3-FBI-%D9%BE%D8%B1%D9%88%D9%86%D8%AF%D9%87-%D9%87%DA%A9%D8%B1%D9%87%D8%A7%DB%8C-%D9%BE%DB%8C%D9%88%D9%86%DA%AF-%DB%8C%D8%A7%D9%86%DA%AF",
       "raw_date": "اخیر",
       "file_path": null
     },
     {
-      "title": "مبانی «عرضه اولیه ترکیبی» به تایید مراجع قانونی رسید/ روش «عرضه اولیه ترکیبی» از دیوان عدالت اداری و شورای نگهبان تایید قضایی و شرعی گرفت",
+      "title": "کارنامه معاملات فرابورس در هفته منتهی به هشتم آبان ۱۴۰۵",
       "rejection_reason": "REJECTED_IRRELEVANT",
       "reason": "REJECTED_IRRELEVANT",
       "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
       "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96757/%D9%85%D8%A8%D8%A7%D9%86%DB%8C-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AA%D8%B1%DA%A9%DB%8C%D8%A8%DB%8C-%D8%A8%D9%87-%D8%AA%D8%A7%DB%8C%DB%8C%D8%AF-%D9%85%D8%B1%D8%A7%D8%AC%D8%B9-%D9%82%D8%A7%D9%86%D9%88%D9%86%DB%8C-%D8%B1%D8%B3%DB%8C%D8%AF-%D8%B1%D9%88%D8%B4-%D8%B9%D8%B1%D8%B6%D9%87",
+      "source_url": "https://www.sena.ir/news/96802/%DA%A9%D8%A7%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D9%85%D8%B9%D8%A7%D9%85%D9%84%D8%A7%D8%AA-%D9%81%D8%B1%D8%A7%D8%A8%D9%88%D8%B1%D8%B3-%D8%AF%D8%B1-%D9%87%D9%81%D8%AA%D9%87-%D9%85%D9%86%D8%AA%D9%87%DB%8C-%D8%A8%D9%87-%D9%87%D8%B4%D8%AA%D9%85-%D8%A2%D8%A8%D8%A7%D9%86-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "در نخستین هفته آبان ۱۴۰۵ عملیاتی شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "واریز ۱۲ همت سود برای ۲.۶ میلیون سهام‌دار",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۹ آبان ۰۵ - ۱۳:۱۷",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96799/واریز-۱۲-همت-سود-برای-۲-۶-میلیون-سهام-دار",
       "raw_date": "اخیر",
       "file_path": null
     },
@@ -1640,41 +1727,11 @@
       "source_url": "https://www.sena.ir/news/96398/ارزش-مبادلات-بازار-مالی-و-مشتقه-بورس-کالا-به-۲۴-همت-رسید",
       "raw_date": "اخیر",
       "file_path": null
-    },
-    {
-      "title": "در سامانه کدال منتشر شد",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "اطلاعیه پارس‌خودرو درباره تعیین قیمت خالص فروش کارخانه‌ای چانگان CS۳۵ + اطلاعیه",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
-      "raw_date": "اخیر",
-      "file_path": null
-    },
-    {
-      "title": "۱۴ مهر ۰۵ - ۰۹:۰۴",
-      "rejection_reason": "REJECTED_IRRELEVANT",
-      "reason": "REJECTED_IRRELEVANT",
-      "details": "عدم وجود واژگان همنشین الزامی نماد خودرو در عنوان یا متن",
-      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
-      "source_url": "https://www.sena.ir/news/96371/اطلاعیه-پارس-خودرو-درباره-تعیین-قیمت-خالص-فروش-کارخانه-ای-چانگان",
-      "raw_date": "اخیر",
-      "file_path": null
     }
   ],
   "sentiment_summary": {
     "overall_sentiment": "POSITIVE",
-    "positive_count": 2,
+    "positive_count": 3,
     "negative_count": 1,
     "neutral_count": 3,
     "average_sentiment_score": 1.0,
@@ -1682,11 +1739,11 @@
       "sentiment_score": 0.6,
       "market_psychology": "خوش‌بینی محتاطانه",
       "key_rumors_and_themes": [
-        "واگذاری سهام تودلی و خروج از بنگاه‌داری",
-        "رشد درآمد ماهانه و افزایش فروش",
+        "واگذاری سهام تودلی و وتجارت/سایپا",
+        "رشد ۵۰ درصدی درآمد ۷ ماهه",
         "انتظار برای افزایش نرخ خودرو"
       ],
-      "gemini_rationale": "انتشار اخبار مثبت پیرامون واگذاری سهام تودلی در ایران‌خودرو و سایپا به همراه جهش ۵۴ درصدی درآمدهای ۵ ماهه، موجی از امیدواری منطقی را میان سهامداران ایجاد کرده است. با وجود ابهاماتی نظیر هزینه‌های مسئولیت اجتماعی و مسائل شورای رقابت، چشم‌انداز احتمالی افزایش نرخ کارخانه‌ای محصولات باعث شکل‌گیری انتظارات تورمی مثبت و کاهش فروش هیجانی در نماد «خودرو» شده است."
+      "gemini_rationale": "انتشار اخبار مثبت مربوط به رشد قابل توجه درآمدهای ماهانه و گام‌های جدی برای واگذاری سهام تودلی، کورسوی امیدی را در دل سهامداران برای بهبود وضعیت بنیادی ایجاد کرده است. با وجود ابهامات پیرامون قیمت‌گذاری و هزینه‌ها، انتظارات تورمی و احتمال افزایش نرخ خودرو توانسته جو روانی نسبتاً مطلوبی پیرامون نماد «خودرو» شکل دهد."
     }
   }
 }

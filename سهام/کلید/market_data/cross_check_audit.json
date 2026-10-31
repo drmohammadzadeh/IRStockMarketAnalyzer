@@ -4,24 +4,24 @@
   "asset_id": "34513",
   "live_info": {
     "date": "20261031",
-    "close_price": 17604.0,
-    "last_price": 17502.0,
+    "close_price": 17576.0,
+    "last_price": 17520.0,
     "yesterday_price": 17884.0,
-    "volume": 13765475.0,
-    "value": 242332349413.0,
-    "trades": 1437.0
+    "volume": 24975746.0,
+    "value": 438973214009.0,
+    "trades": 2680.0
   },
   "rahavard_prices": {
-    "close_price": 17604.0,
-    "last_price": 17502.0,
-    "close_change_percent": -1.57,
-    "last_change_percent": -2.14,
-    "end_date_time": "2026-10-31T11:50:43.129+03:30"
+    "close_price": 17576.0,
+    "last_price": 17520.0,
+    "close_change_percent": -1.72,
+    "last_change_percent": -2.04,
+    "end_date_time": "2026-10-31T17:59:54.441+03:30"
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 17604.0,
-    "rahavard_close": 17604.0,
+    "tsetmc_close": 17576.0,
+    "rahavard_close": 17576.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }
