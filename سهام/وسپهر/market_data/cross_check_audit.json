@@ -1,0 +1,28 @@
+{
+  "symbol": "وسپهر",
+  "inscode": "114312662654155",
+  "asset_id": "15728",
+  "live_info": {
+    "date": "20261101",
+    "close_price": 5170.0,
+    "last_price": 5080.0,
+    "yesterday_price": 5140.0,
+    "volume": 2336135.0,
+    "value": 12076784150.0,
+    "trades": 206.0
+  },
+  "rahavard_prices": {
+    "close_price": 5170.0,
+    "last_price": 5080.0,
+    "close_change_percent": 0.58,
+    "last_change_percent": -1.17,
+    "end_date_time": "2026-11-01T09:27:48.788+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 5170.0,
+    "rahavard_close": 5170.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

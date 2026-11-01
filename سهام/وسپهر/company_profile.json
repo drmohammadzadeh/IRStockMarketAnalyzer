@@ -1,0 +1,25 @@
+{
+  "symbol": "وسپهر",
+  "name": "گروه سرمایه گذاری سپهر صادرات",
+  "archetype": "INVESTMENT_HOLDING",
+  "inscode": "114312662654155",
+  "sector_name": "سرمایه‌گذاری‌ها",
+  "subsector_name": "هلدینگ سرمایه‌گذاری چندرشته‌ای و بازار سرمایه",
+  "core_business": "سرمایه‌گذاری در سهام شرکت‌های بورسی و غیربورسی (پتروشیمی، مالی، انرژی، ساختمانی و صنعتی)، مدیریت پورتفوی سهام و کسب سود نقدی مجامع (DPS)",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "P/E",
+    "DPS Cover",
+    "Portfolio Value"
+  ],
+  "forbidden_terms": [
+    "خط تولید مستقیم",
+    "مواد اولیه صنعتی",
+    "انبار کالای ساخته‌شده",
+    "مواد اولیه",
+    "خط تولید"
+  ]
+}

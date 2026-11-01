@@ -1,0 +1,31 @@
+{
+  "symbol": "وسپهر",
+  "date": "20261101",
+  "close_price": 5170.0,
+  "last_price": 5080.0,
+  "yesterday_price": 5140.0,
+  "close_change_percent": 0.58,
+  "last_change_percent": -1.17,
+  "volume": 2336135.0,
+  "value": 12076784150.0,
+  "client_type": {
+    "buy_real_count": 41,
+    "buy_legal_count": 1,
+    "sell_real_count": 154,
+    "sell_legal_count": 0,
+    "buy_real_vol": 1582278.0,
+    "buy_legal_vol": 749670.0,
+    "sell_real_vol": 2331948.0,
+    "sell_legal_vol": 0.0,
+    "buy_real_capita": 38592.14634146341,
+    "sell_real_capita": 15142.51948051948,
+    "buyer_power": 2.5485947956752746
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 5170.0,
+    "rahavard_close": 5170.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}
