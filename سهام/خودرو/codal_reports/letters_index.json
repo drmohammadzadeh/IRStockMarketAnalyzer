@@ -5,6 +5,69 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1625763,
+    "Symbol": "خودرو",
+    "CompanyName": "ایران خودرو",
+    "UnderSupervision": 0,
+    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۶ ماهه منتهی به  ۱۴۰۵/۰۶/۳۱ (حسابرسی شده) (شرکت تولید خودرو و صنعت خزر)",
+    "LetterCode": "ن-۱۰",
+    "SentDateTime": "۱۴۰۵/۰۸/۱۰ ۱۰:۴۰:۱۹",
+    "PublishDateTime": "۱۴۰۵/۰۸/۱۰ ۱۰:۴۰:۱۹",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=UiMKoD1DVpQNyyTjaFjfMg%3d%3d&rt=0&let=6&ct=0&ft=-1",
+    "HasExcel": true,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=UiMKoD1DVpQNyyTjaFjfMg%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=UiMKoD1DVpQNyyTjaFjfMg%3d%3d&ft=1005&let=6",
+    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/UiMKoD1DVpQNyyTjaFjfMg%3d%3d/0",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "42_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "42_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "42_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
+    "TracingNo": 1625670,
+    "Symbol": "خودرو",
+    "CompanyName": "ایران خودرو",
+    "UnderSupervision": 0,
+    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۶ ماهه منتهی به  ۱۴۰۵/۰۶/۳۱ (حسابرسی شده) (شرکت باشگاه فرهنگی ورزشی ایران خودرو خراسان-در حال تصفیه)",
+    "LetterCode": "ن-۱۰",
+    "SentDateTime": "۱۴۰۵/۰۸/۱۰ ۱۰:۲۵:۱۵",
+    "PublishDateTime": "۱۴۰۵/۰۸/۱۰ ۱۰:۲۵:۱۵",
+    "HasHtml": false,
+    "IsEstimate": false,
+    "Url": "/Reports/Attachment.aspx?LetterSerial=XGEID0GDBEAGKO8MQ4M2DQ%3d%3d",
+    "HasExcel": false,
+    "HasPdf": false,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=XGEID0GDBEAGKO8MQ4M2DQ%3d%3d",
+    "PdfUrl": "",
+    "ExcelUrl": "",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "43_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "43_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1620143,
     "Symbol": "خودرو",
     "CompanyName": "ایران خودرو",
@@ -29,7 +92,7 @@
       "36_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf",
       "36_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
     ],
-    "local_file": "36_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.html"
+    "local_file": "36_صورت‌های_مالی_سال_مالی_منتهی_به_۱۴۰.pdf"
   },
   {
     "SuperVision": {
@@ -61,7 +124,7 @@
       "37_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
       "37_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
     ],
-    "local_file": "37_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    "local_file": "37_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf"
   },
   {
     "SuperVision": {
@@ -93,7 +156,7 @@
       "38_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.pdf",
       "38_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
     ],
-    "local_file": "38_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
+    "local_file": "38_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.pdf"
   },
   {
     "SuperVision": {
@@ -125,7 +188,7 @@
       "39_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "39_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "39_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "39_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
@@ -157,7 +220,7 @@
       "40_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
       "40_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
     ],
-    "local_file": "40_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    "local_file": "40_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf"
   },
   {
     "SuperVision": {
@@ -189,7 +252,7 @@
       "41_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf",
       "41_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
     ],
-    "local_file": "41_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.html"
+    "local_file": "41_گزارش_فعالیت_ماهانه_دوره_۱_ماهه_منت.pdf"
   },
   {
     "SuperVision": {
