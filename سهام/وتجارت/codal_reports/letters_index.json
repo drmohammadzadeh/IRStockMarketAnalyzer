@@ -5,6 +5,38 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1628167,
+    "Symbol": "وتجارت",
+    "CompanyName": "بانک تجارت",
+    "UnderSupervision": 0,
+    "Title": "توضیحات در خصوص اطلاعات و صورت های مالی منتشر شده",
+    "LetterCode": "ن-۲۶",
+    "SentDateTime": "۱۴۰۵/۰۸/۱۱ ۱۱:۲۴:۱۳",
+    "PublishDateTime": "۱۴۰۵/۰۸/۱۱ ۱۱:۲۴:۱۳",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=UTcUQQQaQQQHMZWoxenF09vbRdLg%3d%3d&rt=3&let=174&ct=0&ft=-1",
+    "HasExcel": false,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=UTcUQQQaQQQHMZWoxenF09vbRdLg%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=UTcUQQQaQQQHMZWoxenF09vbRdLg%3d%3d&ft=1005&let=174",
+    "ExcelUrl": "",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "49_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.pdf",
+      "49_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
+    ],
+    "local_file": "49_توضیحات_در_خصوص_اطلاعات_و_صورت_های_.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1614509,
     "Symbol": "وتجارت",
     "CompanyName": "بانک تجارت",
