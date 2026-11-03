@@ -5,6 +5,38 @@
       "AdditionalInfo": "",
       "Reasons": []
     },
+    "TracingNo": 1625683,
+    "Symbol": "خودرو",
+    "CompanyName": "ایران خودرو",
+    "UnderSupervision": 0,
+    "Title": "اطلاعات و صورت‌های مالی میاندوره‌ای  دوره ۶ ماهه منتهی به  ۱۴۰۵/۰۶/۳۱ (حسابرسی شده) (شرکت شهرک صنعتی ایران خودرو خراسان)",
+    "LetterCode": "ن-۱۰",
+    "SentDateTime": "۱۴۰۵/۰۸/۱۱ ۱۵:۲۵:۵۱",
+    "PublishDateTime": "۱۴۰۵/۰۸/۱۱ ۱۵:۲۵:۵۱",
+    "HasHtml": true,
+    "IsEstimate": false,
+    "Url": "/Reports/Decision.aspx?LetterSerial=7bwp2baNyonW09lzKD6U8A%3d%3d&rt=5&let=6&ct=0&ft=-1",
+    "HasExcel": true,
+    "HasPdf": true,
+    "HasXbrl": false,
+    "HasAttachment": true,
+    "AttachmentUrl": "/Reports/Attachment.aspx?LetterSerial=7bwp2baNyonW09lzKD6U8A%3d%3d",
+    "PdfUrl": "DownloadFile.aspx?hs=7bwp2baNyonW09lzKD6U8A%3d%3d&ft=1005&let=6",
+    "ExcelUrl": "https://excel.codal.ir/service/Excel/GetAll/7bwp2baNyonW09lzKD6U8A%3d%3d/0",
+    "XbrlUrl": "",
+    "TedanUrl": "http://www.tedan.ir",
+    "local_files": [
+      "44_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.pdf",
+      "44_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+    ],
+    "local_file": "44_اطلاعات_و_صورت‌های_مالی_میاندوره‌ای.html"
+  },
+  {
+    "SuperVision": {
+      "UnderSupervision": 0,
+      "AdditionalInfo": "",
+      "Reasons": []
+    },
     "TracingNo": 1625763,
     "Symbol": "خودرو",
     "CompanyName": "ایران خودرو",
