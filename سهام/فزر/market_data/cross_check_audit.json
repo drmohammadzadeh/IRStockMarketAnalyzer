@@ -3,25 +3,25 @@
   "inscode": "8175784894140974",
   "asset_id": "16449",
   "live_info": {
-    "date": "20261031",
-    "close_price": 322800.0,
-    "last_price": 322800.0,
-    "yesterday_price": 332700.0,
-    "volume": 3487952.0,
-    "value": 1125910905600.0,
-    "trades": 5792.0
+    "date": "20261122",
+    "close_price": 288100.0,
+    "last_price": 291000.0,
+    "yesterday_price": 296500.0,
+    "volume": 42395717.0,
+    "value": 12216270550600.0,
+    "trades": 56753.0
   },
   "rahavard_prices": {
-    "close_price": 322800.0,
-    "last_price": 322800.0,
-    "close_change_percent": -2.98,
-    "last_change_percent": -2.98,
-    "end_date_time": "2026-10-31T09:28:37.766+03:30"
+    "close_price": 288100.0,
+    "last_price": 291000.0,
+    "close_change_percent": -2.83,
+    "last_change_percent": -1.85,
+    "end_date_time": "2026-11-22T12:30:00.034+03:30"
   },
   "cross_check": {
     "status": "VERIFIED",
-    "tsetmc_close": 322800.0,
-    "rahavard_close": 322800.0,
+    "tsetmc_close": 288100.0,
+    "rahavard_close": 288100.0,
     "discrepancy_pct": 0.0,
     "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
   }

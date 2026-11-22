@@ -1,13 +1,13 @@
 {
-  "buy_real_count": 15087,
-  "buy_legal_count": 51,
-  "sell_real_count": 7131,
-  "sell_legal_count": 31,
-  "buy_real_vol": 36626997.0,
-  "buy_legal_vol": 4931371.0,
-  "sell_real_vol": 20317740.0,
-  "sell_legal_vol": 21240628.0,
-  "buy_real_capita": 2427.7190296281565,
-  "sell_real_capita": 2849.213294068153,
-  "buyer_power": 0.8520664404741071
+  "buy_real_count": 18890,
+  "buy_legal_count": 48,
+  "sell_real_count": 7737,
+  "sell_legal_count": 28,
+  "buy_real_vol": 33457169.0,
+  "buy_legal_vol": 8938548.0,
+  "sell_real_vol": 38231873.0,
+  "sell_legal_vol": 4163844.0,
+  "buy_real_capita": 1771.157702488089,
+  "sell_real_capita": 4941.433759855241,
+  "buyer_power": 0.35842991904033433
 }
