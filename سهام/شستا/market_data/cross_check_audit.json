@@ -1,0 +1,28 @@
+{
+  "symbol": "شستا",
+  "inscode": "2400322364771558",
+  "asset_id": "7836",
+  "live_info": {
+    "date": "20261124",
+    "close_price": 3580.0,
+    "last_price": 3590.0,
+    "yesterday_price": 3490.0,
+    "volume": 795839355.0,
+    "value": 2849462745340.0,
+    "trades": 9555.0
+  },
+  "rahavard_prices": {
+    "close_price": 3580.0,
+    "last_price": 3590.0,
+    "close_change_percent": 2.58,
+    "last_change_percent": 2.87,
+    "end_date_time": "2026-11-24T12:29:57.02+03:30"
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 3580.0,
+    "rahavard_close": 3580.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

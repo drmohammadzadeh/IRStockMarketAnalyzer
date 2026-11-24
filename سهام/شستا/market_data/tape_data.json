@@ -1,0 +1,31 @@
+{
+  "symbol": "شستا",
+  "date": "20261124",
+  "close_price": 3580.0,
+  "last_price": 3590.0,
+  "yesterday_price": 3490.0,
+  "close_change_percent": 2.58,
+  "last_change_percent": 2.87,
+  "volume": 795839355.0,
+  "value": 2849462745340.0,
+  "client_type": {
+    "buy_real_count": 1313,
+    "buy_legal_count": 28,
+    "sell_real_count": 1955,
+    "sell_legal_count": 19,
+    "buy_real_vol": 388022357.0,
+    "buy_legal_vol": 407816998.0,
+    "sell_real_vol": 374850570.0,
+    "sell_legal_vol": 420988785.0,
+    "buy_real_capita": 295523.5011424219,
+    "sell_real_capita": 191739.4219948849,
+    "buyer_power": 1.5412766872234844
+  },
+  "cross_check": {
+    "status": "VERIFIED",
+    "tsetmc_close": 3580.0,
+    "rahavard_close": 3580.0,
+    "discrepancy_pct": 0.0,
+    "message": "تطابق کامل اطلاعات معاملات با ره‌آورد ۳۶۵ (انحراف: 0.0٪)."
+  }
+}

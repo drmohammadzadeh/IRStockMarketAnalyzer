@@ -1,0 +1,1294 @@
+{
+  "symbol": "شستا",
+  "audit_timestamp": "1405/09/03 - 13:06",
+  "total_candidates": 64,
+  "approved_count": 5,
+  "rejected_count": 59,
+  "approved_news": [
+    {
+      "id": "news_1",
+      "title": "جست‌وجو - شستا - سنا",
+      "source": "آرشیو محلی",
+      "source_url": "file:///ref_جست‌وجو_-_شستا_-_سنا.html",
+      "url": "file:///ref_جست‌وجو_-_شستا_-_سنا.html",
+      "date": "1405/09/03",
+      "raw_date": "نامشخص",
+      "body": "فهرست سهام شرکت‌های قابل واگذاری وزیر اقتصاد فهرست سهام قابل واگذاری شرکت‌های اصلی در پرتفوی شرکت‌های فرعی را در اجرای برنامه هفتم ابلاغ کرد. ... اجتماعی (شستا)، بانک پارسیان، بانک اقتصادنوین، گروه مدیریت سرمایه‌گذاری امید، کشتیرانی جمهوری اسلامی ایران، صنایع پتروشیمی... رکوردشکنی در معاملات پایانی (TAL) بورس تهران/ ارزش معاملات پایانی (TAL) به ۱۸۱۱ میلیارد تومان رسید معاون عملیات بازار بورس تهران از ثبت رکورد جدید ارزش معاملات مرحله پایانی(TAL) خبر داد و گفت: ارزش و حجم‌ معاملات پایانی (TAL) امروز به ۱۸۱۱ میلیارد تومان رسید که بالاترین رقم ثبت‌شده از زمان راه‌اندازی این مرحله از معاملات محسوب می‌شود. پیش از این، بیش‌ترین ارزش معاملات پایانی به میزان ۵۴۲ میلیارد تومان در پاییز پارسال هم‌زمان با راه‌اندازی مرحله معاملات پایانی به ثبت رسیده بود. ...، خگستر، خساپا و شستا با قیمت مناسب‌تری معامله کنند.... رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد بر اساس گزارش آماری اداره تحلیل‌های اقتصادی و ریسک سازمان بورس مجموع ارزش بازار سهام ۴۹ صنعت بورس و فرابورس با رشد ۴۶ درصدی از ۱۰.۸۵۰ همت در پایان دی ۱۴۰۳ به ۱۵.۸۵۸ همت در پایان دی ۱۴۰۴ رسید.",
+      "summary": "فهرست سهام شرکت‌های قابل واگذاری وزیر اقتصاد فهرست سهام قابل واگذاری شرکت‌های اصلی در پرتفوی شرکت‌های فرعی را در اجرای برنامه هفتم ابلاغ کرد. ... اجتماعی (شستا)، بانک پارسیان، بانک اقتصادنوین، گروه مدیریت سرمایه‌گذاری امید، کشتیرانی جمهوری اسلامی ایر",
+      "sentiment": "مثبت / دارای اثر حمایتی",
+      "sentiment_label": "POSITIVE",
+      "impact_type": "MARKET_DEVELOPMENT",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_جست‌وجو_-_شستا_-_سنا.html"
+    },
+    {
+      "id": "news_2",
+      "title": "واگذاری پتروشیمی‌های شستا به هلدینگ خلیج‌فارس، اتفاقی مثبتی برای بورس است",
+      "source": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "date": "1405/09/03",
+      "raw_date": "اخیر",
+      "body": "واگذاری پتروشیمی‌های شستا به هلدینگ خلیج‌فارس، اتفاقی مثبتی برای بورس است",
+      "summary": "واگذاری پتروشیمی‌های شستا به هلدینگ خلیج‌فارس، اتفاقی مثبتی برای بورس است",
+      "sentiment": "خنثی / بدون جهت‌گیری خاص",
+      "sentiment_label": "NEUTRAL",
+      "impact_type": "MARKET_DEVELOPMENT",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": null
+    },
+    {
+      "id": "news_3",
+      "title": "انجام معاملات گواهی سکه در بورس کالا مانع تضییع حقوق سهامداران است/ واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ‌های تخصصی به نفع سهام‌داران تمام می‌شود",
+      "source": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "date": "1405/09/03",
+      "raw_date": "اخیر",
+      "body": "انجام معاملات گواهی سکه در بورس کالا مانع تضییع حقوق سهامداران است/ واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ‌های تخصصی به نفع سهام‌داران تمام می‌شود",
+      "summary": "انجام معاملات گواهی سکه در بورس کالا مانع تضییع حقوق سهامداران است/ واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ‌های تخصصی به نفع سهام‌داران تمام می‌شود",
+      "sentiment": "خنثی / بدون جهت‌گیری خاص",
+      "sentiment_label": "NEUTRAL",
+      "impact_type": "MARKET_DEVELOPMENT",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": null
+    },
+    {
+      "id": "news_4",
+      "title": "منافع واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ خلیج فارس برای بازار سهام",
+      "source": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "date": "1405/09/03",
+      "raw_date": "اخیر",
+      "body": "منافع واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ خلیج فارس برای بازار سهام",
+      "summary": "منافع واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ خلیج فارس برای بازار سهام",
+      "sentiment": "خنثی / بدون جهت‌گیری خاص",
+      "sentiment_label": "NEUTRAL",
+      "impact_type": "MARKET_DEVELOPMENT",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": null
+    },
+    {
+      "id": "news_5",
+      "title": "شناسایی سود سنگین ملی نفتکش ایران در دفاتر «شستا»؛ سهم سود ۷.۹ همتی شناسایی شد | بورس 24",
+      "source": "آرشیو محلی",
+      "source_url": "https://www.bourse24.ir/news/371642/شناسایی-سود-سنگین-ملی-نفتکش-ایران-در-دفاتر-«شستا»؛-سهم-سود-۷.۹-همتی-شناسایی-شد",
+      "url": "https://www.bourse24.ir/news/371642/شناسایی-سود-سنگین-ملی-نفتکش-ایران-در-دفاتر-«شستا»؛-سهم-سود-۷.۹-همتی-شناسایی-شد",
+      "date": "1405/05/05",
+      "raw_date": "1405/05/05",
+      "body": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! شناسایی سود سنگین ملی نفتکش ایران در دفاتر «شستا»؛ سهم سود ۷.۹ همتی شناسایی شد به گزارش کدال‌نگر بورس ۲۴، بر اساس صورتجلسه مجمع عمومی عادی به‌طور فوق‌العاده شرکت ملی نفتکش ایران، مبلغ 1091 میلیارد تومان بابت سهم سود شستا در صورت‌های مالی تلفیقی گروه برای سال مالی منتهی به ۳۱ خرداد ۱۴۰۵ شناسایی و گزارش گردید. به گزارش کدال‌نگر بورس24 ، بر اساس صورتجلسه مجمع عمومی عادی به‌طور فوق‌العاده مورخ ۱۴۰۵/۰۵/۰۵ شرکت ملی نفتکش ایران، مبلغ ۱۰۹1 میلیارد تومان بابت سهم سود شستا در صورت‌های مالی تلفیقی گروه برای سال مالی منتهی به ۳۱ خرداد ۱۴۰۵ شناسایی و گزارش گردید. با عنایت به مصوبات و تکالیف مقرر در مجمع مزبور مبنی بر تقسیم مابقی سود حداکثر قبل از دو ماه از پایان سال مالی جاری شرکت، مجمع عمومی عادی به‌طور فوق‌العاده صاحبان سهام در تاریخ ۱۴۰۵.۰۸.۱۰ تشکیل و با تقسیم مبلغ 26 همت (به ازای هر سهم مبلغ ۳۱,۶۵۳ ریال) از محل سود انباشته ابتدای سال مالی جاری موافقت گردید. بر این اساس، مبلغ ۷.۹ میلیارد تومان به عنوان سهم سود شستا در دفاتر مالی سال جاری شناسایی و ثبت گردید. منبع خبر: سازمان خبری - تحلیلی بورس 24 شما می توانید اولین نفری باشید که برای این مطلب نظر می دهید.",
+      "summary": "با عضویت در کانال بله بورس۲۴، از آخرین اخبار و تحلیل‌های بازار سرمایه باخبر شوید! شناسایی سود سنگین ملی نفتکش ایران در دفاتر «شستا»؛ سهم سود ۷.۹ همتی شناسایی شد به گزارش کدال‌نگر بورس ۲۴، بر اساس صورتجلسه مجمع عمومی عادی به‌طور فوق‌العاده شرکت ملی نف",
+      "sentiment": "خنثی / بدون جهت‌گیری خاص",
+      "sentiment_label": "NEUTRAL",
+      "impact_type": "EARNINGS_REPORT",
+      "status": "APPROVED",
+      "credibility_score": 1.0,
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\news_1_شناسایی_سود_سنگین_ملی_نفتکش_ایران_د.html"
+    }
+  ],
+  "rejected_news": [
+    {
+      "title": ".:TSETMC:. :: مدیریت فناوری بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html"
+    },
+    {
+      "title": "ره‌آورد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_ره‌آورد.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_ره‌آورد.html"
+    },
+    {
+      "title": "سامانه اطلاع رسانی ناشران کدال|Codal",
+      "rejection_reason": "REJECTED_CAPTCHA",
+      "reason": "REJECTED_CAPTCHA",
+      "details": "صفحه خطای محدودیت دسترسی یا اعتبارسنجی امنیتی (کپچا)",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html",
+      "raw_date": "1400/05/02",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
+    },
+    {
+      "title": "سهام یاب، شبکه هوشمند معاملات بورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.sahamyab.com",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_سهام_یاب،_شبکه_هوشمند_معاملات_بورس.html"
+    },
+    {
+      "title": "برنامه عرضه‌های بورس انرژی در سومین روز آذر ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97195/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%B3%D9%88%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D8%A2%D8%B0%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پنل تخصصی «مالی سازی اقتصاد انرژی»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97196/%D9%BE%D9%86%D9%84-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C-%D9%85%D8%A7%D9%84%DB%8C-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%86%D8%B1%DA%98%DB%8C",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "برای فروش نفت در روزهای آینده از ظرفیت بازار سرمایه استفاده می‌کنیم",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97194/%D8%A8%D8%B1%D8%A7%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%86%D9%81%D8%AA-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2%D9%87%D8%A7%DB%8C-%D8%A2%DB%8C%D9%86%D8%AF%D9%87-%D8%A7%D8%B2-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نقش صندوق‌های سرمایه‌گذاری در تأمین مالی دولت، چالش‌های بازار بدهی و راهکارهای مدیریت ریسک نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97193/%D9%86%D9%82%D8%B4-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AF%D9%88%D9%84%D8%AA-%DA%86%D8%A7%D9%84%D8%B4-%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "وزیر اقتصاد ابلاغ کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "فهرست سهام شرکت‌های قابل واگذاری",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ مهر ۰۵ - ۱۵:۰۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "معاون عملیات بازار بورس تهران در گفت‌وگو با «سنا» اعلام کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رکوردشکنی در معاملات پایانی (TAL) بورس تهران/ ارزش معاملات پایانی (TAL) به ۱۸۱۱ میلیارد تومان رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۰ خرداد ۰۵ - ۱۵:۵۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره تحلیل‌های اقتصادی و ریسک سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا گزارش گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات بازار آپشن‌ در دومین هفته خرداد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ خرداد ۰۴ - ۰۹:۵۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، داده‌های آماری گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "عملکرد بازار آپشن‌ در هفته دوم اردیبهشت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ اردیبهشت ۰۴ - ۰۸:۳۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ثبت رکورد در بازار آپشن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89293/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ اردیبهشت ۰۴ - ۱۶:۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89293/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار آپشن هفته اول پس از تعطیلات را پر قدرت شروع کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89067/بازار-آپشن-هفته-اول-پس-از-تعطیلات-را-پر-قدرت-شروع-کرد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۲ فروردین ۰۴ - ۱۴:۲۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89067/بازار-آپشن-هفته-اول-پس-از-تعطیلات-را-پر-قدرت-شروع-کرد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "هیات دولت تصویب کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "انتقال بخشی از سهام ۷ شرکت دولتی به تامین اجتماعی/ بخشی از سهام دولت در هلدینگ پتروشیمی خلیج فارس و شرکت توسعه نیشکر به «تامین اجتماعی» منتقل شد",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد شستا و مربوط به شرکت پتروشیمی خلیج فارس (فارس)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۸ فروردین ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیرعامل سرمایه‌گذاری داریوش، درگفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۷:۰۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "حسن کاظم‌زاده کارشناس بازار سرمایه در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۵:۳۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارشناس بازار سرمایه در گفت‌وگو با «سنا» تشریح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۱:۱۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بر اساس داده‌های آماری اعلام شد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش بازار اوراق بهادار در مرز ۱۳۰۰۰ همت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ بهمن ۰۳ - ۰۹:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "هیات وزیران تصویب کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اعلام برنامه زمان بندی واگذاری سهام متعلق به صندوق‌های بازنشستگی و تامین اجتماعی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ دی ۰۳ - ۱۷:۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش شرکت سبدگردان آگاه را بررسی می‌کند:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش معاملات صندوق‌های سرمایه‌گذاری در بازار مشتقه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ دی ۰۳ - ۰۹:۳۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یادداشتی از پویا دلگشای، مدیر مشتقه سبدگردان آگاه؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87528/پاییز-داغ-بازار-آپشن-ارزش-مبادلات-آپشن-در-پاییز-امسال-۸-برابر",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پاییز داغ بازار آپشن/ ارزش مبادلات آپشن‌ در پاییز امسال؛ ۸ برابر پاییز ۱۴۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87528/پاییز-داغ-بازار-آپشن-ارزش-مبادلات-آپشن-در-پاییز-امسال-۸-برابر",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیر معاملات مشتقه شرکت سبدگردان دیبا در گفت‌وگو با سنا مطرح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پیش‌بینی گرم‌تر شدن بازار آپشن/ میانگین ارزش معاملات روزانه آپشن‌ها در آذرماه به ۵۰۰ میلیارد تومان افزایش پیدا کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نائب رئیس کمیسیون اقتصادی مجلس در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87471/شرکت-پروژه-از-ظرفیت-های-اصلی-بازار-سرمایه-برای-تامین-مالی-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت پروژه‌ از ظرفیت‌های اصلی بازار سرمایه برای تامین مالی است/ توسعه بازار شرکت پروژه‌ها می‌تواند به حل ناترازی در حوزه‌های مختلف، از طریق تامین مالی کمک کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87471/شرکت-پروژه-از-ظرفیت-های-اصلی-بازار-سرمایه-برای-تامین-مالی-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت‌های میلیارد دلاری بورس و فرابورس/ ارزش بازار ۳۱ شرکت فعال در بازار سهام ایران از یک میلیارد دلار فراتر رفت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ آذر ۰۳ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، بررسی کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند ارزش بازار ۱۰ شرکت بزرگ بورس و فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آذر ۰۳ - ۰۹:۳۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "افزایش ۵۷۴ واحدی شاخص کل هم‌وزن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۷ فروردین ۰۳ - ۱۴:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    }
+  ],
+  "rejection_log": [
+    {
+      "title": ".:TSETMC:. :: مدیریت فناوری بورس تهران",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_._TSETMC_._مدیریت_فناوری_بورس_تهران.html"
+    },
+    {
+      "title": "ره‌آورد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_ره‌آورد.html",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_ره‌آورد.html"
+    },
+    {
+      "title": "سامانه اطلاع رسانی ناشران کدال|Codal",
+      "rejection_reason": "REJECTED_CAPTCHA",
+      "reason": "REJECTED_CAPTCHA",
+      "details": "صفحه خطای محدودیت دسترسی یا اعتبارسنجی امنیتی (کپچا)",
+      "source_name": "آرشیو محلی",
+      "source_url": "file:///ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html",
+      "raw_date": "1400/05/02",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_سامانه_اطلاع_رسانی_ناشران_کدال_Coda.html"
+    },
+    {
+      "title": "سهام یاب، شبکه هوشمند معاملات بورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "آرشیو محلی",
+      "source_url": "https://www.sahamyab.com",
+      "raw_date": "نامشخص",
+      "file_path": "D:\\projects\\bourse\\سهام\\شستا\\news\\ref_سهام_یاب،_شبکه_هوشمند_معاملات_بورس.html"
+    },
+    {
+      "title": "برنامه عرضه‌های بورس انرژی در سومین روز آذر ۱۴۰۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97195/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D9%87-%D8%B9%D8%B1%D8%B6%D9%87-%D9%87%D8%A7%DB%8C-%D8%A8%D9%88%D8%B1%D8%B3-%D8%A7%D9%86%D8%B1%DA%98%DB%8C-%D8%AF%D8%B1-%D8%B3%D9%88%D9%85%DB%8C%D9%86-%D8%B1%D9%88%D8%B2-%D8%A2%D8%B0%D8%B1-%DB%B1%DB%B4%DB%B0%DB%B5",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پنل تخصصی «مالی سازی اقتصاد انرژی»",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97196/%D9%BE%D9%86%D9%84-%D8%AA%D8%AE%D8%B5%D8%B5%DB%8C-%D9%85%D8%A7%D9%84%DB%8C-%D8%B3%D8%A7%D8%B2%DB%8C-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF-%D8%A7%D9%86%D8%B1%DA%98%DB%8C",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "برای فروش نفت در روزهای آینده از ظرفیت بازار سرمایه استفاده می‌کنیم",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97194/%D8%A8%D8%B1%D8%A7%DB%8C-%D9%81%D8%B1%D9%88%D8%B4-%D9%86%D9%81%D8%AA-%D8%AF%D8%B1-%D8%B1%D9%88%D8%B2%D9%87%D8%A7%DB%8C-%D8%A2%DB%8C%D9%86%D8%AF%D9%87-%D8%A7%D8%B2-%D8%B8%D8%B1%D9%81%DB%8C%D8%AA-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87-%D9%85%DB%8C-%DA%A9%D9%86%DB%8C%D9%85",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نقش صندوق‌های سرمایه‌گذاری در تأمین مالی دولت، چالش‌های بازار بدهی و راهکارهای مدیریت ریسک نرخ بهره",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/97193/%D9%86%D9%82%D8%B4-%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D9%87%D8%A7%DB%8C-%D8%B3%D8%B1%D9%85%D8%A7%DB%8C%D9%87-%DA%AF%D8%B0%D8%A7%D8%B1%DB%8C-%D8%AF%D8%B1-%D8%AA%D8%A3%D9%85%DB%8C%D9%86-%D9%85%D8%A7%D9%84%DB%8C-%D8%AF%D9%88%D9%84%D8%AA-%DA%86%D8%A7%D9%84%D8%B4-%D9%87%D8%A7%DB%8C-%D8%A8%D8%A7%D8%B2%D8%A7%D8%B1",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "وزیر اقتصاد ابلاغ کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "فهرست سهام شرکت‌های قابل واگذاری",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ مهر ۰۵ - ۱۵:۰۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/96414/فهرست-سهام-شرکت-های-قابل-واگذاری",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "معاون عملیات بازار بورس تهران در گفت‌وگو با «سنا» اعلام کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رکوردشکنی در معاملات پایانی (TAL) بورس تهران/ ارزش معاملات پایانی (TAL) به ۱۸۱۱ میلیارد تومان رسید",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۰ خرداد ۰۵ - ۱۵:۵۸",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/94603/رکوردشکنی-در-معاملات-پایانی-TAL-بورس-تهران-ارزش-معاملات-پایانی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا» گزارش اداره تحلیل‌های اقتصادی و ریسک سازمان بورس را بررسی می‌کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "رونمایی از ۱۰ شرکت بزرگ بازار سهام در پایان دی ۱۴۰۴/ ارزش بازار صنایع فعال بازار سرمایه در یک‌سال گذشته ۱۶ تا ۱۲۰ درصد رشد کرد/ مجموع ارزش بازار سهام صنایع بورس و فرابورس با ۴۶ درصد رشد به مرز ۱۶ هزار همت نزدیک شد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ بهمن ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/93605/رونمایی-از-۱۰-شرکت-بزرگ-بازار-سهام-در-پایان-دی-۱۴۰۴-ارزش-بازار",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا گزارش گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارنامه معاملات بازار آپشن‌ در دومین هفته خرداد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۷ خرداد ۰۴ - ۰۹:۵۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/90001/کارنامه-معاملات-بازار-آپشن-در-دومین-هفته-خرداد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "سنا، داده‌های آماری گروه مالی اقتصاد بیدار را بررسی می‌کند؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "عملکرد بازار آپشن‌ در هفته دوم اردیبهشت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۳ اردیبهشت ۰۴ - ۰۸:۳۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89419/عملکرد-بازار-آپشن-در-هفته-دوم-اردیبهشت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ثبت رکورد در بازار آپشن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89293/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۵ اردیبهشت ۰۴ - ۱۶:۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89293/ثبت-رکورد-در-بازار-آپشن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بازار آپشن هفته اول پس از تعطیلات را پر قدرت شروع کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89067/بازار-آپشن-هفته-اول-پس-از-تعطیلات-را-پر-قدرت-شروع-کرد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۲ فروردین ۰۴ - ۱۴:۲۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/89067/بازار-آپشن-هفته-اول-پس-از-تعطیلات-را-پر-قدرت-شروع-کرد",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "هیات دولت تصویب کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "انتقال بخشی از سهام ۷ شرکت دولتی به تامین اجتماعی/ بخشی از سهام دولت در هلدینگ پتروشیمی خلیج فارس و شرکت توسعه نیشکر به «تامین اجتماعی» منتقل شد",
+      "rejection_reason": "REJECTED_OFF_TARGET",
+      "reason": "REJECTED_OFF_TARGET",
+      "details": "عدم ارتباط با نماد شستا و مربوط به شرکت پتروشیمی خلیج فارس (فارس)",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۱۸ فروردین ۰۴ - ۱۱:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88999/انتقال-بخشی-از-سهام-۷-شرکت-دولتی-به-تامین-اجتماعی-بخشی-از-سهام",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیرعامل سرمایه‌گذاری داریوش، درگفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۷:۰۲",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88345/واگذاری-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-اتفاقی-مثبتی-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "حسن کاظم‌زاده کارشناس بازار سرمایه در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۵:۳۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88353/انجام-معاملات-گواهی-سکه-در-بورس-کالا-مانع-تضییع-حقوق-سهامداران",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "کارشناس بازار سرمایه در گفت‌وگو با «سنا» تشریح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۷ بهمن ۰۳ - ۱۱:۱۵",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88325/منافع-واگذاری-مدیریت-پتروشیمی-های-شستا-به-هلدینگ-خلیج-فارس-برای",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "بر اساس داده‌های آماری اعلام شد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش بازار اوراق بهادار در مرز ۱۳۰۰۰ همت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۶ بهمن ۰۳ - ۰۹:۱۳",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/88009/ارزش-بازار-اوراق-بهادار-در-مرز-۱۳۰۰۰-همت",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "هیات وزیران تصویب کرد؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "اعلام برنامه زمان بندی واگذاری سهام متعلق به صندوق‌های بازنشستگی و تامین اجتماعی",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ دی ۰۳ - ۱۷:۰۴",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87896/اعلام-برنامه-زمان-بندی-واگذاری-سهام-متعلق-به-صندوق-های-بازنشستگی",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش شرکت سبدگردان آگاه را بررسی می‌کند:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "ارزش معاملات صندوق‌های سرمایه‌گذاری در بازار مشتقه",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ دی ۰۳ - ۰۹:۳۹",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87827/ارزش-معاملات-صندوق-های-سرمایه-گذاری-در-بازار-مشتقه",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "یادداشتی از پویا دلگشای، مدیر مشتقه سبدگردان آگاه؛",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87528/پاییز-داغ-بازار-آپشن-ارزش-مبادلات-آپشن-در-پاییز-امسال-۸-برابر",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پاییز داغ بازار آپشن/ ارزش مبادلات آپشن‌ در پاییز امسال؛ ۸ برابر پاییز ۱۴۰۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87528/پاییز-داغ-بازار-آپشن-ارزش-مبادلات-آپشن-در-پاییز-امسال-۸-برابر",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "مدیر معاملات مشتقه شرکت سبدگردان دیبا در گفت‌وگو با سنا مطرح کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "پیش‌بینی گرم‌تر شدن بازار آپشن/ میانگین ارزش معاملات روزانه آپشن‌ها در آذرماه به ۵۰۰ میلیارد تومان افزایش پیدا کرد",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87516/پیش-بینی-گرم-تر-شدن-بازار-آپشن-میانگین-ارزش-معاملات-روزانه-آپشن-ها",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "نائب رئیس کمیسیون اقتصادی مجلس در گفت‌وگو با «سنا»:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87471/شرکت-پروژه-از-ظرفیت-های-اصلی-بازار-سرمایه-برای-تامین-مالی-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت پروژه‌ از ظرفیت‌های اصلی بازار سرمایه برای تامین مالی است/ توسعه بازار شرکت پروژه‌ها می‌تواند به حل ناترازی در حوزه‌های مختلف، از طریق تامین مالی کمک کند",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87471/شرکت-پروژه-از-ظرفیت-های-اصلی-بازار-سرمایه-برای-تامین-مالی-است",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، گزارش می‌دهد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "شرکت‌های میلیارد دلاری بورس و فرابورس/ ارزش بازار ۳۱ شرکت فعال در بازار سهام ایران از یک میلیارد دلار فراتر رفت",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۸ آذر ۰۳ - ۱۰:۳۰",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87416/شرکت-های-میلیارد-دلاری-بورس-و-فرابورس-ارزش-بازار-۳۱-شرکت-فعال",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "«سنا»، بررسی کرد:",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "روند ارزش بازار ۱۰ شرکت بزرگ بورس و فرابورس",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۲۶ آذر ۰۳ - ۰۹:۳۱",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/87340/روند-ارزش-بازار-۱۰-شرکت-بزرگ-بورس-و-فرابورس",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "افزایش ۵۷۴ واحدی شاخص کل هم‌وزن",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    },
+    {
+      "title": "۷ فروردین ۰۳ - ۱۴:۲۶",
+      "rejection_reason": "REJECTED_IRRELEVANT",
+      "reason": "REJECTED_IRRELEVANT",
+      "details": "عدم وجود واژگان همنشین الزامی نماد شستا در عنوان یا متن",
+      "source_name": "سنا (پایگاه خبری بازار سرمایه)",
+      "source_url": "https://www.sena.ir/news/85442/افزایش-۵۷۴-واحدی-شاخص-کل-هم-وزن",
+      "raw_date": "اخیر",
+      "file_path": null
+    }
+  ],
+  "sentiment_summary": {
+    "overall_sentiment": "POSITIVE",
+    "positive_count": 1,
+    "negative_count": 0,
+    "neutral_count": 4,
+    "average_sentiment_score": 1.0,
+    "gemini_psychology": {
+      "sentiment_score": 0.75,
+      "market_psychology": "خوش‌بینی مبتنی بر خبر",
+      "key_rumors_and_themes": [
+        "واگذاری مدیریت پتروشیمی‌های شستا به هلدینگ خلیج‌فارس",
+        "شناسایی سود سنگین ۷.۹ همتی ملی نفتکش ایران در دفاتر شستا"
+      ],
+      "gemini_rationale": "انتشار اخبار مربوط به واگذاری مدیریتی پتروشیمی‌ها به هلدینگ‌های تخصصی و شناسایی سود سنگین ۷.۹ همتی شرکت ملی نفتکش در دفاتر شستا، موجی از خوش‌بینی را در میان سهامداران ایجاد کرده است. این رویدادها به عنوان نشانه‌هایی از بهبود بهره‌وری و تعدیل مثبت سودآوری شرکت ارزیابی شده و انتظارات مثبت پیرامون ارزش ذاتی سهم را تقویت کرده است."
+    }
+  }
+}

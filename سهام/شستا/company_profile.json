@@ -1,0 +1,25 @@
+{
+  "symbol": "شستا",
+  "name": "سرمایه‌گذاری تامین اجتماعی",
+  "archetype": "INVESTMENT_HOLDING",
+  "inscode": "2400322364771558",
+  "sector_name": "شرکت‌های چند رشته‌ای صنعتی",
+  "subsector_name": "هلدینگ سرمایه‌گذاری چندرشته‌ای صنعتی",
+  "core_business": "سرمایه‌گذاری و مدیریت هلدینگ‌های تابعه در حوزه‌های نفت، گاز و پتروشیمی (تاپیکو)، دارویی (تیپیکو)، فلزات و معادن (صدرتامین)، سیمان و انرژی، پایش ارزش پرتفوی بورسی و غیربورسی و کسب سود نقدی مجامع (DPS)",
+  "has_physical_inventory": false,
+  "has_production_line": false,
+  "primary_valuation_metric": "P/NAV",
+  "applicable_metrics": [
+    "P/NAV",
+    "P/E",
+    "DPS Cover",
+    "Portfolio Value"
+  ],
+  "forbidden_terms": [
+    "خط تولید مستقیم",
+    "مواد اولیه صنعتی",
+    "انبار کالای ساخته‌شده",
+    "مواد اولیه",
+    "خط تولید"
+  ]
+}
